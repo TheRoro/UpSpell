@@ -11,24 +11,38 @@
       </div>
     </div>
     <div class="grid xs:grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-3">
-      <LanguageCard name="French" image-url="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Flag_of_France.png/1200px-Flag_of_France.png" />
-      <LanguageCard name="Spanish" image-url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1200px-Bandera_de_Espa%C3%B1a.png" />
-      <LanguageCard />
-      <LanguageCard />
-      <LanguageCard />
-      <LanguageCard />
+      <div v-for="lang in languages" :key="lang.name">
+        <LanguageCard class="langCard" :name="lang.name" :image-url="lang.imageUrl" :route="lang.route" />
+      </div>
     </div>
-    <div class="container mx-auto">
-      biti
-    </div>
-    <h1 class="font-bold bg-blue-100">
-      ÀÂÉÈÊËÎÏÔÙÛÜÇçüûùôïîëêèéâà
-    </h1>
   </div>
 </template>
 
-<style scoped>
+<script>
+export default {
+  data () {
+    return {
+      languages: [
+        { name: 'Français', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Flag_of_France.png/1200px-Flag_of_France.png', route: 'fr' },
+        { name: 'Español', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1200px-Bandera_de_Espa%C3%B1a.png', route: 'es' },
+        { name: 'Português', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg', route: 'pt' }
+      ]
+    }
+  }
+}
+</script>
+
+<style scoped >
   h1 {
     font-family: 'Lato', sans-serif;
+  }
+
+  .langCard {
+    transition: all .2s ease-in-out;
+  }
+
+  .langCard:hover {
+    filter: brightness(.95);
+    cursor: pointer;
   }
 </style>
