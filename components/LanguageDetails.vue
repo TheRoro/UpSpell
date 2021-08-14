@@ -3,10 +3,10 @@
     <div class="bg-purple-700 h-1/3">
       <div class="h-full container mx-auto flex flex-wrap flex-col justify-center content-center px-4">
         <h1 class="text-8xl text-white font-black text-center py-4">
-          Français
+          {{ originalName }}
         </h1>
         <p class="text-3xl text-white font-bold text-center py-8">
-          Special Characters for french!
+          Special Characters for {{ name }}!
         </p>
       </div>
     </div>
@@ -20,9 +20,18 @@
 
 <script>
 export default {
-  data () {
-    return {
-      chars: ['é', 'à', 'è', 'ù', 'â', 'ê', 'î', 'ô', 'û']
+  props: {
+    chars: {
+      type: [Array],
+      required: true
+    },
+    originalName: {
+      type: [String],
+      required: true
+    },
+    name: {
+      type: [String],
+      required: true
     }
   }
 }
