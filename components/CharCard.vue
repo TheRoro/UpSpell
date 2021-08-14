@@ -1,6 +1,6 @@
 <template>
-  <figure class="bg-gray-100 rounded-xl p-8 m-8 sm:m-4 md:m-8" @click="copyChar(char)">
-    <div class="pt-6 space-y-4">
+  <figure class="bg-gray-100 rounded-xl py-8 m-8 sm:m-4 md:m-8" @click="copyChar(char)">
+    <div class="py-8 space-y-4">
       <blockquote class="rounded-full">
         <h1 class="text-5xl font-semibold text-center">
           {{ char }}
