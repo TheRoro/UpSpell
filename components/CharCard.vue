@@ -1,13 +1,20 @@
 <template>
-  <figure class="bg-gray-100 rounded-xl py-8 m-8 sm:m-4 md:m-8" @click="copyChar(char)">
-    <div class="py-8 space-y-4">
-      <blockquote class="rounded-full">
-        <h1 class="text-5xl font-semibold text-center">
-          {{ char }}
-        </h1>
-        <input id="testing-code" type="hidden" :value="char">
+  <figure class="max-w-full w-72 bg-gray-100 rounded-xl m-auto mt-14 py-16" @click="copyChar(char)">
+    <div class="space-y-4">
+      <blockquote>
+        <p class="text-6xl font-semibold text-center">
+          {{ char.letter }}
+        </p>
       </blockquote>
     </div>
+    <div class="pt-6 space-y-4">
+      <blockquote>
+        <p class="text-lg font-semibold text-center">
+          {{ char.name }}
+        </p>
+      </blockquote>
+    </div>
+    <input id="testing-code" type="hidden" :value="char">
   </figure>
 </template>
 
@@ -22,7 +29,7 @@ export default {
   methods: {
     copyChar (char) {
       const elem = document.createElement('textarea')
-      elem.value = char
+      elem.value = char.letter
       document.body.appendChild(elem)
       elem.select()
       document.execCommand('copy')
