@@ -15,8 +15,8 @@ export default {
     return {
       languages: [
         { name: 'Français', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Flag_of_France.png/1200px-Flag_of_France.png', route: 'fr' },
-        { name: 'Español', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1200px-Bandera_de_Espa%C3%B1a.png', route: 'es' }
-        // { name: 'Português', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg', route: 'pt' },
+        { name: 'Español', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1200px-Bandera_de_Espa%C3%B1a.png', route: 'es' },
+        { name: 'Português', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg', route: 'pt' }
         // { name: 'Deutsch', imageUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1000px-Flag_of_Germany.svg.png', route: 'de' }
       ]
     }
