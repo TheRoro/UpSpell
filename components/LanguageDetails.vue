@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen">
-    <Banner :title="originalName" :sub-title="`Special Characters for ${name}`" />
-    <div class="grid xs:grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-4 mx-20 my-10">
+    <Banner :title="originalName" :sub-title="`Special Characters for ${name.toLowerCase()}`" />
+    <div class="grid xs:grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-10 py-14">
       <div v-for="char in chars" :key="char">
         <CharCard class="charCard" :char="char" />
       </div>
@@ -23,6 +23,16 @@ export default {
     name: {
       type: [String],
       required: true
+    }
+  },
+  head () {
+    const name = this.name
+    const originalName = this.originalName
+    return {
+      title: `${name} UpSpell`,
+      meta: [
+        { hid: 'description', name: 'description', content: `${name} | ${originalName} UpSpell - Special Characters` }
+      ]
     }
   }
 }

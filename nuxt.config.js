@@ -1,15 +1,42 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'upspell',
+    title: 'UpSpell',
+    titleTemplate: '%s - Special Characters',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'Special Characters for all languages' },
+      { name: 'format-detection', content: 'telephone=no' },
+      {
+        hid: 'og:type',
+        name: 'og:type',
+        content: 'website'
+      },
+      {
+        hid: 'og:url',
+        name: 'og:url',
+        content: 'https://upspell.vercel.app/'
+      },
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        content: 'UpSpell - Special Characters'
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content: 'Special Characters for all languages'
+      }
+      // {
+      //   hid: 'og:image',
+      //   property: 'og:image',
+      //   content:
+      //   '/test.png'
+      // }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
