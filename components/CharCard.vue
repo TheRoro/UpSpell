@@ -22,18 +22,26 @@
 export default {
   props: {
     char: {
-      type: [String],
+      type: [Object],
+      required: true
+    },
+    copied: {
+      type: [Boolean],
       required: true
     }
   },
   methods: {
     copyChar (char) {
-      const elem = document.createElement('textarea')
-      elem.value = char.letter
-      document.body.appendChild(elem)
-      elem.select()
-      document.execCommand('copy')
-      document.body.removeChild(elem)
+      if (!this.$props.copied) {
+        this.$emit('myEvent')
+        const elem = document.createElement('textarea')
+        elem.value = char.letter
+        document.body.appendChild(elem)
+        elem.select()
+        document.execCommand('copy')
+        document.body.removeChild(elem)
+        setTimeout(() => this.$emit('myEvent'), 2000)
+      }
     }
   }
 }
