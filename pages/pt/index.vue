@@ -1,5 +1,5 @@
 <template>
-  <LanguageDetails :chars="chars" original-name="Português" name="Portuguese" />
+  <LanguageDetails :chars="chars" original-name="Português" name="Portuguese" :image-url="imageUrl" />
 </template>
 
 <script>
@@ -71,7 +71,8 @@ export default {
           letter: 'ç',
           name: 'Cedilha'
         }
-      ]
+      ],
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1280px-Flag_of_Portugal.svg.png'
     }
   }
 }

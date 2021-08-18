@@ -26,6 +26,10 @@ export default {
     name: {
       type: [String],
       required: true
+    },
+    imageUrl: {
+      type: [String],
+      required: true
     }
   },
   data () {
@@ -39,7 +43,19 @@ export default {
     return {
       title: `${name} UpSpell`,
       meta: [
-        { hid: 'description', name: 'description', content: `${name} | ${originalName} UpSpell - Special Characters` }
+        { hid: 'description', name: 'description', content: `${name} | ${originalName} UpSpell - Special Characters` },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          property: 'og:description',
+          content: `${name} | ${originalName} UpSpell - Special Characters`
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          name: 'og:image',
+          content: this.imageUrl
+        }
       ]
     }
   },

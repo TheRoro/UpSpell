@@ -1,5 +1,5 @@
 <template>
-  <LanguageDetails :chars="chars" original-name="Español" name="Spanish" />
+  <LanguageDetails :chars="chars" original-name="Español" name="Spanish" :image-url="imageUrl" />
 </template>
 
 <script>
@@ -35,7 +35,8 @@ export default {
           letter: 'ñ',
           name: 'Eñe'
         }
-      ]
+      ],
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1200px-Bandera_de_Espa%C3%B1a.png'
     }
   }
 }
