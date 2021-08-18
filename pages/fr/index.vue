@@ -1,5 +1,5 @@
 <template>
-  <LanguageDetails :chars="chars" original-name="Français" name="French" />
+  <LanguageDetails :chars="chars" original-name="Français" name="French" :image-url="imageUrl" />
 </template>
 
 <script>
@@ -47,7 +47,8 @@ export default {
           letter: 'ç',
           name: 'C cédille'
         }
-      ]
+      ],
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Flag_of_France.png/1200px-Flag_of_France.png'
     }
   }
 }

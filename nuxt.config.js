@@ -7,36 +7,54 @@ export default {
       lang: 'en'
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Special Characters for all languages' },
-      { name: 'format-detection', content: 'telephone=no' },
+      {
+        charset: 'utf-8'
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        property: 'description',
+        content: 'Special Characters for all languages'
+      },
+      {
+        name: 'format-detection',
+        content: 'telephone=no'
+      },
       {
         hid: 'og:type',
         name: 'og:type',
+        property: 'og:type',
         content: 'website'
       },
       {
         hid: 'og:url',
         name: 'og:url',
+        property: 'og:url',
         content: 'https://upspell.vercel.app/'
       },
       {
         hid: 'og:title',
         name: 'og:title',
+        property: 'og:title',
         content: 'UpSpell - Special Characters'
       },
       {
         hid: 'og:description',
         name: 'og:description',
+        property: 'og:description',
         content: 'Special Characters for all languages'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        name: 'og:image',
+        content:
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Flag_of_France.png/1200px-Flag_of_France.png'
       }
-      // {
-      //   hid: 'og:image',
-      //   property: 'og:image',
-      //   content:
-      //   '/test.png'
-      // }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
