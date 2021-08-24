@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import Vue from 'vue'
 export default {
   props: {
     chars: {
@@ -59,9 +60,27 @@ export default {
       ]
     }
   },
+  mounted () {
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Shift' || e.key === 'CapsLock') {
+        const modifiedArr = this.$props.chars.map((item) => {
+          item.letter = this.swapCase(item.letter)
+          return item
+        })
+        Vue.set(this.$props.chars, modifiedArr)
+      }
+    })
+  },
   methods: {
     copyClick () {
       this.copied = !this.copied
+    },
+    swapCase (char) {
+      if (char === char.toUpperCase()) {
+        return char.toLowerCase()
+      } else {
+        return char.toUpperCase()
+      }
     }
   }
 }
