@@ -45,7 +45,7 @@ export default {
         },
         {
           letter: 'ç',
-          name: 'C cédille'
+          name: 'Cédille'
         }
       ],
       imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Flag_of_France.png/1200px-Flag_of_France.png'
