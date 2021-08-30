@@ -53,11 +53,11 @@ export default {
         property: 'og:image',
         name: 'og:image',
         content:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Flag_of_France.png/1200px-Flag_of_France.png'
+        '/upspell_flags.png'
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/upspell_logo.png' }
     ]
   },
 
