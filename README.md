@@ -1,4 +1,4 @@
-<img align="left" width="80" height="80" src="https://raw.githubusercontent.com/8rb/UpSpell/master/static/upspell_logo.png" alt="UpSpell - Special Characters App Logo">
+<img align="left" width="80" height="80" src="https://raw.githubusercontent.com/TheRoro/UpSpell/master/static/upspell_logo.png" alt="UpSpell - Special Characters App Logo">
 
 # UpSpell
 
