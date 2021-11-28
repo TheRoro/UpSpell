@@ -20,7 +20,7 @@ export default {
         { name: 'Italiano', imageUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/1500px-Flag_of_Italy.svg.png', route: 'it' },
         { name: 'Română', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/1280px-Flag_of_Romania.svg.png', route: 'ro' },
         { name: 'Deutsch', imageUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1000px-Flag_of_Germany.svg.png', route: 'de' }
-        // { name: 'Русский язык', imageUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1280px-Flag_of_Russia.svg.png', route: 'ru' },
+        { name: 'Русский язык', imageUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1280px-Flag_of_Russia.svg.png', route: 'ru' },
       ]
     }
   }
