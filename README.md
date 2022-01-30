@@ -12,7 +12,10 @@ We are currently supporting the special characters for this languages:
 - [French](https://upspell.vercel.app/fr)
 - [Portuguese](https://upspell.vercel.app/pt)
 - [Italian](https://upspell.vercel.app/it)
+- [Romanian](https://upspell.vercel.app/ro)
+- [German](https://upspell.vercel.app/de)
+- [Russian](https://upspell.vercel.app/ru)
 
-Feel free to suggest us more language special characters, and if you like the project, don't forget to star it!
+Feel free to suggest us more language special characters, and if you like the project, don't forget to star it ⭐!
 
 Made with 🦔 by **Rodrigo Ramirez**.
