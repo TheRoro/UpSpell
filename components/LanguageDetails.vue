@@ -1,12 +1,20 @@
 <template>
-  <div class="min-h-screen">
-    <Transition name="fade">
-      <div v-if="showCopied" class="fixed top-4 left-4 z-50 p-3 bg-yellow-300 rounded font-medium shadow-md">
+  <div class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <Transition name="toast">
+      <div v-if="showCopied" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-5 py-3 bg-green-500 text-white rounded-lg font-medium shadow-lg">
         Copied to clipboard ✓
       </div>
     </Transition>
     <Banner :title="originalName" :sub-title="`Special Characters for ${name.toLowerCase()}`" />
-    <div class="grid xs:grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-10 py-14">
+    <div class="px-10 py-6">
+      <button
+        class="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors font-medium"
+        @click="navigateTo('/')"
+      >
+        ← Back to languages
+      </button>
+    </div>
+    <div class="grid xs:grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-10 pb-14">
       <CharCard
         v-for="char in displayChars"
         :key="char.name"
@@ -65,10 +73,11 @@ if (import.meta.client) {
 </script>
 
 <style scoped>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.3s ease;
+.toast-enter-active, .toast-leave-active {
+  transition: all 0.3s ease;
 }
-.fade-enter-from, .fade-leave-to {
+.toast-enter-from, .toast-leave-to {
   opacity: 0;
+  transform: translate(-50%, 10px);
 }
 </style>
