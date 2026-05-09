@@ -2,146 +2,41 @@
   <LanguageDetails :chars="chars" original-name="Русский язык" name="Russian" :image-url="imageUrl" />
 </template>
 
-<script>
-export default {
-  data () {
-    return {
-      chars: [
-        {
-          letter: 'а',
-          name: 'а'
-        },
-        {
-          letter: 'б',
-          name: 'бэ'
-        },
-        {
-          letter: 'в',
-          name: 'вэ'
-        },
-        {
-          letter: 'г',
-          name: 'гэ'
-        },
-        {
-          letter: 'д',
-          name: 'дэ'
-        },
-        {
-          letter: 'е',
-          name: 'е'
-        },
-        {
-          letter: 'ё',
-          name: 'ё'
-        },
-        {
-          letter: 'ж',
-          name: 'же'
-        },
-        {
-          letter: 'з',
-          name: 'зэ'
-        },
-        {
-          letter: 'и',
-          name: 'и'
-        },
-        {
-          letter: 'й',
-          name: 'и краткое'
-        },
-        {
-          letter: 'к',
-          name: 'ка'
-        },
-        {
-          letter: 'л',
-          name: 'эль'
-        },
-        {
-          letter: 'м',
-          name: 'эм'
-        },
-        {
-          letter: 'н',
-          name: 'эн'
-        },
-        {
-          letter: 'о',
-          name: 'о'
-        },
-        {
-          letter: 'п',
-          name: 'пэ'
-        },
-        {
-          letter: 'р',
-          name: 'эр'
-        },
-        {
-          letter: 'с',
-          name: 'эс'
-        },
-        {
-          letter: 'т',
-          name: 'тэ'
-        },
-        {
-          letter: 'у',
-          name: 'у'
-        },
-        {
-          letter: 'ф',
-          name: 'эф'
-        },
-        {
-          letter: 'х',
-          name: 'ха'
-        },
-        {
-          letter: 'ц',
-          name: 'це'
-        },
-        {
-          letter: 'ч',
-          name: 'че'
-        },
-        {
-          letter: 'ш',
-          name: 'ша'
-        },
-        {
-          letter: 'щ',
-          name: 'ща'
-        },
-        {
-          letter: 'ъ',
-          name: 'твёрдый знак'
-        },
-        {
-          letter: 'ы',
-          name: 'ы'
-        },
-        {
-          letter: 'ь',
-          name: 'мягкий знак'
-        },
-        {
-          letter: 'э',
-          name: 'э'
-        },
-        {
-          letter: 'ю',
-          name: 'ю'
-        },
-        {
-          letter: 'я',
-          name: 'я'
-        }
-      ],
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1280px-Flag_of_Russia.svg.png'
-    }
-  }
-}
+<script setup lang="ts">
+const chars = [
+  { letter: 'а', name: 'A' },
+  { letter: 'б', name: 'Be' },
+  { letter: 'в', name: 'Ve' },
+  { letter: 'г', name: 'Ge' },
+  { letter: 'д', name: 'De' },
+  { letter: 'е', name: 'Ye' },
+  { letter: 'ё', name: 'Yo' },
+  { letter: 'ж', name: 'Zhe' },
+  { letter: 'з', name: 'Ze' },
+  { letter: 'и', name: 'I' },
+  { letter: 'й', name: 'Short I' },
+  { letter: 'к', name: 'Ka' },
+  { letter: 'л', name: 'El' },
+  { letter: 'м', name: 'Em' },
+  { letter: 'н', name: 'En' },
+  { letter: 'о', name: 'O' },
+  { letter: 'п', name: 'Pe' },
+  { letter: 'р', name: 'Er' },
+  { letter: 'с', name: 'Es' },
+  { letter: 'т', name: 'Te' },
+  { letter: 'у', name: 'U' },
+  { letter: 'ф', name: 'Ef' },
+  { letter: 'х', name: 'Kha' },
+  { letter: 'ц', name: 'Tse' },
+  { letter: 'ч', name: 'Che' },
+  { letter: 'ш', name: 'Sha' },
+  { letter: 'щ', name: 'Shcha' },
+  { letter: 'ъ', name: 'Hard sign' },
+  { letter: 'ы', name: 'Yeru' },
+  { letter: 'ь', name: 'Soft sign' },
+  { letter: 'э', name: 'E' },
+  { letter: 'ю', name: 'Yu' },
+  { letter: 'я', name: 'Ya' },
+]
+const imageUrl = 'https://flagcdn.com/w320/ru.png'
 </script>

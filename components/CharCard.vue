@@ -1,48 +1,37 @@
 <template>
-  <figure class="max-w-full w-72 bg-gray-100 rounded-xl m-auto mt-14 py-16" @click="copyChar(char)">
+  <figure
+    class="max-w-full w-72 bg-gray-100 rounded-xl m-auto mt-14 py-16 cursor-pointer hover:brightness-95 transition-all"
+    @click="copyChar"
+  >
     <div class="space-y-4">
-      <blockquote>
-        <p class="text-6xl font-semibold text-center">
-          {{ char.letter }}
-        </p>
-      </blockquote>
+      <p class="text-6xl font-semibold text-center">
+        {{ char.letter }}
+      </p>
     </div>
     <div class="pt-6 space-y-4">
-      <blockquote>
-        <p class="text-lg font-semibold text-center">
-          {{ char.name }}
-        </p>
-      </blockquote>
+      <p class="text-lg font-semibold text-center text-gray-700">
+        {{ char.name }}
+      </p>
     </div>
-    <input id="testing-code" type="hidden" :value="char">
   </figure>
 </template>
 
-<script>
-export default {
-  props: {
-    char: {
-      type: [Object],
-      required: true
-    },
-    copied: {
-      type: [Boolean],
-      required: true
-    }
-  },
-  methods: {
-    copyChar (char) {
-      if (!this.$props.copied) {
-        this.$emit('myEvent')
-        const elem = document.createElement('textarea')
-        elem.value = char.letter
-        document.body.appendChild(elem)
-        elem.select()
-        document.execCommand('copy')
-        document.body.removeChild(elem)
-        setTimeout(() => this.$emit('myEvent'), 2000)
-      }
-    }
-  }
+<script setup lang="ts">
+interface Char {
+  letter: string
+  name: string
+}
+
+const props = defineProps<{
+  char: Char
+}>()
+
+const emit = defineEmits<{
+  copied: []
+}>()
+
+function copyChar() {
+  navigator.clipboard.writeText(props.char.letter)
+  emit('copied')
 }
 </script>

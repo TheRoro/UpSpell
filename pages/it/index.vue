@@ -2,38 +2,14 @@
   <LanguageDetails :chars="chars" original-name="Italiano" name="Italian" :image-url="imageUrl" />
 </template>
 
-<script>
-export default {
-  data () {
-    return {
-      chars: [
-        {
-          letter: 'à',
-          name: 'A accento grave'
-        },
-        {
-          letter: 'è',
-          name: 'E accento grave'
-        },
-        {
-          letter: 'ì',
-          name: 'I accento grave'
-        },
-        {
-          letter: 'ò',
-          name: 'O accento grave'
-        },
-        {
-          letter: 'ù',
-          name: 'U accento grave'
-        },
-        {
-          letter: 'é',
-          name: 'E accento acuto'
-        }
-      ],
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/1500px-Flag_of_Italy.svg.png'
-    }
-  }
-}
+<script setup lang="ts">
+const chars = [
+  { letter: 'à', name: 'A con accento grave' },
+  { letter: 'è', name: 'E con accento grave' },
+  { letter: 'é', name: 'E con accento acuto' },
+  { letter: 'ì', name: 'I con accento grave' },
+  { letter: 'ò', name: 'O con accento grave' },
+  { letter: 'ù', name: 'U con accento grave' },
+]
+const imageUrl = 'https://flagcdn.com/w320/it.png'
 </script>

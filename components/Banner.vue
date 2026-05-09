@@ -11,17 +11,9 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    title: {
-      type: [String],
-      required: true
-    },
-    subTitle: {
-      type: [String],
-      required: true
-    }
-  }
-}
+<script setup lang="ts">
+defineProps<{
+  title: string
+  subTitle: string
+}>()
 </script>
