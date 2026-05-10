@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+  <div class="min-h-screen">
     <Transition name="toast">
       <div v-if="showCopied" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-5 py-3 bg-green-500 text-white rounded-lg font-medium shadow-lg">
         Copied to clipboard ✓

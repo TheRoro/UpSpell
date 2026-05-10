@@ -19,6 +19,12 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/png', href: '/upspell_logo.png' },
       ],
+      script: [
+        {
+          innerHTML: `(function(){try{var d=localStorage.getItem('upspell-dark');if(d==='1'||(d===null&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})()`,
+          type: 'text/javascript',
+        },
+      ],
     },
   },
 
