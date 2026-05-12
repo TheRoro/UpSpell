@@ -63,5 +63,10 @@ const languages = [
     imageUrl: 'https://flagcdn.com/w320/ru.png',
     route: '/ru',
   },
+  {
+    name: 'Türkçe',
+    imageUrl: 'https://flagcdn.com/w320/tr.png',
+    route: '/tr',
+  },
 ]
 </script>
