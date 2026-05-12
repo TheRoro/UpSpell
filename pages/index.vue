@@ -1,7 +1,20 @@
 <template>
   <div class="min-h-screen">
     <Banner title="UpSpell" sub-title="Language Special Characters" />
-    <div class="grid xs:grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-6 sm:px-10 py-14">
+
+    <!-- Daily Spell CTA -->
+    <div class="px-6 sm:px-10 pt-14 pb-6">
+      <button
+        class="w-full max-w-md mx-auto flex items-center justify-center gap-3 py-4 px-6 bg-gradient-to-r from-blue-500 to-purple-600
+               hover:from-blue-600 hover:to-purple-700 text-white font-bold text-lg rounded-xl shadow-lg
+               hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
+        @click="navigateTo('/play')"
+      >
+        🎯 Daily Spell Challenge
+      </button>
+    </div>
+
+    <div class="grid xs:grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-6 sm:px-10 pb-14">
       <LanguageCard
         v-for="lang in languages"
         :key="lang.name"
