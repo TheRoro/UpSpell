@@ -78,5 +78,10 @@ const languages = [
     imageUrl: 'https://flagcdn.com/w320/cz.png',
     route: '/cs',
   },
+  {
+    name: 'Tiếng Việt',
+    imageUrl: 'https://flagcdn.com/w320/vn.png',
+    route: '/vi',
+  },
 ]
 </script>
