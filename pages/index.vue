@@ -3,18 +3,18 @@
     <Banner title="UpSpell" sub-title="Daily accent challenge. Pick the right character!" />
 
     <!-- Language selector -->
-    <div v-if="!selectedLang" class="px-6 sm:px-10 py-14">
-      <h2 class="text-2xl font-bold text-center mb-8 text-gray-800 dark:text-white">Choose a language</h2>
-      <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+    <div v-if="!selectedLang" class="px-6 sm:px-10 py-8">
+      <h2 class="text-xl font-bold text-center mb-6 text-gray-800 dark:text-white">Choose a language</h2>
+      <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
         <button
           v-for="lang in languages"
           :key="lang.code"
-          class="flex items-center gap-3 p-4 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700
+          class="flex items-center gap-4 p-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700
                  hover:scale-105 hover:shadow-lg transition-all duration-200 cursor-pointer"
           @click="selectLanguage(lang.code)"
         >
-          <img :src="lang.flag" :alt="lang.name" class="w-10 h-7 rounded object-cover" />
-          <span class="font-semibold text-gray-800 dark:text-white">{{ lang.name }}</span>
+          <img :src="lang.flag" :alt="lang.name" class="w-12 h-8 rounded object-cover" />
+          <span class="font-semibold text-lg text-gray-800 dark:text-white">{{ lang.name }}</span>
           <span v-if="getStreak(lang.code) > 0" class="ml-auto text-sm bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 px-2 py-0.5 rounded-full">
             🔥 {{ getStreak(lang.code) }}
           </span>
@@ -22,20 +22,20 @@
       </div>
 
       <!-- Link to reference -->
-      <div class="text-center mt-10">
+      <div class="text-center mt-8">
         <button
-          class="text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors underline"
+          class="text-sm text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors underline"
           @click="navigateTo('/reference')"
         >
-          📋 Character Reference — copy special characters
+          📋 Character Reference · copy special characters
         </button>
       </div>
     </div>
 
     <!-- Quiz -->
-    <div v-else class="px-6 sm:px-10 py-14 max-w-lg mx-auto">
+    <div v-else class="px-6 sm:px-10 py-8 max-w-lg mx-auto">
       <button
-        class="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors font-medium mb-8"
+        class="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors font-medium mb-6"
         @click="selectedLang = null; answered = false"
       >
         ← Back to languages

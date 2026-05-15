@@ -1,10 +1,10 @@
 <template>
-  <div class="bg-blue-500 dark:bg-blue-700 sm:py-24 sm:px-8 py-14 px-2 transition-colors duration-300">
-    <div class="h-full container mx-auto flex flex-wrap flex-col justify-center content-center px-4">
-      <h1 class="sm:text-8xl text-5xl text-white font-black text-center py-4">
+  <div class="bg-blue-500 dark:bg-blue-700 sm:py-12 py-8 px-4 transition-colors duration-300">
+    <div class="container mx-auto text-center">
+      <h1 class="sm:text-5xl text-3xl text-white font-black">
         {{ title }}
       </h1>
-      <p class="sm:text-3xl text-lg text-white font-bold text-center py-8">
+      <p class="sm:text-xl text-base text-white/90 font-medium mt-2">
         {{ subTitle }}
       </p>
     </div>
