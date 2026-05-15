@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'UpSpell',
-      titleTemplate: '%s - Daily Accent Challenge',
+      titleTemplate: '%s | UpSpell',
       htmlAttrs: { lang: 'en' },
       meta: [
         { charset: 'utf-8' },
@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         { name: 'description', content: 'Daily accent quiz — pick the right special character!' },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://upspell.vercel.app/' },
-        { property: 'og:title', content: 'UpSpell - Daily Accent Challenge' },
+        { property: 'og:title', content: 'UpSpell | Daily Accent Challenge' },
         { property: 'og:description', content: 'Daily accent quiz — pick the right special character!' },
         { property: 'og:image', content: '/upspell_flags.png' },
       ],

@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen">
-    <Banner title="UpSpell" sub-title="Daily accent challenge — pick the right character!" />
+    <Banner title="UpSpell" sub-title="Daily accent challenge. Pick the right character!" />
 
     <!-- Language selector -->
     <div v-if="!selectedLang" class="px-6 sm:px-10 py-14">
