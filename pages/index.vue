@@ -91,6 +91,16 @@
           <p v-if="!correct" class="text-gray-500 dark:text-gray-400 mb-4">
             The correct answer was <strong class="text-gray-800 dark:text-white">{{ todayWord?.choices[0] }}</strong>
           </p>
+
+          <!-- Share button -->
+          <button
+            class="mt-6 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-xl
+                   transition-all duration-200 hover:scale-105 shadow-md"
+            @click="shareResult"
+          >
+            {{ shareText }}
+          </button>
+
           <p class="text-gray-600 dark:text-gray-300 mt-4">
             Come back tomorrow for a new word!
           </p>
@@ -204,5 +214,24 @@ function guess(choice: string) {
   localStorage.setItem(getStreakKey(code), String(currentStreak.value))
   localStorage.setItem(getLastPlayedKey(code), today)
   localStorage.setItem(`upspell-correct-${code}`, correct.value ? '1' : '0')
+}
+
+const shareText = ref('📋 Share result')
+
+const langFlags: Record<string, string> = {
+  fr: '🇫🇷', es: '🇪🇸', pt: '🇵🇹', it: '🇮🇹', ro: '🇷🇴', de: '🇩🇪',
+  ru: '🇷🇺', tr: '🇹🇷', pl: '🇵🇱', cs: '🇨🇿', vi: '🇻🇳', is: '🇮🇸',
+}
+
+async function shareResult() {
+  const flag = langFlags[selectedLang.value || ''] || '🌍'
+  const result = correct.value ? '✅' : '❌'
+  const streak = currentStreak.value > 0 ? ` 🔥${currentStreak.value}` : ''
+  const dayNum = getTodayIndex(365)
+  const text = `UpSpell ${flag} Day ${dayNum}\n${result}${streak}\nupspell.vercel.app`
+
+  await navigator.clipboard.writeText(text)
+  shareText.value = '✓ Copied!'
+  setTimeout(() => { shareText.value = '📋 Share result' }, 2000)
 }
 </script>
