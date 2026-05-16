@@ -31,7 +31,59 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
+    '@vite-pwa/nuxt',
   ],
+
+  pwa: {
+    registerType: 'autoUpdate',
+    manifest: {
+      name: 'UpSpell',
+      short_name: 'UpSpell',
+      description: 'Daily accent quiz — pick the right special character!',
+      theme_color: '#3b82f6',
+      background_color: '#f9fafb',
+      display: 'standalone',
+      orientation: 'portrait',
+      icons: [
+        {
+          src: '/upspell_logo.png',
+          sizes: '192x192',
+          type: 'image/png',
+        },
+        {
+          src: '/upspell_logo.png',
+          sizes: '512x512',
+          type: 'image/png',
+        },
+        {
+          src: '/upspell_logo.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'maskable',
+        },
+      ],
+    },
+    workbox: {
+      navigateFallback: '/',
+      globPatterns: ['**/*.{js,css,html,svg,ico,woff2}'],
+      runtimeCaching: [
+        {
+          urlPattern: /\.png$/,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'images',
+            expiration: { maxEntries: 50, maxAgeSeconds: 60 * 60 * 24 * 30 },
+          },
+        },
+      ],
+    },
+    client: {
+      installPrompt: true,
+    },
+    devOptions: {
+      enabled: false,
+    },
+  },
 
   googleFonts: {
     families: {
