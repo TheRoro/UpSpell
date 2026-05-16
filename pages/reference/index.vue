@@ -41,5 +41,6 @@ const languages = [
   { name: 'Polski', imageUrl: 'https://flagcdn.com/w320/pl.png', route: '/pl' },
   { name: 'Čeština', imageUrl: 'https://flagcdn.com/w320/cz.png', route: '/cs' },
   { name: 'Tiếng Việt', imageUrl: 'https://flagcdn.com/w320/vn.png', route: '/vi' },
+  { name: 'Íslenska', imageUrl: 'https://flagcdn.com/w320/is.png', route: '/is' },
 ]
 </script>
