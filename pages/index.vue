@@ -113,6 +113,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { languages } from '~/data/words'
+import confetti from 'canvas-confetti'
 
 useHead({
   title: 'UpSpell',
@@ -194,6 +195,14 @@ function guess(choice: string) {
   answered.value = true
 
   correct.value = choice === todayWord.value.choices[0]
+
+  if (correct.value) {
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 },
+    })
+  }
 
   const code = selectedLang.value
   const today = getTodayStr()
