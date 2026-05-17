@@ -29,6 +29,13 @@
         >
           📋 Character Reference · copy special characters
         </button>
+        <span class="text-gray-300 dark:text-gray-600 mx-2">|</span>
+        <button
+          class="text-sm text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors underline"
+          @click="navigateTo('/stats')"
+        >
+          📊 Stats
+        </button>
       </div>
     </div>
 
@@ -223,6 +230,14 @@ function guess(choice: string) {
   localStorage.setItem(getStreakKey(code), String(currentStreak.value))
   localStorage.setItem(getLastPlayedKey(code), today)
   localStorage.setItem(`upspell-correct-${code}`, correct.value ? '1' : '0')
+
+  // Track stats
+  const played = parseInt(localStorage.getItem(`upspell-played-${code}`) || '0') + 1
+  const won = parseInt(localStorage.getItem(`upspell-won-${code}`) || '0') + (correct.value ? 1 : 0)
+  const bestStreak = Math.max(currentStreak.value, parseInt(localStorage.getItem(`upspell-best-${code}`) || '0'))
+  localStorage.setItem(`upspell-played-${code}`, String(played))
+  localStorage.setItem(`upspell-won-${code}`, String(won))
+  localStorage.setItem(`upspell-best-${code}`, String(bestStreak))
 }
 
 const shareText = ref('📋 Share result')
