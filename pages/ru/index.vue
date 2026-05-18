@@ -1,5 +1,5 @@
 <template>
-  <LanguageDetails :chars="chars" original-name="Русский язык" name="Russian" :image-url="imageUrl" />
+  <LanguageDetails :chars="chars" code="ru" />
 </template>
 
 <script setup lang="ts">
@@ -38,5 +38,4 @@ const chars = [
   { letter: 'ю', name: 'Yu' },
   { letter: 'я', name: 'Ya' },
 ]
-const imageUrl = 'https://flagcdn.com/w320/ru.png'
 </script>

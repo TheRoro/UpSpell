@@ -1,5 +1,5 @@
 <template>
-  <LanguageDetails :chars="chars" original-name="Tiếng Việt" name="Vietnamese" :image-url="imageUrl" />
+  <LanguageDetails :chars="chars" code="vi" />
 </template>
 
 <script setup lang="ts">
@@ -17,5 +17,4 @@ const chars = [
   { letter: 'ã', name: 'A with tilde (ngã)' },
   { letter: 'ạ', name: 'A with dot below (nặng)' },
 ]
-const imageUrl = 'https://flagcdn.com/w320/vn.png'
 </script>

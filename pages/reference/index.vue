@@ -14,7 +14,7 @@
         v-for="lang in languages"
         :key="lang.name"
         :name="lang.name"
-        :image-url="lang.imageUrl"
+        :image-url="lang.flag"
         :route="lang.route"
       />
     </div>
@@ -22,25 +22,11 @@
 </template>
 
 <script setup lang="ts">
-useHead({
-  title: 'Character Reference',
-  meta: [
-    { name: 'description', content: 'Special characters reference for 11 languages' },
-  ],
-})
+import { languageMetadata as languages } from '~/data/languageMetadata'
 
-const languages = [
-  { name: 'Français', imageUrl: 'https://flagcdn.com/w320/fr.png', route: '/fr' },
-  { name: 'Español', imageUrl: 'https://flagcdn.com/w320/es.png', route: '/es' },
-  { name: 'Português', imageUrl: 'https://flagcdn.com/w320/pt.png', route: '/pt' },
-  { name: 'Italiano', imageUrl: 'https://flagcdn.com/w320/it.png', route: '/it' },
-  { name: 'Română', imageUrl: 'https://flagcdn.com/w320/ro.png', route: '/ro' },
-  { name: 'Deutsch', imageUrl: 'https://flagcdn.com/w320/de.png', route: '/de' },
-  { name: 'Русский язык', imageUrl: 'https://flagcdn.com/w320/ru.png', route: '/ru' },
-  { name: 'Türkçe', imageUrl: 'https://flagcdn.com/w320/tr.png', route: '/tr' },
-  { name: 'Polski', imageUrl: 'https://flagcdn.com/w320/pl.png', route: '/pl' },
-  { name: 'Čeština', imageUrl: 'https://flagcdn.com/w320/cz.png', route: '/cs' },
-  { name: 'Tiếng Việt', imageUrl: 'https://flagcdn.com/w320/vn.png', route: '/vi' },
-  { name: 'Íslenska', imageUrl: 'https://flagcdn.com/w320/is.png', route: '/is' },
-]
+usePageSeo({
+  title: 'Character reference - UpSpell',
+  description: 'Copy and learn special characters for all 12 languages supported by UpSpell.',
+  path: '/reference',
+})
 </script>

@@ -1,6 +1,7 @@
 <template>
   <div class="min-h-screen">
-    <Banner title="UpSpell" sub-title="Daily accent challenge. Pick the right character!" />
+    <p class="sr-only" role="status" aria-live="polite">{{ announcement }}</p>
+    <Banner title="UpSpell" sub-title="Daily accent challenge. New words at 00:00 UTC." />
 
     <!-- Language selector -->
     <div v-if="!selectedLang" class="px-6 sm:px-10 py-8">
@@ -43,7 +44,7 @@
     <div v-else class="px-6 sm:px-10 py-8 max-w-lg mx-auto">
       <button
         class="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors font-medium mb-6"
-        @click="selectedLang = null; answered = false"
+        @click="goBack"
       >
         ← Back to languages
       </button>
@@ -52,7 +53,7 @@
         <!-- Streak -->
         <div class="flex justify-between items-center mb-6">
           <span class="text-sm text-gray-500 dark:text-gray-400">
-            {{ currentLangData?.name }}
+            {{ currentLangData?.name }} · {{ practiceMode ? 'Practice' : 'Daily word' }}
           </span>
           <span class="text-sm bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 px-3 py-1 rounded-full font-medium">
             🔥 Streak: {{ currentStreak }}
@@ -108,9 +109,59 @@
             {{ shareText }}
           </button>
 
-          <p class="text-gray-600 dark:text-gray-300 mt-4">
+          <p v-if="!practiceMode" class="text-gray-600 dark:text-gray-300 mt-4">
             Come back tomorrow for a new word!
           </p>
+
+          <div class="mt-6 rounded-xl border border-purple-100 bg-purple-50/60 p-4 text-left dark:border-purple-900/50 dark:bg-purple-950/20">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <h3 class="font-semibold text-gray-900 dark:text-white">Learn from this word</h3>
+              <button
+                type="button"
+                class="rounded-lg border border-purple-200 bg-white px-3 py-2 text-sm font-medium text-purple-700 transition-colors hover:bg-purple-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 dark:border-purple-800 dark:bg-gray-800 dark:text-purple-300"
+                @click="speakWord"
+              >
+                Hear pronunciation
+              </button>
+            </div>
+            <p class="mt-3 text-sm text-gray-700 dark:text-gray-300">
+              <span class="font-medium">Spelling tip:</span> {{ selectedMetadata.accentRule }}
+            </p>
+            <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">
+              <span class="font-medium">In context:</span> {{ todayWord?.word }} — {{ todayWord?.meaning }}
+            </p>
+            <ul class="mt-3 space-y-1 text-sm text-gray-600 dark:text-gray-400">
+              <li v-for="choice in shuffledChoices" :key="choice">
+                <span class="font-mono font-semibold">{{ choice }}</span>:
+                {{ choice === todayWord?.choices[0] ? 'completes the standard spelling' : 'would produce a different spelling' }}.
+              </li>
+            </ul>
+            <p v-if="speechStatus" class="mt-3 text-sm text-gray-600 dark:text-gray-400">
+              {{ speechStatus }}
+            </p>
+          </div>
+
+          <div class="mt-6 flex flex-wrap justify-center gap-4">
+            <button
+              v-if="practiceMode && missedWords.length"
+              type="button"
+              class="text-sm font-medium text-purple-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 dark:text-purple-400"
+              @click="practiceAnother"
+            >
+              Practice another missed word
+            </button>
+            <button
+              v-else-if="!practiceMode && missedWords.length"
+              type="button"
+              class="text-sm font-medium text-purple-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 dark:text-purple-400"
+              @click="startPractice"
+            >
+              Practice missed words ({{ missedWords.length }})
+            </button>
+            <p v-else-if="practiceMode" class="text-sm font-medium text-purple-700 dark:text-purple-300">
+              You cleared every missed word!
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -119,26 +170,38 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { languages } from '~/data/words'
+import { languages, type Word } from '~/data/words'
+import { getLanguageMetadata } from '~/data/languageMetadata'
+import {
+  addMissedWord,
+  getDailyIndex,
+  getUtcDayKey,
+  nextStreak,
+  parseStoredCount,
+  readMissedWords,
+  removeMissedWord,
+  shuffleChoices,
+} from '~/utils/game'
+import { copyText } from '~/utils/clipboard'
 import confetti from 'canvas-confetti'
 
-useHead({
-  title: 'UpSpell',
-  meta: [
-    { name: 'description', content: 'Daily accent quiz — pick the right special character for 11 languages!' },
-  ],
+usePageSeo({
+  title: 'UpSpell - Daily spelling practice',
+  description: 'Practice accented characters and distinctive letters with a free daily word game across 12 languages.',
+  path: '/',
 })
 
 const selectedLang = ref<string | null>(null)
 const answered = ref(false)
 const correct = ref(false)
 const currentStreak = ref(0)
-
-function getTodayIndex(wordCount: number): number {
-  const now = new Date()
-  const dayOfYear = Math.floor((now.getTime() - new Date(now.getFullYear(), 0, 0).getTime()) / 86400000)
-  return dayOfYear % wordCount
-}
+const practiceMode = ref(false)
+const practiceIndex = ref(0)
+const practiceAttempt = ref(0)
+const practiceWord = ref<Word | null>(null)
+const missedWords = ref<Word[]>([])
+const speechStatus = ref('')
+const announcement = ref('')
 
 const currentLangData = computed(() => {
   return languages.find(l => l.code === selectedLang.value)
@@ -146,7 +209,10 @@ const currentLangData = computed(() => {
 
 const todayWord = computed(() => {
   if (!currentLangData.value) return null
-  const idx = getTodayIndex(currentLangData.value.words.length)
+  if (practiceMode.value) {
+    return practiceWord.value
+  }
+  const idx = getDailyIndex(currentLangData.value.words.length)
   return currentLangData.value.words[idx]
 })
 
@@ -156,15 +222,19 @@ const wordSegments = computed(() => {
 })
 
 const shuffledChoices = computed(() => {
-  if (!todayWord.value) return []
-  const choices = [...todayWord.value.choices]
-  const seed = getTodayIndex(1000)
-  for (let i = choices.length - 1; i > 0; i--) {
-    const j = (seed * (i + 1) + 7) % (i + 1)
-    ;[choices[i], choices[j]] = [choices[j], choices[i]]
-  }
-  return choices
+  if (!todayWord.value || !selectedLang.value) return []
+  const mode = practiceMode.value
+    ? `practice:${practiceAttempt.value}`
+    : getUtcDayKey()
+  return shuffleChoices(
+    todayWord.value.choices,
+    `${mode}:${selectedLang.value}:${todayWord.value.word}`,
+  )
 })
+
+const selectedMetadata = computed(() =>
+  getLanguageMetadata(selectedLang.value ?? 'fr'),
+)
 
 function getStreakKey(code: string) {
   return `upspell-streak-${code}`
@@ -176,21 +246,23 @@ function getLastPlayedKey(code: string) {
 
 function getStreak(code: string): number {
   if (!import.meta.client) return 0
-  return parseInt(localStorage.getItem(getStreakKey(code)) || '0')
-}
-
-function getTodayStr(): string {
-  return new Date().toISOString().split('T')[0]
+  return parseStoredCount(storageGet(getStreakKey(code)))
 }
 
 function selectLanguage(code: string) {
   selectedLang.value = code
   currentStreak.value = getStreak(code)
+  practiceMode.value = false
+  practiceIndex.value = 0
+  practiceAttempt.value = 0
+  practiceWord.value = null
+  speechStatus.value = ''
+  missedWords.value = readMissedWords(storageGet(getMissedKey(code)))
 
-  const lastPlayed = localStorage.getItem(getLastPlayedKey(code))
-  if (lastPlayed === getTodayStr()) {
+  const lastPlayed = storageGet(getLastPlayedKey(code))
+  if (lastPlayed === getUtcDayKey()) {
     answered.value = true
-    const savedCorrect = localStorage.getItem(`upspell-correct-${code}`)
+    const savedCorrect = storageGet(`upspell-correct-${code}`)
     correct.value = savedCorrect === '1'
   } else {
     answered.value = false
@@ -202,42 +274,46 @@ function guess(choice: string) {
   answered.value = true
 
   correct.value = choice === todayWord.value.choices[0]
+  announcement.value = correct.value
+    ? `Correct. The word is ${todayWord.value.word}.`
+    : `Incorrect. The correct answer is ${todayWord.value.choices[0]}.`
 
   if (correct.value) {
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 },
-    })
+    celebrate()
   }
 
   const code = selectedLang.value
-  const today = getTodayStr()
-
-  if (correct.value) {
-    const lastPlayed = localStorage.getItem(getLastPlayedKey(code))
-    const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0]
-
-    if (lastPlayed === yesterday) {
-      currentStreak.value++
-    } else if (lastPlayed !== today) {
-      currentStreak.value = 1
+  if (practiceMode.value) {
+    if (correct.value) {
+      missedWords.value = removeMissedWord(missedWords.value, todayWord.value)
     }
-  } else {
-    currentStreak.value = 0
+    storageSet(getMissedKey(code), JSON.stringify(missedWords.value))
+    return
   }
 
-  localStorage.setItem(getStreakKey(code), String(currentStreak.value))
-  localStorage.setItem(getLastPlayedKey(code), today)
-  localStorage.setItem(`upspell-correct-${code}`, correct.value ? '1' : '0')
+  const today = getUtcDayKey()
+  const lastPlayed = storageGet(getLastPlayedKey(code))
+  currentStreak.value = nextStreak(
+    currentStreak.value,
+    lastPlayed,
+    today,
+    correct.value,
+  )
+  if (!correct.value) {
+    missedWords.value = addMissedWord(missedWords.value, todayWord.value)
+    storageSet(getMissedKey(code), JSON.stringify(missedWords.value))
+  }
 
-  // Track stats
-  const played = parseInt(localStorage.getItem(`upspell-played-${code}`) || '0') + 1
-  const won = parseInt(localStorage.getItem(`upspell-won-${code}`) || '0') + (correct.value ? 1 : 0)
-  const bestStreak = Math.max(currentStreak.value, parseInt(localStorage.getItem(`upspell-best-${code}`) || '0'))
-  localStorage.setItem(`upspell-played-${code}`, String(played))
-  localStorage.setItem(`upspell-won-${code}`, String(won))
-  localStorage.setItem(`upspell-best-${code}`, String(bestStreak))
+  storageSet(getStreakKey(code), String(currentStreak.value))
+  storageSet(getLastPlayedKey(code), today)
+  storageSet(`upspell-correct-${code}`, correct.value ? '1' : '0')
+
+  const played = parseStoredCount(storageGet(`upspell-played-${code}`)) + 1
+  const won = parseStoredCount(storageGet(`upspell-won-${code}`)) + (correct.value ? 1 : 0)
+  const bestStreak = Math.max(currentStreak.value, parseStoredCount(storageGet(`upspell-best-${code}`)))
+  storageSet(`upspell-played-${code}`, String(played))
+  storageSet(`upspell-won-${code}`, String(won))
+  storageSet(`upspell-best-${code}`, String(bestStreak))
 }
 
 const shareText = ref('📋 Share result')
@@ -251,11 +327,96 @@ async function shareResult() {
   const flag = langFlags[selectedLang.value || ''] || '🌍'
   const result = correct.value ? '✅' : '❌'
   const streak = currentStreak.value > 0 ? ` 🔥${currentStreak.value}` : ''
-  const dayNum = getTodayIndex(365)
-  const text = `UpSpell ${flag} Day ${dayNum}\n${result}${streak}\nupspell.vercel.app`
+  const label = practiceMode.value ? 'Practice' : getUtcDayKey()
+  const text = `UpSpell ${flag} ${label}\n${result}${streak}\nhttps://upspell.vercel.app`
 
-  await navigator.clipboard.writeText(text)
-  shareText.value = '✓ Copied!'
+  const copied = await copyText(text)
+  shareText.value = copied ? '✓ Copied!' : 'Copy failed'
+  announcement.value = copied
+    ? 'Result copied to the clipboard.'
+    : 'The result could not be copied.'
   setTimeout(() => { shareText.value = '📋 Share result' }, 2000)
+}
+
+function getMissedKey(code: string) {
+  return `upspell-missed-${code}`
+}
+
+function storageGet(key: string): string | null {
+  try {
+    return localStorage.getItem(key)
+  } catch {
+    return null
+  }
+}
+
+function storageSet(key: string, value: string) {
+  try {
+    localStorage.setItem(key, value)
+  } catch {
+    // The quiz remains usable when storage is disabled or full.
+  }
+}
+
+function celebrate() {
+  confetti({
+    particleCount: 100,
+    spread: 70,
+    origin: { y: 0.6 },
+  })
+}
+
+function goBack() {
+  selectedLang.value = null
+  answered.value = false
+  practiceMode.value = false
+  practiceAttempt.value = 0
+  practiceWord.value = null
+  speechStatus.value = ''
+}
+
+function startPractice() {
+  if (!missedWords.value.length) return
+  practiceMode.value = true
+  practiceIndex.value = 0
+  practiceAttempt.value = 0
+  practiceWord.value = missedWords.value[0] ?? null
+  answered.value = false
+  speechStatus.value = ''
+}
+
+function practiceAnother() {
+  if (!missedWords.value.length) {
+    goBack()
+    return
+  }
+  practiceIndex.value = correct.value
+    ? practiceIndex.value % missedWords.value.length
+    : (practiceIndex.value + 1) % missedWords.value.length
+  practiceAttempt.value++
+  practiceWord.value = missedWords.value[practiceIndex.value] ?? null
+  answered.value = false
+  speechStatus.value = ''
+}
+
+function speakWord() {
+  if (!todayWord.value || !import.meta.client || !('speechSynthesis' in window)) {
+    speechStatus.value = 'Pronunciation is not supported by this browser.'
+    announcement.value = speechStatus.value
+    return
+  }
+  window.speechSynthesis.cancel()
+  const utterance = new SpeechSynthesisUtterance(todayWord.value.word)
+  utterance.lang = selectedMetadata.value.speechLocale
+  utterance.onstart = () => {
+    speechStatus.value = `Playing ${selectedMetadata.value.englishName} pronunciation.`
+    announcement.value = speechStatus.value
+  }
+  utterance.onerror = () => {
+    speechStatus.value = 'The pronunciation could not be played.'
+    announcement.value = speechStatus.value
+  }
+  speechStatus.value = 'Preparing pronunciation…'
+  window.speechSynthesis.speak(utterance)
 }
 </script>

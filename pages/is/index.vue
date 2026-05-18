@@ -1,5 +1,5 @@
 <template>
-  <LanguageDetails :chars="chars" original-name="Íslenska" name="Icelandic" :image-url="imageUrl" />
+  <LanguageDetails :chars="chars" code="is" />
 </template>
 
 <script setup lang="ts">
@@ -15,5 +15,4 @@ const chars = [
   { letter: 'æ', name: 'Ash (ae ligature)' },
   { letter: 'ö', name: 'O with diaeresis' },
 ]
-const imageUrl = 'https://flagcdn.com/w320/is.png'
 </script>

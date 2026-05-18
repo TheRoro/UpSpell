@@ -1,5 +1,5 @@
 <template>
-  <LanguageDetails :chars="chars" original-name="Română" name="Romanian" :image-url="imageUrl" />
+  <LanguageDetails :chars="chars" code="ro" />
 </template>
 
 <script setup lang="ts">
@@ -10,5 +10,4 @@ const chars = [
   { letter: 'ș', name: 'S cu virgulă' },
   { letter: 'ț', name: 'T cu virgulă' },
 ]
-const imageUrl = 'https://flagcdn.com/w320/ro.png'
 </script>

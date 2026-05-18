@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'UpSpell',
-      titleTemplate: '%s | UpSpell',
+      titleTemplate: '%s',
       htmlAttrs: { lang: 'en' },
       meta: [
         { charset: 'utf-8' },
@@ -14,7 +14,10 @@ export default defineNuxtConfig({
         { property: 'og:url', content: 'https://upspell.vercel.app/' },
         { property: 'og:title', content: 'UpSpell | Daily Accent Challenge' },
         { property: 'og:description', content: 'Daily accent quiz — pick the right special character!' },
-        { property: 'og:image', content: '/upspell_flags.png' },
+        { property: 'og:image', content: 'https://upspell.vercel.app/upspell-social.png' },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { name: 'twitter:card', content: 'summary_large_image' },
       ],
       link: [
         { rel: 'icon', type: 'image/png', href: '/upspell_logo.png' },
@@ -65,10 +68,10 @@ export default defineNuxtConfig({
     },
     workbox: {
       navigateFallback: '/',
-      globPatterns: ['**/*.{js,css,html,svg,ico,woff2}'],
+      globPatterns: ['**/*.{js,css,html,svg,png,webp,ico,woff2}'],
       runtimeCaching: [
         {
-          urlPattern: /\.png$/,
+          urlPattern: /\.(?:png|webp|svg)$/,
           handler: 'CacheFirst',
           options: {
             cacheName: 'images',

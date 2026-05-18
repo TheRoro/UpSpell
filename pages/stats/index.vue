@@ -12,7 +12,7 @@
 
       <!-- Overall stats -->
       <div class="max-w-2xl mx-auto mb-10">
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div class="bg-white dark:bg-gray-800 rounded-xl p-5 text-center border border-gray-200 dark:border-gray-700">
             <p class="text-3xl font-bold text-gray-800 dark:text-white">{{ totalPlayed }}</p>
             <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Played</p>
@@ -35,13 +35,13 @@
           <div
             v-for="stat in langStats"
             :key="stat.code"
-            class="flex items-center gap-4 bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700"
+            class="grid grid-cols-[auto_1fr_auto] sm:flex sm:items-center gap-3 sm:gap-4 bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700"
           >
             <img :src="stat.flag" :alt="stat.name" class="w-10 h-7 rounded object-cover" />
-            <span class="font-semibold text-gray-800 dark:text-white w-28">{{ stat.name }}</span>
+            <span class="font-semibold text-gray-800 dark:text-white sm:w-28">{{ stat.name }}</span>
 
             <!-- Progress bar -->
-            <div class="flex-1">
+            <div class="col-span-3 order-last sm:order-none sm:col-auto sm:flex-1">
               <div class="w-full h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
                 <div
                   class="h-full bg-green-500 rounded-full transition-all duration-500"
@@ -67,8 +67,10 @@
 import { computed, onMounted, ref } from 'vue'
 import { languages } from '~/data/words'
 
-useHead({
-  title: 'Stats',
+usePageSeo({
+  title: 'Your stats - UpSpell',
+  description: 'Review your UpSpell accuracy and spelling streaks across all 12 supported languages.',
+  path: '/stats',
 })
 
 interface LangStat {
@@ -86,10 +88,10 @@ const langStats = ref<LangStat[]>([])
 
 onMounted(() => {
   langStats.value = languages.map(lang => {
-    const played = parseInt(localStorage.getItem(`upspell-played-${lang.code}`) || '0')
-    const won = parseInt(localStorage.getItem(`upspell-won-${lang.code}`) || '0')
-    const currentStreak = parseInt(localStorage.getItem(`upspell-streak-${lang.code}`) || '0')
-    const bestStreak = parseInt(localStorage.getItem(`upspell-best-${lang.code}`) || '0')
+    const played = readCount(`upspell-played-${lang.code}`)
+    const won = readCount(`upspell-won-${lang.code}`)
+    const currentStreak = readCount(`upspell-streak-${lang.code}`)
+    const bestStreak = readCount(`upspell-best-${lang.code}`)
     return {
       code: lang.code,
       name: lang.name,
@@ -101,6 +103,15 @@ onMounted(() => {
       bestStreak,
     }
   })
+
+  function readCount(key: string): number {
+    try {
+      const value = Number.parseInt(localStorage.getItem(key) ?? '', 10)
+      return Number.isFinite(value) && value >= 0 ? value : 0
+    } catch {
+      return 0
+    }
+  }
 })
 
 const totalPlayed = computed(() => langStats.value.reduce((sum, s) => sum + s.played, 0))

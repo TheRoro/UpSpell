@@ -1,5 +1,5 @@
 <template>
-  <LanguageDetails :chars="chars" original-name="Türkçe" name="Turkish" :image-url="imageUrl" />
+  <LanguageDetails :chars="chars" code="tr" />
 </template>
 
 <script setup lang="ts">
@@ -12,5 +12,4 @@ const chars = [
   { letter: 'ş', name: 'Şe (S with cedilla)' },
   { letter: 'ü', name: 'Ü (U with umlaut)' },
 ]
-const imageUrl = 'https://flagcdn.com/w320/tr.png'
 </script>

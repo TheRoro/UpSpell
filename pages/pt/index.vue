@@ -1,5 +1,5 @@
 <template>
-  <LanguageDetails :chars="chars" original-name="Português" name="Portuguese" :image-url="imageUrl" />
+  <LanguageDetails :chars="chars" code="pt" />
 </template>
 
 <script setup lang="ts">
@@ -17,5 +17,4 @@ const chars = [
   { letter: 'ú', name: 'U com acento agudo' },
   { letter: 'ç', name: 'C cedilha' },
 ]
-const imageUrl = 'https://flagcdn.com/w320/pt.png'
 </script>

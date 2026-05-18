@@ -1,5 +1,5 @@
 <template>
-  <LanguageDetails :chars="chars" original-name="Deutsch" name="German" :image-url="imageUrl" />
+  <LanguageDetails :chars="chars" code="de" />
 </template>
 
 <script setup lang="ts">
@@ -9,5 +9,4 @@ const chars = [
   { letter: 'ü', name: 'U Umlaut' },
   { letter: 'ß', name: 'Eszett (scharfes S)' },
 ]
-const imageUrl = 'https://flagcdn.com/w320/de.png'
 </script>

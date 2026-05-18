@@ -16,7 +16,7 @@ export interface LanguageWords {
 export const languages: LanguageWords[] = [  {
     code: 'fr',
     name: 'Français',
-    flag: 'https://flagcdn.com/w320/fr.png',
+    flag: '/flags/fr.svg',
     words: [
       { word: 'café', blank: 'caf_', position: 3, choices: ['é', 'è', 'ê', 'e'], meaning: 'coffee' },
       { word: 'marché', blank: 'march_', position: 5, choices: ['é', 'è', 'ê', 'e'], meaning: 'market' },
@@ -373,22 +373,22 @@ export const languages: LanguageWords[] = [  {
       { word: 'déçus', blank: 'd_çus', position: 1, choices: ['é', 'è', 'ê', 'e'], meaning: 'disappointed' },
       { word: 'façonner', blank: 'fa_onner', position: 2, choices: ['ç', 'c', 's', 'z'], meaning: 'to shape' },
       { word: 'déception', blank: 'd_ception', position: 1, choices: ['é', 'è', 'ê', 'e'], meaning: 'disappointment' },
-      { word: 'cœur', blank: 'c__ur', position: 1, choices: ['œ', 'oe', 'eu', 'e'], meaning: 'heart' },
-      { word: 'sœur', blank: 's__ur', position: 1, choices: ['œ', 'oe', 'eu', 'e'], meaning: 'sister' },
-      { word: 'œuvre', blank: '__uvre', position: 0, choices: ['œ', 'oe', 'eu', 'e'], meaning: 'work' },
-      { word: 'œuf', blank: '__uf', position: 0, choices: ['œ', 'oe', 'eu', 'e'], meaning: 'egg' },
-      { word: 'bœuf', blank: 'b__uf', position: 1, choices: ['œ', 'oe', 'eu', 'e'], meaning: 'beef' },
-      { word: 'nœud', blank: 'n__ud', position: 1, choices: ['œ', 'oe', 'eu', 'e'], meaning: 'knot' },
-      { word: 'vœu', blank: 'v__u', position: 1, choices: ['œ', 'oe', 'eu', 'e'], meaning: 'wish' },
-      { word: 'œil', blank: '__il', position: 0, choices: ['œ', 'oe', 'eu', 'e'], meaning: 'eye' },
-      { word: 'cæcum', blank: 'c__cum', position: 1, choices: ['æ', 'ae', 'e', 'a'], meaning: 'cecum' },
-      { word: 'tænia', blank: 't__nia', position: 1, choices: ['æ', 'ae', 'e', 'a'], meaning: 'tapeworm' },
+      { word: 'cœur', blank: 'c_ur', position: 1, choices: ['œ', 'oe', 'eu', 'e'], meaning: 'heart' },
+      { word: 'sœur', blank: 's_ur', position: 1, choices: ['œ', 'oe', 'eu', 'e'], meaning: 'sister' },
+      { word: 'œuvre', blank: '_uvre', position: 0, choices: ['œ', 'oe', 'eu', 'e'], meaning: 'work' },
+      { word: 'œuf', blank: '_uf', position: 0, choices: ['œ', 'oe', 'eu', 'e'], meaning: 'egg' },
+      { word: 'bœuf', blank: 'b_uf', position: 1, choices: ['œ', 'oe', 'eu', 'e'], meaning: 'beef' },
+      { word: 'nœud', blank: 'n_ud', position: 1, choices: ['œ', 'oe', 'eu', 'e'], meaning: 'knot' },
+      { word: 'vœu', blank: 'v_u', position: 1, choices: ['œ', 'oe', 'eu', 'e'], meaning: 'wish' },
+      { word: 'œil', blank: '_il', position: 0, choices: ['œ', 'oe', 'eu', 'e'], meaning: 'eye' },
+      { word: 'cæcum', blank: 'c_cum', position: 1, choices: ['æ', 'ae', 'e', 'a'], meaning: 'cecum' },
+      { word: 'tænia', blank: 't_nia', position: 1, choices: ['æ', 'ae', 'e', 'a'], meaning: 'tapeworm' },
     ],
   },
   {
     code: 'es',
     name: 'Español',
-    flag: 'https://flagcdn.com/w320/es.png',
+    flag: '/flags/es.svg',
     words: [
       { word: 'mamá', blank: 'mam_', position: 3, choices: ['á', 'a', 'à', 'â'], meaning: 'mom' },
       { word: 'papá', blank: 'pap_', position: 3, choices: ['á', 'a', 'à', 'â'], meaning: 'dad' },
@@ -422,7 +422,7 @@ export const languages: LanguageWords[] = [  {
       { word: 'cálido', blank: 'c_lido', position: 1, choices: ['á', 'a', 'à', 'â'], meaning: 'warm' },
       { word: 'cáliz', blank: 'c_liz', position: 1, choices: ['á', 'a', 'à', 'â'], meaning: 'chalice' },
       { word: 'pánico', blank: 'p_nico', position: 1, choices: ['á', 'a', 'à', 'â'], meaning: 'panic' },
-      { word: 'catálogo', blank: 'c_talogo', position: 1, choices: ['á', 'a', 'à', 'â'], meaning: 'catalog' },
+      { word: 'catálogo', blank: 'cat_logo', position: 3, choices: ['á', 'a', 'à', 'â'], meaning: 'catalog' },
       { word: 'bálsamo', blank: 'b_lsamo', position: 1, choices: ['á', 'a', 'à', 'â'], meaning: 'balm' },
       { word: 'hábito', blank: 'h_bito', position: 1, choices: ['á', 'a', 'à', 'â'], meaning: 'habit' },
       { word: 'náutico', blank: 'n_utico', position: 1, choices: ['á', 'a', 'à', 'â'], meaning: 'nautical' },
@@ -487,7 +487,7 @@ export const languages: LanguageWords[] = [  {
       { word: 'pésame', blank: 'p_same', position: 1, choices: ['é', 'e', 'è', 'ê'], meaning: 'condolence' },
       { word: 'récord', blank: 'r_cord', position: 1, choices: ['é', 'e', 'è', 'ê'], meaning: 'record' },
       { word: 'régimen', blank: 'r_gimen', position: 1, choices: ['é', 'e', 'è', 'ê'], meaning: 'regime' },
-      { word: 'espécimen', blank: '_specimen', position: 0, choices: ['é', 'e', 'è', 'ê'], meaning: 'specimen' },
+      { word: 'espécimen', blank: 'esp_cimen', position: 3, choices: ['é', 'e', 'è', 'ê'], meaning: 'specimen' },
       { word: 'rehén', blank: 'reh_n', position: 3, choices: ['é', 'e', 'è', 'ê'], meaning: 'hostage' },
       { word: 'sartén', blank: 'sart_n', position: 4, choices: ['é', 'e', 'è', 'ê'], meaning: 'frying pan' },
       { word: 'énfasis', blank: '_nfasis', position: 0, choices: ['é', 'e', 'è', 'ê'], meaning: 'emphasis' },
@@ -760,7 +760,7 @@ export const languages: LanguageWords[] = [  {
   {
     code: 'pt',
     name: 'Português',
-    flag: 'https://flagcdn.com/w320/pt.png',
+    flag: '/flags/pt.svg',
     words: [
       { word: 'água', blank: '_gua', position: 0, choices: ['á', 'a', 'à', 'â'], meaning: 'water' },
       { word: 'árvore', blank: '_rvore', position: 0, choices: ['á', 'a', 'à', 'â'], meaning: 'tree' },
@@ -1132,7 +1132,7 @@ export const languages: LanguageWords[] = [  {
   {
     code: 'it',
     name: 'Italiano',
-    flag: 'https://flagcdn.com/w320/it.png',
+    flag: '/flags/it.svg',
     words: [
       { word: 'città', blank: 'citt_', position: 4, choices: ['à', 'a', 'á', 'â'], meaning: 'city' },
       { word: 'università', blank: 'universit_', position: 9, choices: ['à', 'a', 'á', 'â'], meaning: 'university' },
@@ -1504,7 +1504,7 @@ export const languages: LanguageWords[] = [  {
   {
     code: 'ro',
     name: 'Română',
-    flag: 'https://flagcdn.com/w320/ro.png',
+    flag: '/flags/ro.svg',
     words: [
       { word: 'apă', blank: 'ap_', position: 2, choices: ['ă', 'a', 'â', 'á'], meaning: 'water' },
       { word: 'casă', blank: 'cas_', position: 3, choices: ['ă', 'a', 'â', 'á'], meaning: 'house' },
@@ -1876,7 +1876,7 @@ export const languages: LanguageWords[] = [  {
   {
     code: 'de',
     name: 'Deutsch',
-    flag: 'https://flagcdn.com/w320/de.png',
+    flag: '/flags/de.svg',
     words: [
       { word: 'Mädchen', blank: 'M_dchen', position: 1, choices: ['ä', 'a', 'á', 'â'], meaning: 'girl' },
       { word: 'Bäcker', blank: 'B_cker', position: 1, choices: ['ä', 'a', 'á', 'â'], meaning: 'baker' },
@@ -2248,7 +2248,7 @@ export const languages: LanguageWords[] = [  {
   {
     code: 'ru',
     name: 'Русский',
-    flag: 'https://flagcdn.com/w320/ru.png',
+    flag: '/flags/ru.svg',
     words: [
       { word: 'ёлка', blank: '_лка', position: 0, choices: ['ё', 'е', 'э', 'ě'], meaning: 'Christmas tree' },
       { word: 'ёж', blank: '_ж', position: 0, choices: ['ё', 'е', 'э', 'ě'], meaning: 'hedgehog' },
@@ -2620,7 +2620,7 @@ export const languages: LanguageWords[] = [  {
   {
     code: 'tr',
     name: 'Türkçe',
-    flag: 'https://flagcdn.com/w320/tr.png',
+    flag: '/flags/tr.svg',
     words: [
       { word: 'çiçek', blank: '_içek', position: 0, choices: ['ç', 'c', 'ş', 'j'], meaning: 'flower' },
       { word: 'çocuk', blank: '_ocuk', position: 0, choices: ['ç', 'c', 'ş', 'j'], meaning: 'child' },
@@ -2992,7 +2992,7 @@ export const languages: LanguageWords[] = [  {
   {
     code: 'pl',
     name: 'Polski',
-    flag: 'https://flagcdn.com/w320/pl.png',
+    flag: '/flags/pl.svg',
     words: [
       { word: 'mąka', blank: 'm_ka', position: 1, choices: ['ą', 'a', 'ę', 'o'], meaning: 'flour' },
       { word: 'mąż', blank: 'm_ż', position: 1, choices: ['ą', 'a', 'ę', 'o'], meaning: 'husband' },
@@ -3295,9 +3295,9 @@ export const languages: LanguageWords[] = [  {
       { word: 'wyraźnie', blank: 'wyra_nie', position: 4, choices: ['ź', 'z', 'ż', 'ž'], meaning: 'clearly' },
       { word: 'groźny', blank: 'gro_ny', position: 3, choices: ['ź', 'z', 'ż', 'ž'], meaning: 'dangerous' },
       { word: 'groźba', blank: 'gro_ba', position: 3, choices: ['ź', 'z', 'ż', 'ž'], meaning: 'threat' },
-      { word: 'grozić', blank: 'gro_ić', position: 3, choices: ['ź', 'z', 'ż', 'ž'], meaning: 'threaten' },
+      { word: 'grozić', blank: 'gro_ić', position: 3, choices: ['z', 'ź', 'ż', 'ž'], meaning: 'threaten' },
       { word: 'mroźny', blank: 'mro_ny', position: 3, choices: ['ź', 'z', 'ż', 'ž'], meaning: 'frosty' },
-      { word: 'mrozić', blank: 'mro_ić', position: 3, choices: ['ź', 'z', 'ż', 'ž'], meaning: 'freeze' },
+      { word: 'mrozić', blank: 'mro_ić', position: 3, choices: ['z', 'ź', 'ż', 'ž'], meaning: 'freeze' },
       { word: 'późno', blank: 'pó_no', position: 2, choices: ['ź', 'z', 'ż', 'ž'], meaning: 'late' },
       { word: 'luźny', blank: 'lu_ny', position: 2, choices: ['ź', 'z', 'ż', 'ž'], meaning: 'loose' },
       { word: 'luźno', blank: 'lu_no', position: 2, choices: ['ź', 'z', 'ż', 'ž'], meaning: 'loosely' },
@@ -3364,7 +3364,7 @@ export const languages: LanguageWords[] = [  {
   {
     code: 'cs',
     name: 'Čeština',
-    flag: 'https://flagcdn.com/w320/cz.png',
+    flag: '/flags/cz.svg',
     words: [
       { word: 'máma', blank: 'm_ma', position: 1, choices: ['á', 'a', 'à', 'ä'], meaning: 'mom' },
       { word: 'táta', blank: 't_ta', position: 1, choices: ['á', 'a', 'à', 'ä'], meaning: 'dad' },
@@ -3736,7 +3736,7 @@ export const languages: LanguageWords[] = [  {
   {
     code: 'vi',
     name: 'Tiếng Việt',
-    flag: 'https://flagcdn.com/w320/vn.png',
+    flag: '/flags/vn.svg',
     words: [
       { word: 'đẹp', blank: '_ẹp', position: 0, choices: ['đ', 'd', 'ð', 'ď'], meaning: 'beautiful' },
       { word: 'đen', blank: '_en', position: 0, choices: ['đ', 'd', 'ð', 'ď'], meaning: 'black' },
@@ -4108,7 +4108,7 @@ export const languages: LanguageWords[] = [  {
   {
     code: 'is',
     name: 'Íslenska',
-    flag: 'https://flagcdn.com/w320/is.png',
+    flag: '/flags/is.svg',
     words: [
       { word: 'þakka', blank: '_akka', position: 0, choices: ['þ', 't', 'ð', 'p'], meaning: 'to thank' },
       { word: 'þak', blank: '_ak', position: 0, choices: ['þ', 't', 'ð', 'p'], meaning: 'roof' },

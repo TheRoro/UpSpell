@@ -1,5 +1,5 @@
 <template>
-  <LanguageDetails :chars="chars" original-name="Español" name="Spanish" :image-url="imageUrl" />
+  <LanguageDetails :chars="chars" code="es" />
 </template>
 
 <script setup lang="ts">
@@ -14,5 +14,4 @@ const chars = [
   { letter: '¿', name: 'Signo de interrogación invertido' },
   { letter: '¡', name: 'Signo de exclamación invertido' },
 ]
-const imageUrl = 'https://flagcdn.com/w320/es.png'
 </script>
