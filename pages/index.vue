@@ -1,43 +1,104 @@
 <template>
   <div class="min-h-screen">
     <p class="sr-only" role="status" aria-live="polite">{{ announcement }}</p>
-    <Banner title="UpSpell" sub-title="Daily accent challenge. New words at 00:00 UTC." />
+    <Banner title="UpSpell" sub-title="Learn the spelling. Hear the difference." />
 
     <!-- Language selector -->
-    <div v-if="!selectedLang" class="px-6 sm:px-10 py-8">
-      <h2 class="text-xl font-bold text-center mb-6 text-gray-800 dark:text-white">Choose a language</h2>
-      <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
-        <button
-          v-for="lang in languages"
-          :key="lang.code"
-          class="flex items-center gap-4 p-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700
-                 hover:scale-105 hover:shadow-lg transition-all duration-200 cursor-pointer"
-          @click="selectLanguage(lang.code)"
-        >
-          <img :src="lang.flag" :alt="lang.name" class="w-12 h-8 rounded object-cover" />
-          <span class="font-semibold text-lg text-gray-800 dark:text-white">{{ lang.name }}</span>
-          <span v-if="getStreak(lang.code) > 0" class="ml-auto text-sm bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 px-2 py-0.5 rounded-full">
-            🔥 {{ getStreak(lang.code) }}
-          </span>
-        </button>
+    <div v-if="!selectedLang" class="px-5 py-8 sm:px-10 sm:py-10">
+      <section class="daily-intro mx-auto max-w-5xl">
+        <div class="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+          <div class="max-w-2xl">
+            <p class="text-sm font-bold uppercase tracking-[0.2em] text-blue-600 dark:text-blue-400">Today’s UpSpell</p>
+            <h2 class="mt-2 text-3xl font-black text-gray-900 dark:text-white sm:text-4xl">
+              Choose the language you want to practice.
+            </h2>
+            <p class="mt-3 text-gray-600 dark:text-gray-300">
+              One word completes your daily challenge. Explore more languages only when you feel like it.
+            </p>
+          </div>
+
+          <div
+            class="daily-status-card"
+            :class="hasCompletedToday
+              ? 'border-emerald-200 bg-emerald-50 dark:border-emerald-800 dark:bg-emerald-950/30'
+              : 'border-blue-200 bg-blue-50 dark:border-blue-800 dark:bg-blue-950/30'"
+          >
+            <span
+              class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-xl"
+              :class="hasCompletedToday
+                ? 'bg-emerald-500 text-white'
+                : 'bg-blue-500 text-white'"
+              aria-hidden="true"
+            >
+              {{ hasCompletedToday ? '✓' : '✦' }}
+            </span>
+            <span>
+              <strong class="block text-sm font-black text-gray-900 dark:text-white">
+                {{ hasCompletedToday ? 'Daily challenge complete' : 'Your daily word is ready' }}
+              </strong>
+              <small class="mt-1 block text-xs text-gray-600 dark:text-gray-300">
+                {{ hasCompletedToday && nextChallengeIn ? `Fresh challenge in ${nextChallengeIn}` : 'Pick any language to begin.' }}
+              </small>
+            </span>
+          </div>
+        </div>
+
+        <div v-if="hasCompletedToday" class="mt-5 flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-4 py-3 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+          <span class="text-lg" aria-hidden="true">🎉</span>
+          <p class="text-sm text-gray-600 dark:text-gray-300">
+            You showed up today. That counts. Continue for fun or come back for tomorrow’s word.
+          </p>
+        </div>
+      </section>
+
+      <div class="mx-auto mt-10 max-w-5xl">
+        <div class="mb-5 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400">Language passport</p>
+            <h2 class="mt-1 text-2xl font-black text-gray-900 dark:text-white">Choose your next challenge</h2>
+          </div>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Your progress stays on this device.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <DailyLanguageCard
+            v-for="(lang, index) in languages"
+            :key="lang.code"
+            :name="lang.name"
+            :english-name="getLanguageMetadata(lang.code).englishName"
+            :flag="lang.flag"
+            :word-count="lang.words.length"
+            :index="index"
+            v-bind="getLanguageProgress(lang.code)"
+            @select="openLanguage(lang.code)"
+          />
+        </div>
       </div>
 
-      <!-- Link to reference -->
-      <div class="text-center mt-8">
+      <nav class="mx-auto mt-8 grid max-w-5xl gap-4 sm:grid-cols-2" aria-label="UpSpell resources">
         <button
-          class="text-sm text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors underline"
-          @click="navigateTo('/reference')"
-        >
-          📋 Character Reference · copy special characters
-        </button>
-        <span class="text-gray-300 dark:text-gray-600 mx-2">|</span>
-        <button
-          class="text-sm text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors underline"
+          class="resource-card group border border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800"
           @click="navigateTo('/stats')"
         >
-          📊 Stats
+          <span class="resource-icon bg-blue-100 text-blue-700 dark:bg-blue-900/60 dark:text-blue-300" aria-hidden="true">📊</span>
+          <span>
+            <strong class="text-gray-900 dark:text-white">Your Stats</strong>
+            <small class="text-gray-500 dark:text-gray-400">See accuracy and streaks across every language</small>
+          </span>
+          <span class="resource-arrow" aria-hidden="true">→</span>
         </button>
-      </div>
+        <button
+          class="resource-card group border border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800"
+          @click="navigateTo('/reference')"
+        >
+          <span class="resource-icon bg-purple-100 text-purple-700 dark:bg-purple-900/60 dark:text-purple-300" aria-hidden="true">á</span>
+          <span>
+            <strong class="text-gray-900 dark:text-white">Character Reference</strong>
+            <small class="text-gray-500 dark:text-gray-400">Explore and copy special characters</small>
+          </span>
+          <span class="resource-arrow" aria-hidden="true">→</span>
+        </button>
+      </nav>
     </div>
 
     <!-- Quiz -->
@@ -65,8 +126,11 @@
           <p class="text-5xl font-bold text-gray-800 dark:text-white tracking-wide mb-4">
             <span v-for="(segment, i) in wordSegments" :key="i">
               <span v-if="segment === '_'" class="inline-block w-8 border-b-4 border-blue-500 dark:border-blue-400 mx-0.5"
-                :class="{ 'border-green-500 dark:border-green-400': answered && correct, 'border-red-500 dark:border-red-400': answered && !correct }"
-              >&nbsp;</span>
+                :class="{
+                  'answer-letter border-green-500 text-green-600 dark:border-green-400 dark:text-green-400': answered && correct,
+                  'answer-letter border-red-500 text-red-600 dark:border-red-400 dark:text-red-400': answered && !correct,
+                }"
+              >{{ answered ? selectedChoice || todayWord?.choices[0] : '\u00a0' }}</span>
               <span v-else>{{ segment }}</span>
             </span>
           </p>
@@ -89,16 +153,20 @@
 
         <!-- Result -->
         <div v-else class="text-center">
-          <div class="mb-4">
-            <span v-if="correct" class="text-6xl">✅</span>
-            <span v-else class="text-6xl">❌</span>
-          </div>
-          <p class="text-3xl font-bold mb-2" :class="correct ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'">
-            {{ todayWord?.word }}
-          </p>
-          <p v-if="!correct" class="text-gray-500 dark:text-gray-400 mb-4">
-            The correct answer was <strong class="text-gray-800 dark:text-white">{{ todayWord?.choices[0] }}</strong>
-          </p>
+          <AnswerFeedback
+            v-if="todayWord"
+            :word="todayWord.word"
+            :blank="todayWord.blank"
+            :meaning="todayWord.meaning"
+            :correct-choice="todayWord.choices[0]"
+            :selected-choice="selectedChoice"
+            :correct="correct"
+            :accent-rule="selectedMetadata.accentRule"
+            :language-code="selectedLang || 'en'"
+            :language-name="selectedMetadata.englishName"
+            :speech-status="speechStatus"
+            @speak="speakWord"
+          />
 
           <!-- Share button -->
           <button
@@ -112,34 +180,6 @@
           <p v-if="!practiceMode" class="text-gray-600 dark:text-gray-300 mt-4">
             Come back tomorrow for a new word!
           </p>
-
-          <div class="mt-6 rounded-xl border border-purple-100 bg-purple-50/60 p-4 text-left dark:border-purple-900/50 dark:bg-purple-950/20">
-            <div class="flex flex-wrap items-center justify-between gap-3">
-              <h3 class="font-semibold text-gray-900 dark:text-white">Learn from this word</h3>
-              <button
-                type="button"
-                class="rounded-lg border border-purple-200 bg-white px-3 py-2 text-sm font-medium text-purple-700 transition-colors hover:bg-purple-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 dark:border-purple-800 dark:bg-gray-800 dark:text-purple-300"
-                @click="speakWord"
-              >
-                Hear pronunciation
-              </button>
-            </div>
-            <p class="mt-3 text-sm text-gray-700 dark:text-gray-300">
-              <span class="font-medium">Spelling tip:</span> {{ selectedMetadata.accentRule }}
-            </p>
-            <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">
-              <span class="font-medium">In context:</span> {{ todayWord?.word }} — {{ todayWord?.meaning }}
-            </p>
-            <ul class="mt-3 space-y-1 text-sm text-gray-600 dark:text-gray-400">
-              <li v-for="choice in shuffledChoices" :key="choice">
-                <span class="font-mono font-semibold">{{ choice }}</span>:
-                {{ choice === todayWord?.choices[0] ? 'completes the standard spelling' : 'would produce a different spelling' }}.
-              </li>
-            </ul>
-            <p v-if="speechStatus" class="mt-3 text-sm text-gray-600 dark:text-gray-400">
-              {{ speechStatus }}
-            </p>
-          </div>
 
           <div class="mt-6 flex flex-wrap justify-center gap-4">
             <button
@@ -169,7 +209,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, onBeforeUnmount, onMounted } from 'vue'
 import { languages, type Word } from '~/data/words'
 import { getLanguageMetadata } from '~/data/languageMetadata'
 import {
@@ -194,6 +234,7 @@ usePageSeo({
 const selectedLang = ref<string | null>(null)
 const answered = ref(false)
 const correct = ref(false)
+const selectedChoice = ref('')
 const currentStreak = ref(0)
 const practiceMode = ref(false)
 const practiceIndex = ref(0)
@@ -202,6 +243,18 @@ const practiceWord = ref<Word | null>(null)
 const missedWords = ref<Word[]>([])
 const speechStatus = ref('')
 const announcement = ref('')
+const nextChallengeIn = ref('')
+const progressRevision = ref(0)
+const progressReady = ref(false)
+let countdownTimer: ReturnType<typeof setInterval> | undefined
+
+interface LanguageProgress {
+  status: 'play' | 'completed' | 'practice'
+  mastery: number
+  played: number
+  streak: number
+  missed: number
+}
 
 const currentLangData = computed(() => {
   return languages.find(l => l.code === selectedLang.value)
@@ -236,6 +289,73 @@ const selectedMetadata = computed(() =>
   getLanguageMetadata(selectedLang.value ?? 'fr'),
 )
 
+const languageProgress = computed<Record<string, LanguageProgress>>(() => {
+  progressRevision.value
+  if (!progressReady.value) {
+    return Object.fromEntries(languages.map(language => [language.code, {
+      status: 'play',
+      mastery: 0,
+      played: 0,
+      streak: 0,
+      missed: 0,
+    } satisfies LanguageProgress]))
+  }
+  return Object.fromEntries(languages.map((language) => {
+    const played = parseStoredCount(storageGet(`upspell-played-${language.code}`))
+    const won = parseStoredCount(storageGet(`upspell-won-${language.code}`))
+    const missed = readMissedWords(storageGet(getMissedKey(language.code))).length
+    const playedToday = storageGet(getLastPlayedKey(language.code)) === getUtcDayKey()
+    const wonToday = storageGet(`upspell-correct-${language.code}`) === '1'
+    return [language.code, {
+      status: !playedToday ? 'play' : wonToday ? 'completed' : 'practice',
+      mastery: played ? Math.round((won / played) * 100) : 0,
+      played,
+      streak: getStreak(language.code),
+      missed,
+    }]
+  }))
+})
+
+const hasCompletedToday = computed(() =>
+  Object.values(languageProgress.value).some(progress => progress.status !== 'play'),
+)
+
+function getLanguageProgress(code: string): LanguageProgress {
+  return languageProgress.value[code] ?? {
+    status: 'play',
+    mastery: 0,
+    played: 0,
+    streak: 0,
+    missed: 0,
+  }
+}
+
+function openLanguage(code: string) {
+  const shouldPractice = getLanguageProgress(code).status === 'practice'
+  selectLanguage(code)
+  if (shouldPractice) startPractice()
+}
+
+function updateCountdown() {
+  const now = new Date()
+  const tomorrow = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1)
+  const remainingMinutes = Math.max(0, Math.ceil((tomorrow - now.getTime()) / 60_000))
+  const hours = Math.floor(remainingMinutes / 60)
+  const minutes = remainingMinutes % 60
+  nextChallengeIn.value = hours ? `${hours}h ${minutes}m` : `${minutes}m`
+}
+
+onMounted(() => {
+  progressReady.value = true
+  progressRevision.value++
+  updateCountdown()
+  countdownTimer = setInterval(updateCountdown, 60_000)
+})
+
+onBeforeUnmount(() => {
+  if (countdownTimer) clearInterval(countdownTimer)
+})
+
 function getStreakKey(code: string) {
   return `upspell-streak-${code}`
 }
@@ -257,6 +377,7 @@ function selectLanguage(code: string) {
   practiceAttempt.value = 0
   practiceWord.value = null
   speechStatus.value = ''
+  selectedChoice.value = ''
   missedWords.value = readMissedWords(storageGet(getMissedKey(code)))
 
   const lastPlayed = storageGet(getLastPlayedKey(code))
@@ -264,6 +385,7 @@ function selectLanguage(code: string) {
     answered.value = true
     const savedCorrect = storageGet(`upspell-correct-${code}`)
     correct.value = savedCorrect === '1'
+    selectedChoice.value = storageGet(`upspell-choice-${code}`) || (correct.value ? todayWord.value?.choices[0] || '' : '')
   } else {
     answered.value = false
   }
@@ -272,6 +394,7 @@ function selectLanguage(code: string) {
 function guess(choice: string) {
   if (!todayWord.value || !selectedLang.value) return
   answered.value = true
+  selectedChoice.value = choice
 
   correct.value = choice === todayWord.value.choices[0]
   announcement.value = correct.value
@@ -307,6 +430,7 @@ function guess(choice: string) {
   storageSet(getStreakKey(code), String(currentStreak.value))
   storageSet(getLastPlayedKey(code), today)
   storageSet(`upspell-correct-${code}`, correct.value ? '1' : '0')
+  storageSet(`upspell-choice-${code}`, choice)
 
   const played = parseStoredCount(storageGet(`upspell-played-${code}`)) + 1
   const won = parseStoredCount(storageGet(`upspell-won-${code}`)) + (correct.value ? 1 : 0)
@@ -314,6 +438,7 @@ function guess(choice: string) {
   storageSet(`upspell-played-${code}`, String(played))
   storageSet(`upspell-won-${code}`, String(won))
   storageSet(`upspell-best-${code}`, String(bestStreak))
+  progressRevision.value++
 }
 
 const shareText = ref('📋 Share result')
@@ -359,6 +484,7 @@ function storageSet(key: string, value: string) {
 }
 
 function celebrate() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
   confetti({
     particleCount: 100,
     spread: 70,
@@ -373,6 +499,8 @@ function goBack() {
   practiceAttempt.value = 0
   practiceWord.value = null
   speechStatus.value = ''
+  selectedChoice.value = ''
+  progressRevision.value++
 }
 
 function startPractice() {
@@ -383,6 +511,7 @@ function startPractice() {
   practiceWord.value = missedWords.value[0] ?? null
   answered.value = false
   speechStatus.value = ''
+  selectedChoice.value = ''
 }
 
 function practiceAnother() {
@@ -397,6 +526,7 @@ function practiceAnother() {
   practiceWord.value = missedWords.value[practiceIndex.value] ?? null
   answered.value = false
   speechStatus.value = ''
+  selectedChoice.value = ''
 }
 
 function speakWord() {
@@ -420,3 +550,118 @@ function speakWord() {
   window.speechSynthesis.speak(utterance)
 }
 </script>
+
+<style scoped>
+.answer-letter {
+  animation: answer-letter-pop 480ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes answer-letter-pop {
+  0% {
+    opacity: 0;
+    transform: translateY(-0.75rem) scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .answer-letter {
+    animation: none;
+  }
+}
+
+.daily-intro {
+  animation: dashboard-arrival 600ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.daily-status-card {
+  display: flex;
+  max-width: 20rem;
+  align-items: center;
+  gap: 0.75rem;
+  border-width: 1px;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.resource-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  text-align: left;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
+  transition: transform 250ms ease, box-shadow 250ms ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 12px 24px rgb(15 23 42 / 10%);
+}
+
+.resource-card:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgb(59 130 246 / 35%);
+}
+
+.resource-icon {
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.resource-card strong,
+.resource-card small {
+  display: block;
+}
+
+.resource-card strong {
+  font-size: 1rem;
+}
+
+.resource-card small {
+  margin-top: 0.2rem;
+  font-size: 0.75rem;
+}
+
+.resource-arrow {
+  color: rgb(156 163 175);
+  transition: transform 250ms ease;
+}
+
+.resource-card:hover .resource-arrow {
+  transform: translateX(0.25rem);
+}
+
+@keyframes dashboard-arrival {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .daily-intro {
+    animation: none;
+  }
+
+  .resource-card,
+  .resource-arrow {
+    transition-duration: 0ms;
+  }
+}
+</style>
