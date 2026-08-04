@@ -25,7 +25,7 @@
         </span>
         <div>
           <p class="text-xs font-bold uppercase tracking-[0.18em]" :class="correct ? 'text-emerald-700 dark:text-emerald-300' : 'text-rose-700 dark:text-rose-300'">
-            {{ correct ? 'Accent mastered' : 'New word learned' }}
+            {{ correct ? 'Discovery recorded' : 'Field note added' }}
           </p>
           <h2 :id="feedbackTitleId" class="mt-1 text-2xl font-black text-gray-900 dark:text-white">
             {{ correct ? 'Perfect choice!' : 'Almost there!' }}
@@ -118,6 +118,17 @@ const wordAfter = computed(() => props.blank.slice(blankIndex.value + 1))
 <style scoped>
 .feedback-card {
   isolation: isolate;
+}
+
+.feedback-card::after {
+  position: absolute;
+  inset: 0.6rem;
+  z-index: -1;
+  border: 1px dashed currentColor;
+  border-radius: 0.8rem;
+  content: '';
+  opacity: 0.12;
+  pointer-events: none;
 }
 
 .feedback-card-correct {
@@ -244,16 +255,6 @@ const wordAfter = computed(() => props.blank.slice(blankIndex.value + 1))
   50% { transform: scale(1.14); }
 }
 
-:global(.dark) .answer-chip-wrong {
-  background: rgb(136 19 55 / 35%);
-  color: rgb(253 164 175);
-}
-
-:global(.dark) .answer-chip-correct {
-  background: rgb(6 78 59 / 45%);
-  color: rgb(110 231 183);
-}
-
 @media (prefers-reduced-motion: reduce) {
   .feedback-card-correct,
   .feedback-card-incorrect,
@@ -268,5 +269,17 @@ const wordAfter = computed(() => props.blank.slice(blankIndex.value + 1))
   .feedback-leave-active {
     transition: opacity 150ms ease;
   }
+}
+</style>
+
+<style>
+html.dark .answer-chip-wrong {
+  background: rgb(136 19 55 / 35%);
+  color: rgb(253 164 175);
+}
+
+html.dark .answer-chip-correct {
+  background: rgb(6 78 59 / 45%);
+  color: rgb(110 231 183);
 }
 </style>

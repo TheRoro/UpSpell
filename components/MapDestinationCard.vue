@@ -1,13 +1,16 @@
 <template>
   <button
     type="button"
-    class="language-card group relative overflow-hidden rounded-2xl border bg-white p-5 text-left shadow-sm transition duration-300 hover:-translate-y-1.5 hover:shadow-xl focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-blue-500/40 dark:border-gray-700 dark:bg-gray-800"
+    class="destination-card group relative overflow-hidden rounded-2xl border bg-amber-50/80 p-5 text-left shadow-sm transition duration-300 hover:-translate-y-1.5 hover:shadow-xl focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sky-700/40 dark:border-[#6A4A32] dark:bg-[#38251A]"
     :class="status === 'completed'
       ? 'border-emerald-200 dark:border-emerald-800'
       : status === 'practice'
         ? 'border-amber-200 dark:border-amber-800'
         : 'border-gray-200'"
-    :style="{ '--card-delay': `${index * 55}ms` }"
+    :style="{
+      '--card-delay': `${index * 55}ms`,
+      '--stamp-tilt': `${index % 2 === 0 ? -2 : 2}deg`,
+    }"
     :aria-label="`${actionLabel} ${englishName} challenge`"
     @click="$emit('select')"
   >
@@ -19,14 +22,14 @@
 
     <span
       v-if="status === 'completed'"
-      class="completion-stamp absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500 font-black text-white shadow-md"
+      class="completion-marker absolute right-3 top-3 flex h-11 w-11 items-center justify-center rounded-full border-2 border-dashed border-emerald-100 bg-emerald-700 font-black text-white shadow-md"
       aria-hidden="true"
     >
       ✓
     </span>
 
     <span class="flex items-start justify-between gap-4">
-      <span class="flag-frame flex h-14 w-16 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-50 to-purple-50 p-2 shadow-inner dark:from-gray-700 dark:to-gray-900">
+      <span class="flag-frame flex h-14 w-16 shrink-0 items-center justify-center bg-white p-2 shadow-md dark:bg-gray-900">
         <img :src="flag" alt="" class="h-8 w-12 rounded object-cover shadow-sm" />
       </span>
 
@@ -49,7 +52,7 @@
 
     <span class="mt-4 flex flex-wrap items-center gap-2">
       <span
-        class="rounded-full px-3 py-1 text-xs font-bold"
+        class="map-label rounded-md border-2 border-current px-3 py-1 text-xs font-black uppercase tracking-wider"
         :class="status === 'completed'
           ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/60 dark:text-emerald-300'
           : status === 'practice'
@@ -66,7 +69,7 @@
       </span>
     </span>
 
-    <span class="mt-5 flex items-center justify-between border-t border-gray-100 pt-4 text-xs font-semibold text-gray-400 dark:border-gray-700 dark:text-gray-500">
+    <span class="mt-5 flex items-center justify-between border-t border-dashed border-amber-200 pt-4 text-xs font-semibold text-gray-400 dark:border-[#6A4A32] dark:text-[#C7AF8B]">
       <span>{{ wordCount }} words</span>
       <span class="transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">→</span>
     </span>
@@ -94,23 +97,38 @@ defineEmits<{
 }>()
 
 const actionLabel = computed(() => {
-  if (props.status === 'completed') return 'Completed'
-  if (props.status === 'practice') return 'Practice'
-  return 'Play today'
+  if (props.status === 'completed') return 'Discovered'
+  if (props.status === 'practice') return 'Revisit'
+  return 'Explore today'
 })
 </script>
 
 <style scoped>
-.language-card {
+.destination-card {
+  isolation: isolate;
+  background-color: rgb(255 248 231);
   animation: card-arrival 520ms var(--card-delay) cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+.destination-card::after {
+  position: absolute;
+  inset: 0.55rem;
+  z-index: -1;
+  border: 1px dashed rgb(180 83 9 / 18%);
+  border-radius: 0.7rem;
+  content: '';
+  pointer-events: none;
+}
+
 .flag-frame {
+  border: 1px dashed rgb(148 163 184);
+  border-radius: 0.35rem;
+  transform: rotate(var(--stamp-tilt));
   transition: transform 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.language-card:hover .flag-frame {
-  transform: rotate(-3deg) scale(1.08);
+.destination-card:hover .flag-frame {
+  transform: rotate(0deg) scale(1.08);
 }
 
 .mastery-ring {
@@ -147,17 +165,17 @@ const actionLabel = computed(() => {
   text-transform: uppercase;
 }
 
-:global(.dark) .mastery-ring {
-  background: conic-gradient(rgb(96 165 250) var(--mastery), rgb(55 65 81) 0);
-}
-
-:global(.dark) .mastery-ring > span {
-  background: rgb(31 41 55);
-  color: white;
-}
-
-.completion-stamp {
+.completion-marker {
   animation: stamp-in 520ms calc(var(--card-delay) + 300ms) cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.map-label {
+  transform: rotate(var(--stamp-tilt));
+  transition: transform 250ms ease;
+}
+
+.destination-card:hover .map-label {
+  transform: rotate(0deg) scale(1.04);
 }
 
 @keyframes card-arrival {
@@ -183,14 +201,34 @@ const actionLabel = computed(() => {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .language-card,
-  .completion-stamp {
+  .destination-card,
+  .completion-marker {
     animation: none;
   }
 
-  .language-card,
-  .flag-frame {
+  .destination-card,
+  .flag-frame,
+  .map-label {
     transition-duration: 0ms;
   }
+}
+</style>
+
+<style>
+html.dark .destination-card {
+  background-color: rgb(56 37 26);
+}
+
+html.dark .destination-card::after {
+  border-color: rgb(251 191 36 / 14%);
+}
+
+html.dark .destination-card .mastery-ring {
+  background: conic-gradient(rgb(95 143 145) var(--mastery), rgb(78 54 39) 0);
+}
+
+html.dark .destination-card .mastery-ring > span {
+  background: rgb(56 37 26);
+  color: rgb(244 229 197);
 }
 </style>
