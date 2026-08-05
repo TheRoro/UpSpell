@@ -90,7 +90,9 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      Lato: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      Overpass: [400, 500, 600, 700, 800],
+      'Overpass+Mono': [500, 600, 700],
+      'Source+Serif+4': [600, 700, 800],
     },
     download: true,
     overwriting: true,

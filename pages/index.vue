@@ -41,29 +41,32 @@
             <h2 class="mt-2 text-3xl font-black text-stone-900 dark:text-white sm:text-4xl">
               Where would you like to explore?
             </h2>
-            <p class="mt-3 text-stone-600 dark:text-gray-300">
+            <p class="mt-3 text-stone-600 dark:text-[#D7C3A3]">
               One word completes today’s journey. Visit more destinations whenever curiosity takes you there.
             </p>
           </div>
 
           <div
             class="daily-status-card"
-            :class="hasCompletedToday
-              ? 'border-emerald-700/30 bg-emerald-50/80 dark:border-emerald-700 dark:bg-emerald-950/30'
-              : 'border-sky-800/25 bg-sky-50/70 dark:border-[#5F8F91] dark:bg-[#38251A]'"
+            :class="hasCompletedToday ? 'daily-status-card-charted' : 'daily-status-card-awaiting'"
           >
-            <span
-              class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-xl"
-              :class="hasCompletedToday ? 'bg-emerald-700 text-white' : 'bg-sky-800 text-white'"
-              aria-hidden="true"
-            >
-              {{ hasCompletedToday ? '✓' : '⌖' }}
+            <span class="daily-status-icon" aria-hidden="true">
+              <svg v-if="hasCompletedToday" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="8.25" />
+                <path d="M12 5.5l2.75 6.5L12 18.5 9.25 12 12 5.5z" />
+                <circle cx="12" cy="12" r="1.25" class="icon-fill" />
+              </svg>
+              <svg v-else viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="5" />
+                <path d="M12 2.75v4.5M12 16.75v4.5M2.75 12h4.5M16.75 12h4.5" />
+                <circle cx="12" cy="12" r="1.25" class="icon-fill" />
+              </svg>
             </span>
             <span>
               <strong class="block text-sm font-black text-stone-900 dark:text-white">
-                {{ hasCompletedToday ? 'Today’s discovery recorded' : 'A new discovery awaits' }}
+                {{ hasCompletedToday ? 'Today’s route charted' : 'A new discovery awaits' }}
               </strong>
-              <small class="mt-1 block text-xs text-stone-600 dark:text-gray-300">
+              <small class="mt-1 block text-xs text-stone-600 dark:text-[#D7C3A3]">
                 {{ hasCompletedToday && nextChallengeIn ? `New coordinates in ${nextChallengeIn}` : 'Choose any destination to begin.' }}
               </small>
             </span>
@@ -77,7 +80,7 @@
             <p class="text-sm font-bold uppercase tracking-widest text-sky-800 dark:text-sky-300">Mapped destinations</p>
             <h2 class="mt-1 text-2xl font-black text-stone-900 dark:text-white">Choose your next language</h2>
           </div>
-          <p class="text-sm text-stone-500 dark:text-gray-400">Your discoveries stay on this device.</p>
+          <p class="text-sm text-stone-500 dark:text-[#D4C1A4]">Your discoveries stay on this device.</p>
         </div>
 
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-x-10">
@@ -86,8 +89,10 @@
             :key="lang.code"
             :name="lang.name"
             :english-name="getLanguageMetadata(lang.code).englishName"
+            :language-code="lang.code"
             :flag="lang.flag"
-            :word-count="lang.words.length"
+            :featured-marks="languageCardDetails[lang.code].featuredMarks"
+            :featured-words="languageCardDetails[lang.code].featuredWords"
             :index="index"
             v-bind="getLanguageProgress(lang.code)"
             @select="openLanguage(lang.code)"
@@ -103,7 +108,7 @@
           <span class="resource-icon bg-sky-100 text-sky-800 dark:bg-sky-900/60 dark:text-sky-300" aria-hidden="true">⌁</span>
           <span>
             <strong class="text-stone-900 dark:text-white">Travel Log</strong>
-            <small class="text-stone-500 dark:text-gray-400">Review accuracy, streaks, and past discoveries</small>
+            <small class="text-stone-500 dark:text-[#CDBB9D]">Review accuracy, streaks, and past discoveries</small>
           </span>
           <span class="resource-arrow" aria-hidden="true">→</span>
         </button>
@@ -114,7 +119,7 @@
           <span class="resource-icon bg-red-100 text-red-800 dark:bg-red-900/60 dark:text-red-300" aria-hidden="true">á</span>
           <span>
             <strong class="text-stone-900 dark:text-white">Explorer’s Field Guide</strong>
-            <small class="text-stone-500 dark:text-gray-400">Study and copy special characters</small>
+            <small class="text-stone-500 dark:text-[#CDBB9D]">Study and copy special characters</small>
           </span>
           <span class="resource-arrow" aria-hidden="true">→</span>
         </button>
@@ -125,7 +130,7 @@
     <main v-else class="field-sheet mx-auto my-6 max-w-xl px-6 py-8 sm:my-10 sm:px-10">
       <div class="field-sheet-grid" aria-hidden="true" />
       <button
-        class="relative z-10 mb-6 flex items-center gap-2 font-medium text-stone-600 transition-colors hover:text-sky-800 dark:text-gray-300 dark:hover:text-sky-300"
+        class="relative z-10 mb-6 flex items-center gap-2 font-medium text-stone-600 transition-colors hover:text-sky-800 dark:text-[#E8D8BC] dark:hover:text-[#9FD0CE]"
         @click="goBack"
       >
         ← Back to the map
@@ -134,7 +139,7 @@
       <div class="field-note-card relative z-10 rounded-2xl border border-amber-900/20 bg-amber-50/90 p-8 shadow-lg dark:border-[#6A4A32] dark:bg-[#38251A]">
         <!-- Streak -->
         <div class="flex justify-between items-center mb-6">
-          <span class="entry-label text-sm text-gray-500 dark:text-gray-400">
+          <span class="entry-label text-sm text-gray-500 dark:text-[#E2C99A]">
             Field note · {{ currentLangData?.name }} · {{ practiceMode ? 'Revisit' : 'Daily word' }}
           </span>
           <span class="text-sm bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 px-3 py-1 rounded-full font-medium">
@@ -155,7 +160,7 @@
               <span v-else>{{ segment }}</span>
             </span>
           </p>
-          <p class="text-gray-500 dark:text-gray-400 text-lg italic">{{ todayWord?.meaning }}</p>
+          <p class="text-gray-500 dark:text-[#D7C3A3] text-lg italic">{{ todayWord?.meaning }}</p>
         </div>
 
         <!-- Choices -->
@@ -163,8 +168,8 @@
           <button
             v-for="choice in shuffledChoices"
             :key="choice"
-            class="choice-marker rounded-xl border-2 border-dashed border-stone-300 bg-white py-4 text-2xl dark:border-gray-600 dark:bg-gray-700
-                   hover:border-sky-700 dark:hover:border-sky-400 hover:bg-sky-50 dark:hover:bg-sky-900/30
+            class="choice-marker rounded-xl border-2 border-solid border-stone-300 bg-white py-4 text-2xl dark:border-[#8B6542] dark:bg-[#4A3122]
+                   hover:border-sky-700 dark:hover:border-[#82B8B8] hover:bg-sky-50 dark:hover:bg-[#533A29]
                    transition-all duration-150 font-bold text-gray-800 dark:text-white"
             @click="guess(choice)"
           >
@@ -198,7 +203,7 @@
             {{ shareText }}
           </button>
 
-          <p v-if="!practiceMode" class="text-gray-600 dark:text-gray-300 mt-4">
+          <p v-if="!practiceMode" class="text-gray-600 dark:text-[#D7C3A3] mt-4">
             Come back tomorrow for a new word!
           </p>
 
@@ -206,7 +211,7 @@
             <button
               v-if="practiceMode && missedWords.length"
               type="button"
-              class="text-sm font-medium text-purple-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 dark:text-purple-400"
+              class="text-sm font-medium text-purple-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 dark:text-[#9FD0CE]"
               @click="practiceAnother"
             >
               Practice another missed word
@@ -214,12 +219,12 @@
             <button
               v-else-if="!practiceMode && missedWords.length"
               type="button"
-              class="text-sm font-medium text-purple-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 dark:text-purple-400"
+              class="text-sm font-medium text-purple-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 dark:text-[#9FD0CE]"
               @click="startPractice"
             >
               Practice missed words ({{ missedWords.length }})
             </button>
-            <p v-else-if="practiceMode" class="text-sm font-medium text-purple-700 dark:text-purple-300">
+            <p v-else-if="practiceMode" class="text-sm font-medium text-purple-700 dark:text-[#B7D8D4]">
               You cleared every missed word!
             </p>
           </div>
@@ -276,6 +281,32 @@ interface LanguageProgress {
   streak: number
   missed: number
 }
+
+interface LanguageCardDetails {
+  featuredMarks: string[]
+  featuredWords: string[]
+}
+
+function createLanguageCardDetails(words: Word[]): LanguageCardDetails {
+  const featuredMarks = [...new Set(words.map(word => word.choices[0]).filter(Boolean))].slice(0, 3)
+  const featuredWords: string[] = []
+
+  for (const mark of featuredMarks) {
+    const sample = words.find(word => word.word.includes(mark) && !featuredWords.includes(word.word))
+    if (sample) featuredWords.push(sample.word)
+  }
+
+  for (const word of words) {
+    if (featuredWords.length === 3) break
+    if (!featuredWords.includes(word.word)) featuredWords.push(word.word)
+  }
+
+  return { featuredMarks, featuredWords }
+}
+
+const languageCardDetails: Record<string, LanguageCardDetails> = Object.fromEntries(
+  languages.map(language => [language.code, createLanguageCardDetails(language.words)]),
+)
 
 const currentLangData = computed(() => {
   return languages.find(l => l.code === selectedLang.value)
@@ -590,6 +621,14 @@ function speakWord() {
     inset -8px 0 16px rgb(30 8 16 / 20%);
 }
 
+.atlas-hero h1,
+.atlas-page h2,
+.atlas-page .daily-status-card strong,
+.atlas-page .entry-label,
+.atlas-page .resource-card strong {
+  font-family: 'Source Serif 4', Georgia, serif;
+}
+
 .atlas-hero {
   position: relative;
   isolation: isolate;
@@ -799,17 +838,9 @@ function speakWord() {
   pointer-events: none;
 }
 
-.choice-marker:nth-child(odd) {
-  transform: rotate(-0.7deg);
-}
-
-.choice-marker:nth-child(even) {
-  transform: rotate(0.7deg);
-}
-
 .choice-marker:hover,
 .choice-marker:focus-visible {
-  transform: rotate(0deg) translateY(-0.15rem);
+  transform: translateY(-0.15rem);
 }
 
 .share-discovery {
@@ -1181,13 +1212,90 @@ function speakWord() {
 }
 
 .daily-status-card {
+  position: relative;
   display: flex;
-  max-width: 20rem;
+  max-width: 21rem;
   align-items: center;
   gap: 0.75rem;
-  border-width: 1px;
-  border-radius: 1rem;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0.55rem;
+  background-color: rgb(255 250 235 / 68%);
+  background-image:
+    linear-gradient(currentColor, currentColor),
+    linear-gradient(currentColor, currentColor),
+    linear-gradient(currentColor, currentColor),
+    linear-gradient(currentColor, currentColor),
+    linear-gradient(currentColor, currentColor),
+    linear-gradient(currentColor, currentColor),
+    linear-gradient(currentColor, currentColor),
+    linear-gradient(currentColor, currentColor);
+  background-position:
+    left top, left top,
+    right top, right top,
+    left bottom, left bottom,
+    right bottom, right bottom;
+  background-repeat: no-repeat;
+  background-size:
+    1rem 1px, 1px 1rem,
+    1rem 1px, 1px 1rem,
+    1rem 1px, 1px 1rem,
+    1rem 1px, 1px 1rem;
   padding: 1rem;
+  box-shadow:
+    3px 3px 0 rgb(120 53 15 / 10%),
+    inset 0 0 0 3px rgb(255 255 255 / 20%);
+}
+
+.daily-status-card::after {
+  position: absolute;
+  right: -1rem;
+  bottom: 0.4rem;
+  width: 4.5rem;
+  border-top: 1px solid currentColor;
+  content: '';
+  opacity: 0.25;
+  transform: rotate(-12deg);
+}
+
+.daily-status-card-awaiting {
+  color: rgb(32 91 98);
+}
+
+.daily-status-card-charted {
+  color: rgb(39 102 94);
+}
+
+.daily-status-icon {
+  display: grid;
+  height: 2.75rem;
+  width: 2.75rem;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 9999px;
+  background: rgb(32 91 98);
+  color: rgb(255 250 235);
+  box-shadow: 0 0 0 3px rgb(42 103 110 / 10%);
+}
+
+.daily-status-card-charted .daily-status-icon {
+  background: rgb(39 102 94);
+}
+
+.daily-status-icon svg {
+  display: block;
+  height: 1.35rem;
+  width: 1.35rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.4;
+}
+
+.daily-status-icon .icon-fill {
+  fill: currentColor;
+  stroke: none;
 }
 
 .resource-card {
@@ -1295,6 +1403,31 @@ html.dark .atlas-page .field-sheet {
 html.dark .atlas-page .map-note {
   border-left-color: rgb(95 143 145 / 55%);
   background: rgb(56 37 26 / 76%);
+}
+
+html.dark .atlas-page .daily-status-card {
+  background-color: rgb(49 34 25);
+  box-shadow:
+    3px 3px 0 rgb(0 0 0 / 16%),
+    inset 0 0 0 3px rgb(196 154 74 / 4%);
+}
+
+html.dark .atlas-page .daily-status-card-awaiting {
+  color: rgb(130 184 184);
+}
+
+html.dark .atlas-page .daily-status-card-charted {
+  color: rgb(126 185 171);
+}
+
+html.dark .atlas-page .daily-status-icon {
+  background: rgb(130 184 184);
+  color: rgb(43 27 20);
+  box-shadow: 0 0 0 3px rgb(95 143 145 / 14%);
+}
+
+html.dark .atlas-page .daily-status-card-charted .daily-status-icon {
+  background: rgb(126 185 171);
 }
 
 html.dark .atlas-page .map-contours {

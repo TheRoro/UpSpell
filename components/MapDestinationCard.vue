@@ -1,12 +1,7 @@
 <template>
   <button
     type="button"
-    class="destination-card group relative overflow-hidden rounded-2xl border bg-amber-50/80 p-5 text-left shadow-sm transition duration-300 hover:-translate-y-1.5 hover:shadow-xl focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sky-700/40 dark:border-[#6A4A32] dark:bg-[#38251A]"
-    :class="status === 'completed'
-      ? 'border-emerald-200 dark:border-emerald-800'
-      : status === 'practice'
-        ? 'border-amber-200 dark:border-amber-800'
-        : 'border-gray-200'"
+    class="destination-card group relative overflow-hidden rounded-2xl border border-amber-900/20 bg-amber-50/80 p-5 text-left shadow-sm transition duration-300 hover:-translate-y-1.5 hover:shadow-xl focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sky-700/40 dark:border-[#6A4A32] dark:bg-[#38251A]"
     :style="{
       '--card-delay': `${index * 55}ms`,
       '--stamp-tilt': `${index % 2 === 0 ? -2 : 2}deg`,
@@ -15,18 +10,10 @@
     @click="$emit('select')"
   >
     <span
-      class="absolute inset-x-0 top-0 h-1 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
-      :class="status === 'completed' ? 'bg-emerald-500' : status === 'practice' ? 'bg-amber-500' : 'bg-blue-500'"
+      class="route-accent absolute inset-x-0 top-0 h-1 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
+      :class="`route-accent-${status}`"
       aria-hidden="true"
     />
-
-    <span
-      v-if="status === 'completed'"
-      class="completion-marker absolute right-3 top-3 flex h-11 w-11 items-center justify-center rounded-full border-2 border-dashed border-emerald-100 bg-emerald-700 font-black text-white shadow-md"
-      aria-hidden="true"
-    >
-      ✓
-    </span>
 
     <span class="flex items-start justify-between gap-4">
       <span class="flag-frame flex h-14 w-16 shrink-0 items-center justify-center bg-white p-2 shadow-md dark:bg-gray-900">
@@ -34,44 +21,54 @@
       </span>
 
       <span
+        v-if="played"
         class="mastery-ring"
         :style="{ '--mastery': `${mastery * 3.6}deg` }"
-        :aria-label="played ? `${mastery}% accuracy` : 'No games played yet'"
+        :aria-label="`${mastery}% accuracy`"
       >
         <span>
-          <strong>{{ played ? mastery : '★' }}</strong>
-          <small>{{ played ? '%' : 'New' }}</small>
+          <strong>{{ mastery }}</strong>
+          <small>%</small>
         </span>
+      </span>
+      <span v-else class="uncharted-marker">
+        <svg viewBox="0 0 20 20" aria-hidden="true">
+          <path d="M10 2.5v15M2.5 10h15" />
+          <circle cx="10" cy="10" r="3.5" />
+        </svg>
+        Uncharted
       </span>
     </span>
 
     <span class="mt-4 block">
-      <span class="block text-xl font-black text-gray-900 dark:text-white">{{ name }}</span>
-      <span class="mt-0.5 block text-sm text-gray-500 dark:text-gray-400">{{ englishName }}</span>
+      <span class="destination-name block text-xl font-black text-gray-900 dark:text-white">{{ name }}</span>
+      <span class="destination-subtitle mt-0.5 block text-sm text-gray-500">{{ englishName }}</span>
     </span>
 
-    <span class="mt-4 flex flex-wrap items-center gap-2">
+    <span class="card-field-notes mt-4 block">
+      <span class="field-note-label">Featured marks</span>
+      <span class="featured-marks mt-2 flex flex-wrap gap-2">
+        <span v-for="mark in featuredMarks" :key="mark">{{ mark }}</span>
+      </span>
+      <span :lang="languageCode" class="featured-words mt-3 block">
+        {{ featuredWords.join(' · ') }}
+      </span>
+    </span>
+
+    <span class="card-footer mt-5 flex flex-wrap items-center gap-2 border-t border-solid border-amber-900/20 pt-4 dark:border-[#6A4A32]">
       <span
-        class="map-label rounded-md border-2 border-current px-3 py-1 text-xs font-black uppercase tracking-wider"
-        :class="status === 'completed'
-          ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/60 dark:text-emerald-300'
-          : status === 'practice'
-            ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/60 dark:text-amber-300'
-            : 'bg-blue-100 text-blue-700 dark:bg-blue-900/60 dark:text-blue-300'"
+        class="map-label rounded-md px-3 py-1 text-xs font-black uppercase tracking-wider"
+        :class="`map-label-${status}`"
       >
         {{ actionLabel }}
       </span>
       <span v-if="streak" class="text-xs font-bold text-orange-600 dark:text-orange-300">
         🔥 {{ streak }} day streak
       </span>
-      <span v-else-if="missed" class="text-xs font-medium text-gray-500 dark:text-gray-400">
+      <span v-else-if="missed" class="progress-note text-xs font-medium text-gray-500">
         {{ missed }} saved for practice
       </span>
-    </span>
-
-    <span class="mt-5 flex items-center justify-between border-t border-dashed border-amber-200 pt-4 text-xs font-semibold text-gray-400 dark:border-[#6A4A32] dark:text-[#C7AF8B]">
-      <span>{{ wordCount }} words</span>
-      <span class="transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">→</span>
+      <span class="ml-auto text-amber-900/55 transition-transform duration-300 group-hover:translate-x-1 dark:text-[#C7AF8B]" aria-hidden="true">→</span>
     </span>
   </button>
 </template>
@@ -82,13 +79,15 @@ import { computed } from 'vue'
 const props = defineProps<{
   name: string
   englishName: string
+  languageCode: string
   flag: string
   status: 'play' | 'completed' | 'practice'
   mastery: number
   played: number
   streak: number
   missed: number
-  wordCount: number
+  featuredMarks: string[]
+  featuredWords: string[]
   index: number
 }>()
 
@@ -97,8 +96,8 @@ defineEmits<{
 }>()
 
 const actionLabel = computed(() => {
-  if (props.status === 'completed') return 'Discovered'
-  if (props.status === 'practice') return 'Revisit'
+  if (props.status === 'completed') return 'Charted'
+  if (props.status === 'practice') return 'Revisit route'
   return 'Explore today'
 })
 </script>
@@ -114,14 +113,15 @@ const actionLabel = computed(() => {
   position: absolute;
   inset: 0.55rem;
   z-index: -1;
-  border: 1px dashed rgb(180 83 9 / 18%);
+  border: 1px solid rgb(180 83 9 / 16%);
   border-radius: 0.7rem;
+  box-shadow: inset 0 0 0 2px rgb(255 255 255 / 18%);
   content: '';
   pointer-events: none;
 }
 
 .flag-frame {
-  border: 1px dashed rgb(148 163 184);
+  border: 1px solid rgb(148 163 184 / 72%);
   border-radius: 0.35rem;
   transform: rotate(var(--stamp-tilt));
   transition: transform 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -129,6 +129,35 @@ const actionLabel = computed(() => {
 
 .destination-card:hover .flag-frame {
   transform: rotate(0deg) scale(1.08);
+}
+
+.destination-name {
+  font-family: 'Source Serif 4', Georgia, serif;
+}
+
+.field-note-label,
+.map-label,
+.uncharted-marker {
+  font-family: 'Overpass', sans-serif;
+}
+
+.field-note-label,
+.map-label,
+.uncharted-marker,
+.featured-marks {
+  font-family: 'Overpass Mono', monospace;
+}
+
+.route-accent-play {
+  background: rgb(42 103 110);
+}
+
+.route-accent-completed {
+  background: rgb(55 111 104);
+}
+
+.route-accent-practice {
+  background: rgb(166 112 34);
 }
 
 .mastery-ring {
@@ -165,13 +194,87 @@ const actionLabel = computed(() => {
   text-transform: uppercase;
 }
 
-.completion-marker {
-  animation: stamp-in 520ms calc(var(--card-delay) + 300ms) cubic-bezier(0.34, 1.56, 0.64, 1) both;
+.uncharted-marker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-bottom: 1px solid rgb(120 53 15 / 32%);
+  padding: 0.2rem 0.1rem;
+  color: rgb(120 53 15 / 70%);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transform: rotate(1deg);
+}
+
+.uncharted-marker svg {
+  height: 0.9rem;
+  width: 0.9rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-width: 1.25;
+}
+
+.card-field-notes {
+  min-height: 6.7rem;
+  border-left: 2px solid rgb(42 103 110 / 28%);
+  padding-left: 0.8rem;
+}
+
+.field-note-label {
+  color: rgb(120 53 15 / 68%);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.featured-marks > span {
+  display: inline-grid;
+  min-width: 2rem;
+  place-items: center;
+  border: 0;
+  border-radius: 0.25rem;
+  background: rgb(229 219 187 / 84%);
+  padding: 0.2rem 0.4rem;
+  color: rgb(30 78 83);
+  font-size: 0.9rem;
+  font-weight: 700;
+  box-shadow:
+    inset 0 0 0 1px rgb(120 53 15 / 10%),
+    inset 0 1px 2px rgb(120 53 15 / 12%);
+}
+
+.featured-words {
+  color: rgb(87 65 49);
+  font-size: 0.82rem;
+  font-style: italic;
+  line-height: 1.4;
 }
 
 .map-label {
+  border: 0;
+  border-left: 3px solid currentColor;
+  background: rgb(255 251 235 / 88%);
+  box-shadow:
+    1px 2px 0 rgb(120 53 15 / 12%),
+    inset 0 0 0 1px rgb(120 53 15 / 8%);
   transform: rotate(var(--stamp-tilt));
   transition: transform 250ms ease;
+}
+
+.map-label-play {
+  color: rgb(32 91 98);
+}
+
+.map-label-completed {
+  color: rgb(39 102 94);
+}
+
+.map-label-practice {
+  color: rgb(146 91 18);
 }
 
 .destination-card:hover .map-label {
@@ -189,20 +292,8 @@ const actionLabel = computed(() => {
   }
 }
 
-@keyframes stamp-in {
-  from {
-    opacity: 0;
-    transform: scale(1.8) rotate(-18deg);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1) rotate(0);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .destination-card,
-  .completion-marker {
+  .destination-card {
     animation: none;
   }
 
@@ -220,7 +311,8 @@ html.dark .destination-card {
 }
 
 html.dark .destination-card::after {
-  border-color: rgb(251 191 36 / 14%);
+  border-color: rgb(196 154 74 / 20%);
+  box-shadow: inset 0 0 0 2px rgb(196 154 74 / 3%);
 }
 
 html.dark .destination-card .mastery-ring {
@@ -230,5 +322,55 @@ html.dark .destination-card .mastery-ring {
 html.dark .destination-card .mastery-ring > span {
   background: rgb(56 37 26);
   color: rgb(244 229 197);
+}
+
+html.dark .destination-card .uncharted-marker {
+  border-bottom-color: rgb(214 184 122 / 48%);
+  color: rgb(226 201 150);
+}
+
+html.dark .destination-card .card-field-notes {
+  border-left-color: rgb(95 143 145 / 42%);
+}
+
+html.dark .destination-card .field-note-label {
+  color: rgb(218 191 140);
+}
+
+html.dark .destination-card .featured-marks > span {
+  background: rgb(67 48 34);
+  color: rgb(183 222 218);
+  box-shadow:
+    inset 0 0 0 1px rgb(130 184 184 / 20%),
+    inset 0 1px 2px rgb(0 0 0 / 28%);
+}
+
+html.dark .destination-card .featured-words {
+  color: rgb(226 205 168);
+}
+
+html.dark .destination-card .map-label {
+  background: rgb(63 46 33);
+  box-shadow: 1px 2px 0 rgb(0 0 0 / 18%);
+}
+
+html.dark .destination-card .map-label-play {
+  color: rgb(130 184 184);
+}
+
+html.dark .destination-card .map-label-completed {
+  color: rgb(126 185 171);
+}
+
+html.dark .destination-card .map-label-practice {
+  color: rgb(220 174 89);
+}
+
+html.dark .destination-card .destination-subtitle {
+  color: rgb(205 189 164);
+}
+
+html.dark .destination-card .progress-note {
+  color: rgb(219 198 164);
 }
 </style>

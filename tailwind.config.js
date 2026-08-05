@@ -5,7 +5,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Lato', 'sans-serif'],
+        sans: ['Overpass', 'sans-serif'],
+        serif: ['Source Serif 4', 'Georgia', 'serif'],
+        atlas: ['Overpass', 'sans-serif'],
+        coordinates: ['Overpass Mono', 'monospace'],
       },
     },
   },
