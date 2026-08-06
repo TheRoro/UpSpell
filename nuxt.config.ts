@@ -1,6 +1,10 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
 
+  experimental: {
+    appManifest: false,
+  },
+
   app: {
     head: {
       title: 'UpSpell',
