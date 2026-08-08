@@ -2,24 +2,19 @@
   <button
     type="button"
     :aria-label="`Copy ${char.letter}, ${char.name}`"
-    class="group relative max-w-full w-72 bg-white dark:bg-gray-800 rounded-xl m-auto mt-14 py-16 cursor-pointer
-           hover:scale-105 hover:shadow-xl transition-all duration-200 border border-gray-200 dark:border-gray-700
-           focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-blue-500/60"
+    class="character-card"
     @click="copyChar"
   >
-    <span class="block space-y-4">
-      <span :lang="language" class="block text-6xl font-semibold text-center text-gray-900 dark:text-white">
-        {{ char.letter }}
-      </span>
+    <span class="character-content">
+      <span :lang="language" class="character-letter">{{ char.letter }}</span>
+      <span class="character-name">{{ char.name }}</span>
     </span>
-    <span class="block pt-6 space-y-4">
-      <span class="block text-lg font-semibold text-center text-gray-700 dark:text-gray-300">
-        {{ char.name }}
-      </span>
-    </span>
-    <span class="absolute bottom-3 left-0 right-0 text-center text-xs text-gray-400 dark:text-gray-500
-                 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-200">
-      Copy character
+    <span class="copy-label">
+      <svg viewBox="0 0 20 20" aria-hidden="true">
+        <rect x="6.5" y="6.5" width="9" height="9" rx="1.5" />
+        <path d="M4.5 12.5h-.5a1.5 1.5 0 0 1-1.5-1.5v-7a1.5 1.5 0 0 1 1.5-1.5h7a1.5 1.5 0 0 1 1.5 1.5v.5" />
+      </svg>
+      Copy
     </span>
   </button>
 </template>
@@ -45,3 +40,113 @@ async function copyChar() {
   emit('copied', await copyText(props.char.letter))
 }
 </script>
+
+<style scoped>
+.character-card {
+  display: grid;
+  aspect-ratio: 6 / 5;
+  grid-template-rows: 1fr auto auto 1fr;
+  justify-items: center;
+  border: 1px solid rgb(120 53 15 / 18%);
+  border-radius: 0.65rem;
+  background: rgb(255 251 235 / 84%);
+  padding: 1.5rem 1.25rem;
+  box-shadow: 1px 2px 0 rgb(120 53 15 / 8%);
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.character-content {
+  display: flex;
+  grid-row: 2;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(0.75rem);
+}
+
+.character-card:hover {
+  border-color: rgb(42 103 110 / 45%);
+  box-shadow: 0 6px 16px rgb(120 53 15 / 10%);
+  transform: translateY(-0.15rem);
+}
+
+.character-card:focus-visible {
+  outline: 3px solid rgb(42 103 110 / 45%);
+  outline-offset: 3px;
+}
+
+.character-letter {
+  color: rgb(30 78 83);
+  font-size: clamp(3.45rem, 8vw, 4.85rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.character-name {
+  min-height: 2.6rem;
+  margin-top: 0.35rem;
+  color: rgb(68 64 60);
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.copy-label {
+  display: inline-flex;
+  grid-row: 3;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.45rem;
+  color: rgb(32 91 98);
+  font-size: 0.68rem;
+  font-weight: 700;
+  transform: translateY(0.3rem);
+}
+
+.copy-label svg {
+  height: 0.85rem;
+  width: 0.85rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.3;
+}
+
+html.dark .character-card {
+  border-color: rgb(106 74 50);
+  background: rgb(56 37 26);
+  box-shadow: 1px 2px 0 rgb(0 0 0 / 18%);
+}
+
+html.dark .character-card:hover {
+  border-color: rgb(209 190 162 / 55%);
+  box-shadow: 0 6px 16px rgb(0 0 0 / 20%);
+}
+
+html.dark .character-letter {
+  color: var(--guide-dark-accent-strong, rgb(240 228 207));
+}
+
+html.dark .character-name {
+  color: rgb(226 205 168);
+}
+
+html.dark .copy-label {
+  color: var(--guide-dark-accent, rgb(209 190 162));
+}
+
+html.dark .character-card:focus-visible {
+  outline-color: rgb(209 190 162 / 55%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .character-card {
+    transition: none;
+  }
+
+  .character-card:hover {
+    transform: none;
+  }
+}
+</style>

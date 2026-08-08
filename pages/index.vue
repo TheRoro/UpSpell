@@ -19,68 +19,13 @@
 
     <!-- Language map -->
     <main v-if="!selectedLang" class="atlas-map mx-auto my-6 max-w-6xl px-5 py-8 sm:my-10 sm:px-10 sm:py-10">
-      <div class="map-contours" aria-hidden="true" />
-      <svg class="map-journey-route" viewBox="0 0 1000 720" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M90 170 C 250 70, 330 280, 485 210 S 720 120, 900 250 S 730 470, 545 410 S 310 540, 125 620" />
-        <circle cx="90" cy="170" r="7" />
-        <circle cx="485" cy="210" r="7" />
-        <circle cx="900" cy="250" r="7" />
-        <circle cx="545" cy="410" r="7" />
-        <circle cx="125" cy="620" r="7" />
-      </svg>
-      <div class="map-compass-rose" aria-hidden="true">
-        <span>N</span>
-        <strong>✦</strong>
-        <small>S</small>
-      </div>
-
-      <section class="daily-intro map-note mx-auto max-w-5xl">
-        <div class="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
-          <div class="max-w-2xl">
-            <p class="text-sm font-black uppercase tracking-[0.2em] text-sky-800 dark:text-sky-300">Today’s discovery</p>
-            <h2 class="mt-2 text-3xl font-black text-stone-900 dark:text-white sm:text-4xl">
-              Where would you like to explore?
-            </h2>
-            <p class="mt-3 text-stone-600 dark:text-[#D7C3A3]">
-              One word completes today’s journey. Visit more destinations whenever curiosity takes you there.
-            </p>
-          </div>
-
-          <div
-            class="daily-status-card"
-            :class="hasCompletedToday ? 'daily-status-card-charted' : 'daily-status-card-awaiting'"
-          >
-            <span class="daily-status-icon" aria-hidden="true">
-              <svg v-if="hasCompletedToday" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="8.25" />
-                <path d="M12 5.5l2.75 6.5L12 18.5 9.25 12 12 5.5z" />
-                <circle cx="12" cy="12" r="1.25" class="icon-fill" />
-              </svg>
-              <svg v-else viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="5" />
-                <path d="M12 2.75v4.5M12 16.75v4.5M2.75 12h4.5M16.75 12h4.5" />
-                <circle cx="12" cy="12" r="1.25" class="icon-fill" />
-              </svg>
-            </span>
-            <span>
-              <strong class="block text-sm font-black text-stone-900 dark:text-white">
-                {{ hasCompletedToday ? 'Today’s route charted' : 'A new discovery awaits' }}
-              </strong>
-              <small class="mt-1 block text-xs text-stone-600 dark:text-[#D7C3A3]">
-                {{ hasCompletedToday && nextChallengeIn ? `New coordinates in ${nextChallengeIn}` : 'Choose any destination to begin.' }}
-              </small>
-            </span>
-          </div>
-        </div>
-      </section>
-
-      <section class="relative z-10 mx-auto mt-10 max-w-5xl">
-        <div class="mb-5 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+      <section class="relative z-10 mx-auto max-w-5xl">
+        <div class="destinations-heading mb-8">
           <div>
-            <p class="text-sm font-bold uppercase tracking-widest text-sky-800 dark:text-sky-300">Mapped destinations</p>
-            <h2 class="mt-1 text-2xl font-black text-stone-900 dark:text-white">Choose your next language</h2>
+            <p class="text-xs font-black uppercase tracking-[0.24em] text-sky-800 dark:text-[#D1BEA2]">Mapped destinations</p>
+            <h2 class="mt-2 text-3xl font-black text-stone-900 dark:text-white sm:text-4xl">Choose your next language</h2>
+            <p class="mt-3 text-stone-600 dark:text-[#D7C3A3]">Your discoveries stay on this device.</p>
           </div>
-          <p class="text-sm text-stone-500 dark:text-[#D4C1A4]">Your discoveries stay on this device.</p>
         </div>
 
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-x-10">
@@ -105,7 +50,7 @@
           class="resource-card group border border-amber-900/20 bg-amber-50/85 dark:border-[#6A4A32] dark:bg-[#38251A]"
           @click="navigateTo('/stats')"
         >
-          <span class="resource-icon bg-sky-100 text-sky-800 dark:bg-sky-900/60 dark:text-sky-300" aria-hidden="true">⌁</span>
+          <span class="resource-icon bg-sky-100 text-sky-800 dark:bg-sky-900/60 dark:text-[#F0E4CF]" aria-hidden="true">⌁</span>
           <span>
             <strong class="text-stone-900 dark:text-white">Travel Log</strong>
             <small class="text-stone-500 dark:text-[#CDBB9D]">Review accuracy, streaks, and past discoveries</small>
@@ -130,7 +75,7 @@
     <main v-else class="field-sheet mx-auto my-6 max-w-xl px-6 py-8 sm:my-10 sm:px-10">
       <div class="field-sheet-grid" aria-hidden="true" />
       <button
-        class="relative z-10 mb-6 flex items-center gap-2 font-medium text-stone-600 transition-colors hover:text-sky-800 dark:text-[#E8D8BC] dark:hover:text-[#9FD0CE]"
+        class="relative z-10 mb-6 flex items-center gap-2 font-medium text-stone-600 transition-colors hover:text-sky-800 dark:text-[#E8D8BC] dark:hover:text-[#F0E4CF]"
         @click="goBack"
       >
         ← Back to the map
@@ -211,7 +156,7 @@
             <button
               v-if="practiceMode && missedWords.length"
               type="button"
-              class="text-sm font-medium text-purple-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 dark:text-[#9FD0CE]"
+              class="text-sm font-medium text-purple-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 dark:text-[#D1BEA2]"
               @click="practiceAnother"
             >
               Practice another missed word
@@ -219,12 +164,12 @@
             <button
               v-else-if="!practiceMode && missedWords.length"
               type="button"
-              class="text-sm font-medium text-purple-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 dark:text-[#9FD0CE]"
+              class="text-sm font-medium text-purple-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 dark:text-[#D1BEA2]"
               @click="startPractice"
             >
               Practice missed words ({{ missedWords.length }})
             </button>
-            <p v-else-if="practiceMode" class="text-sm font-medium text-purple-700 dark:text-[#B7D8D4]">
+            <p v-else-if="practiceMode" class="text-sm font-medium text-purple-700 dark:text-[#D1BEA2]">
               You cleared every missed word!
             </p>
           </div>
@@ -235,7 +180,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onBeforeUnmount, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { languages, type Word } from '~/data/words'
 import { getLanguageMetadata } from '~/data/languageMetadata'
 import {
@@ -269,10 +214,8 @@ const practiceWord = ref<Word | null>(null)
 const missedWords = ref<Word[]>([])
 const speechStatus = ref('')
 const announcement = ref('')
-const nextChallengeIn = ref('')
 const progressRevision = ref(0)
 const progressReady = ref(false)
-let countdownTimer: ReturnType<typeof setInterval> | undefined
 
 interface LanguageProgress {
   status: 'play' | 'completed' | 'practice'
@@ -368,10 +311,6 @@ const languageProgress = computed<Record<string, LanguageProgress>>(() => {
   }))
 })
 
-const hasCompletedToday = computed(() =>
-  Object.values(languageProgress.value).some(progress => progress.status !== 'play'),
-)
-
 function getLanguageProgress(code: string): LanguageProgress {
   return languageProgress.value[code] ?? {
     status: 'play',
@@ -388,24 +327,9 @@ function openLanguage(code: string) {
   if (shouldPractice) startPractice()
 }
 
-function updateCountdown() {
-  const now = new Date()
-  const tomorrow = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1)
-  const remainingMinutes = Math.max(0, Math.ceil((tomorrow - now.getTime()) / 60_000))
-  const hours = Math.floor(remainingMinutes / 60)
-  const minutes = remainingMinutes % 60
-  nextChallengeIn.value = hours ? `${hours}h ${minutes}m` : `${minutes}m`
-}
-
 onMounted(() => {
   progressReady.value = true
   progressRevision.value++
-  updateCountdown()
-  countdownTimer = setInterval(updateCountdown, 60_000)
-})
-
-onBeforeUnmount(() => {
-  if (countdownTimer) clearInterval(countdownTimer)
 })
 
 function getStreakKey(code: string) {
@@ -606,8 +530,6 @@ function speakWord() {
 <style scoped>
 .atlas-page {
   display: flow-root;
-  border-right: clamp(0.3rem, 0.8vw, 0.75rem) solid rgb(74 33 23);
-  border-left: clamp(0.3rem, 0.8vw, 0.75rem) solid rgb(74 33 23);
   background-color: rgb(139 74 47);
   background-image:
     radial-gradient(circle at 20% 18%, rgb(255 239 208 / 7%) 0 0.7px, transparent 1px),
@@ -623,7 +545,6 @@ function speakWord() {
 
 .atlas-hero h1,
 .atlas-page h2,
-.atlas-page .daily-status-card strong,
 .atlas-page .entry-label,
 .atlas-page .resource-card strong {
   font-family: 'Source Serif 4', Georgia, serif;
@@ -694,11 +615,8 @@ function speakWord() {
   border-radius: 0.45rem;
   background-color: rgb(243 226 189);
   background-image:
-    linear-gradient(rgb(120 53 15 / 4%) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(120 53 15 / 4%) 1px, transparent 1px),
     radial-gradient(circle at 20% 18%, rgb(255 255 255 / 45%), transparent 30%),
     linear-gradient(135deg, rgb(255 245 220), rgb(231 207 161));
-  background-size: 28px 28px, 28px 28px, auto, auto;
   box-shadow:
     0 24px 55px rgb(35 14 8 / 38%),
     inset 0 0 38px rgb(120 53 15 / 12%);
@@ -715,104 +633,25 @@ function speakWord() {
   pointer-events: none;
 }
 
-.map-contours {
-  position: absolute;
-  inset: -8%;
-  z-index: -1;
-  background-image:
-    repeating-radial-gradient(ellipse at 17% 30%, transparent 0 20px, rgb(57 75 74 / 9%) 21px 22px, transparent 23px 41px),
-    repeating-radial-gradient(ellipse at 83% 67%, transparent 0 24px, rgb(163 75 60 / 7%) 25px 26px, transparent 27px 49px);
-  opacity: 0.8;
-  transform: rotate(-3deg);
-}
-
-.map-journey-route {
-  position: absolute;
-  inset: 7% 4%;
-  z-index: 0;
-  height: 86%;
-  width: 92%;
-  overflow: visible;
-  pointer-events: none;
-}
-
-.map-journey-route path {
-  fill: none;
-  stroke: rgb(163 75 60 / 34%);
-  stroke-dasharray: 9 12;
-  stroke-linecap: round;
-  stroke-width: 2.5;
-}
-
-.map-journey-route circle {
-  fill: rgb(196 154 74 / 55%);
-  stroke: rgb(255 245 220 / 65%);
-  stroke-width: 2;
-}
-
-.map-compass-rose {
-  position: absolute;
-  right: 3rem;
-  top: 2.4rem;
-  z-index: 0;
-  display: grid;
-  height: 7rem;
-  width: 7rem;
-  place-items: center;
-  border: 2px solid rgb(57 75 74 / 12%);
-  border-radius: 9999px;
-  color: rgb(57 75 74 / 22%);
-  transform: rotate(7deg);
-}
-
-.map-compass-rose::before,
-.map-compass-rose::after {
-  position: absolute;
-  background: currentColor;
-  content: '';
-}
-
-.map-compass-rose::before {
-  height: 130%;
-  width: 1px;
-}
-
-.map-compass-rose::after {
-  height: 1px;
-  width: 130%;
-}
-
-.map-compass-rose span,
-.map-compass-rose small {
-  position: absolute;
-  font-size: 0.55rem;
-  font-weight: 900;
-}
-
-.map-compass-rose span {
-  top: 0.4rem;
-}
-
-.map-compass-rose small {
-  bottom: 0.4rem;
-}
-
-.map-compass-rose strong {
-  font-size: 2.4rem;
-}
-
-.map-note {
-  position: relative;
-  z-index: 2;
-  border-left: 4px double rgb(57 75 74 / 48%);
-  border-radius: 0.5rem;
-  background: rgb(255 250 235 / 62%);
-  padding: 1.5rem;
-  box-shadow: 0 8px 24px rgb(86 50 25 / 8%);
-}
-
 .field-sheet {
   max-width: 38rem;
+}
+
+.destinations-heading {
+  position: relative;
+  border-bottom: 1px solid rgb(120 53 15 / 20%);
+  padding-bottom: 1.25rem;
+}
+
+.destinations-heading::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 3px;
+  width: 4.5rem;
+  border-radius: 9999px;
+  background: rgb(42 103 110);
+  content: '';
 }
 
 .field-sheet-grid {
@@ -1207,97 +1046,6 @@ function speakWord() {
   }
 }
 
-.daily-intro {
-  animation: dashboard-arrival 600ms cubic-bezier(0.16, 1, 0.3, 1) both;
-}
-
-.daily-status-card {
-  position: relative;
-  display: flex;
-  max-width: 21rem;
-  align-items: center;
-  gap: 0.75rem;
-  overflow: hidden;
-  border: 0;
-  border-radius: 0.55rem;
-  background-color: rgb(255 250 235 / 68%);
-  background-image:
-    linear-gradient(currentColor, currentColor),
-    linear-gradient(currentColor, currentColor),
-    linear-gradient(currentColor, currentColor),
-    linear-gradient(currentColor, currentColor),
-    linear-gradient(currentColor, currentColor),
-    linear-gradient(currentColor, currentColor),
-    linear-gradient(currentColor, currentColor),
-    linear-gradient(currentColor, currentColor);
-  background-position:
-    left top, left top,
-    right top, right top,
-    left bottom, left bottom,
-    right bottom, right bottom;
-  background-repeat: no-repeat;
-  background-size:
-    1rem 1px, 1px 1rem,
-    1rem 1px, 1px 1rem,
-    1rem 1px, 1px 1rem,
-    1rem 1px, 1px 1rem;
-  padding: 1rem;
-  box-shadow:
-    3px 3px 0 rgb(120 53 15 / 10%),
-    inset 0 0 0 3px rgb(255 255 255 / 20%);
-}
-
-.daily-status-card::after {
-  position: absolute;
-  right: -1rem;
-  bottom: 0.4rem;
-  width: 4.5rem;
-  border-top: 1px solid currentColor;
-  content: '';
-  opacity: 0.25;
-  transform: rotate(-12deg);
-}
-
-.daily-status-card-awaiting {
-  color: rgb(32 91 98);
-}
-
-.daily-status-card-charted {
-  color: rgb(39 102 94);
-}
-
-.daily-status-icon {
-  display: grid;
-  height: 2.75rem;
-  width: 2.75rem;
-  flex-shrink: 0;
-  place-items: center;
-  border-radius: 9999px;
-  background: rgb(32 91 98);
-  color: rgb(255 250 235);
-  box-shadow: 0 0 0 3px rgb(42 103 110 / 10%);
-}
-
-.daily-status-card-charted .daily-status-icon {
-  background: rgb(39 102 94);
-}
-
-.daily-status-icon svg {
-  display: block;
-  height: 1.35rem;
-  width: 1.35rem;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.4;
-}
-
-.daily-status-icon .icon-fill {
-  fill: currentColor;
-  stroke: none;
-}
-
 .resource-card {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -1354,22 +1102,7 @@ function speakWord() {
   transform: translateX(0.25rem);
 }
 
-@keyframes dashboard-arrival {
-  from {
-    opacity: 0;
-    transform: translateY(1rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .daily-intro {
-    animation: none;
-  }
-
   .resource-card,
   .resource-arrow {
     transition-duration: 0ms;
@@ -1384,10 +1117,19 @@ function speakWord() {
 
 <style>
 html.dark .atlas-page {
+  background-color: rgb(58 36 26);
+  background-image:
+    radial-gradient(circle at 20% 18%, rgb(196 154 74 / 4%) 0 0.7px, transparent 1px),
+    radial-gradient(circle at 72% 63%, rgb(0 0 0 / 25%) 0 0.8px, transparent 1px),
+    repeating-linear-gradient(22deg, transparent 0 8px, rgb(196 154 74 / 1.5%) 9px, transparent 10px 17px),
+    linear-gradient(135deg, rgb(73 45 31), rgb(41 27 21));
+  background-size: 8px 10px, 11px 9px, auto, auto;
+}
+
+html.dark .atlas-page .atlas-hero {
   background:
-    radial-gradient(circle at 20% 18%, rgb(255 255 255 / 3%) 0 0.7px, transparent 1px),
-    repeating-linear-gradient(22deg, transparent 0 8px, rgb(255 255 255 / 0.8%) 9px, transparent 10px 17px),
-    linear-gradient(135deg, rgb(83 40 26), rgb(42 18 13));
+    radial-gradient(circle at 50% 125%, rgb(95 143 145 / 24%), transparent 48%),
+    linear-gradient(135deg, rgb(35 65 65), rgb(20 42 46));
 }
 
 html.dark .atlas-page .atlas-map,
@@ -1400,50 +1142,12 @@ html.dark .atlas-page .field-sheet {
   box-shadow: 0 24px 55px rgb(0 0 0 / 48%), inset 0 0 38px rgb(0 0 0 / 18%);
 }
 
-html.dark .atlas-page .map-note {
-  border-left-color: rgb(95 143 145 / 55%);
-  background: rgb(56 37 26 / 76%);
+html.dark .atlas-page .destinations-heading {
+  border-bottom-color: rgb(196 154 74 / 16%);
 }
 
-html.dark .atlas-page .daily-status-card {
-  background-color: rgb(49 34 25);
-  box-shadow:
-    3px 3px 0 rgb(0 0 0 / 16%),
-    inset 0 0 0 3px rgb(196 154 74 / 4%);
-}
-
-html.dark .atlas-page .daily-status-card-awaiting {
-  color: rgb(130 184 184);
-}
-
-html.dark .atlas-page .daily-status-card-charted {
-  color: rgb(126 185 171);
-}
-
-html.dark .atlas-page .daily-status-icon {
-  background: rgb(130 184 184);
-  color: rgb(43 27 20);
-  box-shadow: 0 0 0 3px rgb(95 143 145 / 14%);
-}
-
-html.dark .atlas-page .daily-status-card-charted .daily-status-icon {
-  background: rgb(126 185 171);
-}
-
-html.dark .atlas-page .map-contours {
-  background-image:
-    repeating-radial-gradient(ellipse at 17% 30%, transparent 0 20px, rgb(139 101 66 / 16%) 21px 22px, transparent 23px 41px),
-    repeating-radial-gradient(ellipse at 83% 67%, transparent 0 24px, rgb(176 100 82 / 11%) 25px 26px, transparent 27px 49px);
-  opacity: 0.42;
-}
-
-html.dark .atlas-page .map-journey-route path {
-  stroke: rgb(176 100 82 / 58%);
-}
-
-html.dark .atlas-page .map-journey-route circle {
-  fill: rgb(196 154 74 / 75%);
-  stroke: rgb(43 27 20);
+html.dark .atlas-page .destinations-heading::after {
+  background: rgb(209 190 162);
 }
 
 html.dark .passport-page {
@@ -1479,12 +1183,6 @@ html.dark .passport-page .passport-spread {
   .field-sheet {
     margin-right: 0.65rem;
     margin-left: 0.65rem;
-  }
-
-  .map-compass-rose {
-    right: -1rem;
-    top: 2rem;
-    opacity: 0.55;
   }
 
   .passport-spread {

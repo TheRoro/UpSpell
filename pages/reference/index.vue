@@ -19,21 +19,6 @@
     </header>
 
     <main class="field-guide mx-auto my-6 max-w-6xl px-5 py-8 sm:my-10 sm:px-10 sm:py-10">
-      <div class="map-contours" aria-hidden="true" />
-      <svg class="guide-route" viewBox="0 0 1000 760" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M70 110 C 235 35, 300 205, 465 145 S 735 95, 910 220 S 760 410, 555 365 S 315 520, 95 655" />
-        <circle cx="70" cy="110" r="6" />
-        <circle cx="465" cy="145" r="6" />
-        <circle cx="910" cy="220" r="6" />
-        <circle cx="555" cy="365" r="6" />
-        <circle cx="95" cy="655" r="6" />
-      </svg>
-      <div class="guide-compass" aria-hidden="true">
-        <span>N</span>
-        <strong>✦</strong>
-        <small>S</small>
-      </div>
-
       <button
         type="button"
         class="back-link relative z-10 mb-8 inline-flex items-center gap-2 font-bold"
@@ -45,7 +30,7 @@
 
       <section class="guide-intro relative z-10 mx-auto max-w-5xl">
         <div class="intro-copy">
-          <p class="coordinate-label text-sm font-black uppercase tracking-[0.2em] text-sky-800 dark:text-sky-300">
+          <p class="coordinate-label text-sm font-black uppercase tracking-[0.2em] text-sky-800 dark:text-[#D1BEA2]">
             Character collection
           </p>
           <h2 class="mt-2 text-3xl font-black text-stone-900 dark:text-white sm:text-4xl">
@@ -73,7 +58,7 @@
       <section class="relative z-10 mx-auto mt-10 max-w-5xl" aria-labelledby="language-guides">
         <div class="section-heading">
           <div>
-            <p class="coordinate-label text-sm font-black uppercase tracking-[0.2em] text-sky-800 dark:text-sky-300">
+            <p class="coordinate-label text-sm font-black uppercase tracking-[0.2em] text-sky-800 dark:text-[#D1BEA2]">
               Indexed by destination
             </p>
             <h2 id="language-guides" class="mt-1 text-2xl font-black text-stone-900 dark:text-white">
@@ -151,15 +136,14 @@ const languageGuides = computed(() =>
 <style scoped>
 .field-guide-page {
   display: flow-root;
-  border-right: clamp(0.3rem, 0.8vw, 0.75rem) solid rgb(74 33 23);
-  border-left: clamp(0.3rem, 0.8vw, 0.75rem) solid rgb(74 33 23);
   background-color: rgb(139 74 47);
   background-image:
     radial-gradient(circle at 20% 18%, rgb(255 239 208 / 7%) 0 0.7px, transparent 1px),
     radial-gradient(circle at 72% 63%, rgb(45 18 9 / 22%) 0 0.8px, transparent 1px),
     repeating-linear-gradient(22deg, transparent 0 8px, rgb(255 239 208 / 1.8%) 9px, transparent 10px 17px),
+    repeating-linear-gradient(94deg, transparent 0 12px, rgb(54 22 12 / 2.5%) 13px, transparent 14px 23px),
     linear-gradient(135deg, rgb(157 91 56), rgb(102 48 31));
-  background-size: 8px 10px, 11px 9px, auto, auto;
+  background-size: 8px 10px, 11px 9px, auto, auto, auto;
   box-shadow:
     inset 8px 0 16px rgb(30 8 16 / 20%),
     inset -8px 0 16px rgb(30 8 16 / 20%);
@@ -168,10 +152,13 @@ const languageGuides = computed(() =>
 .field-guide-hero {
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid rgb(224 180 99 / 35%);
+  border-bottom: 5px double rgb(217 179 106);
   background:
-    radial-gradient(circle at 50% 125%, rgb(183 128 70 / 30%), transparent 48%),
-    linear-gradient(135deg, rgb(50 78 77), rgb(25 52 56));
+    radial-gradient(ellipse at 20% 15%, rgb(255 239 208 / 10%) 0, transparent 24%),
+    radial-gradient(ellipse at 80% 85%, rgb(45 18 9 / 24%) 0, transparent 32%),
+    repeating-linear-gradient(18deg, transparent 0 5px, rgb(255 239 208 / 2.2%) 6px, transparent 7px 13px),
+    linear-gradient(135deg, rgb(137 75 47), rgb(70 31 21));
+  box-shadow: inset 0 -12px 28px rgb(34 14 10 / 22%);
 }
 
 .field-guide-hero h1,
@@ -244,11 +231,7 @@ const languageGuides = computed(() =>
   overflow: hidden;
   border: 1px solid rgb(120 53 15 / 24%);
   border-radius: 0.65rem;
-  background-color: rgb(244 235 207);
-  background-image:
-    linear-gradient(rgb(120 53 15 / 5%) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(120 53 15 / 5%) 1px, transparent 1px);
-  background-size: 30px 30px;
+  background: rgb(244 235 207);
   box-shadow:
     0 16px 40px rgb(38 14 8 / 24%),
     inset 0 0 50px rgb(120 53 15 / 8%);
@@ -261,84 +244,6 @@ const languageGuides = computed(() =>
   border-radius: 0.35rem;
   content: '';
   pointer-events: none;
-}
-
-.map-contours {
-  position: absolute;
-  inset: 0;
-  background-image:
-    repeating-radial-gradient(ellipse at 82% 14%, transparent 0 24px, rgb(120 53 15 / 7%) 25px 26px, transparent 27px 46px),
-    repeating-radial-gradient(ellipse at 8% 76%, transparent 0 31px, rgb(42 103 110 / 7%) 32px 33px, transparent 34px 58px);
-  pointer-events: none;
-}
-
-.guide-route {
-  position: absolute;
-  inset: 7rem 0 auto;
-  height: 45rem;
-  width: 100%;
-  fill: none;
-  opacity: 0.12;
-  pointer-events: none;
-  stroke: rgb(42 103 110);
-  stroke-dasharray: 7 9;
-  stroke-linecap: round;
-  stroke-width: 2;
-}
-
-.guide-route circle {
-  fill: rgb(244 235 207);
-  stroke-dasharray: none;
-}
-
-.guide-compass {
-  position: absolute;
-  right: 3rem;
-  bottom: 2.5rem;
-  display: grid;
-  height: 8rem;
-  width: 8rem;
-  place-items: center;
-  border: 1px solid rgb(120 53 15 / 10%);
-  border-radius: 9999px;
-  color: rgb(120 53 15 / 11%);
-  transform: rotate(8deg);
-}
-
-.guide-compass::before,
-.guide-compass::after {
-  position: absolute;
-  background: currentColor;
-  content: '';
-}
-
-.guide-compass::before {
-  height: 115%;
-  width: 1px;
-}
-
-.guide-compass::after {
-  height: 1px;
-  width: 115%;
-}
-
-.guide-compass span,
-.guide-compass small {
-  position: absolute;
-  font-size: 0.7rem;
-  font-weight: 800;
-}
-
-.guide-compass span {
-  top: 0.4rem;
-}
-
-.guide-compass small {
-  bottom: 0.4rem;
-}
-
-.guide-compass strong {
-  font-size: 2rem;
 }
 
 .back-link {
@@ -600,13 +505,13 @@ const languageGuides = computed(() =>
 }
 
 html.dark .field-guide-page {
-  border-color: rgb(42 25 18);
   background-color: rgb(58 36 26);
   background-image:
     radial-gradient(circle at 20% 18%, rgb(196 154 74 / 4%) 0 0.7px, transparent 1px),
     radial-gradient(circle at 72% 63%, rgb(0 0 0 / 25%) 0 0.8px, transparent 1px),
     repeating-linear-gradient(22deg, transparent 0 8px, rgb(196 154 74 / 1.5%) 9px, transparent 10px 17px),
     linear-gradient(135deg, rgb(73 45 31), rgb(41 27 21));
+  background-size: 8px 10px, 11px 9px, auto, auto;
 }
 
 html.dark .field-guide-hero {
@@ -617,10 +522,7 @@ html.dark .field-guide-hero {
 
 html.dark .field-guide {
   border-color: rgb(106 74 50);
-  background-color: rgb(47 32 24);
-  background-image:
-    linear-gradient(rgb(196 154 74 / 6%) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(196 154 74 / 6%) 1px, transparent 1px);
+  background: rgb(47 32 24);
   box-shadow:
     0 16px 40px rgb(0 0 0 / 34%),
     inset 0 0 50px rgb(0 0 0 / 16%);
@@ -630,30 +532,12 @@ html.dark .field-guide::before {
   border-color: rgb(196 154 74 / 16%);
 }
 
-html.dark .map-contours {
-  background-image:
-    repeating-radial-gradient(ellipse at 82% 14%, transparent 0 24px, rgb(196 154 74 / 8%) 25px 26px, transparent 27px 46px),
-    repeating-radial-gradient(ellipse at 8% 76%, transparent 0 31px, rgb(95 143 145 / 9%) 32px 33px, transparent 34px 58px);
-}
-
-html.dark .guide-route {
-  stroke: rgb(130 184 184);
-}
-
-html.dark .guide-route circle {
-  fill: rgb(47 32 24);
-}
-
-html.dark .guide-compass {
-  color: rgb(196 154 74 / 12%);
-}
-
 html.dark .back-link {
   color: rgb(232 216 188);
 }
 
 html.dark .back-link:hover {
-  color: rgb(159 208 206);
+  color: rgb(240 228 207);
 }
 
 html.dark .guide-note,
@@ -666,8 +550,8 @@ html.dark .language-guide-card {
 }
 
 html.dark .guide-note-icon {
-  background: rgb(95 143 145 / 15%);
-  color: rgb(159 208 206);
+  background: rgb(209 190 162 / 12%);
+  color: rgb(209 190 162);
 }
 
 html.dark .guide-note strong,
@@ -697,12 +581,12 @@ html.dark .character-specimens {
 }
 
 html.dark .character-specimens span {
-  color: rgb(183 222 218);
+  color: rgb(240 228 207);
 }
 
 html.dark .card-footer {
   border-color: rgb(106 74 50);
-  color: rgb(159 208 206);
+  color: rgb(209 190 162);
 }
 
 @media (max-width: 900px) {
@@ -736,9 +620,6 @@ html.dark .card-footer {
     min-height: 18rem;
   }
 
-  .guide-compass {
-    right: -3rem;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

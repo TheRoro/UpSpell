@@ -167,7 +167,7 @@ const actionLabel = computed(() => {
   flex-shrink: 0;
   place-items: center;
   border-radius: 9999px;
-  background: conic-gradient(rgb(59 130 246) var(--mastery), rgb(229 231 235) 0);
+  background: conic-gradient(rgb(50 78 77) var(--mastery), rgb(214 203 172) 0);
 }
 
 .mastery-ring > span {
@@ -316,7 +316,7 @@ html.dark .destination-card::after {
 }
 
 html.dark .destination-card .mastery-ring {
-  background: conic-gradient(rgb(95 143 145) var(--mastery), rgb(78 54 39) 0);
+  background: conic-gradient(rgb(209 190 162) var(--mastery), rgb(78 54 39) 0);
 }
 
 html.dark .destination-card .mastery-ring > span {
@@ -330,7 +330,7 @@ html.dark .destination-card .uncharted-marker {
 }
 
 html.dark .destination-card .card-field-notes {
-  border-left-color: rgb(95 143 145 / 42%);
+  border-left-color: rgb(209 190 162 / 38%);
 }
 
 html.dark .destination-card .field-note-label {
@@ -339,9 +339,9 @@ html.dark .destination-card .field-note-label {
 
 html.dark .destination-card .featured-marks > span {
   background: rgb(67 48 34);
-  color: rgb(183 222 218);
+  color: rgb(240 228 207);
   box-shadow:
-    inset 0 0 0 1px rgb(130 184 184 / 20%),
+    inset 0 0 0 1px rgb(209 190 162 / 20%),
     inset 0 1px 2px rgb(0 0 0 / 28%);
 }
 
@@ -355,11 +355,11 @@ html.dark .destination-card .map-label {
 }
 
 html.dark .destination-card .map-label-play {
-  color: rgb(130 184 184);
+  color: rgb(209 190 162);
 }
 
 html.dark .destination-card .map-label-completed {
-  color: rgb(126 185 171);
+  color: rgb(240 228 207);
 }
 
 html.dark .destination-card .map-label-practice {

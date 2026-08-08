@@ -19,13 +19,6 @@
     </header>
 
     <main class="logbook mx-auto my-6 max-w-6xl px-5 py-8 sm:my-10 sm:px-10 sm:py-10">
-      <div class="map-contours" aria-hidden="true" />
-      <div class="logbook-compass" aria-hidden="true">
-        <span>N</span>
-        <strong>✦</strong>
-        <small>S</small>
-      </div>
-
       <button
         type="button"
         class="back-link relative z-10 mb-8 inline-flex items-center gap-2 font-bold"
@@ -38,7 +31,7 @@
       <section class="relative z-10 mx-auto max-w-5xl" aria-labelledby="expedition-summary">
         <div class="summary-heading">
           <div>
-            <p class="coordinate-label text-sm font-black uppercase tracking-[0.2em] text-sky-800 dark:text-sky-300">
+            <p class="coordinate-label text-sm font-black uppercase tracking-[0.2em] text-sky-800 dark:text-[#D1BEA2]">
               Expedition record
             </p>
             <h2 id="expedition-summary" class="mt-2 text-3xl font-black text-stone-900 dark:text-white sm:text-4xl">
@@ -109,7 +102,7 @@
       <section class="relative z-10 mx-auto mt-12 max-w-5xl" aria-labelledby="route-records">
         <div class="routes-heading">
           <div>
-            <p class="coordinate-label text-sm font-black uppercase tracking-[0.2em] text-sky-800 dark:text-sky-300">
+            <p class="coordinate-label text-sm font-black uppercase tracking-[0.2em] text-sky-800 dark:text-[#D1BEA2]">
               Mapped destinations
             </p>
             <h2 id="route-records" class="mt-1 text-2xl font-black text-stone-900 dark:text-white">
@@ -253,15 +246,14 @@ const languagesExplored = computed(() => langStats.value.filter(stat => stat.pla
 <style scoped>
 .travel-log-page {
   display: flow-root;
-  border-right: clamp(0.3rem, 0.8vw, 0.75rem) solid rgb(74 33 23);
-  border-left: clamp(0.3rem, 0.8vw, 0.75rem) solid rgb(74 33 23);
   background-color: rgb(139 74 47);
   background-image:
     radial-gradient(circle at 20% 18%, rgb(255 239 208 / 7%) 0 0.7px, transparent 1px),
     radial-gradient(circle at 72% 63%, rgb(45 18 9 / 22%) 0 0.8px, transparent 1px),
     repeating-linear-gradient(22deg, transparent 0 8px, rgb(255 239 208 / 1.8%) 9px, transparent 10px 17px),
+    repeating-linear-gradient(94deg, transparent 0 12px, rgb(54 22 12 / 2.5%) 13px, transparent 14px 23px),
     linear-gradient(135deg, rgb(157 91 56), rgb(102 48 31));
-  background-size: 8px 10px, 11px 9px, auto, auto;
+  background-size: 8px 10px, 11px 9px, auto, auto, auto;
   box-shadow:
     inset 8px 0 16px rgb(30 8 16 / 20%),
     inset -8px 0 16px rgb(30 8 16 / 20%);
@@ -270,10 +262,13 @@ const languagesExplored = computed(() => langStats.value.filter(stat => stat.pla
 .travel-log-hero {
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid rgb(224 180 99 / 35%);
+  border-bottom: 5px double rgb(217 179 106);
   background:
-    radial-gradient(circle at 50% 125%, rgb(183 128 70 / 30%), transparent 48%),
-    linear-gradient(135deg, rgb(50 78 77), rgb(25 52 56));
+    radial-gradient(ellipse at 20% 15%, rgb(255 239 208 / 10%) 0, transparent 24%),
+    radial-gradient(ellipse at 80% 85%, rgb(45 18 9 / 24%) 0, transparent 32%),
+    repeating-linear-gradient(18deg, transparent 0 5px, rgb(255 239 208 / 2.2%) 6px, transparent 7px 13px),
+    linear-gradient(135deg, rgb(137 75 47), rgb(70 31 21));
+  box-shadow: inset 0 -12px 28px rgb(34 14 10 / 22%);
 }
 
 .travel-log-hero h1,
@@ -349,11 +344,7 @@ const languagesExplored = computed(() => langStats.value.filter(stat => stat.pla
   overflow: hidden;
   border: 1px solid rgb(120 53 15 / 24%);
   border-radius: 0.65rem;
-  background-color: rgb(244 235 207);
-  background-image:
-    linear-gradient(rgb(120 53 15 / 5%) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(120 53 15 / 5%) 1px, transparent 1px);
-  background-size: 30px 30px;
+  background: rgb(244 235 207);
   box-shadow:
     0 16px 40px rgb(38 14 8 / 24%),
     inset 0 0 50px rgb(120 53 15 / 8%);
@@ -366,65 +357,6 @@ const languagesExplored = computed(() => langStats.value.filter(stat => stat.pla
   border-radius: 0.35rem;
   content: '';
   pointer-events: none;
-}
-
-.map-contours {
-  position: absolute;
-  inset: 0;
-  background-image:
-    repeating-radial-gradient(ellipse at 82% 14%, transparent 0 24px, rgb(120 53 15 / 7%) 25px 26px, transparent 27px 46px),
-    repeating-radial-gradient(ellipse at 8% 76%, transparent 0 31px, rgb(42 103 110 / 7%) 32px 33px, transparent 34px 58px);
-  pointer-events: none;
-}
-
-.logbook-compass {
-  position: absolute;
-  right: 3.5rem;
-  bottom: 3rem;
-  display: grid;
-  height: 8rem;
-  width: 8rem;
-  place-items: center;
-  border: 1px solid rgb(120 53 15 / 10%);
-  border-radius: 9999px;
-  color: rgb(120 53 15 / 11%);
-  transform: rotate(8deg);
-}
-
-.logbook-compass::before,
-.logbook-compass::after {
-  position: absolute;
-  background: currentColor;
-  content: '';
-}
-
-.logbook-compass::before {
-  height: 115%;
-  width: 1px;
-}
-
-.logbook-compass::after {
-  height: 1px;
-  width: 115%;
-}
-
-.logbook-compass span,
-.logbook-compass small {
-  position: absolute;
-  font-size: 0.7rem;
-  font-weight: 800;
-}
-
-.logbook-compass span {
-  top: 0.4rem;
-}
-
-.logbook-compass small {
-  bottom: 0.4rem;
-}
-
-.logbook-compass strong {
-  font-size: 2rem;
 }
 
 .back-link {
@@ -759,13 +691,13 @@ const languagesExplored = computed(() => langStats.value.filter(stat => stat.pla
 }
 
 html.dark .travel-log-page {
-  border-color: rgb(42 25 18);
   background-color: rgb(58 36 26);
   background-image:
     radial-gradient(circle at 20% 18%, rgb(196 154 74 / 4%) 0 0.7px, transparent 1px),
     radial-gradient(circle at 72% 63%, rgb(0 0 0 / 25%) 0 0.8px, transparent 1px),
     repeating-linear-gradient(22deg, transparent 0 8px, rgb(196 154 74 / 1.5%) 9px, transparent 10px 17px),
     linear-gradient(135deg, rgb(73 45 31), rgb(41 27 21));
+  background-size: 8px 10px, 11px 9px, auto, auto;
 }
 
 html.dark .travel-log-hero {
@@ -776,10 +708,7 @@ html.dark .travel-log-hero {
 
 html.dark .logbook {
   border-color: rgb(106 74 50);
-  background-color: rgb(47 32 24);
-  background-image:
-    linear-gradient(rgb(196 154 74 / 6%) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(196 154 74 / 6%) 1px, transparent 1px);
+  background: rgb(47 32 24);
   box-shadow:
     0 16px 40px rgb(0 0 0 / 34%),
     inset 0 0 50px rgb(0 0 0 / 16%);
@@ -789,22 +718,12 @@ html.dark .logbook::before {
   border-color: rgb(196 154 74 / 16%);
 }
 
-html.dark .map-contours {
-  background-image:
-    repeating-radial-gradient(ellipse at 82% 14%, transparent 0 24px, rgb(196 154 74 / 8%) 25px 26px, transparent 27px 46px),
-    repeating-radial-gradient(ellipse at 8% 76%, transparent 0 31px, rgb(95 143 145 / 9%) 32px 33px, transparent 34px 58px);
-}
-
-html.dark .logbook-compass {
-  color: rgb(196 154 74 / 12%);
-}
-
 html.dark .back-link {
   color: rgb(232 216 188);
 }
 
 html.dark .back-link:hover {
-  color: rgb(159 208 206);
+  color: rgb(240 228 207);
 }
 
 html.dark .summary-note {
@@ -823,8 +742,8 @@ html.dark .empty-log {
 }
 
 html.dark .summary-icon {
-  background: rgb(95 143 145 / 15%);
-  color: rgb(159 208 206);
+  background: rgb(209 190 162 / 12%);
+  color: rgb(209 190 162);
 }
 
 html.dark .summary-card strong,
@@ -847,12 +766,12 @@ html.dark .flag-frame {
 }
 
 html.dark .accuracy-seal {
-  background: conic-gradient(rgb(130 184 184) var(--accuracy), rgb(83 62 45) 0);
+  background: conic-gradient(rgb(209 190 162) var(--accuracy), rgb(83 62 45) 0);
 }
 
 html.dark .accuracy-seal > span {
   background: rgb(56 37 26);
-  color: rgb(183 222 218);
+  color: rgb(240 228 207);
 }
 
 html.dark .uncharted-label {
@@ -869,7 +788,7 @@ html.dark .route-progress-track {
 }
 
 html.dark .route-progress-track span {
-  background: linear-gradient(90deg, rgb(95 143 145), rgb(130 184 184));
+  background: linear-gradient(90deg, rgb(180 157 120), rgb(209 190 162));
 }
 
 html.dark .route-details,
@@ -886,12 +805,12 @@ html.dark .route-details dd {
 }
 
 html.dark .empty-log-mark {
-  border-color: rgb(130 184 184 / 35%);
-  color: rgb(159 208 206);
+  border-color: rgb(209 190 162 / 35%);
+  color: rgb(209 190 162);
 }
 
 html.dark .empty-log button {
-  background: rgb(95 143 145);
+  background: rgb(209 190 162);
   color: rgb(30 24 20);
 }
 
@@ -927,9 +846,6 @@ html.dark .empty-log button {
     padding: 0.9rem;
   }
 
-  .logbook-compass {
-    right: -3rem;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
