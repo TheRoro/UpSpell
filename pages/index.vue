@@ -52,7 +52,7 @@
         >
           <span class="resource-icon bg-sky-100 text-sky-800 dark:bg-sky-900/60 dark:text-[#F0E4CF]" aria-hidden="true">⌁</span>
           <span>
-            <strong class="text-stone-900 dark:text-white">Travel Log</strong>
+            <strong class="text-stone-900 dark:text-white">Stats</strong>
             <small class="text-stone-500 dark:text-[#CDBB9D]">Review accuracy, streaks, and past discoveries</small>
           </span>
           <span class="resource-arrow" aria-hidden="true">→</span>
@@ -63,7 +63,7 @@
         >
           <span class="resource-icon bg-red-100 text-red-800 dark:bg-red-900/60 dark:text-red-300" aria-hidden="true">á</span>
           <span>
-            <strong class="text-stone-900 dark:text-white">Explorer’s Field Guide</strong>
+            <strong class="text-stone-900 dark:text-white">Characters</strong>
             <small class="text-stone-500 dark:text-[#CDBB9D]">Study and copy special characters</small>
           </span>
           <span class="resource-arrow" aria-hidden="true">→</span>
@@ -73,7 +73,6 @@
 
     <!-- Field challenge -->
     <main v-else class="field-sheet mx-auto my-6 max-w-xl px-6 py-8 sm:my-10 sm:px-10">
-      <div class="field-sheet-grid" aria-hidden="true" />
       <button
         class="relative z-10 mb-6 flex items-center gap-2 font-medium text-stone-600 transition-colors hover:text-sky-800 dark:text-[#E8D8BC] dark:hover:text-[#F0E4CF]"
         @click="goBack"
@@ -141,8 +140,7 @@
 
           <!-- Share button -->
           <button
-            class="share-discovery mt-6 rounded-lg border-2 border-dashed border-sky-200 bg-sky-800 px-6 py-3 font-bold text-white hover:bg-sky-900
-                   transition-all duration-200 hover:scale-105 shadow-md"
+            class="share-discovery mt-6 rounded-lg px-6 py-3 font-bold focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#6F9692]/40"
             @click="shareResult"
           >
             {{ shareText }}
@@ -417,7 +415,7 @@ function guess(choice: string) {
   progressRevision.value++
 }
 
-const shareText = ref('📋 Share result')
+const shareText = ref('Share result')
 
 const langFlags: Record<string, string> = {
   fr: '🇫🇷', es: '🇪🇸', pt: '🇵🇹', it: '🇮🇹', ro: '🇷🇴', de: '🇩🇪',
@@ -436,7 +434,7 @@ async function shareResult() {
   announcement.value = copied
     ? 'Result copied to the clipboard.'
     : 'The result could not be copied.'
-  setTimeout(() => { shareText.value = '📋 Share result' }, 2000)
+  setTimeout(() => { shareText.value = 'Share result' }, 2000)
 }
 
 function getMissedKey(code: string) {
@@ -583,27 +581,44 @@ function speakWord() {
 
 .atlas-compass {
   position: absolute;
-  right: 7%;
-  top: 1.25rem;
+  top: 50%;
+  left: 8%;
   display: grid;
   height: 6rem;
   width: 6rem;
   place-items: center;
-  border: 3px double rgb(253 230 138 / 25%);
+  border: 1px solid rgb(255 237 190 / 18%);
   border-radius: 9999px;
-  color: rgb(253 230 138 / 38%);
-  transform: rotate(9deg);
+  color: rgb(255 237 190 / 32%);
+  transform: translateY(-50%) rotate(-12deg);
+}
+
+.atlas-compass::before,
+.atlas-compass::after {
+  position: absolute;
+  background: currentColor;
+  content: '';
+}
+
+.atlas-compass::before {
+  height: 120%;
+  width: 1px;
+}
+
+.atlas-compass::after {
+  height: 1px;
+  width: 120%;
 }
 
 .atlas-compass span {
   position: absolute;
-  top: 0.45rem;
-  font-size: 0.6rem;
-  font-weight: 900;
+  top: 0.35rem;
+  font-size: 0.65rem;
+  font-weight: 800;
 }
 
 .atlas-compass strong {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .atlas-map,
@@ -654,15 +669,6 @@ function speakWord() {
   content: '';
 }
 
-.field-sheet-grid {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background:
-    repeating-radial-gradient(ellipse at 18% 30%, transparent 0 18px, rgb(57 75 74 / 7%) 19px 20px, transparent 21px 39px);
-  opacity: 0.8;
-}
-
 .field-note-card {
   isolation: isolate;
 }
@@ -683,7 +689,47 @@ function speakWord() {
 }
 
 .share-discovery {
-  transform: rotate(-1deg);
+  border: 1px solid rgb(53 110 105 / 72%);
+  background: rgb(238 224 193);
+  box-shadow:
+    3px 5px 0 rgb(120 53 15 / 13%),
+    inset 0 0 0 2px rgb(255 255 255 / 26%);
+  color: rgb(36 78 77);
+  transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.share-discovery:hover {
+  background: rgb(230 213 178);
+  box-shadow:
+    4px 6px 0 rgb(120 53 15 / 16%),
+    inset 0 0 0 2px rgb(255 255 255 / 26%);
+  transform: translateY(-0.12rem);
+}
+
+html.dark .share-discovery {
+  border-color: rgb(111 150 146 / 70%);
+  background: rgb(47 33 25);
+  box-shadow:
+    3px 5px 0 rgb(0 0 0 / 24%),
+    inset 0 0 0 2px rgb(209 190 162 / 5%);
+  color: rgb(240 228 207);
+}
+
+html.dark .share-discovery:hover {
+  background: rgb(58 42 31);
+  box-shadow:
+    4px 6px 0 rgb(0 0 0 / 28%),
+    inset 0 0 0 2px rgb(209 190 162 / 5%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .share-discovery {
+    transition: none;
+  }
+
+  .share-discovery:hover {
+    transform: none;
+  }
 }
 
 .passport-cover-stage {
@@ -1179,6 +1225,11 @@ html.dark .passport-page .passport-spread {
 }
 
 @media (max-width: 639px) {
+  .atlas-compass {
+    left: -2rem;
+    opacity: 0.6;
+  }
+
   .atlas-map,
   .field-sheet {
     margin-right: 0.65rem;

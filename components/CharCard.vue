@@ -43,16 +43,33 @@ async function copyChar() {
 
 <style scoped>
 .character-card {
+  position: relative;
   display: grid;
   aspect-ratio: 6 / 5;
   grid-template-rows: 1fr auto auto 1fr;
   justify-items: center;
+  overflow: hidden;
   border: 1px solid rgb(120 53 15 / 18%);
   border-radius: 0.65rem;
   background: rgb(255 251 235 / 84%);
   padding: 1.5rem 1.25rem;
-  box-shadow: 1px 2px 0 rgb(120 53 15 / 8%);
-  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+  box-shadow:
+    2px 3px 0 rgb(120 53 15 / 10%),
+    inset 0 0 0 2px rgb(255 255 255 / 18%);
+  transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+}
+
+.character-card::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 0.22rem;
+  background: rgb(111 150 146);
+  content: '';
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 220ms ease;
 }
 
 .character-content {
@@ -65,8 +82,14 @@ async function copyChar() {
 
 .character-card:hover {
   border-color: rgb(42 103 110 / 45%);
-  box-shadow: 0 6px 16px rgb(120 53 15 / 10%);
-  transform: translateY(-0.15rem);
+  box-shadow:
+    4px 7px 0 rgb(120 53 15 / 12%),
+    inset 0 0 0 2px rgb(255 255 255 / 18%);
+  transform: translateY(-0.25rem);
+}
+
+.character-card:hover::before {
+  transform: scaleX(1);
 }
 
 .character-card:focus-visible {
@@ -116,12 +139,20 @@ async function copyChar() {
 html.dark .character-card {
   border-color: rgb(106 74 50);
   background: rgb(56 37 26);
-  box-shadow: 1px 2px 0 rgb(0 0 0 / 18%);
+  box-shadow:
+    2px 3px 0 rgb(0 0 0 / 18%),
+    inset 0 0 0 2px rgb(196 154 74 / 3%);
+}
+
+html.dark .character-card::before {
+  background: rgb(209 190 162);
 }
 
 html.dark .character-card:hover {
   border-color: rgb(209 190 162 / 55%);
-  box-shadow: 0 6px 16px rgb(0 0 0 / 20%);
+  box-shadow:
+    4px 7px 0 rgb(0 0 0 / 24%),
+    inset 0 0 0 2px rgb(196 154 74 / 3%);
 }
 
 html.dark .character-letter {
@@ -145,8 +176,16 @@ html.dark .character-card:focus-visible {
     transition: none;
   }
 
+  .character-card::before {
+    transition: none;
+  }
+
   .character-card:hover {
     transform: none;
+  }
+
+  .character-card:hover::before {
+    transform: scaleX(0);
   }
 }
 </style>

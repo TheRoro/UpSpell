@@ -29,10 +29,10 @@
     </header>
 
     <main class="specimen-sheet mx-auto my-6 max-w-7xl px-5 py-7 sm:my-10 sm:px-10 sm:py-9">
-      <nav class="guide-navigation" aria-label="Character guide navigation">
+      <nav class="guide-navigation" aria-label="Character reference navigation">
         <button type="button" class="back-link" @click="navigateTo('/reference')">
           <span aria-hidden="true">←</span>
-          Back to field guides
+          Back to characters
         </button>
         <button type="button" class="map-link" @click="navigateTo('/')">
           Daily map

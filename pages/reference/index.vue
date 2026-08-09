@@ -11,9 +11,9 @@
         <p class="coordinate-label text-xs font-black uppercase tracking-[0.28em] text-amber-200">
           UpSpell Language Atlas
         </p>
-        <h1 class="mt-2 text-4xl font-black text-amber-50 sm:text-6xl">Explorer’s Field Guide</h1>
+        <h1 class="mt-2 text-4xl font-black text-amber-50 sm:text-6xl">Characters</h1>
         <p class="mx-auto mt-3 max-w-2xl text-base text-amber-100/85 sm:text-lg">
-          Study the marks, letters, and symbols that give each language its character.
+          Browse special characters for every language.
         </p>
       </div>
     </header>
@@ -28,60 +28,28 @@
         Back to the map
       </button>
 
-      <section class="guide-intro relative z-10 mx-auto max-w-5xl">
-        <div class="intro-copy">
+      <section class="relative z-10 mx-auto max-w-5xl" aria-labelledby="language-guides">
+        <div class="collection-heading">
           <p class="coordinate-label text-sm font-black uppercase tracking-[0.2em] text-sky-800 dark:text-[#D1BEA2]">
             Character collection
           </p>
-          <h2 class="mt-2 text-3xl font-black text-stone-900 dark:text-white sm:text-4xl">
-            Choose a language to examine
+          <h2 id="language-guides" class="mt-2 text-3xl font-black text-stone-900 dark:text-white sm:text-4xl">
+            Choose a language
           </h2>
           <p class="mt-3 max-w-2xl text-stone-600 dark:text-[#D7C3A3]">
-            Open a field guide to learn each character’s name, compare uppercase forms, and copy any mark for immediate use.
+            View each language’s special characters and copy any mark.
           </p>
         </div>
 
-        <aside class="guide-note">
-          <span class="guide-note-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24">
-              <path d="M5 4.5h11a2 2 0 0 1 2 2v13H7a2 2 0 0 1-2-2z" />
-              <path d="M7 4.5v15M9.5 8h5M9.5 11h4" />
-            </svg>
-          </span>
-          <span>
-            <strong>12 field guides</strong>
-            <small>Tap any character inside a guide to copy it.</small>
-          </span>
-        </aside>
-      </section>
-
-      <section class="relative z-10 mx-auto mt-10 max-w-5xl" aria-labelledby="language-guides">
-        <div class="section-heading">
-          <div>
-            <p class="coordinate-label text-sm font-black uppercase tracking-[0.2em] text-sky-800 dark:text-[#D1BEA2]">
-              Indexed by destination
-            </p>
-            <h2 id="language-guides" class="mt-1 text-2xl font-black text-stone-900 dark:text-white">
-              Language field guides
-            </h2>
-          </div>
-          <p class="text-sm text-stone-500 dark:text-[#D4C1A4]">Select a card to open its collection</p>
-        </div>
-
-        <div class="guide-grid mt-6">
+        <div class="guide-grid mt-8">
           <NuxtLink
             v-for="(language, index) in languageGuides"
             :key="language.code"
             :to="language.route"
             :aria-label="`Open ${language.englishName} character reference`"
             class="language-guide-card group"
-            :style="{
-              '--card-delay': `${index * 45}ms`,
-              '--card-tilt': `${index % 2 === 0 ? -0.35 : 0.35}deg`,
-            }"
+            :style="{ '--card-delay': `${index * 45}ms` }"
           >
-            <span class="card-index" aria-hidden="true">{{ String(index + 1).padStart(2, '0') }}</span>
-
             <span class="card-heading">
               <span class="flag-frame">
                 <img :src="language.flag" alt="" />
@@ -99,7 +67,7 @@
             <span class="rule-note">{{ language.accentRule }}</span>
 
             <span class="card-footer">
-              <span>Open field guide</span>
+              <span>View characters</span>
               <span class="card-arrow" aria-hidden="true">→</span>
             </span>
           </NuxtLink>
@@ -115,7 +83,7 @@ import { languageMetadata } from '~/data/languageMetadata'
 import { languages } from '~/data/words'
 
 usePageSeo({
-  title: 'Character reference - UpSpell',
+  title: 'Characters - UpSpell',
   description: 'Copy and learn special characters for all 12 languages supported by UpSpell.',
   path: '/reference',
 })
@@ -162,15 +130,12 @@ const languageGuides = computed(() =>
 }
 
 .field-guide-hero h1,
-.guide-intro h2,
-.section-heading h2,
-.language-guide-card strong,
-.guide-note strong {
+.collection-heading h2,
+.language-guide-card strong {
   font-family: 'Source Serif 4', Georgia, serif;
 }
 
 .coordinate-label,
-.card-index,
 .card-footer {
   font-family: 'Overpass Mono', monospace;
 }
@@ -263,68 +228,21 @@ const languageGuides = computed(() =>
   outline-offset: 3px;
 }
 
-.guide-intro {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 2rem;
+.collection-heading {
+  position: relative;
+  border-bottom: 1px solid rgb(120 53 15 / 20%);
+  padding-bottom: 1.25rem;
 }
 
-.guide-note {
-  display: flex;
-  max-width: 19rem;
-  flex-shrink: 0;
-  align-items: center;
-  gap: 0.75rem;
-  border: 1px solid rgb(120 53 15 / 18%);
-  border-radius: 0.45rem;
-  background: rgb(255 251 235 / 72%);
-  padding: 0.9rem;
-  box-shadow: 2px 3px 0 rgb(120 53 15 / 9%);
-  transform: rotate(0.5deg);
-}
-
-.guide-note-icon {
-  display: grid;
-  height: 2.6rem;
-  width: 2.6rem;
-  flex-shrink: 0;
-  place-items: center;
+.collection-heading::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 3px;
+  width: 4.5rem;
   border-radius: 9999px;
-  background: rgb(42 103 110 / 12%);
-  color: rgb(32 91 98);
-}
-
-.guide-note-icon svg {
-  height: 1.35rem;
-  width: 1.35rem;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.5;
-}
-
-.guide-note strong {
-  display: block;
-  color: rgb(41 37 36);
-  font-size: 1rem;
-  font-weight: 800;
-}
-
-.guide-note small {
-  display: block;
-  margin-top: 0.15rem;
-  color: rgb(87 83 78);
-  font-size: 0.72rem;
-  line-height: 1.35;
-}
-
-.section-heading {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 1.5rem;
+  background: rgb(42 103 110);
+  content: '';
 }
 
 .guide-grid {
@@ -346,7 +264,6 @@ const languageGuides = computed(() =>
   box-shadow:
     2px 3px 0 rgb(120 53 15 / 10%),
     inset 0 0 0 2px rgb(255 255 255 / 22%);
-  transform: rotate(var(--card-tilt));
   transition: box-shadow 220ms ease, transform 220ms ease;
   animation: card-arrive 420ms calc(var(--card-delay)) ease both;
 }
@@ -368,21 +285,11 @@ const languageGuides = computed(() =>
   box-shadow:
     4px 7px 0 rgb(120 53 15 / 12%),
     inset 0 0 0 2px rgb(255 255 255 / 22%);
-  transform: rotate(0deg) translateY(-0.25rem);
+  transform: translateY(-0.25rem);
 }
 
 .language-guide-card:hover::before {
   transform: scaleX(1);
-}
-
-.card-index {
-  position: absolute;
-  top: 0.85rem;
-  right: 1rem;
-  color: rgb(120 53 15 / 30%);
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
 }
 
 .card-heading {
@@ -398,12 +305,11 @@ const languageGuides = computed(() =>
   width: 3.75rem;
   flex-shrink: 0;
   place-items: center;
-  border: 1px solid rgb(120 113 108 / 55%);
+  border: 1px solid rgb(139 94 61 / 48%);
   border-radius: 0.25rem;
-  background: white;
+  background: rgb(238 224 193);
   padding: 0.35rem;
   box-shadow: 1px 2px 0 rgb(120 53 15 / 10%);
-  transform: rotate(-1.5deg);
 }
 
 .flag-frame img {
@@ -447,15 +353,6 @@ const languageGuides = computed(() =>
   font-family: 'Source Serif 4', Georgia, serif;
   font-size: 1.55rem;
   font-weight: 700;
-  transition: transform 180ms ease;
-}
-
-.character-specimens span:nth-child(even) {
-  transform: translateY(0.18rem);
-}
-
-.language-guide-card:hover .character-specimens span {
-  transform: translateY(-0.08rem);
 }
 
 .rule-note {
@@ -496,11 +393,11 @@ const languageGuides = computed(() =>
 @keyframes card-arrive {
   from {
     opacity: 0;
-    transform: rotate(var(--card-tilt)) translateY(0.5rem);
+    transform: translateY(0.5rem);
   }
   to {
     opacity: 1;
-    transform: rotate(var(--card-tilt)) translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -540,7 +437,6 @@ html.dark .back-link:hover {
   color: rgb(240 228 207);
 }
 
-html.dark .guide-note,
 html.dark .language-guide-card {
   border-color: rgb(106 74 50);
   background: rgb(56 37 26 / 90%);
@@ -549,29 +445,26 @@ html.dark .language-guide-card {
     inset 0 0 0 2px rgb(196 154 74 / 3%);
 }
 
-html.dark .guide-note-icon {
-  background: rgb(209 190 162 / 12%);
-  color: rgb(209 190 162);
+html.dark .collection-heading {
+  border-bottom-color: rgb(196 154 74 / 16%);
 }
 
-html.dark .guide-note strong,
+html.dark .collection-heading::after {
+  background: rgb(209 190 162);
+}
+
 html.dark .card-heading strong {
   color: rgb(250 244 232);
 }
 
-html.dark .guide-note small,
 html.dark .card-heading small,
 html.dark .rule-note {
   color: rgb(205 187 157);
 }
 
-html.dark .card-index {
-  color: rgb(196 154 74 / 32%);
-}
-
 html.dark .flag-frame {
-  border-color: rgb(139 101 66);
-  background: rgb(40 29 23);
+  border-color: rgb(209 190 162 / 30%);
+  background: rgb(47 33 25);
   box-shadow: 1px 2px 0 rgb(0 0 0 / 20%);
 }
 
@@ -601,17 +494,6 @@ html.dark .card-footer {
     opacity: 0.6;
   }
 
-  .guide-intro,
-  .section-heading {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  .guide-note {
-    max-width: none;
-  }
-
   .guide-grid {
     grid-template-columns: 1fr;
   }
@@ -629,12 +511,11 @@ html.dark .card-footer {
   }
 
   .language-guide-card:hover {
-    transform: rotate(var(--card-tilt));
+    transform: none;
   }
 
   .back-link,
-  .card-arrow,
-  .character-specimens span {
+  .card-arrow {
     transition: none;
   }
 }

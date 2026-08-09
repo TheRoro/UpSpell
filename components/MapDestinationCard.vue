@@ -1,7 +1,7 @@
 <template>
   <button
     type="button"
-    class="destination-card group relative overflow-hidden rounded-2xl border border-amber-900/20 bg-amber-50/80 p-5 text-left shadow-sm transition duration-300 hover:-translate-y-1.5 hover:shadow-xl focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sky-700/40 dark:border-[#6A4A32] dark:bg-[#38251A]"
+    class="destination-card group relative overflow-hidden rounded-2xl border border-amber-900/20 bg-amber-50/80 p-5 text-left focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#6F9692]/45 dark:border-[#6A4A32] dark:bg-[#38251A]"
     :style="{
       '--card-delay': `${index * 55}ms`,
       '--stamp-tilt': `${index % 2 === 0 ? -2 : 2}deg`,
@@ -16,13 +16,14 @@
     />
 
     <span class="flex items-start justify-between gap-4">
-      <span class="flag-frame flex h-14 w-16 shrink-0 items-center justify-center bg-white p-2 shadow-md dark:bg-gray-900">
+      <span class="flag-frame flex h-14 w-16 shrink-0 items-center justify-center bg-[#EEE0C1] p-2 shadow-md dark:bg-[#2F2119]">
         <img :src="flag" alt="" class="h-8 w-12 rounded object-cover shadow-sm" />
       </span>
 
       <span
         v-if="played"
         class="mastery-ring"
+        :class="{ 'mastery-ring-complete': mastery === 100 }"
         :style="{ '--mastery': `${mastery * 3.6}deg` }"
         :aria-label="`${mastery}% accuracy`"
       >
@@ -57,6 +58,7 @@
 
     <span class="card-footer mt-5 flex flex-wrap items-center gap-2 border-t border-solid border-amber-900/20 pt-4 dark:border-[#6A4A32]">
       <span
+        v-if="status !== 'play'"
         class="map-label rounded-md px-3 py-1 text-xs font-black uppercase tracking-wider"
         :class="`map-label-${status}`"
       >
@@ -106,7 +108,18 @@ const actionLabel = computed(() => {
 .destination-card {
   isolation: isolate;
   background-color: rgb(255 248 231);
+  box-shadow:
+    2px 3px 0 rgb(120 53 15 / 10%),
+    inset 0 0 0 2px rgb(255 255 255 / 18%);
+  transition: box-shadow 220ms ease, transform 220ms ease;
   animation: card-arrival 520ms var(--card-delay) cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.destination-card:hover {
+  box-shadow:
+    4px 7px 0 rgb(120 53 15 / 12%),
+    inset 0 0 0 2px rgb(255 255 255 / 18%);
+  transform: translateY(-0.25rem);
 }
 
 .destination-card::after {
@@ -121,14 +134,13 @@ const actionLabel = computed(() => {
 }
 
 .flag-frame {
-  border: 1px solid rgb(148 163 184 / 72%);
+  border: 1px solid rgb(139 94 61 / 48%);
   border-radius: 0.35rem;
-  transform: rotate(var(--stamp-tilt));
   transition: transform 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .destination-card:hover .flag-frame {
-  transform: rotate(0deg) scale(1.08);
+  transform: rotate(var(--stamp-tilt)) scale(1.06);
 }
 
 .destination-name {
@@ -149,11 +161,11 @@ const actionLabel = computed(() => {
 }
 
 .route-accent-play {
-  background: rgb(42 103 110);
+  background: rgb(111 150 146);
 }
 
 .route-accent-completed {
-  background: rgb(55 111 104);
+  background: rgb(53 110 105);
 }
 
 .route-accent-practice {
@@ -167,7 +179,11 @@ const actionLabel = computed(() => {
   flex-shrink: 0;
   place-items: center;
   border-radius: 9999px;
-  background: conic-gradient(rgb(50 78 77) var(--mastery), rgb(214 203 172) 0);
+  background: conic-gradient(rgb(111 150 146) var(--mastery), rgb(214 203 172) 0);
+}
+
+.mastery-ring-complete {
+  background: conic-gradient(rgb(53 110 105) var(--mastery), rgb(214 203 172) 0);
 }
 
 .mastery-ring > span {
@@ -219,7 +235,7 @@ const actionLabel = computed(() => {
 
 .card-field-notes {
   min-height: 6.7rem;
-  border-left: 2px solid rgb(42 103 110 / 28%);
+  border-left: 2px solid rgb(111 150 146 / 38%);
   padding-left: 0.8rem;
 }
 
@@ -239,7 +255,7 @@ const actionLabel = computed(() => {
   border-radius: 0.25rem;
   background: rgb(229 219 187 / 84%);
   padding: 0.2rem 0.4rem;
-  color: rgb(30 78 83);
+  color: rgb(53 110 105);
   font-size: 0.9rem;
   font-weight: 700;
   box-shadow:
@@ -265,12 +281,8 @@ const actionLabel = computed(() => {
   transition: transform 250ms ease;
 }
 
-.map-label-play {
-  color: rgb(32 91 98);
-}
-
 .map-label-completed {
-  color: rgb(39 102 94);
+  color: rgb(42 91 87);
 }
 
 .map-label-practice {
@@ -302,17 +314,35 @@ const actionLabel = computed(() => {
   .map-label {
     transition-duration: 0ms;
   }
+
+  .destination-card:hover,
+  .destination-card:hover .flag-frame {
+    transform: none;
+  }
 }
 </style>
 
 <style>
 html.dark .destination-card {
   background-color: rgb(56 37 26);
+  box-shadow:
+    2px 3px 0 rgb(0 0 0 / 18%),
+    inset 0 0 0 2px rgb(196 154 74 / 3%);
+}
+
+html.dark .destination-card:hover {
+  box-shadow:
+    4px 7px 0 rgb(0 0 0 / 24%),
+    inset 0 0 0 2px rgb(196 154 74 / 3%);
 }
 
 html.dark .destination-card::after {
   border-color: rgb(196 154 74 / 20%);
   box-shadow: inset 0 0 0 2px rgb(196 154 74 / 3%);
+}
+
+html.dark .destination-card .flag-frame {
+  border-color: rgb(209 190 162 / 30%);
 }
 
 html.dark .destination-card .mastery-ring {
@@ -352,10 +382,6 @@ html.dark .destination-card .featured-words {
 html.dark .destination-card .map-label {
   background: rgb(63 46 33);
   box-shadow: 1px 2px 0 rgb(0 0 0 / 18%);
-}
-
-html.dark .destination-card .map-label-play {
-  color: rgb(209 190 162);
 }
 
 html.dark .destination-card .map-label-completed {

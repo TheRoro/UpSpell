@@ -33,7 +33,7 @@
         </div>
       </header>
 
-      <div class="relative mt-6 rounded-xl bg-white/80 p-5 text-center shadow-sm dark:bg-gray-900/60">
+      <div class="feedback-surface relative mt-6 rounded-xl border p-5 text-center">
         <p class="text-xs font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">
           Correct spelling
         </p>
@@ -58,14 +58,14 @@
       </div>
 
       <div class="relative mt-4 grid gap-3 sm:grid-cols-2">
-        <section class="rounded-xl border border-white/70 bg-white/70 p-4 dark:border-gray-700 dark:bg-gray-900/50">
+        <section class="feedback-surface rounded-xl border p-4">
           <h3 class="text-sm font-bold text-gray-900 dark:text-white">Why this character?</h3>
           <p class="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
             {{ accentRule }}
           </p>
         </section>
 
-        <section class="rounded-xl border border-white/70 bg-white/70 p-4 dark:border-gray-700 dark:bg-gray-900/50">
+        <section class="feedback-surface rounded-xl border p-4">
           <h3 class="text-sm font-bold text-gray-900 dark:text-white">Lock it into memory</h3>
           <p class="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
             <strong :lang="languageCode" class="text-gray-900 dark:text-white">{{ word }}</strong>
@@ -76,7 +76,7 @@
 
       <button
         type="button"
-        class="relative mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-gray-900 px-4 py-3 font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-gray-700 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-blue-500/40 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-200"
+        class="pronunciation-button relative mt-4 flex w-full items-center justify-center gap-2 rounded-xl border px-4 py-3 font-bold focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#6F9692]/40"
         @click="$emit('speak')"
       >
         <span class="speaker-icon" aria-hidden="true">🔊</span>
@@ -118,6 +118,32 @@ const wordAfter = computed(() => props.blank.slice(blankIndex.value + 1))
 <style scoped>
 .feedback-card {
   isolation: isolate;
+}
+
+.feedback-surface {
+  border-color: rgb(120 53 15 / 16%);
+  background: rgb(239 225 194 / 72%);
+  box-shadow:
+    2px 3px 0 rgb(120 53 15 / 7%),
+    inset 0 0 0 1px rgb(255 255 255 / 24%);
+}
+
+.pronunciation-button {
+  border-color: rgb(36 82 79 / 74%);
+  background: rgb(53 110 105);
+  box-shadow:
+    3px 5px 0 rgb(35 14 8 / 16%),
+    inset 0 0 0 1px rgb(255 255 255 / 12%);
+  color: rgb(255 250 238);
+  transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.pronunciation-button:hover {
+  background: rgb(44 93 89);
+  box-shadow:
+    4px 6px 0 rgb(35 14 8 / 18%),
+    inset 0 0 0 1px rgb(255 255 255 / 12%);
+  transform: translateY(-0.12rem);
 }
 
 .feedback-card::after {
@@ -269,10 +295,42 @@ const wordAfter = computed(() => props.blank.slice(blankIndex.value + 1))
   .feedback-leave-active {
     transition: opacity 150ms ease;
   }
+
+  .pronunciation-button {
+    transition: none;
+  }
+
+  .pronunciation-button:hover {
+    transform: none;
+  }
 }
 </style>
 
 <style>
+html.dark .feedback-surface {
+  border-color: rgb(209 190 162 / 22%);
+  background: rgb(47 34 25 / 84%);
+  box-shadow:
+    2px 3px 0 rgb(0 0 0 / 16%),
+    inset 0 0 0 1px rgb(209 190 162 / 5%);
+}
+
+html.dark .pronunciation-button {
+  border-color: rgb(130 184 184 / 58%);
+  background: rgb(53 110 105);
+  box-shadow:
+    3px 5px 0 rgb(0 0 0 / 22%),
+    inset 0 0 0 1px rgb(240 228 207 / 9%);
+  color: rgb(255 250 238);
+}
+
+html.dark .pronunciation-button:hover {
+  background: rgb(65 126 121);
+  box-shadow:
+    4px 6px 0 rgb(0 0 0 / 26%),
+    inset 0 0 0 1px rgb(240 228 207 / 9%);
+}
+
 html.dark .answer-chip-wrong {
   background: rgb(136 19 55 / 35%);
   color: rgb(253 164 175);

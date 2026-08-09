@@ -11,9 +11,9 @@
         <p class="coordinate-label text-xs font-black uppercase tracking-[0.28em] text-amber-200">
           UpSpell Language Atlas
         </p>
-        <h1 class="mt-2 text-4xl font-black text-amber-50 sm:text-6xl">Travel Log</h1>
+        <h1 class="mt-2 text-4xl font-black text-amber-50 sm:text-6xl">Stats</h1>
         <p class="mx-auto mt-3 max-w-2xl text-base text-amber-100/85 sm:text-lg">
-          A record of every word discovered, route revisited, and streak carried forward.
+          Review your accuracy, streaks, and progress across every language.
         </p>
       </div>
     </header>
@@ -30,14 +30,9 @@
 
       <section class="relative z-10 mx-auto max-w-5xl" aria-labelledby="expedition-summary">
         <div class="summary-heading">
-          <div>
-            <p class="coordinate-label text-sm font-black uppercase tracking-[0.2em] text-sky-800 dark:text-[#D1BEA2]">
-              Expedition record
-            </p>
-            <h2 id="expedition-summary" class="mt-2 text-3xl font-black text-stone-900 dark:text-white sm:text-4xl">
-              Your discoveries at a glance
-            </h2>
-          </div>
+          <h2 id="expedition-summary" class="text-3xl font-black text-stone-900 dark:text-white sm:text-4xl">
+            Your progress
+          </h2>
           <p class="summary-note">
             Stored privately on this device
           </p>
@@ -101,22 +96,14 @@
 
       <section class="relative z-10 mx-auto mt-12 max-w-5xl" aria-labelledby="route-records">
         <div class="routes-heading">
-          <div>
-            <p class="coordinate-label text-sm font-black uppercase tracking-[0.2em] text-sky-800 dark:text-[#D1BEA2]">
-              Mapped destinations
-            </p>
-            <h2 id="route-records" class="mt-1 text-2xl font-black text-stone-900 dark:text-white">
-              Route records
-            </h2>
-          </div>
-          <p class="text-sm text-stone-500 dark:text-[#D4C1A4]">
-            Accuracy reflects daily discoveries
-          </p>
+          <h2 id="route-records" class="text-2xl font-black text-stone-900 dark:text-white">
+            Language progress
+          </h2>
         </div>
 
         <div v-if="totalPlayed === 0" class="empty-log mt-6">
           <span class="empty-log-mark" aria-hidden="true">⌖</span>
-          <h3>Your travel log is waiting for its first entry.</h3>
+          <h3>Your stats are waiting for their first entry.</h3>
           <p>Choose a destination and complete one daily word to begin charting progress.</p>
           <button type="button" @click="navigateTo('/')">Explore a language</button>
         </div>
@@ -188,7 +175,7 @@ import { getLanguageMetadata } from '~/data/languageMetadata'
 import { languages } from '~/data/words'
 
 usePageSeo({
-  title: 'Your travel log - UpSpell',
+  title: 'Your stats - UpSpell',
   description: 'Review your UpSpell accuracy and spelling streaks across all 12 supported languages.',
   path: '/stats',
 })
@@ -378,21 +365,27 @@ const languagesExplored = computed(() => langStats.value.filter(stat => stat.pla
 
 .summary-heading,
 .routes-heading {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 1.5rem;
+  position: relative;
+  border-bottom: 1px solid rgb(120 53 15 / 20%);
+  padding-bottom: 1.25rem;
+}
+
+.summary-heading::after,
+.routes-heading::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 3px;
+  width: 4.5rem;
+  border-radius: 9999px;
+  background: rgb(42 103 110);
+  content: '';
 }
 
 .summary-note {
-  border-bottom: 1px solid rgb(120 53 15 / 30%);
-  padding: 0.25rem 0;
-  color: rgb(87 65 49);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  transform: rotate(-1deg);
+  margin-top: 0.65rem;
+  color: rgb(87 83 78);
+  font-size: 0.9rem;
 }
 
 .summary-grid {
@@ -509,12 +502,11 @@ const languagesExplored = computed(() => langStats.value.filter(stat => stat.pla
   width: 3.5rem;
   flex-shrink: 0;
   place-items: center;
-  border: 1px solid rgb(120 113 108 / 55%);
+  border: 1px solid rgb(139 94 61 / 48%);
   border-radius: 0.25rem;
-  background: white;
+  background: rgb(238 224 193);
   padding: 0.35rem;
   box-shadow: 1px 2px 0 rgb(120 53 15 / 10%);
-  transform: rotate(-1.5deg);
 }
 
 .flag-frame img {
@@ -553,20 +545,23 @@ const languagesExplored = computed(() => langStats.value.filter(stat => stat.pla
 }
 
 .accuracy-seal > span {
-  display: grid;
+  display: flex;
   height: 2.65rem;
   width: 2.65rem;
-  place-items: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 9999px;
   background: rgb(255 251 235);
   color: rgb(32 91 98);
   font-size: 0.9rem;
   font-weight: 800;
+  line-height: 1;
 }
 
 .accuracy-seal small {
-  display: inline;
+  margin-left: 0.05rem;
   font-size: 0.58rem;
+  transform: translateY(0.08rem);
 }
 
 .uncharted-label {
@@ -727,8 +722,17 @@ html.dark .back-link:hover {
 }
 
 html.dark .summary-note {
-  border-color: rgb(196 154 74 / 30%);
   color: rgb(205 187 157);
+}
+
+html.dark .summary-heading,
+html.dark .routes-heading {
+  border-bottom-color: rgb(196 154 74 / 16%);
+}
+
+html.dark .summary-heading::after,
+html.dark .routes-heading::after {
+  background: rgb(209 190 162);
 }
 
 html.dark .summary-card,
@@ -760,8 +764,8 @@ html.dark .empty-log p {
 }
 
 html.dark .flag-frame {
-  border-color: rgb(139 101 66);
-  background: rgb(40 29 23);
+  border-color: rgb(209 190 162 / 30%);
+  background: rgb(47 33 25);
   box-shadow: 1px 2px 0 rgb(0 0 0 / 20%);
 }
 
@@ -828,13 +832,6 @@ html.dark .empty-log button {
   .hero-compass {
     left: -2rem;
     opacity: 0.6;
-  }
-
-  .summary-heading,
-  .routes-heading {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.65rem;
   }
 
   .summary-grid,
