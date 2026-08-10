@@ -18,6 +18,7 @@
   "dependencies": {
     "canvas-confetti": "^1.9.4",
     "nuxt": "^3.21.11",
+    "nuxt-security": "2.5.1",
     "vue": "^3.5.41",
     "vue-router": "^4.6.4"
   },

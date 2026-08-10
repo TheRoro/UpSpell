@@ -36,10 +36,49 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    'nuxt-security',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
     '@vite-pwa/nuxt',
   ],
+
+  security: {
+    strict: true,
+    headers: {
+      contentSecurityPolicy: {
+        'base-uri': ["'none'"],
+        'connect-src': ["'self'"],
+        'default-src': ["'none'"],
+        'font-src': ["'self'"],
+        'form-action': ["'self'"],
+        'frame-ancestors': ["'none'"],
+        'frame-src': ["'none'"],
+        'img-src': ["'self'", 'data:'],
+        'manifest-src': ["'self'"],
+        'media-src': ["'self'"],
+        'object-src': ["'none'"],
+        'script-src': ["'self'", "'strict-dynamic'", "'nonce-{{nonce}}'"],
+        'script-src-attr': ["'none'"],
+        'style-src': ["'self'", "'unsafe-inline'"],
+        'upgrade-insecure-requests': true,
+        'worker-src': ["'self'"],
+      },
+      permissionsPolicy: {
+        camera: [],
+        'display-capture': [],
+        fullscreen: [],
+        geolocation: [],
+        microphone: [],
+      },
+      referrerPolicy: 'strict-origin-when-cross-origin',
+      xContentTypeOptions: 'nosniff',
+      xFrameOptions: 'DENY',
+    },
+    requestSizeLimiter: false,
+    rateLimiter: false,
+    xssValidator: false,
+    corsHandler: false,
+  },
 
   pwa: {
     registerType: 'autoUpdate',
