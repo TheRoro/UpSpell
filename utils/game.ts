@@ -7,26 +7,75 @@ export interface StorageLike {
   setItem(key: string, value: string): void
 }
 
-export function getUtcDayKey(date = new Date()): string {
-  return date.toISOString().slice(0, 10)
+function formatDayKey(year: number, month: number, day: number): string {
+  return [
+    String(year).padStart(4, '0'),
+    String(month).padStart(2, '0'),
+    String(day).padStart(2, '0'),
+  ].join('-')
 }
 
-export function getPreviousUtcDayKey(dayKey: string): string {
-  const date = new Date(`${dayKey}T00:00:00.000Z`)
-  return getUtcDayKey(new Date(date.getTime() - DAY_MS))
+function parseDayKey(dayKey: string): [number, number, number] | null {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dayKey)
+  if (!match) return null
+
+  const year = Number(match[1])
+  const month = Number(match[2])
+  const day = Number(match[3])
+  const date = new Date(Date.UTC(year, month - 1, day))
+  if (
+    date.getUTCFullYear() !== year ||
+    date.getUTCMonth() !== month - 1 ||
+    date.getUTCDate() !== day
+  ) {
+    return null
+  }
+  return [year, month, day]
+}
+
+export function getLocalDayKey(date = new Date()): string {
+  return formatDayKey(
+    date.getFullYear(),
+    date.getMonth() + 1,
+    date.getDate(),
+  )
+}
+
+export function getPreviousLocalDayKey(dayKey: string): string {
+  const parts = parseDayKey(dayKey)
+  if (!parts) return ''
+
+  const previous = new Date(Date.UTC(
+    parts[0],
+    parts[1] - 1,
+    parts[2] - 1,
+  ))
+  return formatDayKey(
+    previous.getUTCFullYear(),
+    previous.getUTCMonth() + 1,
+    previous.getUTCDate(),
+  )
 }
 
 export function getDailyIndex(wordCount: number, date = new Date()): number {
+  return getDailyIndexForDayKey(wordCount, getLocalDayKey(date))
+}
+
+export function getDailyIndexForDayKey(
+  wordCount: number,
+  dayKey: string,
+): number {
   if (!Number.isInteger(wordCount) || wordCount <= 0) {
     throw new Error('wordCount must be a positive integer')
   }
-  const epochDay = Math.floor(
-    Date.UTC(
-      date.getUTCFullYear(),
-      date.getUTCMonth(),
-      date.getUTCDate(),
-    ) / DAY_MS,
-  )
+  const parts = parseDayKey(dayKey)
+  if (!parts) throw new Error('dayKey must use YYYY-MM-DD format')
+
+  const epochDay = Math.floor(Date.UTC(
+    parts[0],
+    parts[1] - 1,
+    parts[2],
+  ) / DAY_MS)
   return ((epochDay % wordCount) + wordCount) % wordCount
 }
 
@@ -73,7 +122,19 @@ export function nextStreak(
 ): number {
   if (!correct) return 0
   if (lastPlayed === today) return currentStreak
-  return lastPlayed === getPreviousUtcDayKey(today) ? currentStreak + 1 : 1
+  return lastPlayed === getPreviousLocalDayKey(today) ? currentStreak + 1 : 1
+}
+
+export function getActiveStreak(
+  currentStreak: number,
+  lastPlayed: string | null,
+  today: string,
+): number {
+  if (!Number.isFinite(currentStreak) || currentStreak <= 0) return 0
+  if (lastPlayed === today || lastPlayed === getPreviousLocalDayKey(today)) {
+    return currentStreak
+  }
+  return 0
 }
 
 export function parseStoredCount(value: string | null): number {

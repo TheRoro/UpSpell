@@ -1,9 +1,11 @@
 import { describe, expect, it } from 'vitest'
 import {
   addMissedWord,
+  getActiveStreak,
   getDailyIndex,
-  getPreviousUtcDayKey,
-  getUtcDayKey,
+  getDailyIndexForDayKey,
+  getLocalDayKey,
+  getPreviousLocalDayKey,
   nextStreak,
   parseStoredCount,
   readMissedWords,
@@ -19,22 +21,26 @@ const word = {
   meaning: 'coffee',
 }
 
-describe('UTC daily game', () => {
-  it('changes days only at the documented UTC boundary', () => {
-    expect(getUtcDayKey(new Date('2025-05-10T23:59:59.999Z'))).toBe('2025-05-10')
-    expect(getUtcDayKey(new Date('2025-05-11T00:00:00.000Z'))).toBe('2025-05-11')
-    expect(getPreviousUtcDayKey('2025-01-01')).toBe('2024-12-31')
+describe('local daily game', () => {
+  it('changes days at the user’s local midnight', () => {
+    expect(getLocalDayKey(new Date(2025, 4, 10, 23, 59, 59, 999))).toBe('2025-05-10')
+    expect(getLocalDayKey(new Date(2025, 4, 11, 0, 0, 0, 0))).toBe('2025-05-11')
+    expect(getPreviousLocalDayKey('2025-01-01')).toBe('2024-12-31')
+    expect(getPreviousLocalDayKey('not-a-date')).toBe('')
   })
 
-  it('selects one stable word index per UTC day', () => {
-    expect(getDailyIndex(365, new Date('2025-02-01T01:00:00Z'))).toBe(
-      getDailyIndex(365, new Date('2025-02-01T23:00:00Z')),
+  it('selects one stable word index per local day', () => {
+    expect(getDailyIndex(365, new Date(2025, 1, 1, 1))).toBe(
+      getDailyIndex(365, new Date(2025, 1, 1, 23)),
     )
-    expect(getDailyIndex(365, new Date('2025-02-02T01:00:00Z'))).not.toBe(
-      getDailyIndex(365, new Date('2025-02-01T23:00:00Z')),
+    expect(getDailyIndex(365, new Date(2025, 1, 2, 1))).not.toBe(
+      getDailyIndex(365, new Date(2025, 1, 1, 23)),
     )
-    expect(getDailyIndex(365, new Date('2024-12-31T12:00:00Z'))).not.toBe(
-      getDailyIndex(365, new Date('2025-01-01T12:00:00Z')),
+    expect(getDailyIndex(365, new Date(2024, 11, 31, 12))).not.toBe(
+      getDailyIndex(365, new Date(2025, 0, 1, 12)),
+    )
+    expect(getDailyIndexForDayKey(365, '2025-02-01')).toBe(
+      getDailyIndexForDayKey(365, '2025-02-01'),
     )
   })
 
@@ -59,6 +65,13 @@ describe('UTC daily game', () => {
     expect(nextStreak(4, '2025-05-08', '2025-05-10', true)).toBe(1)
     expect(nextStreak(4, '2025-05-09', '2025-05-10', false)).toBe(0)
     expect(nextStreak(4, '2025-05-10', '2025-05-10', true)).toBe(4)
+  })
+
+  it('expires current streaks after a missed local day', () => {
+    expect(getActiveStreak(4, '2025-05-10', '2025-05-10')).toBe(4)
+    expect(getActiveStreak(4, '2025-05-09', '2025-05-10')).toBe(4)
+    expect(getActiveStreak(4, '2025-05-08', '2025-05-10')).toBe(0)
+    expect(getActiveStreak(4, null, '2025-05-10')).toBe(0)
   })
 })
 

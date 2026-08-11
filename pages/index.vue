@@ -178,13 +178,13 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import { languages, type Word } from '~/data/words'
 import { getLanguageMetadata } from '~/data/languageMetadata'
 import {
   addMissedWord,
-  getDailyIndex,
-  getUtcDayKey,
+  getActiveStreak,
+  getDailyIndexForDayKey,
   nextStreak,
   parseStoredCount,
   readMissedWords,
@@ -214,6 +214,7 @@ const speechStatus = ref('')
 const announcement = ref('')
 const progressRevision = ref(0)
 const progressReady = ref(false)
+const currentDayKey = useLocalDayKey()
 
 interface LanguageProgress {
   status: 'play' | 'completed' | 'practice'
@@ -258,7 +259,10 @@ const todayWord = computed(() => {
   if (practiceMode.value) {
     return practiceWord.value
   }
-  const idx = getDailyIndex(currentLangData.value.words.length)
+  const idx = getDailyIndexForDayKey(
+    currentLangData.value.words.length,
+    currentDayKey.value,
+  )
   return currentLangData.value.words[idx]
 })
 
@@ -271,7 +275,7 @@ const shuffledChoices = computed(() => {
   if (!todayWord.value || !selectedLang.value) return []
   const mode = practiceMode.value
     ? `practice:${practiceAttempt.value}`
-    : getUtcDayKey()
+    : currentDayKey.value
   return shuffleChoices(
     todayWord.value.choices,
     `${mode}:${selectedLang.value}:${todayWord.value.word}`,
@@ -297,7 +301,7 @@ const languageProgress = computed<Record<string, LanguageProgress>>(() => {
     const played = parseStoredCount(storageGet(`upspell-played-${language.code}`))
     const won = parseStoredCount(storageGet(`upspell-won-${language.code}`))
     const missed = readMissedWords(storageGet(getMissedKey(language.code))).length
-    const playedToday = storageGet(getLastPlayedKey(language.code)) === getUtcDayKey()
+    const playedToday = storageGet(getLastPlayedKey(language.code)) === currentDayKey.value
     const wonToday = storageGet(`upspell-correct-${language.code}`) === '1'
     return [language.code, {
       status: !playedToday ? 'play' : wonToday ? 'completed' : 'practice',
@@ -330,6 +334,13 @@ onMounted(() => {
   progressRevision.value++
 })
 
+watch(currentDayKey, () => {
+  progressRevision.value++
+  if (selectedLang.value && !practiceMode.value) {
+    selectLanguage(selectedLang.value)
+  }
+})
+
 function getStreakKey(code: string) {
   return `upspell-streak-${code}`
 }
@@ -340,7 +351,11 @@ function getLastPlayedKey(code: string) {
 
 function getStreak(code: string): number {
   if (!import.meta.client) return 0
-  return parseStoredCount(storageGet(getStreakKey(code)))
+  return getActiveStreak(
+    parseStoredCount(storageGet(getStreakKey(code))),
+    storageGet(getLastPlayedKey(code)),
+    currentDayKey.value,
+  )
 }
 
 function selectLanguage(code: string) {
@@ -355,7 +370,7 @@ function selectLanguage(code: string) {
   missedWords.value = readMissedWords(storageGet(getMissedKey(code)))
 
   const lastPlayed = storageGet(getLastPlayedKey(code))
-  if (lastPlayed === getUtcDayKey()) {
+  if (lastPlayed === currentDayKey.value) {
     answered.value = true
     const savedCorrect = storageGet(`upspell-correct-${code}`)
     correct.value = savedCorrect === '1'
@@ -388,7 +403,7 @@ function guess(choice: string) {
     return
   }
 
-  const today = getUtcDayKey()
+  const today = currentDayKey.value
   const lastPlayed = storageGet(getLastPlayedKey(code))
   currentStreak.value = nextStreak(
     currentStreak.value,
@@ -426,7 +441,7 @@ async function shareResult() {
   const flag = langFlags[selectedLang.value || ''] || '🌍'
   const result = correct.value ? '✅' : '❌'
   const streak = currentStreak.value > 0 ? ` 🔥${currentStreak.value}` : ''
-  const label = practiceMode.value ? 'Practice' : getUtcDayKey()
+  const label = practiceMode.value ? 'Practice' : currentDayKey.value
   const text = `UpSpell ${flag} ${label}\n${result}${streak}\nhttps://upspell.vercel.app`
 
   const copied = await copyText(text)

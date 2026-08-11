@@ -170,9 +170,10 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import { getLanguageMetadata } from '~/data/languageMetadata'
 import { languages } from '~/data/words'
+import { getActiveStreak, parseStoredCount } from '~/utils/game'
 
 usePageSeo({
   title: 'Your stats - UpSpell',
@@ -193,8 +194,9 @@ interface LangStat {
 }
 
 const langStats = ref<LangStat[]>([])
+const currentDayKey = useLocalDayKey()
 
-onMounted(() => {
+function loadStats() {
   langStats.value = languages.map((language) => {
     const played = readCount(`upspell-played-${language.code}`)
     const won = readCount(`upspell-won-${language.code}`)
@@ -208,18 +210,28 @@ onMounted(() => {
       played,
       won,
       accuracy: played > 0 ? Math.round((won / played) * 100) : 0,
-      currentStreak: readCount(`upspell-streak-${language.code}`),
+      currentStreak: getActiveStreak(
+        readCount(`upspell-streak-${language.code}`),
+        readValue(`upspell-lastplayed-${language.code}`),
+        currentDayKey.value,
+      ),
       bestStreak: readCount(`upspell-best-${language.code}`),
     }
   })
-})
+}
+
+onMounted(loadStats)
+watch(currentDayKey, loadStats)
 
 function readCount(key: string): number {
+  return parseStoredCount(readValue(key))
+}
+
+function readValue(key: string): string | null {
   try {
-    const value = Number.parseInt(localStorage.getItem(key) ?? '', 10)
-    return Number.isFinite(value) && value >= 0 ? value : 0
+    return localStorage.getItem(key)
   } catch {
-    return 0
+    return null
   }
 }
 
