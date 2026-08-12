@@ -1,24 +1,14 @@
 <template>
-  <div class="atlas-page min-h-screen">
+  <AtlasPageShell>
     <p class="sr-only" role="status" aria-live="polite">{{ announcement }}</p>
 
-    <header class="atlas-hero">
-      <div class="atlas-route-line" aria-hidden="true" />
-      <div class="atlas-compass" aria-hidden="true">
-        <span>N</span>
-        <strong>✦</strong>
-      </div>
-      <div class="relative mx-auto max-w-5xl px-6 py-10 text-center sm:py-14">
-        <p class="text-xs font-black uppercase tracking-[0.28em] text-amber-200">UpSpell Language Atlas</p>
-        <h1 class="mt-2 text-4xl font-black text-amber-50 sm:text-6xl">Explore words through spelling and sound.</h1>
-        <p class="mx-auto mt-3 max-w-2xl text-base text-amber-100/85 sm:text-lg">
-          Choose a language, discover today’s word, and chart what you learn.
-        </p>
-      </div>
-    </header>
+    <AtlasHero
+      title="Explore words through spelling and sound."
+      subtitle="Choose a language, discover today’s word, and chart what you learn."
+    />
 
     <!-- Language map -->
-    <main v-if="!selectedLang" class="atlas-map mx-auto my-6 max-w-6xl px-5 py-8 sm:my-10 sm:px-10 sm:py-10">
+    <AtlasPanel v-if="!selectedLang" class="mx-auto my-6 max-w-6xl px-5 py-8 sm:my-10 sm:px-10 sm:py-10">
       <section class="relative z-10 mx-auto max-w-5xl">
         <div class="destinations-heading mb-8">
           <div>
@@ -45,136 +35,38 @@
         </div>
       </section>
 
-      <nav class="relative z-10 mx-auto mt-8 grid max-w-5xl gap-4 sm:grid-cols-2" aria-label="UpSpell resources">
-        <button
-          class="resource-card group border border-amber-900/20 bg-amber-50/85 dark:border-[#6A4A32] dark:bg-[#38251A]"
-          @click="navigateTo('/stats')"
-        >
-          <span class="resource-icon bg-sky-100 text-sky-800 dark:bg-sky-900/60 dark:text-[#F0E4CF]" aria-hidden="true">⌁</span>
-          <span>
-            <strong class="text-stone-900 dark:text-white">Stats</strong>
-            <small class="text-stone-500 dark:text-[#CDBB9D]">Review accuracy, streaks, and past discoveries</small>
-          </span>
-          <span class="resource-arrow" aria-hidden="true">→</span>
-        </button>
-        <button
-          class="resource-card group border border-amber-900/20 bg-amber-50/85 dark:border-[#6A4A32] dark:bg-[#38251A]"
-          @click="navigateTo('/reference')"
-        >
-          <span class="resource-icon bg-red-100 text-red-800 dark:bg-red-900/60 dark:text-red-300" aria-hidden="true">á</span>
-          <span>
-            <strong class="text-stone-900 dark:text-white">Characters</strong>
-            <small class="text-stone-500 dark:text-[#CDBB9D]">Study and copy special characters</small>
-          </span>
-          <span class="resource-arrow" aria-hidden="true">→</span>
-        </button>
-      </nav>
-    </main>
+      <AtlasResourceNavigation class="relative z-10 mx-auto mt-8 max-w-5xl" />
+    </AtlasPanel>
 
     <!-- Field challenge -->
-    <main v-else class="field-sheet mx-auto my-6 max-w-xl px-6 py-8 sm:my-10 sm:px-10">
-      <button
-        class="relative z-10 mb-6 flex items-center gap-2 font-medium text-stone-600 transition-colors hover:text-sky-800 dark:text-[#E8D8BC] dark:hover:text-[#F0E4CF]"
-        @click="goBack"
-      >
-        ← Back to the map
-      </button>
-
-      <div class="field-note-card relative z-10 rounded-2xl border border-amber-900/20 bg-amber-50/90 p-8 shadow-lg dark:border-[#6A4A32] dark:bg-[#38251A]">
-        <!-- Streak -->
-        <div class="flex justify-between items-center mb-6">
-          <span class="entry-label text-sm text-gray-500 dark:text-[#E2C99A]">
-            Field note · {{ currentLangData?.name }} · {{ practiceMode ? 'Revisit' : 'Daily word' }}
-          </span>
-          <span class="text-sm bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 px-3 py-1 rounded-full font-medium">
-            🔥 Streak: {{ currentStreak }}
-          </span>
-        </div>
-
-        <!-- Word display -->
-        <div class="text-center mb-8">
-          <p class="text-5xl font-bold text-gray-800 dark:text-white tracking-wide mb-4">
-            <span v-for="(segment, i) in wordSegments" :key="i">
-              <span v-if="segment === '_'" class="inline-block w-8 border-b-4 border-blue-500 dark:border-blue-400 mx-0.5"
-                :class="{
-                  'answer-letter border-green-500 text-green-600 dark:border-green-400 dark:text-green-400': answered && correct,
-                  'answer-letter border-red-500 text-red-600 dark:border-red-400 dark:text-red-400': answered && !correct,
-                }"
-              >{{ answered ? selectedChoice || todayWord?.choices[0] : '\u00a0' }}</span>
-              <span v-else>{{ segment }}</span>
-            </span>
-          </p>
-          <p class="text-gray-500 dark:text-[#D7C3A3] text-lg italic">{{ todayWord?.meaning }}</p>
-        </div>
-
-        <!-- Choices -->
-        <div v-if="!answered" class="grid grid-cols-2 gap-3">
-          <button
-            v-for="choice in shuffledChoices"
-            :key="choice"
-            class="choice-marker rounded-xl border-2 border-solid border-stone-300 bg-white py-4 text-2xl dark:border-[#8B6542] dark:bg-[#4A3122]
-                   hover:border-sky-700 dark:hover:border-[#82B8B8] hover:bg-sky-50 dark:hover:bg-[#533A29]
-                   transition-all duration-150 font-bold text-gray-800 dark:text-white"
-            @click="guess(choice)"
-          >
-            {{ choice }}
-          </button>
-        </div>
-
-        <!-- Result -->
-        <div v-else class="text-center">
-          <AnswerFeedback
-            v-if="todayWord"
-            :word="todayWord.word"
-            :blank="todayWord.blank"
-            :meaning="todayWord.meaning"
-            :correct-choice="todayWord.choices[0]"
-            :selected-choice="selectedChoice"
-            :correct="correct"
-            :accent-rule="selectedMetadata.accentRule"
-            :language-code="selectedLang || 'en'"
-            :language-name="selectedMetadata.englishName"
-            :speech-status="speechStatus"
-            @speak="speakWord"
-          />
-
-          <!-- Share button -->
-          <button
-            class="share-discovery mt-6 rounded-lg px-6 py-3 font-bold focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#6F9692]/40"
-            @click="shareResult"
-          >
-            {{ shareText }}
-          </button>
-
-          <p v-if="!practiceMode" class="text-gray-600 dark:text-[#D7C3A3] mt-4">
-            Come back tomorrow for a new word!
-          </p>
-
-          <div class="mt-6 flex flex-wrap justify-center gap-4">
-            <button
-              v-if="practiceMode && missedWords.length"
-              type="button"
-              class="text-sm font-medium text-purple-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 dark:text-[#D1BEA2]"
-              @click="practiceAnother"
-            >
-              Practice another missed word
-            </button>
-            <button
-              v-else-if="!practiceMode && missedWords.length"
-              type="button"
-              class="text-sm font-medium text-purple-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 dark:text-[#D1BEA2]"
-              @click="startPractice"
-            >
-              Practice missed words ({{ missedWords.length }})
-            </button>
-            <p v-else-if="practiceMode" class="text-sm font-medium text-purple-700 dark:text-[#D1BEA2]">
-              You cleared every missed word!
-            </p>
-          </div>
-        </div>
-      </div>
-    </main>
-  </div>
+    <DailyChallenge
+      v-else-if="todayWord && selectedLang"
+      :language-name="currentLangData?.name || selectedMetadata.name"
+      :english-language-name="selectedMetadata.englishName"
+      :language-code="selectedLang"
+      :practice-mode="practiceMode"
+      :current-streak="currentStreak"
+      :word="todayWord.word"
+      :blank="todayWord.blank"
+      :meaning="todayWord.meaning"
+      :correct-choice="todayWord.choices[0]"
+      :word-segments="wordSegments"
+      :choices="shuffledChoices"
+      :answered="answered"
+      :selected-choice="selectedChoice"
+      :correct="correct"
+      :accent-rule="selectedMetadata.accentRule"
+      :speech-status="speechStatus"
+      :share-text="shareText"
+      :missed-count="missedWords.length"
+      @back="goBack"
+      @guess="guess"
+      @speak="speakWord"
+      @share="shareResult"
+      @practice-another="practiceAnother"
+      @start-practice="startPractice"
+    />
+  </AtlasPageShell>
 </template>
 
 <script setup lang="ts">
@@ -541,132 +433,6 @@ function speakWord() {
 </script>
 
 <style scoped>
-.atlas-page {
-  display: flow-root;
-  background-color: rgb(139 74 47);
-  background-image:
-    radial-gradient(circle at 20% 18%, rgb(255 239 208 / 7%) 0 0.7px, transparent 1px),
-    radial-gradient(circle at 72% 63%, rgb(45 18 9 / 22%) 0 0.8px, transparent 1px),
-    repeating-linear-gradient(22deg, transparent 0 8px, rgb(255 239 208 / 1.8%) 9px, transparent 10px 17px),
-    repeating-linear-gradient(94deg, transparent 0 12px, rgb(54 22 12 / 2.5%) 13px, transparent 14px 23px),
-    linear-gradient(135deg, rgb(157 91 56), rgb(102 48 31));
-  background-size: 8px 10px, 11px 9px, auto, auto, auto;
-  box-shadow:
-    inset 8px 0 16px rgb(30 8 16 / 20%),
-    inset -8px 0 16px rgb(30 8 16 / 20%);
-}
-
-.atlas-hero h1,
-.atlas-page h2,
-.atlas-page .entry-label,
-.atlas-page .resource-card strong {
-  font-family: 'Source Serif 4', Georgia, serif;
-}
-
-.atlas-hero {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  border-bottom: 5px double rgb(217 179 106);
-  background:
-    radial-gradient(ellipse at 20% 15%, rgb(255 239 208 / 10%) 0, transparent 24%),
-    radial-gradient(ellipse at 80% 85%, rgb(45 18 9 / 24%) 0, transparent 32%),
-    repeating-linear-gradient(18deg, transparent 0 5px, rgb(255 239 208 / 2.2%) 6px, transparent 7px 13px),
-    linear-gradient(135deg, rgb(137 75 47), rgb(70 31 21));
-  box-shadow: inset 0 -12px 28px rgb(34 14 10 / 22%);
-}
-
-.atlas-hero::after {
-  position: absolute;
-  inset: 0.65rem;
-  z-index: -1;
-  border: 1px dashed rgb(232 204 145 / 38%);
-  border-radius: 0.4rem;
-  content: '';
-}
-
-.atlas-route-line {
-  position: absolute;
-  left: 8%;
-  top: 68%;
-  width: 84%;
-  border-top: 2px dashed rgb(253 230 138 / 22%);
-  transform: rotate(-2deg);
-}
-
-.atlas-compass {
-  position: absolute;
-  top: 50%;
-  left: 8%;
-  display: grid;
-  height: 6rem;
-  width: 6rem;
-  place-items: center;
-  border: 1px solid rgb(255 237 190 / 18%);
-  border-radius: 9999px;
-  color: rgb(255 237 190 / 32%);
-  transform: translateY(-50%) rotate(-12deg);
-}
-
-.atlas-compass::before,
-.atlas-compass::after {
-  position: absolute;
-  background: currentColor;
-  content: '';
-}
-
-.atlas-compass::before {
-  height: 120%;
-  width: 1px;
-}
-
-.atlas-compass::after {
-  height: 1px;
-  width: 120%;
-}
-
-.atlas-compass span {
-  position: absolute;
-  top: 0.35rem;
-  font-size: 0.65rem;
-  font-weight: 800;
-}
-
-.atlas-compass strong {
-  font-size: 1.5rem;
-}
-
-.atlas-map,
-.field-sheet {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  border: 1px solid rgb(146 64 14 / 30%);
-  border-radius: 0.45rem;
-  background-color: rgb(243 226 189);
-  background-image:
-    radial-gradient(circle at 20% 18%, rgb(255 255 255 / 45%), transparent 30%),
-    linear-gradient(135deg, rgb(255 245 220), rgb(231 207 161));
-  box-shadow:
-    0 24px 55px rgb(35 14 8 / 38%),
-    inset 0 0 38px rgb(120 53 15 / 12%);
-}
-
-.atlas-map::after,
-.field-sheet::after {
-  position: absolute;
-  inset: 0.75rem;
-  z-index: 4;
-  border: 1px solid rgb(57 75 74 / 22%);
-  box-shadow: inset 0 0 0 3px rgb(163 75 60 / 5%);
-  content: '';
-  pointer-events: none;
-}
-
-.field-sheet {
-  max-width: 38rem;
-}
-
 .destinations-heading {
   position: relative;
   border-bottom: 1px solid rgb(120 53 15 / 20%);
@@ -682,69 +448,6 @@ function speakWord() {
   border-radius: 9999px;
   background: rgb(42 103 110);
   content: '';
-}
-
-.field-note-card {
-  isolation: isolate;
-}
-
-.field-note-card::after {
-  position: absolute;
-  inset: 0.65rem;
-  z-index: -1;
-  border: 1px dashed rgb(120 53 15 / 22%);
-  border-radius: 0.7rem;
-  content: '';
-  pointer-events: none;
-}
-
-.choice-marker:hover,
-.choice-marker:focus-visible {
-  transform: translateY(-0.15rem);
-}
-
-.share-discovery {
-  border: 1px solid rgb(53 110 105 / 72%);
-  background: rgb(238 224 193);
-  box-shadow:
-    3px 5px 0 rgb(120 53 15 / 13%),
-    inset 0 0 0 2px rgb(255 255 255 / 26%);
-  color: rgb(36 78 77);
-  transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
-}
-
-.share-discovery:hover {
-  background: rgb(230 213 178);
-  box-shadow:
-    4px 6px 0 rgb(120 53 15 / 16%),
-    inset 0 0 0 2px rgb(255 255 255 / 26%);
-  transform: translateY(-0.12rem);
-}
-
-html.dark .share-discovery {
-  border-color: rgb(111 150 146 / 70%);
-  background: rgb(47 33 25);
-  box-shadow:
-    3px 5px 0 rgb(0 0 0 / 24%),
-    inset 0 0 0 2px rgb(209 190 162 / 5%);
-  color: rgb(240 228 207);
-}
-
-html.dark .share-discovery:hover {
-  background: rgb(58 42 31);
-  box-shadow:
-    4px 6px 0 rgb(0 0 0 / 28%),
-    inset 0 0 0 2px rgb(209 190 162 / 5%);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .share-discovery {
-    transition: none;
-  }
-
-  .share-discovery:hover {
-    transform: none;
-  }
 }
 
 .passport-cover-stage {
@@ -1058,117 +761,7 @@ html.dark .share-discovery:hover {
   pointer-events: none;
 }
 
-.entry-label {
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.choice-stamp:nth-child(odd) {
-  transform: rotate(-0.7deg);
-}
-
-.choice-stamp:nth-child(even) {
-  transform: rotate(0.7deg);
-}
-
-.choice-stamp:hover,
-.choice-stamp:focus-visible {
-  transform: rotate(0deg) translateY(-0.15rem);
-}
-
-.share-stamp {
-  transform: rotate(-1deg);
-}
-
-.answer-letter {
-  animation: answer-letter-pop 480ms cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-@keyframes answer-letter-pop {
-  0% {
-    opacity: 0;
-    transform: translateY(-0.75rem) scale(1.5);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .answer-letter {
-    animation: none;
-  }
-
-  .choice-stamp,
-  .share-stamp {
-    transform: none;
-  }
-}
-
-.resource-card {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 1rem;
-  border-radius: 1rem;
-  padding: 1.25rem;
-  text-align: left;
-  box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
-  transition: transform 250ms ease, box-shadow 250ms ease;
-}
-
-.resource-card:hover {
-  transform: translateY(-0.2rem);
-  box-shadow: 0 12px 24px rgb(15 23 42 / 10%);
-}
-
-.resource-card:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 4px rgb(59 130 246 / 35%);
-}
-
-.resource-icon {
-  display: flex;
-  height: 3rem;
-  width: 3rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.75rem;
-  font-size: 1.25rem;
-  font-weight: 900;
-}
-
-.resource-card strong,
-.resource-card small {
-  display: block;
-}
-
-.resource-card strong {
-  font-size: 1rem;
-}
-
-.resource-card small {
-  margin-top: 0.2rem;
-  font-size: 0.75rem;
-}
-
-.resource-arrow {
-  color: rgb(156 163 175);
-  transition: transform 250ms ease;
-}
-
-.resource-card:hover .resource-arrow {
-  transform: translateX(0.25rem);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .resource-card,
-  .resource-arrow {
-    transition-duration: 0ms;
-  }
-
   .passport-unfold-enter-active,
   .passport-unfold-leave-active {
     transition: opacity 150ms ease;
@@ -1177,38 +770,12 @@ html.dark .share-discovery:hover {
 </style>
 
 <style>
-html.dark .atlas-page {
-  background-color: rgb(58 36 26);
-  background-image:
-    radial-gradient(circle at 20% 18%, rgb(196 154 74 / 4%) 0 0.7px, transparent 1px),
-    radial-gradient(circle at 72% 63%, rgb(0 0 0 / 25%) 0 0.8px, transparent 1px),
-    repeating-linear-gradient(22deg, transparent 0 8px, rgb(196 154 74 / 1.5%) 9px, transparent 10px 17px),
-    linear-gradient(135deg, rgb(73 45 31), rgb(41 27 21));
-  background-size: 8px 10px, 11px 9px, auto, auto;
-}
-
-html.dark .atlas-page .atlas-hero {
-  background:
-    radial-gradient(circle at 50% 125%, rgb(95 143 145 / 24%), transparent 48%),
-    linear-gradient(135deg, rgb(35 65 65), rgb(20 42 46));
-}
-
-html.dark .atlas-page .atlas-map,
-html.dark .atlas-page .field-sheet {
-  border-color: rgb(251 191 36 / 18%);
-  background-color: rgb(43 27 20);
-  background-image:
-    radial-gradient(circle at 20% 18%, rgb(139 101 66 / 10%), transparent 30%),
-    linear-gradient(135deg, rgb(56 37 26), rgb(43 27 20));
-  box-shadow: 0 24px 55px rgb(0 0 0 / 48%), inset 0 0 38px rgb(0 0 0 / 18%);
-}
-
-html.dark .atlas-page .destinations-heading {
+html.dark .destinations-heading {
   border-bottom-color: rgb(196 154 74 / 16%);
 }
 
-html.dark .atlas-page .destinations-heading::after {
-  background: rgb(209 190 162);
+html.dark .destinations-heading::after {
+  background: var(--atlas-accent-strong);
 }
 
 html.dark .passport-page {
@@ -1240,17 +807,6 @@ html.dark .passport-page .passport-spread {
 }
 
 @media (max-width: 639px) {
-  .atlas-compass {
-    left: -2rem;
-    opacity: 0.6;
-  }
-
-  .atlas-map,
-  .field-sheet {
-    margin-right: 0.65rem;
-    margin-left: 0.65rem;
-  }
-
   .passport-spread {
     margin-right: 0.65rem;
     margin-left: 0.65rem;

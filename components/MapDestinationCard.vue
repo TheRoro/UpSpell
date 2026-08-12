@@ -107,10 +107,9 @@ const actionLabel = computed(() => {
 <style scoped>
 .destination-card {
   isolation: isolate;
-  background-color: rgb(255 248 231);
-  box-shadow:
-    2px 3px 0 rgb(120 53 15 / 10%),
-    inset 0 0 0 2px rgb(255 255 255 / 18%);
+  border-color: var(--atlas-card-border);
+  background-color: var(--atlas-card);
+  box-shadow: var(--atlas-card-shadow);
   transition: box-shadow 220ms ease, transform 220ms ease;
   animation: card-arrival 520ms var(--card-delay) cubic-bezier(0.16, 1, 0.3, 1) both;
 }
@@ -161,11 +160,11 @@ const actionLabel = computed(() => {
 }
 
 .route-accent-play {
-  background: rgb(111 150 146);
+  background: var(--atlas-accent);
 }
 
 .route-accent-completed {
-  background: rgb(53 110 105);
+  background: var(--atlas-accent-strong);
 }
 
 .route-accent-practice {
@@ -179,11 +178,11 @@ const actionLabel = computed(() => {
   flex-shrink: 0;
   place-items: center;
   border-radius: 9999px;
-  background: conic-gradient(rgb(111 150 146) var(--mastery), rgb(214 203 172) 0);
+  background: conic-gradient(var(--atlas-accent) var(--mastery), var(--atlas-route-track) 0);
 }
 
 .mastery-ring-complete {
-  background: conic-gradient(rgb(53 110 105) var(--mastery), rgb(214 203 172) 0);
+  background: conic-gradient(var(--atlas-accent-strong) var(--mastery), var(--atlas-route-track) 0);
 }
 
 .mastery-ring > span {
@@ -324,10 +323,8 @@ const actionLabel = computed(() => {
 
 <style>
 html.dark .destination-card {
-  background-color: rgb(56 37 26);
-  box-shadow:
-    2px 3px 0 rgb(0 0 0 / 18%),
-    inset 0 0 0 2px rgb(196 154 74 / 3%);
+  background-color: var(--atlas-card);
+  box-shadow: var(--atlas-card-shadow);
 }
 
 html.dark .destination-card:hover {

@@ -1,32 +1,17 @@
 <template>
-  <div class="field-guide-page min-h-screen">
-    <header class="field-guide-hero">
-      <div class="hero-route-line" aria-hidden="true" />
-      <div class="hero-compass" aria-hidden="true">
-        <span>N</span>
-        <strong>✦</strong>
-      </div>
+  <AtlasPageShell>
+    <AtlasHero
+      title="Characters"
+      subtitle="Browse special characters for every language."
+    />
 
-      <div class="relative mx-auto max-w-5xl px-6 py-10 text-center sm:py-14">
-        <p class="coordinate-label text-xs font-black uppercase tracking-[0.28em] text-amber-200">
-          UpSpell Language Atlas
-        </p>
-        <h1 class="mt-2 text-4xl font-black text-amber-50 sm:text-6xl">Characters</h1>
-        <p class="mx-auto mt-3 max-w-2xl text-base text-amber-100/85 sm:text-lg">
-          Browse special characters for every language.
-        </p>
-      </div>
-    </header>
-
-    <main class="field-guide mx-auto my-6 max-w-6xl px-5 py-8 sm:my-10 sm:px-10 sm:py-10">
-      <button
-        type="button"
-        class="back-link relative z-10 mb-8 inline-flex items-center gap-2 font-bold"
-        @click="navigateTo('/')"
-      >
-        <span aria-hidden="true">←</span>
-        Back to the map
-      </button>
+    <AtlasPanel class="mx-auto my-6 max-w-6xl px-5 py-8 sm:my-10 sm:px-10 sm:py-10">
+      <AtlasNavigation
+        class="mb-8"
+        back-label="Back to the map"
+        back-to="/"
+        label="Character collection navigation"
+      />
 
       <section class="relative z-10 mx-auto max-w-5xl" aria-labelledby="language-guides">
         <div class="collection-heading">
@@ -73,8 +58,8 @@
           </NuxtLink>
         </div>
       </section>
-    </main>
-  </div>
+    </AtlasPanel>
+  </AtlasPageShell>
 </template>
 
 <script setup lang="ts">
@@ -102,34 +87,6 @@ const languageGuides = computed(() =>
 </script>
 
 <style scoped>
-.field-guide-page {
-  display: flow-root;
-  background-color: rgb(139 74 47);
-  background-image:
-    radial-gradient(circle at 20% 18%, rgb(255 239 208 / 7%) 0 0.7px, transparent 1px),
-    radial-gradient(circle at 72% 63%, rgb(45 18 9 / 22%) 0 0.8px, transparent 1px),
-    repeating-linear-gradient(22deg, transparent 0 8px, rgb(255 239 208 / 1.8%) 9px, transparent 10px 17px),
-    repeating-linear-gradient(94deg, transparent 0 12px, rgb(54 22 12 / 2.5%) 13px, transparent 14px 23px),
-    linear-gradient(135deg, rgb(157 91 56), rgb(102 48 31));
-  background-size: 8px 10px, 11px 9px, auto, auto, auto;
-  box-shadow:
-    inset 8px 0 16px rgb(30 8 16 / 20%),
-    inset -8px 0 16px rgb(30 8 16 / 20%);
-}
-
-.field-guide-hero {
-  position: relative;
-  overflow: hidden;
-  border-bottom: 5px double rgb(217 179 106);
-  background:
-    radial-gradient(ellipse at 20% 15%, rgb(255 239 208 / 10%) 0, transparent 24%),
-    radial-gradient(ellipse at 80% 85%, rgb(45 18 9 / 24%) 0, transparent 32%),
-    repeating-linear-gradient(18deg, transparent 0 5px, rgb(255 239 208 / 2.2%) 6px, transparent 7px 13px),
-    linear-gradient(135deg, rgb(137 75 47), rgb(70 31 21));
-  box-shadow: inset 0 -12px 28px rgb(34 14 10 / 22%);
-}
-
-.field-guide-hero h1,
 .collection-heading h2,
 .language-guide-card strong {
   font-family: 'Source Serif 4', Georgia, serif;
@@ -140,91 +97,9 @@ const languageGuides = computed(() =>
   font-family: 'Overpass Mono', monospace;
 }
 
-.hero-route-line {
-  position: absolute;
-  top: 50%;
-  left: -5%;
-  width: 110%;
-  border-top: 1px dashed rgb(255 237 190 / 22%);
-  transform: rotate(-3deg);
-}
-
-.hero-compass {
-  position: absolute;
-  top: 50%;
-  left: 8%;
-  display: grid;
-  height: 6rem;
-  width: 6rem;
-  place-items: center;
-  border: 1px solid rgb(255 237 190 / 18%);
-  border-radius: 9999px;
-  color: rgb(255 237 190 / 32%);
-  transform: translateY(-50%) rotate(-12deg);
-}
-
-.hero-compass::before,
-.hero-compass::after {
-  position: absolute;
-  background: currentColor;
-  content: '';
-}
-
-.hero-compass::before {
-  height: 120%;
-  width: 1px;
-}
-
-.hero-compass::after {
-  height: 1px;
-  width: 120%;
-}
-
-.hero-compass span {
-  position: absolute;
-  top: 0.35rem;
-  font-size: 0.65rem;
-  font-weight: 800;
-}
-
-.hero-compass strong {
-  font-size: 1.5rem;
-}
-
-.field-guide {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgb(120 53 15 / 24%);
-  border-radius: 0.65rem;
-  background: rgb(244 235 207);
-  box-shadow:
-    0 16px 40px rgb(38 14 8 / 24%),
-    inset 0 0 50px rgb(120 53 15 / 8%);
-}
-
-.field-guide::before {
-  position: absolute;
-  inset: 0.65rem;
-  border: 1px solid rgb(120 53 15 / 16%);
-  border-radius: 0.35rem;
-  content: '';
-  pointer-events: none;
-}
-
-.back-link {
-  color: rgb(87 65 49);
-  transition: color 180ms ease, transform 180ms ease;
-}
-
-.back-link:hover {
-  color: rgb(32 91 98);
-  transform: translateX(-0.2rem);
-}
-
-.back-link:focus-visible,
 .language-guide-card:focus-visible {
   border-radius: 0.35rem;
-  outline: 3px solid rgb(42 103 110 / 45%);
+  outline: 3px solid var(--atlas-focus);
   outline-offset: 3px;
 }
 
@@ -401,42 +276,6 @@ const languageGuides = computed(() =>
   }
 }
 
-html.dark .field-guide-page {
-  background-color: rgb(58 36 26);
-  background-image:
-    radial-gradient(circle at 20% 18%, rgb(196 154 74 / 4%) 0 0.7px, transparent 1px),
-    radial-gradient(circle at 72% 63%, rgb(0 0 0 / 25%) 0 0.8px, transparent 1px),
-    repeating-linear-gradient(22deg, transparent 0 8px, rgb(196 154 74 / 1.5%) 9px, transparent 10px 17px),
-    linear-gradient(135deg, rgb(73 45 31), rgb(41 27 21));
-  background-size: 8px 10px, 11px 9px, auto, auto;
-}
-
-html.dark .field-guide-hero {
-  background:
-    radial-gradient(circle at 50% 125%, rgb(95 143 145 / 24%), transparent 48%),
-    linear-gradient(135deg, rgb(35 65 65), rgb(20 42 46));
-}
-
-html.dark .field-guide {
-  border-color: rgb(106 74 50);
-  background: rgb(47 32 24);
-  box-shadow:
-    0 16px 40px rgb(0 0 0 / 34%),
-    inset 0 0 50px rgb(0 0 0 / 16%);
-}
-
-html.dark .field-guide::before {
-  border-color: rgb(196 154 74 / 16%);
-}
-
-html.dark .back-link {
-  color: rgb(232 216 188);
-}
-
-html.dark .back-link:hover {
-  color: rgb(240 228 207);
-}
-
 html.dark .language-guide-card {
   border-color: rgb(106 74 50);
   background: rgb(56 37 26 / 90%);
@@ -489,11 +328,6 @@ html.dark .card-footer {
 }
 
 @media (max-width: 640px) {
-  .hero-compass {
-    left: -2rem;
-    opacity: 0.6;
-  }
-
   .guide-grid {
     grid-template-columns: 1fr;
   }
@@ -514,7 +348,6 @@ html.dark .card-footer {
     transform: none;
   }
 
-  .back-link,
   .card-arrow {
     transition: none;
   }

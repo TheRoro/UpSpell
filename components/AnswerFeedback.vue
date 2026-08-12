@@ -121,7 +121,7 @@ const wordAfter = computed(() => props.blank.slice(blankIndex.value + 1))
 }
 
 .feedback-surface {
-  border-color: rgb(120 53 15 / 16%);
+  border-color: var(--atlas-card-border);
   background: rgb(239 225 194 / 72%);
   box-shadow:
     2px 3px 0 rgb(120 53 15 / 7%),
@@ -130,7 +130,7 @@ const wordAfter = computed(() => props.blank.slice(blankIndex.value + 1))
 
 .pronunciation-button {
   border-color: rgb(36 82 79 / 74%);
-  background: rgb(53 110 105);
+  background: var(--atlas-accent-strong);
   box-shadow:
     3px 5px 0 rgb(35 14 8 / 16%),
     inset 0 0 0 1px rgb(255 255 255 / 12%);

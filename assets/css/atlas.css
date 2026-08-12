@@ -1,0 +1,83 @@
+:root {
+  --atlas-page-base: rgb(139 74 47);
+  --atlas-page-background:
+    radial-gradient(circle at 20% 18%, rgb(255 239 208 / 7%) 0 0.7px, transparent 1px),
+    radial-gradient(circle at 72% 63%, rgb(45 18 9 / 22%) 0 0.8px, transparent 1px),
+    repeating-linear-gradient(22deg, transparent 0 8px, rgb(255 239 208 / 1.8%) 9px, transparent 10px 17px),
+    repeating-linear-gradient(94deg, transparent 0 12px, rgb(54 22 12 / 2.5%) 13px, transparent 14px 23px),
+    linear-gradient(135deg, rgb(157 91 56), rgb(102 48 31));
+  --atlas-page-background-size: 8px 10px, 11px 9px, auto, auto, auto;
+  --atlas-page-shadow:
+    inset 8px 0 16px rgb(30 8 16 / 20%),
+    inset -8px 0 16px rgb(30 8 16 / 20%);
+  --atlas-hero-background:
+    radial-gradient(ellipse at 20% 15%, rgb(255 239 208 / 10%) 0, transparent 24%),
+    radial-gradient(ellipse at 80% 85%, rgb(45 18 9 / 24%) 0, transparent 32%),
+    repeating-linear-gradient(18deg, transparent 0 5px, rgb(255 239 208 / 2.2%) 6px, transparent 7px 13px),
+    linear-gradient(135deg, rgb(137 75 47), rgb(70 31 21));
+  --atlas-gold: rgb(217 179 106);
+  --atlas-panel: rgb(244 235 207);
+  --atlas-panel-gradient:
+    radial-gradient(circle at 20% 18%, rgb(255 255 255 / 45%), transparent 30%),
+    linear-gradient(135deg, rgb(255 245 220), rgb(231 207 161));
+  --atlas-panel-border: rgb(120 53 15 / 24%);
+  --atlas-panel-inner-border: rgb(120 53 15 / 16%);
+  --atlas-card: rgb(255 251 235 / 80%);
+  --atlas-card-border: rgb(120 53 15 / 18%);
+  --atlas-card-shadow:
+    2px 3px 0 rgb(120 53 15 / 10%),
+    inset 0 0 0 2px rgb(255 255 255 / 22%);
+  --atlas-panel-shadow:
+    0 20px 48px rgb(35 14 8 / 32%),
+    inset 0 0 42px rgb(120 53 15 / 10%);
+  --atlas-text: rgb(41 37 36);
+  --atlas-muted: rgb(87 83 78);
+  --atlas-link: rgb(87 65 49);
+  --atlas-accent: rgb(111 150 146);
+  --atlas-accent-strong: rgb(53 110 105);
+  --atlas-accent-text: rgb(32 91 98);
+  --atlas-focus: rgb(42 103 110 / 45%);
+  --atlas-flag-background: rgb(238 224 193);
+  --atlas-route-track: rgb(214 203 172);
+  --atlas-radius-panel: 0.65rem;
+  --atlas-radius-card: 0.55rem;
+}
+
+html.dark {
+  --atlas-page-base: rgb(58 36 26);
+  --atlas-page-background:
+    radial-gradient(circle at 20% 18%, rgb(196 154 74 / 4%) 0 0.7px, transparent 1px),
+    radial-gradient(circle at 72% 63%, rgb(0 0 0 / 25%) 0 0.8px, transparent 1px),
+    repeating-linear-gradient(22deg, transparent 0 8px, rgb(196 154 74 / 1.5%) 9px, transparent 10px 17px),
+    linear-gradient(135deg, rgb(73 45 31), rgb(41 27 21));
+  --atlas-page-background-size: 8px 10px, 11px 9px, auto, auto;
+  --atlas-page-shadow:
+    inset 8px 0 16px rgb(0 0 0 / 20%),
+    inset -8px 0 16px rgb(0 0 0 / 20%);
+  --atlas-hero-background:
+    radial-gradient(circle at 50% 125%, rgb(95 143 145 / 24%), transparent 48%),
+    linear-gradient(135deg, rgb(35 65 65), rgb(20 42 46));
+  --atlas-panel: rgb(47 32 24);
+  --atlas-panel-gradient:
+    radial-gradient(circle at 20% 18%, rgb(139 101 66 / 10%), transparent 30%),
+    linear-gradient(135deg, rgb(56 37 26), rgb(43 27 20));
+  --atlas-panel-border: rgb(106 74 50);
+  --atlas-panel-inner-border: rgb(196 154 74 / 16%);
+  --atlas-card: rgb(56 37 26 / 88%);
+  --atlas-card-border: rgb(106 74 50);
+  --atlas-card-shadow:
+    2px 3px 0 rgb(0 0 0 / 18%),
+    inset 0 0 0 2px rgb(196 154 74 / 3%);
+  --atlas-panel-shadow:
+    0 20px 48px rgb(0 0 0 / 42%),
+    inset 0 0 42px rgb(0 0 0 / 16%);
+  --atlas-text: rgb(250 244 232);
+  --atlas-muted: rgb(205 187 157);
+  --atlas-link: rgb(232 216 188);
+  --atlas-accent: rgb(180 157 120);
+  --atlas-accent-strong: rgb(209 190 162);
+  --atlas-accent-text: rgb(240 228 207);
+  --atlas-focus: rgb(209 190 162 / 55%);
+  --atlas-flag-background: rgb(47 33 25);
+  --atlas-route-track: rgb(83 62 45);
+}

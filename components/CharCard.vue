@@ -49,13 +49,11 @@ async function copyChar() {
   grid-template-rows: 1fr auto auto 1fr;
   justify-items: center;
   overflow: hidden;
-  border: 1px solid rgb(120 53 15 / 18%);
+  border: 1px solid var(--atlas-card-border);
   border-radius: 0.65rem;
-  background: rgb(255 251 235 / 84%);
+  background: var(--atlas-card);
   padding: 1.5rem 1.25rem;
-  box-shadow:
-    2px 3px 0 rgb(120 53 15 / 10%),
-    inset 0 0 0 2px rgb(255 255 255 / 18%);
+  box-shadow: var(--atlas-card-shadow);
   transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
 }
 
@@ -65,7 +63,7 @@ async function copyChar() {
   right: 0;
   left: 0;
   height: 0.22rem;
-  background: rgb(111 150 146);
+  background: var(--atlas-accent);
   content: '';
   transform: scaleX(0);
   transform-origin: left;
@@ -137,15 +135,13 @@ async function copyChar() {
 }
 
 html.dark .character-card {
-  border-color: rgb(106 74 50);
-  background: rgb(56 37 26);
-  box-shadow:
-    2px 3px 0 rgb(0 0 0 / 18%),
-    inset 0 0 0 2px rgb(196 154 74 / 3%);
+  border-color: var(--atlas-card-border);
+  background: var(--atlas-card);
+  box-shadow: var(--atlas-card-shadow);
 }
 
 html.dark .character-card::before {
-  background: rgb(209 190 162);
+  background: var(--atlas-accent-strong);
 }
 
 html.dark .character-card:hover {

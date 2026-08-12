@@ -1,102 +1,30 @@
 <template>
-  <div class="travel-log-page min-h-screen">
-    <header class="travel-log-hero">
-      <div class="hero-route-line" aria-hidden="true" />
-      <div class="hero-compass" aria-hidden="true">
-        <span>N</span>
-        <strong>✦</strong>
-      </div>
+  <AtlasPageShell>
+    <AtlasHero
+      title="Stats"
+      subtitle="Review your accuracy, streaks, and progress across every language."
+    />
 
-      <div class="relative mx-auto max-w-5xl px-6 py-10 text-center sm:py-14">
-        <p class="coordinate-label text-xs font-black uppercase tracking-[0.28em] text-amber-200">
-          UpSpell Language Atlas
-        </p>
-        <h1 class="mt-2 text-4xl font-black text-amber-50 sm:text-6xl">Stats</h1>
-        <p class="mx-auto mt-3 max-w-2xl text-base text-amber-100/85 sm:text-lg">
-          Review your accuracy, streaks, and progress across every language.
-        </p>
-      </div>
-    </header>
+    <AtlasPanel class="mx-auto my-6 max-w-6xl px-5 py-8 sm:my-10 sm:px-10 sm:py-10">
+      <AtlasNavigation
+        class="mb-8"
+        back-label="Back to the map"
+        back-to="/"
+        label="Stats navigation"
+      />
 
-    <main class="logbook mx-auto my-6 max-w-6xl px-5 py-8 sm:my-10 sm:px-10 sm:py-10">
-      <button
-        type="button"
-        class="back-link relative z-10 mb-8 inline-flex items-center gap-2 font-bold"
-        @click="navigateTo('/')"
-      >
-        <span aria-hidden="true">←</span>
-        Back to the map
-      </button>
-
-      <section class="relative z-10 mx-auto max-w-5xl" aria-labelledby="expedition-summary">
-        <div class="summary-heading">
-          <h2 id="expedition-summary" class="text-3xl font-black text-stone-900 dark:text-white sm:text-4xl">
-            Your progress
-          </h2>
-          <p class="summary-note">
-            Stored privately on this device
-          </p>
-        </div>
-
-        <div class="summary-grid mt-7">
-          <article class="summary-card">
-            <span class="summary-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path d="M5 4.5h11a2 2 0 0 1 2 2v13H7a2 2 0 0 1-2-2z" />
-                <path d="M7 4.5v15M9.5 8h5M9.5 11h4" />
-              </svg>
-            </span>
-            <span>
-              <strong>{{ totalPlayed }}</strong>
-              <small>Words explored</small>
-            </span>
-          </article>
-
-          <article class="summary-card">
-            <span class="summary-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="8" />
-                <path d="M8.5 12.5l2.2 2.2 4.8-5.2" />
-              </svg>
-            </span>
-            <span>
-              <strong>{{ accuracy }}%</strong>
-              <small>Overall accuracy</small>
-            </span>
-          </article>
-
-          <article class="summary-card">
-            <span class="summary-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path d="M12 3.5c.7 3.5 4.2 4.5 4.2 8.4a4.2 4.2 0 0 1-8.4 0c0-2.2 1.2-3.8 2.7-5.3.1 2 1 3.1 1.5 3.5.8-1.8.5-4.2 0-6.6z" />
-              </svg>
-            </span>
-            <span>
-              <strong>{{ overallBestStreak }}</strong>
-              <small>Best streak</small>
-            </span>
-          </article>
-
-          <article class="summary-card">
-            <span class="summary-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path d="M4 18.5c4.5-1 5.5-5 8-7s4.5-1 8-6" />
-                <circle cx="4" cy="18.5" r="1.5" />
-                <circle cx="12" cy="11.5" r="1.5" />
-                <circle cx="20" cy="5.5" r="1.5" />
-              </svg>
-            </span>
-            <span>
-              <strong>{{ languagesExplored }}<em>/{{ langStats.length }}</em></strong>
-              <small>Routes charted</small>
-            </span>
-          </article>
-        </div>
-      </section>
+      <StatsSummary
+        class="mx-auto max-w-5xl"
+        :total-played="totalPlayed"
+        :accuracy="accuracy"
+        :overall-best-streak="overallBestStreak"
+        :languages-explored="languagesExplored"
+        :language-count="langStats.length"
+      />
 
       <section class="relative z-10 mx-auto mt-12 max-w-5xl" aria-labelledby="route-records">
         <div class="routes-heading">
-          <h2 id="route-records" class="text-2xl font-black text-stone-900 dark:text-white">
+          <h2 id="route-records" class="text-2xl font-black">
             Language progress
           </h2>
         </div>
@@ -109,64 +37,16 @@
         </div>
 
         <div v-else class="route-grid mt-6">
-          <article
+          <LanguageProgressCard
             v-for="(stat, index) in langStats"
             :key="stat.code"
-            class="route-card"
-            :class="{ 'route-card-uncharted': stat.played === 0 }"
-            :style="{ '--card-delay': `${index * 45}ms` }"
-          >
-            <div class="route-card-header">
-              <span class="flag-frame">
-                <img :src="stat.flag" alt="" />
-              </span>
-              <span class="min-w-0">
-                <strong :lang="stat.code">{{ stat.name }}</strong>
-                <small>{{ stat.englishName }}</small>
-              </span>
-              <span v-if="stat.played === 0" class="uncharted-label">Uncharted</span>
-              <span
-                v-else
-                class="accuracy-seal"
-                :style="{ '--accuracy': `${stat.accuracy * 3.6}deg` }"
-                :aria-label="`${stat.accuracy}% accuracy in ${stat.englishName}`"
-              >
-                <span>{{ stat.accuracy }}<small>%</small></span>
-              </span>
-            </div>
-
-            <div class="route-progress">
-              <div class="route-progress-label">
-                <span>{{ stat.played }} {{ stat.played === 1 ? 'word' : 'words' }} explored</span>
-                <span>{{ stat.won }} correct</span>
-              </div>
-              <div
-                class="route-progress-track"
-                role="progressbar"
-                :aria-label="`${stat.englishName} accuracy`"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                :aria-valuenow="stat.accuracy"
-              >
-                <span :style="{ width: `${stat.accuracy}%` }" />
-              </div>
-            </div>
-
-            <dl class="route-details">
-              <div>
-                <dt>Current streak</dt>
-                <dd>{{ stat.currentStreak }} <span aria-hidden="true">🔥</span></dd>
-              </div>
-              <div>
-                <dt>Best streak</dt>
-                <dd>{{ stat.bestStreak }}</dd>
-              </div>
-            </dl>
-          </article>
+            v-bind="stat"
+            :index="index"
+          />
         </div>
       </section>
-    </main>
-  </div>
+    </AtlasPanel>
+  </AtlasPageShell>
 </template>
 
 <script setup lang="ts">
@@ -243,146 +123,12 @@ const languagesExplored = computed(() => langStats.value.filter(stat => stat.pla
 </script>
 
 <style scoped>
-.travel-log-page {
-  display: flow-root;
-  background-color: rgb(139 74 47);
-  background-image:
-    radial-gradient(circle at 20% 18%, rgb(255 239 208 / 7%) 0 0.7px, transparent 1px),
-    radial-gradient(circle at 72% 63%, rgb(45 18 9 / 22%) 0 0.8px, transparent 1px),
-    repeating-linear-gradient(22deg, transparent 0 8px, rgb(255 239 208 / 1.8%) 9px, transparent 10px 17px),
-    repeating-linear-gradient(94deg, transparent 0 12px, rgb(54 22 12 / 2.5%) 13px, transparent 14px 23px),
-    linear-gradient(135deg, rgb(157 91 56), rgb(102 48 31));
-  background-size: 8px 10px, 11px 9px, auto, auto, auto;
-  box-shadow:
-    inset 8px 0 16px rgb(30 8 16 / 20%),
-    inset -8px 0 16px rgb(30 8 16 / 20%);
-}
-
-.travel-log-hero {
-  position: relative;
-  overflow: hidden;
-  border-bottom: 5px double rgb(217 179 106);
-  background:
-    radial-gradient(ellipse at 20% 15%, rgb(255 239 208 / 10%) 0, transparent 24%),
-    radial-gradient(ellipse at 80% 85%, rgb(45 18 9 / 24%) 0, transparent 32%),
-    repeating-linear-gradient(18deg, transparent 0 5px, rgb(255 239 208 / 2.2%) 6px, transparent 7px 13px),
-    linear-gradient(135deg, rgb(137 75 47), rgb(70 31 21));
-  box-shadow: inset 0 -12px 28px rgb(34 14 10 / 22%);
-}
-
-.travel-log-hero h1,
-.summary-heading h2,
-.routes-heading h2,
-.summary-card strong,
-.route-card-header strong,
-.empty-log h3 {
-  font-family: 'Source Serif 4', Georgia, serif;
-}
-
-.coordinate-label,
-.summary-note,
-.route-progress-label,
-.route-details,
-.uncharted-label {
-  font-family: 'Overpass Mono', monospace;
-}
-
-.hero-route-line {
-  position: absolute;
-  top: 50%;
-  left: -5%;
-  width: 110%;
-  border-top: 1px dashed rgb(255 237 190 / 22%);
-  transform: rotate(-3deg);
-}
-
-.hero-compass {
-  position: absolute;
-  top: 50%;
-  left: 8%;
-  display: grid;
-  height: 6rem;
-  width: 6rem;
-  place-items: center;
-  border: 1px solid rgb(255 237 190 / 18%);
-  border-radius: 9999px;
-  color: rgb(255 237 190 / 32%);
-  transform: translateY(-50%) rotate(-12deg);
-}
-
-.hero-compass::before,
-.hero-compass::after {
-  position: absolute;
-  background: currentColor;
-  content: '';
-}
-
-.hero-compass::before {
-  height: 120%;
-  width: 1px;
-}
-
-.hero-compass::after {
-  height: 1px;
-  width: 120%;
-}
-
-.hero-compass span {
-  position: absolute;
-  top: 0.35rem;
-  font-size: 0.65rem;
-  font-weight: 800;
-}
-
-.hero-compass strong {
-  font-size: 1.5rem;
-}
-
-.logbook {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgb(120 53 15 / 24%);
-  border-radius: 0.65rem;
-  background: rgb(244 235 207);
-  box-shadow:
-    0 16px 40px rgb(38 14 8 / 24%),
-    inset 0 0 50px rgb(120 53 15 / 8%);
-}
-
-.logbook::before {
-  position: absolute;
-  inset: 0.65rem;
-  border: 1px solid rgb(120 53 15 / 16%);
-  border-radius: 0.35rem;
-  content: '';
-  pointer-events: none;
-}
-
-.back-link {
-  color: rgb(87 65 49);
-  transition: color 180ms ease, transform 180ms ease;
-}
-
-.back-link:hover {
-  color: rgb(32 91 98);
-  transform: translateX(-0.2rem);
-}
-
-.back-link:focus-visible,
-.empty-log button:focus-visible {
-  border-radius: 0.25rem;
-  outline: 3px solid rgb(42 103 110 / 45%);
-  outline-offset: 3px;
-}
-
-.summary-heading,
 .routes-heading {
   position: relative;
-  border-bottom: 1px solid rgb(120 53 15 / 20%);
+  border-bottom: 1px solid var(--atlas-panel-inner-border);
   padding-bottom: 1.25rem;
 }
 
-.summary-heading::after,
 .routes-heading::after {
   position: absolute;
   bottom: -2px;
@@ -390,78 +136,14 @@ const languagesExplored = computed(() => langStats.value.filter(stat => stat.pla
   height: 3px;
   width: 4.5rem;
   border-radius: 9999px;
-  background: rgb(42 103 110);
+  background: var(--atlas-accent-strong);
   content: '';
 }
 
-.summary-note {
-  margin-top: 0.65rem;
-  color: rgb(87 83 78);
-  font-size: 0.9rem;
-}
-
-.summary-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.85rem;
-}
-
-.summary-card {
-  display: flex;
-  min-width: 0;
-  align-items: center;
-  gap: 0.8rem;
-  border: 1px solid rgb(120 53 15 / 18%);
-  border-radius: 0.45rem;
-  background: rgb(255 251 235 / 76%);
-  padding: 1rem;
-  box-shadow:
-    2px 3px 0 rgb(120 53 15 / 10%),
-    inset 0 0 0 2px rgb(255 255 255 / 24%);
-}
-
-.summary-icon {
-  display: grid;
-  height: 2.75rem;
-  width: 2.75rem;
-  flex-shrink: 0;
-  place-items: center;
-  border-radius: 9999px;
-  background: rgb(42 103 110 / 12%);
-  color: rgb(32 91 98);
-}
-
-.summary-icon svg {
-  height: 1.45rem;
-  width: 1.45rem;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.5;
-}
-
-.summary-card strong {
-  display: block;
-  color: rgb(41 37 36);
-  font-size: clamp(1.6rem, 3vw, 2.15rem);
-  font-weight: 800;
-  line-height: 1;
-}
-
-.summary-card strong em {
-  color: rgb(120 113 108);
-  font-family: 'Overpass', sans-serif;
-  font-size: 0.8rem;
-  font-style: normal;
-}
-
-.summary-card small {
-  display: block;
-  margin-top: 0.35rem;
-  color: rgb(87 83 78);
-  font-size: 0.75rem;
-  font-weight: 700;
+.routes-heading h2,
+.empty-log h3 {
+  color: var(--atlas-text);
+  font-family: 'Source Serif 4', Georgia, serif;
 }
 
 .route-grid {
@@ -470,185 +152,13 @@ const languagesExplored = computed(() => langStats.value.filter(stat => stat.pla
   gap: 1rem 2.5rem;
 }
 
-.route-card {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgb(120 53 15 / 18%);
-  border-radius: 0.55rem;
-  background: rgb(255 251 235 / 80%);
-  padding: 1.15rem;
-  box-shadow:
-    2px 3px 0 rgb(120 53 15 / 9%),
-    inset 0 0 0 2px rgb(255 255 255 / 20%);
-  animation: card-arrive 420ms calc(var(--card-delay)) ease both;
-}
-
-.route-card::before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 0.22rem;
-  background: rgb(42 103 110);
-  content: '';
-}
-
-.route-card-uncharted {
-  opacity: 0.72;
-}
-
-.route-card-uncharted::before {
-  background: rgb(120 113 108);
-}
-
-.route-card-header {
-  display: flex;
-  min-height: 3.75rem;
-  align-items: center;
-  gap: 0.8rem;
-}
-
-.flag-frame {
-  display: grid;
-  height: 2.8rem;
-  width: 3.5rem;
-  flex-shrink: 0;
-  place-items: center;
-  border: 1px solid rgb(139 94 61 / 48%);
-  border-radius: 0.25rem;
-  background: rgb(238 224 193);
-  padding: 0.35rem;
-  box-shadow: 1px 2px 0 rgb(120 53 15 / 10%);
-}
-
-.flag-frame img {
-  height: 1.8rem;
-  width: 2.7rem;
-  border-radius: 0.15rem;
-  object-fit: cover;
-}
-
-.route-card-header strong {
-  display: block;
-  overflow: hidden;
-  color: rgb(41 37 36);
-  font-size: 1.15rem;
-  font-weight: 800;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.route-card-header small {
-  display: block;
-  margin-top: 0.1rem;
-  color: rgb(87 83 78);
-  font-size: 0.75rem;
-}
-
-.accuracy-seal {
-  display: grid;
-  height: 3.35rem;
-  width: 3.35rem;
-  flex-shrink: 0;
-  place-items: center;
-  margin-left: auto;
-  border-radius: 9999px;
-  background: conic-gradient(rgb(42 103 110) var(--accuracy), rgb(214 203 172) 0);
-}
-
-.accuracy-seal > span {
-  display: flex;
-  height: 2.65rem;
-  width: 2.65rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9999px;
-  background: rgb(255 251 235);
-  color: rgb(32 91 98);
-  font-size: 0.9rem;
-  font-weight: 800;
-  line-height: 1;
-}
-
-.accuracy-seal small {
-  margin-left: 0.05rem;
-  font-size: 0.58rem;
-  transform: translateY(0.08rem);
-}
-
-.uncharted-label {
-  margin-left: auto;
-  border-bottom: 1px solid rgb(120 53 15 / 30%);
-  color: rgb(120 53 15 / 65%);
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.route-progress {
-  margin-top: 1rem;
-}
-
-.route-progress-label {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  color: rgb(87 65 49);
-  font-size: 0.66rem;
-}
-
-.route-progress-track {
-  height: 0.42rem;
-  overflow: hidden;
-  margin-top: 0.45rem;
-  border-radius: 9999px;
-  background: rgb(214 203 172);
-}
-
-.route-progress-track span {
-  display: block;
-  height: 100%;
-  border-radius: inherit;
-  background: linear-gradient(90deg, rgb(32 91 98), rgb(74 130 128));
-  transition: width 600ms ease;
-}
-
-.route-details {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-top: 1rem;
-  border-top: 1px solid rgb(120 53 15 / 16%);
-  padding-top: 0.8rem;
-}
-
-.route-details > div + div {
-  border-left: 1px solid rgb(120 53 15 / 16%);
-  padding-left: 1rem;
-}
-
-.route-details dt {
-  color: rgb(120 113 108);
-  font-size: 0.62rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.route-details dd {
-  margin-top: 0.2rem;
-  color: rgb(68 64 60);
-  font-family: 'Source Serif 4', Georgia, serif;
-  font-size: 1.1rem;
-  font-weight: 800;
-}
-
 .empty-log {
-  border: 1px solid rgb(120 53 15 / 20%);
-  border-radius: 0.55rem;
-  background: rgb(255 251 235 / 76%);
+  border: 1px solid var(--atlas-card-border);
+  border-radius: var(--atlas-radius-card);
+  background: var(--atlas-card);
   padding: 2.5rem 1.5rem;
   text-align: center;
-  box-shadow: 2px 3px 0 rgb(120 53 15 / 9%);
+  box-shadow: var(--atlas-card-shadow);
 }
 
 .empty-log-mark {
@@ -657,15 +167,14 @@ const languagesExplored = computed(() => langStats.value.filter(stat => stat.pla
   width: 3.5rem;
   place-items: center;
   margin: 0 auto;
-  border: 1px solid rgb(42 103 110 / 30%);
+  border: 1px solid var(--atlas-focus);
   border-radius: 9999px;
-  color: rgb(32 91 98);
+  color: var(--atlas-accent-text);
   font-size: 1.5rem;
 }
 
 .empty-log h3 {
   margin-top: 1rem;
-  color: rgb(41 37 36);
   font-size: 1.4rem;
   font-weight: 800;
 }
@@ -673,198 +182,37 @@ const languagesExplored = computed(() => langStats.value.filter(stat => stat.pla
 .empty-log p {
   max-width: 30rem;
   margin: 0.5rem auto 0;
-  color: rgb(87 83 78);
+  color: var(--atlas-muted);
 }
 
 .empty-log button {
   margin-top: 1.25rem;
   border-radius: 0.35rem;
-  background: rgb(32 91 98);
+  background: var(--atlas-accent-strong);
   padding: 0.7rem 1rem;
-  color: white;
+  color: rgb(255 255 255);
   font-weight: 800;
   box-shadow: 2px 3px 0 rgb(20 55 59 / 25%);
 }
 
-@keyframes card-arrive {
-  from {
-    opacity: 0;
-    transform: translateY(0.5rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-html.dark .travel-log-page {
-  background-color: rgb(58 36 26);
-  background-image:
-    radial-gradient(circle at 20% 18%, rgb(196 154 74 / 4%) 0 0.7px, transparent 1px),
-    radial-gradient(circle at 72% 63%, rgb(0 0 0 / 25%) 0 0.8px, transparent 1px),
-    repeating-linear-gradient(22deg, transparent 0 8px, rgb(196 154 74 / 1.5%) 9px, transparent 10px 17px),
-    linear-gradient(135deg, rgb(73 45 31), rgb(41 27 21));
-  background-size: 8px 10px, 11px 9px, auto, auto;
-}
-
-html.dark .travel-log-hero {
-  background:
-    radial-gradient(circle at 50% 125%, rgb(95 143 145 / 24%), transparent 48%),
-    linear-gradient(135deg, rgb(35 65 65), rgb(20 42 46));
-}
-
-html.dark .logbook {
-  border-color: rgb(106 74 50);
-  background: rgb(47 32 24);
-  box-shadow:
-    0 16px 40px rgb(0 0 0 / 34%),
-    inset 0 0 50px rgb(0 0 0 / 16%);
-}
-
-html.dark .logbook::before {
-  border-color: rgb(196 154 74 / 16%);
-}
-
-html.dark .back-link {
-  color: rgb(232 216 188);
-}
-
-html.dark .back-link:hover {
-  color: rgb(240 228 207);
-}
-
-html.dark .summary-note {
-  color: rgb(205 187 157);
-}
-
-html.dark .summary-heading,
-html.dark .routes-heading {
-  border-bottom-color: rgb(196 154 74 / 16%);
-}
-
-html.dark .summary-heading::after,
-html.dark .routes-heading::after {
-  background: rgb(209 190 162);
-}
-
-html.dark .summary-card,
-html.dark .route-card,
-html.dark .empty-log {
-  border-color: rgb(106 74 50);
-  background: rgb(56 37 26 / 88%);
-  box-shadow:
-    2px 3px 0 rgb(0 0 0 / 18%),
-    inset 0 0 0 2px rgb(196 154 74 / 3%);
-}
-
-html.dark .summary-icon {
-  background: rgb(209 190 162 / 12%);
-  color: rgb(209 190 162);
-}
-
-html.dark .summary-card strong,
-html.dark .route-card-header strong,
-html.dark .empty-log h3 {
-  color: rgb(250 244 232);
-}
-
-html.dark .summary-card strong em,
-html.dark .summary-card small,
-html.dark .route-card-header small,
-html.dark .empty-log p {
-  color: rgb(205 187 157);
-}
-
-html.dark .flag-frame {
-  border-color: rgb(209 190 162 / 30%);
-  background: rgb(47 33 25);
-  box-shadow: 1px 2px 0 rgb(0 0 0 / 20%);
-}
-
-html.dark .accuracy-seal {
-  background: conic-gradient(rgb(209 190 162) var(--accuracy), rgb(83 62 45) 0);
-}
-
-html.dark .accuracy-seal > span {
-  background: rgb(56 37 26);
-  color: rgb(240 228 207);
-}
-
-html.dark .uncharted-label {
-  border-color: rgb(196 154 74 / 35%);
-  color: rgb(218 191 140);
-}
-
-html.dark .route-progress-label {
-  color: rgb(205 187 157);
-}
-
-html.dark .route-progress-track {
-  background: rgb(83 62 45);
-}
-
-html.dark .route-progress-track span {
-  background: linear-gradient(90deg, rgb(180 157 120), rgb(209 190 162));
-}
-
-html.dark .route-details,
-html.dark .route-details > div + div {
-  border-color: rgb(106 74 50);
-}
-
-html.dark .route-details dt {
-  color: rgb(185 165 134);
-}
-
-html.dark .route-details dd {
-  color: rgb(244 229 197);
-}
-
-html.dark .empty-log-mark {
-  border-color: rgb(209 190 162 / 35%);
-  color: rgb(209 190 162);
+.empty-log button:focus-visible {
+  outline: 3px solid var(--atlas-focus);
+  outline-offset: 3px;
 }
 
 html.dark .empty-log button {
-  background: rgb(209 190 162);
   color: rgb(30 24 20);
 }
 
 @media (max-width: 900px) {
-  .summary-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .route-grid {
     gap: 1rem;
   }
 }
 
 @media (max-width: 640px) {
-  .hero-compass {
-    left: -2rem;
-    opacity: 0.6;
-  }
-
-  .summary-grid,
   .route-grid {
     grid-template-columns: 1fr;
-  }
-
-  .summary-card {
-    padding: 0.9rem;
-  }
-
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .route-card {
-    animation: none;
-  }
-
-  .back-link,
-  .route-progress-track span {
-    transition: none;
   }
 }
 </style>
