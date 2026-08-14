@@ -1,0 +1,398 @@
+import confetti from 'canvas-confetti'
+import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { getLanguageMetadata } from '~/data/languageMetadata'
+import { languages, type Word } from '~/data/words'
+import { copyText } from '~/utils/clipboard'
+import {
+  addMissedWord,
+  getActiveStreak,
+  getDailyIndexForDayKey,
+  nextStreak,
+  parseStoredCount,
+  readMissedWords,
+  removeMissedWord,
+  shuffleChoices,
+} from '~/utils/game'
+
+interface LanguageProgress {
+  status: 'play' | 'completed' | 'practice'
+  mastery: number
+  played: number
+  streak: number
+  missed: number
+}
+
+interface LanguageCardDetails {
+  featuredMarks: string[]
+  featuredWords: string[]
+}
+
+const langFlags: Record<string, string> = {
+  fr: '🇫🇷',
+  es: '🇪🇸',
+  pt: '🇵🇹',
+  it: '🇮🇹',
+  ro: '🇷🇴',
+  de: '🇩🇪',
+  ru: '🇷🇺',
+  tr: '🇹🇷',
+  pl: '🇵🇱',
+  cs: '🇨🇿',
+  vi: '🇻🇳',
+  is: '🇮🇸',
+}
+
+function createLanguageCardDetails(words: Word[]): LanguageCardDetails {
+  const featuredMarks = [...new Set(words.map(word => word.choices[0]).filter(Boolean))].slice(0, 3)
+  const featuredWords: string[] = []
+
+  for (const mark of featuredMarks) {
+    const sample = words.find(word => word.word.includes(mark) && !featuredWords.includes(word.word))
+    if (sample) featuredWords.push(sample.word)
+  }
+
+  for (const word of words) {
+    if (featuredWords.length === 3) break
+    if (!featuredWords.includes(word.word)) featuredWords.push(word.word)
+  }
+
+  return { featuredMarks, featuredWords }
+}
+
+const languageCardDetails: Record<string, LanguageCardDetails> = Object.fromEntries(
+  languages.map(language => [language.code, createLanguageCardDetails(language.words)]),
+)
+
+export function useHomeGame() {
+  const selectedLang = ref<string | null>(null)
+  const answered = ref(false)
+  const correct = ref(false)
+  const selectedChoice = ref('')
+  const currentStreak = ref(0)
+  const practiceMode = ref(false)
+  const practiceIndex = ref(0)
+  const practiceAttempt = ref(0)
+  const practiceWord = ref<Word | null>(null)
+  const missedWords = ref<Word[]>([])
+  const speechStatus = ref('')
+  const announcement = ref('')
+  const shareText = ref('Share result')
+  const progressRevision = ref(0)
+  const progressReady = ref(false)
+  const currentDayKey = useLocalDayKey()
+  let shareResetTimer: ReturnType<typeof setTimeout> | undefined
+
+  const currentLangData = computed(() =>
+    languages.find(language => language.code === selectedLang.value),
+  )
+
+  const todayWord = computed(() => {
+    if (!currentLangData.value) return null
+    if (practiceMode.value) return practiceWord.value
+
+    const index = getDailyIndexForDayKey(
+      currentLangData.value.words.length,
+      currentDayKey.value,
+    )
+    return currentLangData.value.words[index]
+  })
+
+  const wordSegments = computed(() => todayWord.value?.blank.split(/(_)/) ?? [])
+
+  const shuffledChoices = computed(() => {
+    if (!todayWord.value || !selectedLang.value) return []
+    const mode = practiceMode.value
+      ? `practice:${practiceAttempt.value}`
+      : currentDayKey.value
+    return shuffleChoices(
+      todayWord.value.choices,
+      `${mode}:${selectedLang.value}:${todayWord.value.word}`,
+    )
+  })
+
+  const selectedMetadata = computed(() =>
+    getLanguageMetadata(selectedLang.value ?? 'fr'),
+  )
+
+  const languageProgress = computed<Record<string, LanguageProgress>>(() => {
+    progressRevision.value
+    if (!progressReady.value) {
+      return Object.fromEntries(languages.map(language => [language.code, emptyProgress()]))
+    }
+
+    return Object.fromEntries(languages.map((language) => {
+      const played = parseStoredCount(storageGet(`upspell-played-${language.code}`))
+      const won = parseStoredCount(storageGet(`upspell-won-${language.code}`))
+      const missed = readMissedWords(storageGet(getMissedKey(language.code))).length
+      const playedToday = storageGet(getLastPlayedKey(language.code)) === currentDayKey.value
+      const wonToday = storageGet(`upspell-correct-${language.code}`) === '1'
+      return [language.code, {
+        status: !playedToday ? 'play' : wonToday ? 'completed' : 'practice',
+        mastery: played ? Math.round((won / played) * 100) : 0,
+        played,
+        streak: getStreak(language.code),
+        missed,
+      }]
+    }))
+  })
+
+  function emptyProgress(): LanguageProgress {
+    return {
+      status: 'play',
+      mastery: 0,
+      played: 0,
+      streak: 0,
+      missed: 0,
+    }
+  }
+
+  function getLanguageProgress(code: string): LanguageProgress {
+    return languageProgress.value[code] ?? emptyProgress()
+  }
+
+  function getStreakKey(code: string) {
+    return `upspell-streak-${code}`
+  }
+
+  function getLastPlayedKey(code: string) {
+    return `upspell-lastplayed-${code}`
+  }
+
+  function getMissedKey(code: string) {
+    return `upspell-missed-${code}`
+  }
+
+  function getStreak(code: string): number {
+    if (!import.meta.client) return 0
+    return getActiveStreak(
+      parseStoredCount(storageGet(getStreakKey(code))),
+      storageGet(getLastPlayedKey(code)),
+      currentDayKey.value,
+    )
+  }
+
+  function selectLanguage(code: string) {
+    selectedLang.value = code
+    currentStreak.value = getStreak(code)
+    practiceMode.value = false
+    practiceIndex.value = 0
+    practiceAttempt.value = 0
+    practiceWord.value = null
+    speechStatus.value = ''
+    selectedChoice.value = ''
+    missedWords.value = readMissedWords(storageGet(getMissedKey(code)))
+
+    if (storageGet(getLastPlayedKey(code)) === currentDayKey.value) {
+      answered.value = true
+      correct.value = storageGet(`upspell-correct-${code}`) === '1'
+      selectedChoice.value = storageGet(`upspell-choice-${code}`)
+        || (correct.value ? todayWord.value?.choices[0] || '' : '')
+    } else {
+      answered.value = false
+    }
+  }
+
+  function openLanguage(code: string) {
+    const shouldPractice = getLanguageProgress(code).status === 'practice'
+    selectLanguage(code)
+    if (shouldPractice) startPractice()
+  }
+
+  function guess(choice: string) {
+    if (!todayWord.value || !selectedLang.value) return
+
+    answered.value = true
+    selectedChoice.value = choice
+    correct.value = choice === todayWord.value.choices[0]
+    announcement.value = correct.value
+      ? `Correct. The word is ${todayWord.value.word}.`
+      : `Incorrect. The correct answer is ${todayWord.value.choices[0]}.`
+
+    if (correct.value) celebrate()
+
+    const code = selectedLang.value
+    if (practiceMode.value) {
+      if (correct.value) {
+        missedWords.value = removeMissedWord(missedWords.value, todayWord.value)
+      }
+      storageSet(getMissedKey(code), JSON.stringify(missedWords.value))
+      return
+    }
+
+    const today = currentDayKey.value
+    const lastPlayed = storageGet(getLastPlayedKey(code))
+    currentStreak.value = nextStreak(
+      currentStreak.value,
+      lastPlayed,
+      today,
+      correct.value,
+    )
+    if (!correct.value) {
+      missedWords.value = addMissedWord(missedWords.value, todayWord.value)
+      storageSet(getMissedKey(code), JSON.stringify(missedWords.value))
+    }
+
+    storageSet(getStreakKey(code), String(currentStreak.value))
+    storageSet(getLastPlayedKey(code), today)
+    storageSet(`upspell-correct-${code}`, correct.value ? '1' : '0')
+    storageSet(`upspell-choice-${code}`, choice)
+
+    const played = parseStoredCount(storageGet(`upspell-played-${code}`)) + 1
+    const won = parseStoredCount(storageGet(`upspell-won-${code}`)) + (correct.value ? 1 : 0)
+    const bestStreak = Math.max(
+      currentStreak.value,
+      parseStoredCount(storageGet(`upspell-best-${code}`)),
+    )
+    storageSet(`upspell-played-${code}`, String(played))
+    storageSet(`upspell-won-${code}`, String(won))
+    storageSet(`upspell-best-${code}`, String(bestStreak))
+    progressRevision.value++
+  }
+
+  async function shareResult() {
+    const flag = langFlags[selectedLang.value || ''] || '🌍'
+    const result = correct.value ? '✅' : '❌'
+    const streak = currentStreak.value > 0 ? ` 🔥${currentStreak.value}` : ''
+    const label = practiceMode.value ? 'Practice' : currentDayKey.value
+    const text = `UpSpell ${flag} ${label}\n${result}${streak}\nhttps://upspell.vercel.app`
+    const copied = await copyText(text)
+
+    shareText.value = copied ? '✓ Copied!' : 'Copy failed'
+    announcement.value = copied
+      ? 'Result copied to the clipboard.'
+      : 'The result could not be copied.'
+    if (shareResetTimer) clearTimeout(shareResetTimer)
+    shareResetTimer = setTimeout(() => {
+      shareText.value = 'Share result'
+    }, 2000)
+  }
+
+  function goBack() {
+    selectedLang.value = null
+    answered.value = false
+    practiceMode.value = false
+    practiceAttempt.value = 0
+    practiceWord.value = null
+    speechStatus.value = ''
+    selectedChoice.value = ''
+    progressRevision.value++
+  }
+
+  function startPractice() {
+    if (!missedWords.value.length) return
+    practiceMode.value = true
+    practiceIndex.value = 0
+    practiceAttempt.value = 0
+    practiceWord.value = missedWords.value[0] ?? null
+    answered.value = false
+    speechStatus.value = ''
+    selectedChoice.value = ''
+  }
+
+  function practiceAnother() {
+    if (!missedWords.value.length) {
+      goBack()
+      return
+    }
+    practiceIndex.value = correct.value
+      ? practiceIndex.value % missedWords.value.length
+      : (practiceIndex.value + 1) % missedWords.value.length
+    practiceAttempt.value++
+    practiceWord.value = missedWords.value[practiceIndex.value] ?? null
+    answered.value = false
+    speechStatus.value = ''
+    selectedChoice.value = ''
+  }
+
+  function speakWord() {
+    if (!todayWord.value || !import.meta.client || !('speechSynthesis' in window)) {
+      speechStatus.value = 'Pronunciation is not supported by this browser.'
+      announcement.value = speechStatus.value
+      return
+    }
+
+    window.speechSynthesis.cancel()
+    const utterance = new SpeechSynthesisUtterance(todayWord.value.word)
+    utterance.lang = selectedMetadata.value.speechLocale
+    utterance.onstart = () => {
+      speechStatus.value = `Playing ${selectedMetadata.value.englishName} pronunciation.`
+      announcement.value = speechStatus.value
+    }
+    utterance.onerror = () => {
+      speechStatus.value = 'The pronunciation could not be played.'
+      announcement.value = speechStatus.value
+    }
+    speechStatus.value = 'Preparing pronunciation…'
+    window.speechSynthesis.speak(utterance)
+  }
+
+  function storageGet(key: string): string | null {
+    try {
+      return localStorage.getItem(key)
+    } catch {
+      return null
+    }
+  }
+
+  function storageSet(key: string, value: string) {
+    try {
+      localStorage.setItem(key, value)
+    } catch {
+      // The quiz remains usable when storage is disabled or full.
+    }
+  }
+
+  function celebrate() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 },
+    })
+  }
+
+  onMounted(() => {
+    progressReady.value = true
+    progressRevision.value++
+  })
+
+  onBeforeUnmount(() => {
+    if (shareResetTimer) clearTimeout(shareResetTimer)
+  })
+
+  watch(currentDayKey, () => {
+    progressRevision.value++
+    if (selectedLang.value && !practiceMode.value) {
+      selectLanguage(selectedLang.value)
+    }
+  })
+
+  return {
+    announcement,
+    answered,
+    correct,
+    currentLangData,
+    currentStreak,
+    getLanguageMetadata,
+    getLanguageProgress,
+    goBack,
+    guess,
+    languageCardDetails,
+    languages,
+    missedWords,
+    openLanguage,
+    practiceAnother,
+    practiceMode,
+    selectedChoice,
+    selectedLang,
+    selectedMetadata,
+    shareResult,
+    shareText,
+    shuffledChoices,
+    speakWord,
+    speechStatus,
+    startPractice,
+    todayWord,
+    wordSegments,
+  }
+}

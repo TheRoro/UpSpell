@@ -10,6 +10,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "test": "vitest run",
+    "test:e2e": "playwright test",
     "test:watch": "vitest",
     "typecheck": "nuxt typecheck",
     "check": "npm run test && npm run typecheck && npm run generate",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/tailwindcss": "^6.14.0",
+    "@playwright/test": "^1.62.1",
     "@types/canvas-confetti": "^1.9.0",
     "@types/node": "^22.0.0",
     "@vite-pwa/nuxt": "^1.1.1",

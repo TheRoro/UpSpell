@@ -1,5 +1,8 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+  <div
+    class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300"
+    :data-app-ready="appReady"
+  >
     <button
       type="button"
       class="theme-toggle"
@@ -30,6 +33,7 @@
 import { nextTick, onMounted, ref } from 'vue'
 
 const isDark = ref(false)
+const appReady = ref(false)
 
 type ViewTransitionDocument = Document & {
   startViewTransition?: (update: () => void | Promise<void>) => unknown
@@ -69,6 +73,7 @@ function toggleDark() {
 onMounted(() => {
   // Sync with the inline script that already applied the class
   isDark.value = document.documentElement.classList.contains('dark')
+  appReady.value = true
 })
 </script>
 
