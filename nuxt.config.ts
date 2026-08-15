@@ -15,18 +15,26 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Daily accent quiz — pick the right special character!' },
+        { name: 'theme-color', content: '#4b3024' },
+        { name: 'description', content: 'Explore words, spelling, and special characters across 12 languages in a daily language atlas.' },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://upspell.vercel.app/' },
-        { property: 'og:title', content: 'UpSpell | Daily Accent Challenge' },
-        { property: 'og:description', content: 'Daily accent quiz — pick the right special character!' },
+        { property: 'og:site_name', content: 'UpSpell' },
+        { property: 'og:title', content: 'UpSpell | Daily Language Atlas' },
+        { property: 'og:description', content: 'Explore words, spelling, and special characters across 12 languages, one discovery at a time.' },
         { property: 'og:image', content: 'https://upspell.vercel.app/upspell-social.png' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
+        { property: 'og:image:alt', content: 'UpSpell daily language atlas' },
         { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'UpSpell | Daily Language Atlas' },
+        { name: 'twitter:description', content: 'Explore words, spelling, and special characters across 12 languages, one discovery at a time.' },
+        { name: 'twitter:image', content: 'https://upspell.vercel.app/upspell-social.png' },
+        { name: 'twitter:image:alt', content: 'UpSpell daily language atlas' },
       ],
       link: [
-        { rel: 'icon', type: 'image/png', href: '/upspell_logo.png' },
+        { rel: 'icon', type: 'image/png', sizes: '256x256', href: '/upspell_logo.png' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/upspell-180.png' },
       ],
       script: [
         {
@@ -87,24 +95,29 @@ export default defineNuxtConfig({
     manifest: {
       name: 'UpSpell',
       short_name: 'UpSpell',
-      description: 'Daily accent quiz — pick the right special character!',
-      theme_color: '#3b82f6',
-      background_color: '#f9fafb',
+      description: 'Explore words, spelling, and special characters across 12 languages in a daily language atlas.',
+      id: '/',
+      start_url: '/',
+      scope: '/',
+      lang: 'en',
+      categories: ['education', 'games'],
+      theme_color: '#4b3024',
+      background_color: '#f4ebcf',
       display: 'standalone',
       orientation: 'portrait',
       icons: [
         {
-          src: '/upspell_logo.png',
+          src: '/upspell-192.png',
           sizes: '192x192',
           type: 'image/png',
         },
         {
-          src: '/upspell_logo.png',
+          src: '/upspell-512.png',
           sizes: '512x512',
           type: 'image/png',
         },
         {
-          src: '/upspell_logo.png',
+          src: '/upspell-maskable-512.png',
           sizes: '512x512',
           type: 'image/png',
           purpose: 'maskable',
@@ -114,6 +127,7 @@ export default defineNuxtConfig({
     workbox: {
       navigateFallback: '/',
       globPatterns: ['**/*.{js,css,html,svg,png,webp,ico,woff2}'],
+      globIgnores: ['**/words-*.js'],
       runtimeCaching: [
         {
           urlPattern: /\.(?:png|webp|svg)$/,
@@ -121,6 +135,14 @@ export default defineNuxtConfig({
           options: {
             cacheName: 'images',
             expiration: { maxEntries: 50, maxAgeSeconds: 60 * 60 * 24 * 30 },
+          },
+        },
+        {
+          urlPattern: /\/_nuxt\/words-[a-z]{2}-.*\.js$/,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'language-data',
+            expiration: { maxEntries: 12, maxAgeSeconds: 60 * 60 * 24 * 365 },
           },
         },
       ],
@@ -141,5 +163,19 @@ export default defineNuxtConfig({
     },
     download: true,
     overwriting: true,
+  },
+
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          chunkFileNames: '_nuxt/[name].[hash].js',
+          manualChunks(id) {
+            const match = id.replaceAll('\\', '/').match(/\/data\/words\/([a-z]{2})\.ts$/)
+            return match ? `words-${match[1]}` : undefined
+          },
+        },
+      },
+    },
   },
 })

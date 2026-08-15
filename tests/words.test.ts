@@ -1,15 +1,16 @@
 import { describe, expect, it } from 'vitest'
-import { languages } from '../data/words'
+import { languages, loadLanguageWords } from '../data/words'
 import { languageMetadata } from '../data/languageMetadata'
 
 describe('word dataset', () => {
-  it('contains 365 unique, valid prompts for every language', () => {
+  it('contains 365 unique, valid prompts for every language', async () => {
     expect(languages).toHaveLength(12)
     expect(languages.map(language => language.code).sort()).toEqual(
       languageMetadata.map(language => language.code).sort(),
     )
 
-    for (const language of languages) {
+    for (const summary of languages) {
+      const language = await loadLanguageWords(summary.code)
       expect(language.words, `${language.code} word count`).toHaveLength(365)
       expect(
         new Set(language.words.map(word => word.word)).size,

@@ -56,8 +56,8 @@ import { languages } from '~/data/words'
 import { getActiveStreak, parseStoredCount } from '~/utils/game'
 
 usePageSeo({
-  title: 'Your stats - UpSpell',
-  description: 'Review your UpSpell accuracy and spelling streaks across all 12 supported languages.',
+  title: 'Language Progress | UpSpell',
+  description: 'Review your UpSpell accuracy, spelling streaks, and discoveries across the daily language atlas.',
   path: '/stats',
 })
 

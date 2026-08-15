@@ -23,10 +23,13 @@ export function usePageSeo({
     ogImage: SOCIAL_IMAGE,
     ogImageWidth: 1200,
     ogImageHeight: 630,
+    ogImageAlt: 'UpSpell daily language atlas',
+    ogSiteName: 'UpSpell',
     twitterCard: 'summary_large_image',
     twitterTitle: title,
     twitterDescription: description,
     twitterImage: SOCIAL_IMAGE,
+    twitterImageAlt: 'UpSpell daily language atlas',
   })
   useHead({
     link: [{ rel: 'canonical', href: url }],

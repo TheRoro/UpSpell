@@ -1,7 +1,12 @@
 import confetti from 'canvas-confetti'
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { getLanguageMetadata } from '~/data/languageMetadata'
-import { languages, type Word } from '~/data/words'
+import {
+  languages,
+  loadLanguageWords,
+  type LanguageWords,
+  type Word,
+} from '~/data/words'
 import { copyText } from '~/utils/clipboard'
 import {
   addMissedWord,
@@ -22,11 +27,6 @@ interface LanguageProgress {
   missed: number
 }
 
-interface LanguageCardDetails {
-  featuredMarks: string[]
-  featuredWords: string[]
-}
-
 const langFlags: Record<string, string> = {
   fr: '🇫🇷',
   es: '🇪🇸',
@@ -42,25 +42,11 @@ const langFlags: Record<string, string> = {
   is: '🇮🇸',
 }
 
-function createLanguageCardDetails(words: Word[]): LanguageCardDetails {
-  const featuredMarks = [...new Set(words.map(word => word.choices[0]).filter(Boolean))].slice(0, 3)
-  const featuredWords: string[] = []
-
-  for (const mark of featuredMarks) {
-    const sample = words.find(word => word.word.includes(mark) && !featuredWords.includes(word.word))
-    if (sample) featuredWords.push(sample.word)
-  }
-
-  for (const word of words) {
-    if (featuredWords.length === 3) break
-    if (!featuredWords.includes(word.word)) featuredWords.push(word.word)
-  }
-
-  return { featuredMarks, featuredWords }
-}
-
-const languageCardDetails: Record<string, LanguageCardDetails> = Object.fromEntries(
-  languages.map(language => [language.code, createLanguageCardDetails(language.words)]),
+const languageCardDetails = Object.fromEntries(
+  languages.map(language => [language.code, {
+    featuredMarks: language.featuredMarks.slice(0, 3),
+    featuredWords: language.featuredWords,
+  }]),
 )
 
 export function useHomeGame() {
@@ -79,12 +65,11 @@ export function useHomeGame() {
   const shareText = ref('Share result')
   const progressRevision = ref(0)
   const progressReady = ref(false)
+  const loadingLanguageCode = ref<string | null>(null)
+  const currentLangData = ref<LanguageWords | null>(null)
   const currentDayKey = useLocalDayKey()
+  let languageRequest = 0
   let shareResetTimer: ReturnType<typeof setTimeout> | undefined
-
-  const currentLangData = computed(() =>
-    languages.find(language => language.code === selectedLang.value),
-  )
 
   const todayWord = computed(() => {
     if (!currentLangData.value) return null
@@ -192,10 +177,25 @@ export function useHomeGame() {
     }
   }
 
-  function openLanguage(code: string) {
-    const shouldPractice = getLanguageProgress(code).status === 'practice'
-    selectLanguage(code)
-    if (shouldPractice) startPractice()
+  async function openLanguage(code: string) {
+    const request = ++languageRequest
+    loadingLanguageCode.value = code
+    announcement.value = `Loading ${getLanguageMetadata(code).englishName} challenge.`
+
+    try {
+      const language = await loadLanguageWords(code)
+      if (request !== languageRequest) return
+
+      currentLangData.value = language
+      const shouldPractice = getLanguageProgress(code).status === 'practice'
+      selectLanguage(code)
+      if (shouldPractice) startPractice()
+    } catch {
+      if (request !== languageRequest) return
+      announcement.value = 'The language challenge could not be loaded. Please try again.'
+    } finally {
+      if (request === languageRequest) loadingLanguageCode.value = null
+    }
   }
 
   function guess(choice: string) {
@@ -268,7 +268,10 @@ export function useHomeGame() {
   }
 
   function goBack() {
+    languageRequest++
+    loadingLanguageCode.value = null
     selectedLang.value = null
+    currentLangData.value = null
     answered.value = false
     practiceMode.value = false
     practiceAttempt.value = 0
@@ -379,6 +382,7 @@ export function useHomeGame() {
     guess,
     languageCardDetails,
     languages,
+    loadingLanguageCode,
     missedWords,
     openLanguage,
     practiceAnother,

@@ -7,6 +7,7 @@
       '--stamp-tilt': `${index % 2 === 0 ? -2 : 2}deg`,
     }"
     :aria-label="`${actionLabel} ${englishName} challenge`"
+    :disabled="disabled"
     @click="$emit('select')"
   >
     <span
@@ -91,6 +92,8 @@ const props = defineProps<{
   featuredMarks: string[]
   featuredWords: string[]
   index: number
+  disabled?: boolean
+  loading?: boolean
 }>()
 
 defineEmits<{
@@ -98,6 +101,7 @@ defineEmits<{
 }>()
 
 const actionLabel = computed(() => {
+  if (props.loading) return 'Loading'
   if (props.status === 'completed') return 'Charted'
   if (props.status === 'practice') return 'Revisit route'
   return 'Explore today'
@@ -119,6 +123,16 @@ const actionLabel = computed(() => {
     4px 7px 0 rgb(120 53 15 / 12%),
     inset 0 0 0 2px rgb(255 255 255 / 18%);
   transform: translateY(-0.25rem);
+}
+
+.destination-card:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.destination-card:disabled:hover {
+  box-shadow: var(--atlas-card-shadow);
+  transform: none;
 }
 
 .destination-card::after {

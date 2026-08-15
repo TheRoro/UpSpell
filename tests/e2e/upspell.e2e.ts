@@ -1,14 +1,8 @@
 import { expect, test, type Page } from '@playwright/test'
-import { languages } from '../../data/words'
+import french from '../../data/words/fr'
 import { getDailyIndexForDayKey } from '../../utils/game'
 
 const testDay = '2026-09-04'
-const french = languages.find(language => language.code === 'fr')
-
-if (!french) {
-  throw new Error('French test data is missing')
-}
-
 const dailyWord = french.words[getDailyIndexForDayKey(french.words.length, testDay)]
 const correctChoice = dailyWord.choices[0]
 const wrongChoice = dailyWord.choices.find(choice => choice !== correctChoice)

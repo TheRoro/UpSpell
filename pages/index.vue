@@ -32,6 +32,8 @@
             :featured-marks="languageCardDetails[lang.code].featuredMarks"
             :featured-words="languageCardDetails[lang.code].featuredWords"
             :index="index"
+            :disabled="Boolean(loadingLanguageCode)"
+            :loading="loadingLanguageCode === lang.code"
             v-bind="getLanguageProgress(lang.code)"
             @select="openLanguage(lang.code)"
           />
@@ -42,7 +44,7 @@
     </AtlasPanel>
 
     <DailyChallenge
-      v-else-if="todayWord"
+      v-else-if="todayWord && selectedLang"
       :language-name="currentLangData?.name || selectedMetadata.name"
       :english-language-name="selectedMetadata.englishName"
       :language-code="selectedLang"
@@ -73,8 +75,8 @@
 
 <script setup lang="ts">
 usePageSeo({
-  title: 'UpSpell - Daily spelling practice',
-  description: 'Practice accented characters and distinctive letters with a free daily word game across 12 languages.',
+  title: 'UpSpell | Daily Language Atlas',
+  description: 'Explore words, spelling, and special characters across 12 languages, one daily discovery at a time.',
   path: '/',
 })
 
@@ -90,6 +92,7 @@ const {
   guess,
   languageCardDetails,
   languages,
+  loadingLanguageCode,
   missedWords,
   openLanguage,
   practiceAnother,

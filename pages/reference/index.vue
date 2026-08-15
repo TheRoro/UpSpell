@@ -68,15 +68,16 @@ import { languageMetadata } from '~/data/languageMetadata'
 import { languages } from '~/data/words'
 
 usePageSeo({
-  title: 'Characters - UpSpell',
-  description: 'Copy and learn special characters for all 12 languages supported by UpSpell.',
+  title: 'Special Character Atlas | UpSpell',
+  description: 'Browse, learn, and copy special characters from all 12 languages in the UpSpell atlas.',
   path: '/reference',
 })
 
 const languageGuides = computed(() =>
   languageMetadata.map((metadata) => {
-    const words = languages.find(language => language.code === metadata.code)?.words ?? []
-    const featuredCharacters = [...new Set(words.map(word => word.choices[0]).filter(Boolean))].slice(0, 5)
+    const featuredCharacters = languages.find(
+      language => language.code === metadata.code,
+    )?.featuredMarks ?? []
 
     return {
       ...metadata,

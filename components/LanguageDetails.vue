@@ -72,8 +72,8 @@ const props = defineProps<{
 
 const metadata = getLanguageMetadata(props.code)
 usePageSeo({
-  title: `${metadata.englishName} special characters - UpSpell`,
-  description: `Copy and learn the special characters used in ${metadata.name} (${metadata.englishName}).`,
+  title: `${metadata.englishName} Character Guide | UpSpell`,
+  description: `Explore and copy the special characters used in ${metadata.name} through the UpSpell language atlas.`,
   path: metadata.route,
 })
 
