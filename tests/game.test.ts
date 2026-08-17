@@ -19,6 +19,16 @@ const word = {
   position: 3,
   choices: ['é', 'e', 'è', 'ê'],
   meaning: 'coffee',
+  ipa: 'kafˈe',
+  ipaFocus: [[3, 5]] as [number, number][],
+}
+
+const legacyWord = {
+  word: word.word,
+  blank: word.blank,
+  position: word.position,
+  choices: word.choices,
+  meaning: word.meaning,
 }
 
 describe('local daily game', () => {
@@ -86,6 +96,7 @@ describe('local progress recovery', () => {
   it('recovers malformed practice data and maintains a unique queue', () => {
     expect(readMissedWords('{broken')).toEqual([])
     expect(readMissedWords('{"word":"no-array"}')).toEqual([])
+    expect(readMissedWords(JSON.stringify([legacyWord]))).toEqual([legacyWord])
     expect(readMissedWords(JSON.stringify([word]))).toEqual([word])
     expect(addMissedWord([word], word)).toEqual([word])
     expect(removeMissedWord([word], word)).toEqual([])

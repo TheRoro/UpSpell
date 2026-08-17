@@ -6,6 +6,9 @@ const testDay = '2026-09-04'
 const dailyWord = french.words[getDailyIndexForDayKey(french.words.length, testDay)]
 const correctChoice = dailyWord.choices[0]
 const wrongChoice = dailyWord.choices.find(choice => choice !== correctChoice)
+const focusedIpa = dailyWord.ipaFocus
+  .map(([start, end]) => dailyWord.ipa.slice(start, end))
+  .join('')
 
 if (!wrongChoice) {
   throw new Error('French test data requires at least one incorrect choice')
@@ -36,6 +39,8 @@ test('records and restores the daily result', async ({ page }) => {
 
   await expect(page.getByRole('heading', { name: 'Perfect choice!' })).toBeVisible()
   await expect(page.getByRole('button', { name: 'Share result' })).toBeVisible()
+  await expect(page.locator('.ipa-transcription')).toContainText(dailyWord.ipa)
+  await expect(page.locator('.ipa-focus')).toHaveText(focusedIpa)
 
   await page.reload()
   await waitForHydration(page)

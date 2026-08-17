@@ -15,7 +15,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "mom"
+      "meaning": "mom",
+      "ipa": "mˈaːma",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "táta",
@@ -27,7 +34,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "dad"
+      "meaning": "dad",
+      "ipa": "tˈaːta",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "káva",
@@ -39,7 +53,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "coffee"
+      "meaning": "coffee",
+      "ipa": "kˈaːva",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "kráva",
@@ -51,7 +72,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "cow"
+      "meaning": "cow",
+      "ipa": "krˈaːva",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "pátek",
@@ -63,7 +91,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "Friday"
+      "meaning": "Friday",
+      "ipa": "pˈaːtek",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "pánev",
@@ -75,7 +110,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "pan"
+      "meaning": "pan",
+      "ipa": "pˈaːnev",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "pásek",
@@ -87,7 +129,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "belt"
+      "meaning": "belt",
+      "ipa": "pˈaːsek",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "párek",
@@ -99,7 +148,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "sausage"
+      "meaning": "sausage",
+      "ipa": "pˈaːrek",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "ráno",
@@ -111,7 +167,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "morning"
+      "meaning": "morning",
+      "ipa": "rˈaːno",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "vrána",
@@ -123,7 +186,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "crow"
+      "meaning": "crow",
+      "ipa": "vrˈaːna",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "pták",
@@ -135,7 +205,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "bird"
+      "meaning": "bird",
+      "ipa": "ptˈaːk",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "žák",
@@ -147,7 +224,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "pupil"
+      "meaning": "pupil",
+      "ipa": "ʒˈaːk",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "dár",
@@ -159,7 +243,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "gift"
+      "meaning": "gift",
+      "ipa": "dˈaːr",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "zámek",
@@ -171,7 +262,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "castle"
+      "meaning": "castle",
+      "ipa": "zˈaːmek",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "hrách",
@@ -183,7 +281,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "peas"
+      "meaning": "peas",
+      "ipa": "hrˈaːx",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "pláč",
@@ -195,7 +300,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "crying"
+      "meaning": "crying",
+      "ipa": "plˈaːtʃ",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "láhev",
@@ -207,7 +319,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "bottle"
+      "meaning": "bottle",
+      "ipa": "lˈaːhev",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "lázeň",
@@ -219,7 +338,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "spa"
+      "meaning": "spa",
+      "ipa": "lˈaːzeɲ",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "nákup",
@@ -231,7 +357,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "shopping"
+      "meaning": "shopping",
+      "ipa": "nˈaːkup",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "nápad",
@@ -243,7 +376,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "idea"
+      "meaning": "idea",
+      "ipa": "nˈaːpat",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "návod",
@@ -255,7 +395,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "manual"
+      "meaning": "manual",
+      "ipa": "nˈaːvot",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "nápoj",
@@ -267,7 +414,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "drink"
+      "meaning": "drink",
+      "ipa": "nˈaːpoj",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "nálada",
@@ -279,7 +433,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "mood"
+      "meaning": "mood",
+      "ipa": "nˈaːlada",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "zábava",
@@ -291,7 +452,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "fun"
+      "meaning": "fun",
+      "ipa": "zˈaːbava",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "práce",
@@ -303,7 +471,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "work"
+      "meaning": "work",
+      "ipa": "prˈaːtse",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "váza",
@@ -315,7 +490,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "vase"
+      "meaning": "vase",
+      "ipa": "vˈaːza",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "záruka",
@@ -327,7 +509,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "guarantee"
+      "meaning": "guarantee",
+      "ipa": "zˈaːruka",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "stránka",
@@ -339,7 +528,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "page"
+      "meaning": "page",
+      "ipa": "strˈaːŋka",
+      "ipaFocus": [
+        [
+          3,
+          6
+        ]
+      ]
     },
     {
       "word": "krátký",
@@ -351,7 +547,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "short"
+      "meaning": "short",
+      "ipa": "krˈaːtkiː",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "vláda",
@@ -363,7 +566,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "government"
+      "meaning": "government",
+      "ipa": "vlˈaːda",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "skála",
@@ -375,7 +585,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "rock"
+      "meaning": "rock",
+      "ipa": "skˈaːla",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "brána",
@@ -387,7 +604,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "gate"
+      "meaning": "gate",
+      "ipa": "brˈaːna",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "chápu",
@@ -399,7 +623,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "I understand"
+      "meaning": "I understand",
+      "ipa": "xˈaːpu",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "dává",
@@ -411,7 +642,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "gives"
+      "meaning": "gives",
+      "ipa": "dˈaːvaː",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "pálí",
@@ -423,7 +661,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "burns"
+      "meaning": "burns",
+      "ipa": "pˈaːliː",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "vázat",
@@ -435,7 +680,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "to tie"
+      "meaning": "to tie",
+      "ipa": "vˈaːzat",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "kázat",
@@ -447,7 +699,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "to preach"
+      "meaning": "to preach",
+      "ipa": "kˈaːzat",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "sází",
@@ -459,7 +718,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "plants"
+      "meaning": "plants",
+      "ipa": "sˈaːziː",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "šátek",
@@ -471,7 +737,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "scarf"
+      "meaning": "scarf",
+      "ipa": "ʃˈaːtek",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "záchod",
@@ -483,7 +756,14 @@ const language = {
         "à",
         "ä"
       ],
-      "meaning": "toilet"
+      "meaning": "toilet",
+      "ipa": "zˈaːxot",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "čaj",
@@ -495,7 +775,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "tea"
+      "meaning": "tea",
+      "ipa": "tʃˈaj",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "čas",
@@ -507,7 +794,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "time"
+      "meaning": "time",
+      "ipa": "tʃˈas",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "člun",
@@ -519,7 +813,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "boat"
+      "meaning": "boat",
+      "ipa": "tʃlˈun",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "člověk",
@@ -531,7 +832,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "person"
+      "meaning": "person",
+      "ipa": "tʃlˈovjek",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "čtyři",
@@ -543,7 +851,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "four"
+      "meaning": "four",
+      "ipa": "tʃtˈir̝i",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "černý",
@@ -555,7 +870,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "black"
+      "meaning": "black",
+      "ipa": "tʃˈerniː",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "čerstvý",
@@ -567,7 +889,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "fresh"
+      "meaning": "fresh",
+      "ipa": "tʃˈerstviː",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "čelo",
@@ -579,7 +908,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "forehead"
+      "meaning": "forehead",
+      "ipa": "tʃˈelo",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "červen",
@@ -591,7 +927,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "June"
+      "meaning": "June",
+      "ipa": "tʃˈerven",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "čtvrť",
@@ -603,7 +946,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "district"
+      "meaning": "district",
+      "ipa": "tʃtvˈr̩c",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "čepice",
@@ -615,7 +965,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "cap"
+      "meaning": "cap",
+      "ipa": "tʃˈepitse",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "česnek",
@@ -627,7 +984,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "garlic"
+      "meaning": "garlic",
+      "ipa": "tʃˈesnek",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "číšník",
@@ -639,7 +1003,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "waiter"
+      "meaning": "waiter",
+      "ipa": "tʃˈiːʃɲiːk",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "činka",
@@ -651,7 +1022,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "dumbbell"
+      "meaning": "dumbbell",
+      "ipa": "tʃˈiŋka",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "čip",
@@ -663,7 +1041,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "chip"
+      "meaning": "chip",
+      "ipa": "tʃˈip",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "čočka",
@@ -675,7 +1060,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "lentil"
+      "meaning": "lentil",
+      "ipa": "tʃˈotʃka",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "čokoláda",
@@ -687,7 +1079,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "chocolate"
+      "meaning": "chocolate",
+      "ipa": "tʃˈokolˌaːda",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "kočka",
@@ -699,7 +1098,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "cat"
+      "meaning": "cat",
+      "ipa": "kˈotʃka",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "ovečka",
@@ -711,7 +1117,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "sheep"
+      "meaning": "sheep",
+      "ipa": "ˈovetʃka",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "tyč",
@@ -723,7 +1136,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "pole"
+      "meaning": "pole",
+      "ipa": "tˈitʃ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "meč",
@@ -735,7 +1155,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "sword"
+      "meaning": "sword",
+      "ipa": "mˈetʃ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "péče",
@@ -747,7 +1174,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "care"
+      "meaning": "care",
+      "ipa": "pˈeːtʃe",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "klíč",
@@ -759,7 +1193,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "key"
+      "meaning": "key",
+      "ipa": "klˈiːtʃ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "řeč",
@@ -771,7 +1212,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "speech"
+      "meaning": "speech",
+      "ipa": "r̝ˈetʃ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "srdečný",
@@ -783,7 +1231,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "cordial"
+      "meaning": "cordial",
+      "ipa": "sˈr̩detʃniː",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "bezpečí",
@@ -795,7 +1250,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "safety"
+      "meaning": "safety",
+      "ipa": "bˈespetʃiː",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "točím",
@@ -807,7 +1269,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "I turn"
+      "meaning": "I turn",
+      "ipa": "tˈotʃiːm",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "skáče",
@@ -819,7 +1288,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "jumps"
+      "meaning": "jumps",
+      "ipa": "skˈaːtʃe",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "mlčí",
@@ -831,7 +1307,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "is silent"
+      "meaning": "is silent",
+      "ipa": "mˈl̩tʃiː",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "tlačítko",
@@ -843,7 +1326,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "button"
+      "meaning": "button",
+      "ipa": "tlˈatʃiːtko",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "značka",
@@ -855,7 +1345,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "brand"
+      "meaning": "brand",
+      "ipa": "znˈatʃka",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "pračka",
@@ -867,7 +1364,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "washing machine"
+      "meaning": "washing machine",
+      "ipa": "prˈatʃka",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "pečivo",
@@ -879,7 +1383,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "pastry"
+      "meaning": "pastry",
+      "ipa": "pˈetʃivo",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "kočár",
@@ -891,7 +1402,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "carriage"
+      "meaning": "carriage",
+      "ipa": "kˈotʃaːr",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "luční",
@@ -903,7 +1421,14 @@ const language = {
         "ć",
         "ĉ"
       ],
-      "meaning": "meadow"
+      "meaning": "meadow",
+      "ipa": "lˈutʃɲiː",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "ďábel",
@@ -915,7 +1440,14 @@ const language = {
         "đ",
         "ḋ"
       ],
-      "meaning": "devil"
+      "meaning": "devil",
+      "ipa": "ɟˈaːbel",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "loď",
@@ -927,7 +1459,14 @@ const language = {
         "đ",
         "ḋ"
       ],
-      "meaning": "ship"
+      "meaning": "ship",
+      "ipa": "lˈoc",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "loďka",
@@ -939,7 +1478,14 @@ const language = {
         "đ",
         "ḋ"
       ],
-      "meaning": "small boat"
+      "meaning": "small boat",
+      "ipa": "lˈocka",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "buď",
@@ -951,7 +1497,14 @@ const language = {
         "đ",
         "ḋ"
       ],
-      "meaning": "be"
+      "meaning": "be",
+      "ipa": "bˈuc",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "buďte",
@@ -963,7 +1516,14 @@ const language = {
         "đ",
         "ḋ"
       ],
-      "meaning": "be (plural)"
+      "meaning": "be (plural)",
+      "ipa": "bˈucte",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "jeď",
@@ -975,7 +1535,14 @@ const language = {
         "đ",
         "ḋ"
       ],
-      "meaning": "go"
+      "meaning": "go",
+      "ipa": "jˈec",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "přijeď",
@@ -987,7 +1554,14 @@ const language = {
         "đ",
         "ḋ"
       ],
-      "meaning": "come by"
+      "meaning": "come by",
+      "ipa": "pr̝̊ˈijec",
+      "ipaFocus": [
+        [
+          8,
+          9
+        ]
+      ]
     },
     {
       "word": "odjeď",
@@ -999,7 +1573,14 @@ const language = {
         "đ",
         "ḋ"
       ],
-      "meaning": "leave by vehicle"
+      "meaning": "leave by vehicle",
+      "ipa": "ˈodjec",
+      "ipaFocus": [
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "hoď",
@@ -1011,7 +1592,14 @@ const language = {
         "đ",
         "ḋ"
       ],
-      "meaning": "throw"
+      "meaning": "throw",
+      "ipa": "hˈoc",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "saď",
@@ -1023,7 +1611,14 @@ const language = {
         "đ",
         "ḋ"
       ],
-      "meaning": "plant"
+      "meaning": "plant",
+      "ipa": "sˈac",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "léto",
@@ -1035,7 +1630,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "summer"
+      "meaning": "summer",
+      "ipa": "lˈeːto",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "lék",
@@ -1047,7 +1649,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "medicine"
+      "meaning": "medicine",
+      "ipa": "lˈeːk",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "mléko",
@@ -1059,7 +1668,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "milk"
+      "meaning": "milk",
+      "ipa": "mlˈeːko",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "péct",
@@ -1071,7 +1687,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "to bake"
+      "meaning": "to bake",
+      "ipa": "pˈeːtst",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "péra",
@@ -1083,7 +1706,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "feathers"
+      "meaning": "feathers",
+      "ipa": "pˈeːra",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "déšť",
@@ -1095,7 +1725,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "rain"
+      "meaning": "rain",
+      "ipa": "dˈeːʃc",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "démon",
@@ -1107,7 +1744,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "demon"
+      "meaning": "demon",
+      "ipa": "dˈeːmon",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "déle",
@@ -1119,7 +1763,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "longer"
+      "meaning": "longer",
+      "ipa": "dˈeːle",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "méně",
@@ -1131,7 +1782,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "less"
+      "meaning": "less",
+      "ipa": "mˈeːɲe",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "réva",
@@ -1143,7 +1801,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "vine"
+      "meaning": "vine",
+      "ipa": "rˈeːva",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "zelé",
@@ -1155,7 +1820,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "cabbage"
+      "meaning": "cabbage",
+      "ipa": "zˈeleː",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "chléb",
@@ -1167,7 +1839,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "bread"
+      "meaning": "bread",
+      "ipa": "xlˈeːp",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "krém",
@@ -1179,7 +1858,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "cream"
+      "meaning": "cream",
+      "ipa": "krˈeːm",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "teplé",
@@ -1191,7 +1877,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "warm"
+      "meaning": "warm",
+      "ipa": "tˈepleː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "malé",
@@ -1203,7 +1896,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "small"
+      "meaning": "small",
+      "ipa": "mˈaleː",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "velké",
@@ -1215,7 +1915,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "big"
+      "meaning": "big",
+      "ipa": "vˈelkeː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "dlouhé",
@@ -1227,7 +1934,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "long"
+      "meaning": "long",
+      "ipa": "dlˈoʊheː",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "krátké",
@@ -1239,7 +1953,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "short"
+      "meaning": "short",
+      "ipa": "krˈaːtkeː",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "nové",
@@ -1251,7 +1972,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "new"
+      "meaning": "new",
+      "ipa": "nˈoveː",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "zelené",
@@ -1263,7 +1991,14 @@ const language = {
         "è",
         "ë"
       ],
-      "meaning": "green"
+      "meaning": "green",
+      "ipa": "zˈeleneː",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "děda",
@@ -1275,7 +2010,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "grandpa"
+      "meaning": "grandpa",
+      "ipa": "ɟˈeda",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "děti",
@@ -1287,7 +2029,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "children"
+      "meaning": "children",
+      "ipa": "ɟˈeci",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "běh",
@@ -1299,7 +2048,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "run"
+      "meaning": "run",
+      "ipa": "bjˈex",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "běží",
@@ -1311,7 +2067,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "runs"
+      "meaning": "runs",
+      "ipa": "bjˈeʒiː",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "věc",
@@ -1323,7 +2086,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "thing"
+      "meaning": "thing",
+      "ipa": "vjˈets",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "věta",
@@ -1335,7 +2105,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "sentence"
+      "meaning": "sentence",
+      "ipa": "vjˈeta",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "město",
@@ -1347,7 +2124,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "city"
+      "meaning": "city",
+      "ipa": "mɲˈesto",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "měsíc",
@@ -1359,7 +2143,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "month"
+      "meaning": "month",
+      "ipa": "mɲˈesiːts",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "pěna",
@@ -1371,7 +2162,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "foam"
+      "meaning": "foam",
+      "ipa": "pjˈena",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "pět",
@@ -1383,7 +2181,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "five"
+      "meaning": "five",
+      "ipa": "pjˈet",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "květ",
@@ -1395,7 +2200,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "blossom"
+      "meaning": "blossom",
+      "ipa": "kvjˈet",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "svět",
@@ -1407,7 +2219,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "world"
+      "meaning": "world",
+      "ipa": "svjˈet",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "věnec",
@@ -1419,7 +2238,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "wreath"
+      "meaning": "wreath",
+      "ipa": "vjˈenets",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "stěna",
@@ -1431,7 +2257,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "wall"
+      "meaning": "wall",
+      "ipa": "scˈena",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "zpěv",
@@ -1443,7 +2276,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "singing"
+      "meaning": "singing",
+      "ipa": "spjˈev",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "běžet",
@@ -1455,7 +2295,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "to run"
+      "meaning": "to run",
+      "ipa": "bjˈeʒet",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "měkký",
@@ -1467,7 +2314,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "soft"
+      "meaning": "soft",
+      "ipa": "mɲˈekiː",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "tělo",
@@ -1479,7 +2333,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "body"
+      "meaning": "body",
+      "ipa": "cˈelo",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "těsto",
@@ -1491,7 +2352,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "dough"
+      "meaning": "dough",
+      "ipa": "cˈesto",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "oběd",
@@ -1503,7 +2371,14 @@ const language = {
         "é",
         "è"
       ],
-      "meaning": "lunch"
+      "meaning": "lunch",
+      "ipa": "ˈobjet",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "bílý",
@@ -1515,7 +2390,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "white"
+      "meaning": "white",
+      "ipa": "bˈiːliː",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "mír",
@@ -1527,7 +2409,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "peace"
+      "meaning": "peace",
+      "ipa": "mˈiːr",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "síla",
@@ -1539,7 +2428,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "strength"
+      "meaning": "strength",
+      "ipa": "sˈiːla",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "víno",
@@ -1551,7 +2447,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "wine"
+      "meaning": "wine",
+      "ipa": "vˈiːno",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "zítra",
@@ -1563,7 +2466,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "tomorrow"
+      "meaning": "tomorrow",
+      "ipa": "zˈiːtra",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "lípa",
@@ -1575,7 +2485,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "linden tree"
+      "meaning": "linden tree",
+      "ipa": "lˈiːpa",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "mísa",
@@ -1587,7 +2504,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "bowl"
+      "meaning": "bowl",
+      "ipa": "mˈiːsa",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "dívka",
@@ -1599,7 +2523,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "girl"
+      "meaning": "girl",
+      "ipa": "ɟˈiːfka",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "rybí",
@@ -1611,7 +2542,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "fish"
+      "meaning": "fish",
+      "ipa": "rˈibiː",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "bít",
@@ -1623,7 +2561,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "to beat"
+      "meaning": "to beat",
+      "ipa": "bˈiːt",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "svítí",
@@ -1635,7 +2580,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "shines"
+      "meaning": "shines",
+      "ipa": "svˈiːciː",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "lístek",
@@ -1647,7 +2599,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "ticket"
+      "meaning": "ticket",
+      "ipa": "lˈiːstek",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "příběh",
@@ -1659,7 +2618,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "story"
+      "meaning": "story",
+      "ipa": "pr̝̊ˈiːbjex",
+      "ipaFocus": [
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "sníh",
@@ -1671,7 +2637,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "snow"
+      "meaning": "snow",
+      "ipa": "sɲˈiːx",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "spí",
@@ -1683,7 +2656,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "sleeps"
+      "meaning": "sleeps",
+      "ipa": "spˈiː",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "žít",
@@ -1695,7 +2675,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "to live"
+      "meaning": "to live",
+      "ipa": "ʒˈiːt",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "cítit",
@@ -1707,7 +2694,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "to feel"
+      "meaning": "to feel",
+      "ipa": "tsˈiːcit",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "písmo",
@@ -1719,7 +2713,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "script"
+      "meaning": "script",
+      "ipa": "pˈiːsmo",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "šířka",
@@ -1731,7 +2732,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "width"
+      "meaning": "width",
+      "ipa": "ʃˈiːr̝ka",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "hříbě",
@@ -1743,7 +2751,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "foal"
+      "meaning": "foal",
+      "ipa": "hr̝ˈiːbje",
+      "ipaFocus": [
+        [
+          3,
+          6
+        ]
+      ]
     },
     {
       "word": "vítěz",
@@ -1755,7 +2770,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "winner"
+      "meaning": "winner",
+      "ipa": "vˈiːces",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "síto",
@@ -1767,7 +2789,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "sieve"
+      "meaning": "sieve",
+      "ipa": "sˈiːto",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "líc",
@@ -1779,7 +2808,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "face side"
+      "meaning": "face side",
+      "ipa": "lˈiːts",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "slíbí",
@@ -1791,7 +2827,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "will promise"
+      "meaning": "will promise",
+      "ipa": "slˈiːbiː",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "pískat",
@@ -1803,7 +2846,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "to whistle"
+      "meaning": "to whistle",
+      "ipa": "pˈiːskat",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "přímý",
@@ -1815,7 +2865,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "direct"
+      "meaning": "direct",
+      "ipa": "pr̝̊ˈiːmiː",
+      "ipaFocus": [
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "stín",
@@ -1827,7 +2884,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "shadow"
+      "meaning": "shadow",
+      "ipa": "scˈiːn",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "hnízdo",
@@ -1839,7 +2903,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "nest"
+      "meaning": "nest",
+      "ipa": "hɲˈiːzdo",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "bílkovina",
@@ -1851,7 +2922,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "protein"
+      "meaning": "protein",
+      "ipa": "bˈiːlkovˌina",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "říjen",
@@ -1863,7 +2941,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "October"
+      "meaning": "October",
+      "ipa": "r̝ˈiːjen",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "dívat",
@@ -1875,7 +2960,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "to watch"
+      "meaning": "to watch",
+      "ipa": "ɟˈiːvat",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "křídlo",
@@ -1887,7 +2979,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "wing"
+      "meaning": "wing",
+      "ipa": "kr̝̊ˈiːdlo",
+      "ipaFocus": [
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "místo",
@@ -1899,7 +2998,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "place"
+      "meaning": "place",
+      "ipa": "mˈiːsto",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "šíp",
@@ -1911,7 +3017,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "arrow"
+      "meaning": "arrow",
+      "ipa": "ʃˈiːp",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "vítat",
@@ -1923,7 +3036,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "to welcome"
+      "meaning": "to welcome",
+      "ipa": "vˈiːtat",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "pírko",
@@ -1935,7 +3055,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "feather"
+      "meaning": "feather",
+      "ipa": "pˈiːrko",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "bříza",
@@ -1947,7 +3074,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "birch"
+      "meaning": "birch",
+      "ipa": "br̝ˈiːza",
+      "ipaFocus": [
+        [
+          3,
+          6
+        ]
+      ]
     },
     {
       "word": "tlouštík",
@@ -1959,7 +3093,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "chubby person"
+      "meaning": "chubby person",
+      "ipa": "tlˈoʊʃciːk",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "lízat",
@@ -1971,7 +3112,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "to lick"
+      "meaning": "to lick",
+      "ipa": "lˈiːzat",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "spící",
@@ -1983,7 +3131,14 @@ const language = {
         "ì",
         "ï"
       ],
-      "meaning": "sleeping"
+      "meaning": "sleeping",
+      "ipa": "spˈiːtsiː",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "kůň",
@@ -1995,7 +3150,14 @@ const language = {
         "ń",
         "ñ"
       ],
-      "meaning": "horse"
+      "meaning": "horse",
+      "ipa": "kˈuːɲ",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "oheň",
@@ -2007,7 +3169,14 @@ const language = {
         "ń",
         "ñ"
       ],
-      "meaning": "fire"
+      "meaning": "fire",
+      "ipa": "ˈoheɲ",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "laň",
@@ -2019,7 +3188,14 @@ const language = {
         "ń",
         "ñ"
       ],
-      "meaning": "doe"
+      "meaning": "doe",
+      "ipa": "lˈaɲ",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "dlaň",
@@ -2031,7 +3207,14 @@ const language = {
         "ń",
         "ñ"
       ],
-      "meaning": "palm"
+      "meaning": "palm",
+      "ipa": "dlˈaɲ",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "píseň",
@@ -2043,7 +3226,14 @@ const language = {
         "ń",
         "ñ"
       ],
-      "meaning": "song"
+      "meaning": "song",
+      "ipa": "pˈiːseɲ",
+      "ipaFocus": [
+        [
+          6,
+          7
+        ]
+      ]
     },
     {
       "word": "žeň",
@@ -2055,7 +3245,14 @@ const language = {
         "ń",
         "ñ"
       ],
-      "meaning": "harvest"
+      "meaning": "harvest",
+      "ipa": "ʒˈeɲ",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "baňka",
@@ -2067,7 +3264,14 @@ const language = {
         "ń",
         "ñ"
       ],
-      "meaning": "flask"
+      "meaning": "flask",
+      "ipa": "bˈaɲka",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "tůň",
@@ -2079,7 +3283,14 @@ const language = {
         "ń",
         "ñ"
       ],
-      "meaning": "pool"
+      "meaning": "pool",
+      "ipa": "tˈuːɲ",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "vězeň",
@@ -2091,7 +3302,14 @@ const language = {
         "ń",
         "ñ"
       ],
-      "meaning": "prisoner"
+      "meaning": "prisoner",
+      "ipa": "vjˈezeɲ",
+      "ipaFocus": [
+        [
+          6,
+          7
+        ]
+      ]
     },
     {
       "word": "koňský",
@@ -2103,7 +3321,14 @@ const language = {
         "ń",
         "ñ"
       ],
-      "meaning": "equine"
+      "meaning": "equine",
+      "ipa": "kˈoɲskiː",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "móda",
@@ -2115,7 +3340,14 @@ const language = {
         "ò",
         "ö"
       ],
-      "meaning": "fashion"
+      "meaning": "fashion",
+      "ipa": "mˈoːda",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "kód",
@@ -2127,7 +3359,14 @@ const language = {
         "ò",
         "ö"
       ],
-      "meaning": "code"
+      "meaning": "code",
+      "ipa": "kˈoːt",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "tón",
@@ -2139,7 +3378,14 @@ const language = {
         "ò",
         "ö"
       ],
-      "meaning": "tone"
+      "meaning": "tone",
+      "ipa": "tˈoːn",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "sól",
@@ -2151,7 +3397,14 @@ const language = {
         "ò",
         "ö"
       ],
-      "meaning": "solo"
+      "meaning": "solo",
+      "ipa": "sˈoːl",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "bóje",
@@ -2163,7 +3416,14 @@ const language = {
         "ò",
         "ö"
       ],
-      "meaning": "buoy"
+      "meaning": "buoy",
+      "ipa": "bˈoːje",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "póza",
@@ -2175,7 +3435,14 @@ const language = {
         "ò",
         "ö"
       ],
-      "meaning": "pose"
+      "meaning": "pose",
+      "ipa": "pˈoːza",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "mólo",
@@ -2187,7 +3454,14 @@ const language = {
         "ò",
         "ö"
       ],
-      "meaning": "pier"
+      "meaning": "pier",
+      "ipa": "mˈoːlo",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "dóza",
@@ -2199,7 +3473,14 @@ const language = {
         "ò",
         "ö"
       ],
-      "meaning": "jar"
+      "meaning": "jar",
+      "ipa": "dˈoːza",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "řeka",
@@ -2211,7 +3492,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "river"
+      "meaning": "river",
+      "ipa": "r̝ˈeka",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "řidič",
@@ -2223,7 +3511,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "driver"
+      "meaning": "driver",
+      "ipa": "r̝ˈiɟitʃ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "řetěz",
@@ -2235,7 +3530,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "chain"
+      "meaning": "chain",
+      "ipa": "r̝ˈeces",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "řepa",
@@ -2247,7 +3549,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "beet"
+      "meaning": "beet",
+      "ipa": "r̝ˈepa",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "řezník",
@@ -2259,7 +3568,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "butcher"
+      "meaning": "butcher",
+      "ipa": "r̝ˈezɲiːk",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "břicho",
@@ -2271,7 +3587,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "belly"
+      "meaning": "belly",
+      "ipa": "br̝ˈixo",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "březen",
@@ -2283,7 +3606,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "March"
+      "meaning": "March",
+      "ipa": "br̝ˈezen",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "moře",
@@ -2295,7 +3625,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "sea"
+      "meaning": "sea",
+      "ipa": "mˈor̝e",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "dveře",
@@ -2307,7 +3644,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "door"
+      "meaning": "door",
+      "ipa": "dvˈer̝e",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "třešeň",
@@ -2319,7 +3663,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "cherry tree"
+      "meaning": "cherry tree",
+      "ipa": "tr̝̊ˈeʃeɲ",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "hřiště",
@@ -2331,7 +3682,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "playground"
+      "meaning": "playground",
+      "ipa": "hr̝ˈiʃce",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "příroda",
@@ -2343,7 +3701,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "nature"
+      "meaning": "nature",
+      "ipa": "pr̝̊ˈiːroda",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "kříž",
@@ -2355,7 +3720,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "cross"
+      "meaning": "cross",
+      "ipa": "kr̝̊ˈiːʃ",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "střecha",
@@ -2367,7 +3739,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "roof"
+      "meaning": "roof",
+      "ipa": "str̝̊ˈexa",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "kořen",
@@ -2379,7 +3758,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "root"
+      "meaning": "root",
+      "ipa": "kˈor̝en",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "pařez",
@@ -2391,7 +3777,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "stump"
+      "meaning": "stump",
+      "ipa": "pˈar̝es",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "vařečka",
@@ -2403,7 +3796,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "wooden spoon"
+      "meaning": "wooden spoon",
+      "ipa": "vˈar̝etʃka",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "kuře",
@@ -2415,7 +3815,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "chicken"
+      "meaning": "chicken",
+      "ipa": "kˈur̝e",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "hřeben",
@@ -2427,7 +3834,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "comb"
+      "meaning": "comb",
+      "ipa": "hr̝ˈeben",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "zítřek",
@@ -2439,7 +3853,14 @@ const language = {
         "ŕ",
         "ṙ"
       ],
-      "meaning": "tomorrow"
+      "meaning": "tomorrow",
+      "ipa": "zˈiːtr̝̊ek",
+      "ipaFocus": [
+        [
+          5,
+          8
+        ]
+      ]
     },
     {
       "word": "škola",
@@ -2451,7 +3872,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "school"
+      "meaning": "school",
+      "ipa": "ʃkˈola",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "šaty",
@@ -2463,7 +3891,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "dress"
+      "meaning": "dress",
+      "ipa": "ʃˈati",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "šnek",
@@ -2475,7 +3910,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "snail"
+      "meaning": "snail",
+      "ipa": "ʃnˈek",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "šunka",
@@ -2487,7 +3929,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "ham"
+      "meaning": "ham",
+      "ipa": "ʃˈuŋka",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "švestka",
@@ -2499,7 +3948,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "plum"
+      "meaning": "plum",
+      "ipa": "ʃvˈestka",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "šťáva",
@@ -2511,7 +3967,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "juice"
+      "meaning": "juice",
+      "ipa": "ʃcˈaːva",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "šum",
@@ -2523,7 +3986,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "rustle"
+      "meaning": "rustle",
+      "ipa": "ʃˈum",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "šachy",
@@ -2535,7 +4005,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "chess"
+      "meaning": "chess",
+      "ipa": "ʃˈaxi",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "šál",
@@ -2547,7 +4024,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "shawl"
+      "meaning": "shawl",
+      "ipa": "ʃˈaːl",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "šiška",
@@ -2559,7 +4043,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "cone"
+      "meaning": "cone",
+      "ipa": "ʃˈiʃka",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "šepot",
@@ -2571,7 +4062,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "whisper"
+      "meaning": "whisper",
+      "ipa": "ʃˈepot",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "šero",
@@ -2583,7 +4081,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "twilight"
+      "meaning": "twilight",
+      "ipa": "ʃˈero",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "šikovný",
@@ -2595,7 +4100,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "skillful"
+      "meaning": "skillful",
+      "ipa": "ʃˈikovniː",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "špinavý",
@@ -2607,7 +4119,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "dirty"
+      "meaning": "dirty",
+      "ipa": "ʃpˈinaviː",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "šťastný",
@@ -2619,7 +4138,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "happy"
+      "meaning": "happy",
+      "ipa": "ʃcˈastniː",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "myš",
@@ -2631,7 +4157,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "mouse"
+      "meaning": "mouse",
+      "ipa": "mˈiʃ",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "koš",
@@ -2643,7 +4176,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "basket"
+      "meaning": "basket",
+      "ipa": "kˈoʃ",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "našel",
@@ -2655,7 +4195,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "found"
+      "meaning": "found",
+      "ipa": "nˈaʃel",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "uši",
@@ -2667,7 +4214,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "ears"
+      "meaning": "ears",
+      "ipa": "ˈuʃi",
+      "ipaFocus": [
+        [
+          2,
+          3
+        ]
+      ]
     },
     {
       "word": "duše",
@@ -2679,7 +4233,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "soul"
+      "meaning": "soul",
+      "ipa": "dˈuʃe",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "sušenka",
@@ -2691,7 +4252,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "cookie"
+      "meaning": "cookie",
+      "ipa": "sˈuʃeŋka",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "myšlenka",
@@ -2703,7 +4271,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "thought"
+      "meaning": "thought",
+      "ipa": "mˈiʃleŋka",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "vyšší",
@@ -2715,7 +4290,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "higher"
+      "meaning": "higher",
+      "ipa": "vˈiʃʃiː",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "tiše",
@@ -2727,7 +4309,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "quietly"
+      "meaning": "quietly",
+      "ipa": "cˈiʃe",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "prašný",
@@ -2739,7 +4328,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "dusty"
+      "meaning": "dusty",
+      "ipa": "prˈaʃniː",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "hruška",
@@ -2751,7 +4347,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "pear"
+      "meaning": "pear",
+      "ipa": "hrˈuʃka",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "kaše",
@@ -2763,7 +4366,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "porridge"
+      "meaning": "porridge",
+      "ipa": "kˈaʃe",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "pěšky",
@@ -2775,7 +4385,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "on foot"
+      "meaning": "on foot",
+      "ipa": "pjˈeʃki",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "dnešek",
@@ -2787,7 +4404,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "today"
+      "meaning": "today",
+      "ipa": "dnˈeʃek",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "polštář",
@@ -2799,7 +4423,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "pillow"
+      "meaning": "pillow",
+      "ipa": "pˈolʃtaːr̝",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "pašerák",
@@ -2811,7 +4442,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "smuggler"
+      "meaning": "smuggler",
+      "ipa": "pˈaʃeraːk",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "šumět",
@@ -2823,7 +4461,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "to rustle"
+      "meaning": "to rustle",
+      "ipa": "ʃˈumɲet",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "šlapat",
@@ -2835,7 +4480,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "to tread"
+      "meaning": "to tread",
+      "ipa": "ʃlˈapat",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "škrábat",
@@ -2847,7 +4499,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "to scratch"
+      "meaning": "to scratch",
+      "ipa": "ʃkrˈaːbat",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "široký",
@@ -2859,7 +4518,14 @@ const language = {
         "ś",
         "ŝ"
       ],
-      "meaning": "wide"
+      "meaning": "wide",
+      "ipa": "ʃˈirokiː",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ťuk",
@@ -2871,7 +4537,14 @@ const language = {
         "ţ",
         "ṫ"
       ],
-      "meaning": "tap"
+      "meaning": "tap",
+      "ipa": "cˈuk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ťukat",
@@ -2883,7 +4556,14 @@ const language = {
         "ţ",
         "ṫ"
       ],
-      "meaning": "to tap"
+      "meaning": "to tap",
+      "ipa": "cˈukat",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "chuť",
@@ -2895,7 +4575,14 @@ const language = {
         "ţ",
         "ṫ"
       ],
-      "meaning": "taste"
+      "meaning": "taste",
+      "ipa": "xˈuc",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "síť",
@@ -2907,7 +4594,14 @@ const language = {
         "ţ",
         "ṫ"
       ],
-      "meaning": "net"
+      "meaning": "net",
+      "ipa": "sˈiːc",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "pouť",
@@ -2919,7 +4613,14 @@ const language = {
         "ţ",
         "ṫ"
       ],
-      "meaning": "pilgrimage"
+      "meaning": "pilgrimage",
+      "ipa": "pˈoʊc",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "nechoť",
@@ -2931,7 +4632,14 @@ const language = {
         "ţ",
         "ṫ"
       ],
-      "meaning": "spouse"
+      "meaning": "spouse",
+      "ipa": "nˈexoc",
+      "ipaFocus": [
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "rtuť",
@@ -2943,7 +4651,14 @@ const language = {
         "ţ",
         "ṫ"
       ],
-      "meaning": "mercury"
+      "meaning": "mercury",
+      "ipa": "ˈr̩tuc",
+      "ipaFocus": [
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "zeť",
@@ -2955,7 +4670,14 @@ const language = {
         "ţ",
         "ṫ"
       ],
-      "meaning": "son-in-law"
+      "meaning": "son-in-law",
+      "ipa": "zˈec",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "lať",
@@ -2967,7 +4689,14 @@ const language = {
         "ţ",
         "ṫ"
       ],
-      "meaning": "slat"
+      "meaning": "slat",
+      "ipa": "lˈac",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "paměť",
@@ -2979,7 +4708,14 @@ const language = {
         "ţ",
         "ṫ"
       ],
-      "meaning": "memory"
+      "meaning": "memory",
+      "ipa": "pˈamɲec",
+      "ipaFocus": [
+        [
+          6,
+          7
+        ]
+      ]
     },
     {
       "word": "ústa",
@@ -2991,7 +4727,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "mouth"
+      "meaning": "mouth",
+      "ipa": "ˈuːsta",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "únor",
@@ -3003,7 +4746,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "February"
+      "meaning": "February",
+      "ipa": "ˈuːnor",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "účes",
@@ -3015,7 +4765,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "hairstyle"
+      "meaning": "hairstyle",
+      "ipa": "ˈuːtʃes",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "účet",
@@ -3027,7 +4784,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "bill"
+      "meaning": "bill",
+      "ipa": "ˈuːtʃet",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "úkol",
@@ -3039,7 +4803,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "task"
+      "meaning": "task",
+      "ipa": "ˈuːkol",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "úsměv",
@@ -3051,7 +4822,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "smile"
+      "meaning": "smile",
+      "ipa": "ˈuːsmɲev",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "útes",
@@ -3063,7 +4841,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "cliff"
+      "meaning": "cliff",
+      "ipa": "ˈuːtes",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "údolí",
@@ -3075,7 +4860,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "valley"
+      "meaning": "valley",
+      "ipa": "ˈuːdoliː",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "úroda",
@@ -3087,7 +4879,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "harvest"
+      "meaning": "harvest",
+      "ipa": "ˈuːroda",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "úplně",
@@ -3099,7 +4898,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "completely"
+      "meaning": "completely",
+      "ipa": "ˈuːpl̩ɲe",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "úspěch",
@@ -3111,7 +4917,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "success"
+      "meaning": "success",
+      "ipa": "ˈuːspjex",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "únava",
@@ -3123,7 +4936,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "fatigue"
+      "meaning": "fatigue",
+      "ipa": "ˈuːnava",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "úl",
@@ -3135,7 +4955,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "beehive"
+      "meaning": "beehive",
+      "ipa": "ˈuːl",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "úhel",
@@ -3147,7 +4974,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "angle"
+      "meaning": "angle",
+      "ipa": "ˈuːhel",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "úředník",
@@ -3159,7 +4993,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "official"
+      "meaning": "official",
+      "ipa": "ˈuːr̝edɲiːk",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "úterý",
@@ -3171,7 +5012,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "Tuesday"
+      "meaning": "Tuesday",
+      "ipa": "ˈuːteriː",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "úkryt",
@@ -3183,7 +5031,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "hideout"
+      "meaning": "hideout",
+      "ipa": "ˈuːkrit",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "úplatek",
@@ -3195,7 +5050,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "bribe"
+      "meaning": "bribe",
+      "ipa": "ˈuːplatek",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "úprava",
@@ -3207,7 +5069,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "adjustment"
+      "meaning": "adjustment",
+      "ipa": "ˈuːprava",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "úcta",
@@ -3219,7 +5088,14 @@ const language = {
         "ù",
         "ü"
       ],
-      "meaning": "respect"
+      "meaning": "respect",
+      "ipa": "ˈuːtsta",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "dům",
@@ -3231,7 +5107,14 @@ const language = {
         "ú",
         "ü"
       ],
-      "meaning": "house"
+      "meaning": "house",
+      "ipa": "dˈuːm",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "sůl",
@@ -3243,7 +5126,14 @@ const language = {
         "ú",
         "ü"
       ],
-      "meaning": "salt"
+      "meaning": "salt",
+      "ipa": "sˈuːl",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "nůž",
@@ -3255,7 +5145,14 @@ const language = {
         "ú",
         "ü"
       ],
-      "meaning": "knife"
+      "meaning": "knife",
+      "ipa": "nˈuːʃ",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "kůra",
@@ -3267,7 +5164,14 @@ const language = {
         "ú",
         "ü"
       ],
-      "meaning": "bark"
+      "meaning": "bark",
+      "ipa": "kˈuːra",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "půda",
@@ -3279,7 +5183,14 @@ const language = {
         "ú",
         "ü"
       ],
-      "meaning": "soil"
+      "meaning": "soil",
+      "ipa": "pˈuːda",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "stůl",
@@ -3291,7 +5202,14 @@ const language = {
         "ú",
         "ü"
       ],
-      "meaning": "table"
+      "meaning": "table",
+      "ipa": "stˈuːl",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "růže",
@@ -3303,7 +5221,14 @@ const language = {
         "ú",
         "ü"
       ],
-      "meaning": "rose"
+      "meaning": "rose",
+      "ipa": "rˈuːʒe",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "hůl",
@@ -3315,7 +5240,14 @@ const language = {
         "ú",
         "ü"
       ],
-      "meaning": "stick"
+      "meaning": "stick",
+      "ipa": "hˈuːl",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "důvod",
@@ -3327,7 +5259,14 @@ const language = {
         "ú",
         "ü"
       ],
-      "meaning": "reason"
+      "meaning": "reason",
+      "ipa": "dˈuːvot",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "průvod",
@@ -3339,7 +5278,14 @@ const language = {
         "ú",
         "ü"
       ],
-      "meaning": "parade"
+      "meaning": "parade",
+      "ipa": "prˈuːvot",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "trůn",
@@ -3351,7 +5297,14 @@ const language = {
         "ú",
         "ü"
       ],
-      "meaning": "throne"
+      "meaning": "throne",
+      "ipa": "trˈuːn",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "vůz",
@@ -3363,7 +5316,14 @@ const language = {
         "ú",
         "ü"
       ],
-      "meaning": "wagon"
+      "meaning": "wagon",
+      "ipa": "vˈuːs",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "původ",
@@ -3375,7 +5335,14 @@ const language = {
         "ú",
         "ü"
       ],
-      "meaning": "origin"
+      "meaning": "origin",
+      "ipa": "pˈuːvot",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "kůzle",
@@ -3387,7 +5354,14 @@ const language = {
         "ú",
         "ü"
       ],
-      "meaning": "kid goat"
+      "meaning": "kid goat",
+      "ipa": "kˈuːzle",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "důkaz",
@@ -3399,7 +5373,14 @@ const language = {
         "ú",
         "ü"
       ],
-      "meaning": "proof"
+      "meaning": "proof",
+      "ipa": "dˈuːkas",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "dobrý",
@@ -3411,7 +5392,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "good"
+      "meaning": "good",
+      "ipa": "dˈobriː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "malý",
@@ -3423,7 +5411,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "small"
+      "meaning": "small",
+      "ipa": "mˈaliː",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "velký",
@@ -3435,7 +5430,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "big"
+      "meaning": "big",
+      "ipa": "vˈelkiː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "milý",
@@ -3447,7 +5449,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "kind"
+      "meaning": "kind",
+      "ipa": "mˈiliː",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "bohatý",
@@ -3459,7 +5468,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "rich"
+      "meaning": "rich",
+      "ipa": "bˈohatiː",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "tichý",
@@ -3471,7 +5487,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "quiet"
+      "meaning": "quiet",
+      "ipa": "cˈixiː",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "rychlý",
@@ -3483,7 +5506,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "fast"
+      "meaning": "fast",
+      "ipa": "rˈixliː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "drahý",
@@ -3495,7 +5525,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "expensive"
+      "meaning": "expensive",
+      "ipa": "drˈahiː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "suchý",
@@ -3507,7 +5544,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "dry"
+      "meaning": "dry",
+      "ipa": "sˈuxiː",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "hloupý",
@@ -3519,7 +5563,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "stupid"
+      "meaning": "stupid",
+      "ipa": "hlˈoʊpiː",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "chytrý",
@@ -3531,7 +5582,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "clever"
+      "meaning": "clever",
+      "ipa": "xˈitriː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "levý",
@@ -3543,7 +5601,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "left"
+      "meaning": "left",
+      "ipa": "lˈeviː",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "pravý",
@@ -3555,7 +5620,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "right"
+      "meaning": "right",
+      "ipa": "prˈaviː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "teplý",
@@ -3567,7 +5639,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "warm"
+      "meaning": "warm",
+      "ipa": "tˈepliː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "studený",
@@ -3579,7 +5658,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "cold"
+      "meaning": "cold",
+      "ipa": "stˈudeniː",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "mladý",
@@ -3591,7 +5677,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "young"
+      "meaning": "young",
+      "ipa": "mlˈadiː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "starý",
@@ -3603,7 +5696,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "old"
+      "meaning": "old",
+      "ipa": "stˈariː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "jiný",
@@ -3615,7 +5715,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "different"
+      "meaning": "different",
+      "ipa": "jˈiniː",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "tmavý",
@@ -3627,7 +5734,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "dark"
+      "meaning": "dark",
+      "ipa": "tmˈaviː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "čistý",
@@ -3639,7 +5753,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "clean"
+      "meaning": "clean",
+      "ipa": "tʃˈistiː",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "známý",
@@ -3651,7 +5772,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "famous"
+      "meaning": "famous",
+      "ipa": "znˈaːmiː",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "obyčejný",
@@ -3663,7 +5791,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "ordinary"
+      "meaning": "ordinary",
+      "ipa": "ˈobitʃˌeɪniː",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "silný",
@@ -3675,7 +5810,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "strong"
+      "meaning": "strong",
+      "ipa": "sˈilniː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "slabý",
@@ -3687,7 +5829,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "weak"
+      "meaning": "weak",
+      "ipa": "slˈabiː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "volný",
@@ -3699,7 +5848,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "free"
+      "meaning": "free",
+      "ipa": "vˈolniː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "pevný",
@@ -3711,7 +5867,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "firm"
+      "meaning": "firm",
+      "ipa": "pˈevniː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "rovný",
@@ -3723,7 +5886,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "straight"
+      "meaning": "straight",
+      "ipa": "rˈovniː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "šedý",
@@ -3735,7 +5905,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "gray"
+      "meaning": "gray",
+      "ipa": "ʃˈediː",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "hodný",
@@ -3747,7 +5924,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "nice"
+      "meaning": "nice",
+      "ipa": "hˈodniː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "vřelý",
@@ -3759,7 +5943,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "warm-hearted"
+      "meaning": "warm-hearted",
+      "ipa": "vr̝ˈeliː",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "český",
@@ -3771,7 +5962,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "Czech"
+      "meaning": "Czech",
+      "ipa": "tʃˈeskiː",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "horský",
@@ -3783,7 +5981,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "mountain"
+      "meaning": "mountain",
+      "ipa": "hˈorskiː",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "nízký",
@@ -3795,7 +6000,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "low"
+      "meaning": "low",
+      "ipa": "ɲˈiːskiː",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "vysoký",
@@ -3807,7 +6019,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "tall"
+      "meaning": "tall",
+      "ipa": "vˈisokiː",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "žlutý",
@@ -3819,7 +6038,14 @@ const language = {
         "ÿ",
         "ỳ"
       ],
-      "meaning": "yellow"
+      "meaning": "yellow",
+      "ipa": "ʒlˈutiː",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "žena",
@@ -3831,7 +6057,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "woman"
+      "meaning": "woman",
+      "ipa": "ʒˈena",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "život",
@@ -3843,7 +6076,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "life"
+      "meaning": "life",
+      "ipa": "ʒˈivot",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "žába",
@@ -3855,7 +6095,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "frog"
+      "meaning": "frog",
+      "ipa": "ʒˈaːba",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "židle",
@@ -3867,7 +6114,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "chair"
+      "meaning": "chair",
+      "ipa": "ʒˈidle",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "žízeň",
@@ -3879,7 +6133,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "thirst"
+      "meaning": "thirst",
+      "ipa": "ʒˈiːzeɲ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "žaludek",
@@ -3891,7 +6152,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "stomach"
+      "meaning": "stomach",
+      "ipa": "ʒˈaludek",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "žebřík",
@@ -3903,7 +6171,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "ladder"
+      "meaning": "ladder",
+      "ipa": "ʒˈebr̝iːk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "želva",
@@ -3915,7 +6190,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "turtle"
+      "meaning": "turtle",
+      "ipa": "ʒˈelva",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "železo",
@@ -3927,7 +6209,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "iron"
+      "meaning": "iron",
+      "ipa": "ʒˈelezo",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "žně",
@@ -3939,7 +6228,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "harvest"
+      "meaning": "harvest",
+      "ipa": "ʒɲˈe",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "žert",
@@ -3951,7 +6247,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "joke"
+      "meaning": "joke",
+      "ipa": "ʒˈert",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "žeton",
@@ -3963,7 +6266,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "token"
+      "meaning": "token",
+      "ipa": "ʒˈeton",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "župan",
@@ -3975,7 +6285,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "bathrobe"
+      "meaning": "bathrobe",
+      "ipa": "ʒˈupan",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "žihadlo",
@@ -3987,7 +6304,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "stinger"
+      "meaning": "stinger",
+      "ipa": "ʒˈihadlo",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "žirafa",
@@ -3999,7 +6323,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "giraffe"
+      "meaning": "giraffe",
+      "ipa": "ʒˈirafa",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "žížala",
@@ -4011,7 +6342,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "earthworm"
+      "meaning": "earthworm",
+      "ipa": "ʒˈiːʒala",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "běžec",
@@ -4023,7 +6361,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "runner"
+      "meaning": "runner",
+      "ipa": "bjˈeʒets",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "běžně",
@@ -4035,7 +6380,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "commonly"
+      "meaning": "commonly",
+      "ipa": "bjˈeʒɲe",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "mříž",
@@ -4047,7 +6399,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "grille"
+      "meaning": "grille",
+      "ipa": "mr̝ˈiːʃ",
+      "ipaFocus": [
+        [
+          6,
+          7
+        ]
+      ]
     },
     {
       "word": "pláž",
@@ -4059,7 +6418,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "beach"
+      "meaning": "beach",
+      "ipa": "plˈaːʃ",
+      "ipaFocus": [
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "režim",
@@ -4071,7 +6437,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "mode"
+      "meaning": "mode",
+      "ipa": "rˈeʒim",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "pažit",
@@ -4083,7 +6456,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "lawn"
+      "meaning": "lawn",
+      "ipa": "pˈaʒit",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "zážitek",
@@ -4095,7 +6475,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "experience"
+      "meaning": "experience",
+      "ipa": "zˈaːʒitek",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "kůže",
@@ -4107,7 +6494,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "skin"
+      "meaning": "skin",
+      "ipa": "kˈuːʒe",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "lžíce",
@@ -4119,7 +6513,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "spoon"
+      "meaning": "spoon",
+      "ipa": "ˈl̩ʒiːtse",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "lože",
@@ -4131,7 +6532,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "bed"
+      "meaning": "bed",
+      "ipa": "lˈoʒe",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "věž",
@@ -4143,7 +6551,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "tower"
+      "meaning": "tower",
+      "ipa": "vjˈeʃ",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "nůžky",
@@ -4155,7 +6570,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "scissors"
+      "meaning": "scissors",
+      "ipa": "nˈuːʃki",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "tužka",
@@ -4167,7 +6589,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "pencil"
+      "meaning": "pencil",
+      "ipa": "tˈuʃka",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "lyže",
@@ -4179,7 +6608,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "skis"
+      "meaning": "skis",
+      "ipa": "lˈiʒe",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "kníže",
@@ -4191,7 +6627,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "prince"
+      "meaning": "prince",
+      "ipa": "kɲˈiːʒe",
+      "ipaFocus": [
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "družina",
@@ -4203,7 +6646,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "group"
+      "meaning": "group",
+      "ipa": "drˈuʒina",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "požár",
@@ -4215,7 +6665,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "fire"
+      "meaning": "fire",
+      "ipa": "pˈoʒaːr",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "žasnout",
@@ -4227,7 +6684,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "to marvel"
+      "meaning": "to marvel",
+      "ipa": "ʒˈasnoʊt",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "žádat",
@@ -4239,7 +6703,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "to request"
+      "meaning": "to request",
+      "ipa": "ʒˈaːdat",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "žonglovat",
@@ -4251,7 +6722,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "to juggle"
+      "meaning": "to juggle",
+      "ipa": "ʒˈoŋɡlovat",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "užitek",
@@ -4263,7 +6741,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "benefit"
+      "meaning": "benefit",
+      "ipa": "ˈuʒitek",
+      "ipaFocus": [
+        [
+          2,
+          3
+        ]
+      ]
     },
     {
       "word": "zboží",
@@ -4275,7 +6760,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "goods"
+      "meaning": "goods",
+      "ipa": "zbˈoʒiː",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "svěží",
@@ -4287,7 +6779,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "fresh"
+      "meaning": "fresh",
+      "ipa": "svjˈeʒiː",
+      "ipaFocus": [
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "odvážný",
@@ -4299,7 +6798,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "brave"
+      "meaning": "brave",
+      "ipa": "ˈodvaːʒniː",
+      "ipaFocus": [
+        [
+          6,
+          7
+        ]
+      ]
     },
     {
       "word": "vážný",
@@ -4311,7 +6817,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "serious"
+      "meaning": "serious",
+      "ipa": "vˈaːʒniː",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "běžný",
@@ -4323,7 +6836,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "usual"
+      "meaning": "usual",
+      "ipa": "bjˈeʒniː",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "důležitý",
@@ -4335,7 +6855,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "important"
+      "meaning": "important",
+      "ipa": "dˈuːleʒˌitiː",
+      "ipaFocus": [
+        [
+          6,
+          7
+        ]
+      ]
     },
     {
       "word": "kroužek",
@@ -4347,7 +6874,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "circle"
+      "meaning": "circle",
+      "ipa": "krˈoʊʒek",
+      "ipaFocus": [
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "smažený",
@@ -4359,7 +6893,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "fried"
+      "meaning": "fried",
+      "ipa": "smˈaʒeniː",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "lyžař",
@@ -4371,7 +6912,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "skier"
+      "meaning": "skier",
+      "ipa": "lˈiʒar̝",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "ježek",
@@ -4383,7 +6931,14 @@ const language = {
         "ź",
         "ż"
       ],
-      "meaning": "hedgehog"
+      "meaning": "hedgehog",
+      "ipa": "jˈeʒek",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     }
   ]
 } satisfies LanguageWords

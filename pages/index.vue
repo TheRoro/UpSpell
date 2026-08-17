@@ -53,6 +53,8 @@
       :word="todayWord.word"
       :blank="todayWord.blank"
       :meaning="todayWord.meaning"
+      :ipa="todayWord.ipa"
+      :ipa-focus="todayWord.ipaFocus"
       :correct-choice="todayWord.choices[0]"
       :word-segments="wordSegments"
       :choices="shuffledChoices"

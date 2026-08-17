@@ -40,6 +40,24 @@
         <p :lang="languageCode" class="word-reveal mt-2 text-4xl font-black tracking-wide text-gray-900 dark:text-white">
           {{ wordBefore }}<mark class="rounded-md bg-emerald-200 px-1 text-emerald-900 dark:bg-emerald-800 dark:text-emerald-50">{{ correctChoice }}</mark>{{ wordAfter }}
         </p>
+        <div class="ipa-guide mt-4">
+          <p class="ipa-label">Pronunciation · IPA</p>
+          <p class="ipa-transcription">
+            <span aria-hidden="true">/<template
+                v-for="(segment, index) in ipaSegments"
+                :key="`${segment.text}-${index}`"
+              ><mark v-if="segment.focus" class="ipa-focus">{{ segment.text }}</mark><span v-else>{{ segment.text }}</span></template>/</span>
+            <span class="sr-only">
+              International Phonetic Alphabet pronunciation: {{ ipa }}.
+              The highlighted sound corresponds to {{ correctChoice }}.
+            </span>
+          </p>
+          <p class="ipa-connection">
+            <span :lang="languageCode" class="spelling-focus">{{ correctChoice }}</span>
+            <span aria-hidden="true">→</span>
+            <span class="ipa-focus-text">/{{ focusedIpa }}/</span>
+          </p>
+        </div>
         <p class="mt-2 text-lg text-gray-600 dark:text-gray-300">
           {{ meaning }}
         </p>
@@ -91,11 +109,14 @@
 
 <script setup lang="ts">
 import { computed, useId } from 'vue'
+import type { IpaFocusRange } from '~/data/words'
 
 const props = defineProps<{
   word: string
   blank: string
   meaning: string
+  ipa: string
+  ipaFocus: IpaFocusRange[]
   correctChoice: string
   selectedChoice: string
   correct: boolean
@@ -113,6 +134,27 @@ const feedbackTitleId = useId()
 const blankIndex = computed(() => props.blank.indexOf('_'))
 const wordBefore = computed(() => props.blank.slice(0, blankIndex.value))
 const wordAfter = computed(() => props.blank.slice(blankIndex.value + 1))
+const ipaSegments = computed(() => {
+  const segments: Array<{ text: string; focus: boolean }> = []
+  let cursor = 0
+
+  for (const [start, end] of props.ipaFocus) {
+    if (start > cursor) {
+      segments.push({ text: props.ipa.slice(cursor, start), focus: false })
+    }
+    segments.push({ text: props.ipa.slice(start, end), focus: true })
+    cursor = end
+  }
+
+  if (cursor < props.ipa.length) {
+    segments.push({ text: props.ipa.slice(cursor), focus: false })
+  }
+
+  return segments
+})
+const focusedIpa = computed(() =>
+  props.ipaFocus.map(([start, end]) => props.ipa.slice(start, end)).join(''),
+)
 </script>
 
 <style scoped>
@@ -126,6 +168,63 @@ const wordAfter = computed(() => props.blank.slice(blankIndex.value + 1))
   box-shadow:
     2px 3px 0 rgb(120 53 15 / 7%),
     inset 0 0 0 1px rgb(255 255 255 / 24%);
+}
+
+.ipa-guide {
+  border-top: 1px solid var(--atlas-card-border);
+  padding-top: 1rem;
+}
+
+.ipa-label {
+  color: var(--atlas-muted);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.ipa-transcription {
+  margin-top: 0.3rem;
+  color: var(--atlas-text);
+  font-family: 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif;
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
+  font-weight: 650;
+  letter-spacing: 0.04em;
+}
+
+.ipa-focus {
+  border-radius: 0.28rem;
+  background: rgb(111 150 146 / 24%);
+  padding: 0.05em 0.12em;
+  color: var(--atlas-accent-text);
+  box-shadow: inset 0 -2px 0 rgb(53 110 105 / 45%);
+}
+
+.ipa-connection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  color: var(--atlas-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.spelling-focus,
+.ipa-focus-text {
+  color: var(--atlas-accent-text);
+}
+
+.spelling-focus {
+  display: inline-grid;
+  min-width: 1.8rem;
+  place-items: center;
+  border: 1px solid var(--atlas-card-border);
+  border-radius: 0.3rem;
+  background: var(--atlas-flag-background);
+  padding: 0.12rem 0.35rem;
+  font-size: 1rem;
 }
 
 .pronunciation-button {

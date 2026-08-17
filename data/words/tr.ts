@@ -15,7 +15,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "flower"
+      "meaning": "flower",
+      "ipa": "tʃitʃˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çocuk",
@@ -27,7 +34,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "child"
+      "meaning": "child",
+      "ipa": "tʃodʒˈʊk",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çorba",
@@ -39,7 +53,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "soup"
+      "meaning": "soup",
+      "ipa": "tʃɔrbˈa",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çatal",
@@ -51,7 +72,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "fork"
+      "meaning": "fork",
+      "ipa": "tʃatˈaɫ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çanta",
@@ -63,7 +91,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "bag"
+      "meaning": "bag",
+      "ipa": "tʃantˈa",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çilek",
@@ -75,7 +110,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "strawberry"
+      "meaning": "strawberry",
+      "ipa": "tʃilˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çarşı",
@@ -87,7 +129,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "bazaar"
+      "meaning": "bazaar",
+      "ipa": "tʃarʃˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çamur",
@@ -99,7 +148,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "mud"
+      "meaning": "mud",
+      "ipa": "tʃamˈʊr",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çayır",
@@ -111,7 +167,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "meadow"
+      "meaning": "meadow",
+      "ipa": "tʃajˈɯr",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çiğdem",
@@ -123,7 +186,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "crocus"
+      "meaning": "crocus",
+      "ipa": "tʃɪjdˈæm",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çoban",
@@ -135,7 +205,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "shepherd"
+      "meaning": "shepherd",
+      "ipa": "tʃobˈan",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çekiç",
@@ -147,7 +224,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "hammer"
+      "meaning": "hammer",
+      "ipa": "tʃekˈɪtʃ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çörek",
@@ -159,7 +243,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "pastry"
+      "meaning": "pastry",
+      "ipa": "tʃœɾˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çimen",
@@ -171,7 +262,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "grass"
+      "meaning": "grass",
+      "ipa": "tʃimˈæn",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çınar",
@@ -183,7 +281,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "plane tree"
+      "meaning": "plane tree",
+      "ipa": "tʃɯnˈar",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çadır",
@@ -195,7 +300,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "tent"
+      "meaning": "tent",
+      "ipa": "tʃˈadɯr",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çevre",
@@ -207,7 +319,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "environment"
+      "meaning": "environment",
+      "ipa": "tʃɛvrˈɛ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çarpı",
@@ -219,7 +338,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "plus sign"
+      "meaning": "plus sign",
+      "ipa": "tʃarpˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çığlık",
@@ -231,7 +357,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "scream"
+      "meaning": "scream",
+      "ipa": "tʃɯɯɫˈɯk",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çukur",
@@ -243,7 +376,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "pit"
+      "meaning": "pit",
+      "ipa": "tʃukˈʊr",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çaba",
@@ -255,7 +395,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "effort"
+      "meaning": "effort",
+      "ipa": "tʃabˈa",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çapak",
@@ -267,7 +414,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "speck"
+      "meaning": "speck",
+      "ipa": "tʃapˈak",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çamaşır",
@@ -279,7 +433,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "laundry"
+      "meaning": "laundry",
+      "ipa": "tʃamaʃˈɯr",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çerez",
@@ -291,7 +452,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "snack"
+      "meaning": "snack",
+      "ipa": "tʃeɾˈɛz",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çünkü",
@@ -303,7 +471,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "because"
+      "meaning": "because",
+      "ipa": "tʃønkˈø",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çabuk",
@@ -315,7 +490,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "quick"
+      "meaning": "quick",
+      "ipa": "tʃabˈʊk",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çengel",
@@ -327,7 +509,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "hook"
+      "meaning": "hook",
+      "ipa": "tʃænɟˈæl",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çırak",
@@ -339,7 +528,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "apprentice"
+      "meaning": "apprentice",
+      "ipa": "tʃɯɾˈak",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çizgi",
@@ -351,7 +547,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "line"
+      "meaning": "line",
+      "ipa": "tʃɪzɡˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çakıl",
@@ -363,7 +566,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "gravel"
+      "meaning": "gravel",
+      "ipa": "tʃakˈɯɫ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çalgı",
@@ -375,7 +585,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "instrument"
+      "meaning": "instrument",
+      "ipa": "tʃaɫɡˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çarpıştı",
@@ -387,7 +604,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "collided"
+      "meaning": "collided",
+      "ipa": "tʃarpɯʃtˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çöplük",
@@ -399,7 +623,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "dump"
+      "meaning": "dump",
+      "ipa": "tʃœplˈøk",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çöküş",
@@ -411,7 +642,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "collapse"
+      "meaning": "collapse",
+      "ipa": "tʃœkˈøʃ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çorap",
@@ -423,7 +661,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "sock"
+      "meaning": "sock",
+      "ipa": "tʃoɾˈap",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çerçeve",
@@ -435,7 +680,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "frame"
+      "meaning": "frame",
+      "ipa": "tʃɛrtʃevˈɛ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çamaşırcı",
@@ -447,7 +699,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "laundryman"
+      "meaning": "laundryman",
+      "ipa": "tʃamaʃɯrdʒˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çayırlık",
@@ -459,7 +718,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "grassland"
+      "meaning": "grassland",
+      "ipa": "tʃajɯrɫˈɯk",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çiğnedi",
@@ -471,7 +737,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "chewed"
+      "meaning": "chewed",
+      "ipa": "tʃɪjnedˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çürük",
@@ -483,7 +756,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "rotten"
+      "meaning": "rotten",
+      "ipa": "tʃyɾˈøk",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çözdü",
@@ -495,7 +775,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "solved"
+      "meaning": "solved",
+      "ipa": "tʃœzdˈø",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çuvalladı",
@@ -507,7 +794,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "failed badly"
+      "meaning": "failed badly",
+      "ipa": "tʃuvˈaɫɫadɯ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çarptı",
@@ -519,7 +813,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "hit"
+      "meaning": "hit",
+      "ipa": "tʃarptˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çeviri",
@@ -531,7 +832,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "translation"
+      "meaning": "translation",
+      "ipa": "tʃeviɾˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çakmak",
@@ -543,7 +851,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "lighter"
+      "meaning": "lighter",
+      "ipa": "tʃakmˈak",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çetin",
@@ -555,7 +870,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "tough"
+      "meaning": "tough",
+      "ipa": "tʃetˈɪn",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çikolata",
@@ -567,7 +889,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "chocolate"
+      "meaning": "chocolate",
+      "ipa": "tʃikˈoɫata",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çırpındı",
@@ -579,7 +908,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "struggled"
+      "meaning": "struggled",
+      "ipa": "tʃɯrpɯndˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çitlembik",
@@ -591,7 +927,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "hackberry"
+      "meaning": "hackberry",
+      "ipa": "tʃɪtlæmbˈɪk",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çınladı",
@@ -603,7 +946,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "rang"
+      "meaning": "rang",
+      "ipa": "tʃˈɯnɫadɯ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çit",
@@ -615,7 +965,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "fence"
+      "meaning": "fence",
+      "ipa": "tʃˈɪt",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çiğneme",
@@ -627,7 +984,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "chewing"
+      "meaning": "chewing",
+      "ipa": "tʃɪjnˈemɛ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çırpı",
@@ -639,7 +1003,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "kindling"
+      "meaning": "kindling",
+      "ipa": "tʃɯrpˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çakır",
@@ -651,7 +1022,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "gray-eyed"
+      "meaning": "gray-eyed",
+      "ipa": "tʃakˈɯr",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çamlık",
@@ -663,7 +1041,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "pine grove"
+      "meaning": "pine grove",
+      "ipa": "tʃamɫˈɯk",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çözüm",
@@ -675,7 +1060,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "solution"
+      "meaning": "solution",
+      "ipa": "tʃˈœzøm",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çökertti",
@@ -687,7 +1079,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "collapsed"
+      "meaning": "collapsed",
+      "ipa": "tʃœkɛrtːˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çırpıcı",
@@ -699,7 +1098,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "whisk"
+      "meaning": "whisk",
+      "ipa": "tʃɯrpɯdʒˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çiçekçi",
@@ -711,7 +1117,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "florist"
+      "meaning": "florist",
+      "ipa": "tʃitʃɛktʃˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "çöl",
@@ -723,7 +1136,14 @@ const language = {
         "ş",
         "j"
       ],
-      "meaning": "desert"
+      "meaning": "desert",
+      "ipa": "tʃˈœl",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "dağ",
@@ -735,7 +1155,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "mountain"
+      "meaning": "mountain",
+      "ipa": "dˈaː",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "yağ",
@@ -747,7 +1174,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "oil"
+      "meaning": "oil",
+      "ipa": "jˈaː",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "ağır",
@@ -759,7 +1193,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "heavy"
+      "meaning": "heavy",
+      "ipa": "aːˈɯr",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "soğuk",
@@ -771,7 +1212,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "cold"
+      "meaning": "cold",
+      "ipa": "soːˈʊk",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "doğa",
@@ -783,7 +1231,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "nature"
+      "meaning": "nature",
+      "ipa": "doːˈa",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "düğün",
@@ -795,7 +1250,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "wedding"
+      "meaning": "wedding",
+      "ipa": "dˈøːn",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "göğüs",
@@ -807,7 +1269,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "chest"
+      "meaning": "chest",
+      "ipa": "ɟœːˈøs",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "oğul",
@@ -819,7 +1288,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "son"
+      "meaning": "son",
+      "ipa": "oːˈʊɫ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "öğle",
@@ -831,7 +1307,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "noon"
+      "meaning": "noon",
+      "ipa": "ˈœːlɛ",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "iğne",
@@ -843,7 +1326,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "needle"
+      "meaning": "needle",
+      "ipa": "ɪjnˈɛ",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "değer",
@@ -855,7 +1345,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "value"
+      "meaning": "value",
+      "ipa": "dejˈɛr",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "ağrı",
@@ -867,7 +1364,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "pain"
+      "meaning": "pain",
+      "ipa": "ˈaːɾɯ",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "bağırdı",
@@ -879,7 +1383,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "shouted"
+      "meaning": "shouted",
+      "ipa": "baːɯrdˈɯ",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "doğdu",
@@ -891,7 +1402,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "was born"
+      "meaning": "was born",
+      "ipa": "doːdˈʊ",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "yağmur",
@@ -903,7 +1421,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "rain"
+      "meaning": "rain",
+      "ipa": "jaːmˈʊr",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "sığır",
@@ -915,7 +1440,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "cattle"
+      "meaning": "cattle",
+      "ipa": "sɯɯˈɯr",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "uğrak",
@@ -927,7 +1459,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "stopover"
+      "meaning": "stopover",
+      "ipa": "uːɾˈak",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "sağlıklı",
@@ -939,7 +1478,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "healthy"
+      "meaning": "healthy",
+      "ipa": "saːɫɯkɫˈɯ",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "boğaz",
@@ -951,7 +1497,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "throat"
+      "meaning": "throat",
+      "ipa": "boːˈaz",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "ağladı",
@@ -963,7 +1516,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "cried"
+      "meaning": "cried",
+      "ipa": "ˈaːɫadɯ",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "uğradı",
@@ -975,7 +1535,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "visited"
+      "meaning": "visited",
+      "ipa": "ˈuːɾadɯ",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "öğretti",
@@ -987,7 +1554,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "taught"
+      "meaning": "taught",
+      "ipa": "œːɾetːˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "beğeni",
@@ -999,7 +1573,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "appreciation"
+      "meaning": "appreciation",
+      "ipa": "bejenˈɪ",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "eğri",
@@ -1011,7 +1592,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "crooked"
+      "meaning": "crooked",
+      "ipa": "ɛjrˈɪ",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "öğrenci",
@@ -1023,7 +1611,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "student"
+      "meaning": "student",
+      "ipa": "œːɾændʒˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "bağlama",
@@ -1035,7 +1630,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "lute"
+      "meaning": "lute",
+      "ipa": "bˈaːɫama",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "çoğul",
@@ -1047,7 +1649,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "plural"
+      "meaning": "plural",
+      "ipa": "tʃoːˈʊɫ",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "doğum",
@@ -1059,7 +1668,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "birth"
+      "meaning": "birth",
+      "ipa": "dˈoːʊm",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "sığındı",
@@ -1071,7 +1687,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "took shelter"
+      "meaning": "took shelter",
+      "ipa": "sɯɯɯndˈɯ",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "uğultu",
@@ -1083,7 +1706,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "hum"
+      "meaning": "hum",
+      "ipa": "ʊːɫtˈʊ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "öğüt",
@@ -1095,7 +1725,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "advice"
+      "meaning": "advice",
+      "ipa": "œːˈøt",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "yiğit",
@@ -1107,7 +1744,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "brave"
+      "meaning": "brave",
+      "ipa": "jijˈɪt",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "yoğun",
@@ -1119,7 +1763,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "dense"
+      "meaning": "dense",
+      "ipa": "joːˈʊn",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "sağır",
@@ -1131,7 +1782,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "deaf"
+      "meaning": "deaf",
+      "ipa": "saːˈɯr",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "bağış",
@@ -1143,7 +1801,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "donation"
+      "meaning": "donation",
+      "ipa": "baːˈɯʃ",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "öğün",
@@ -1155,7 +1820,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "meal"
+      "meaning": "meal",
+      "ipa": "œːˈøn",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "tuğla",
@@ -1167,7 +1839,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "brick"
+      "meaning": "brick",
+      "ipa": "tˈuːɫa",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "eğlence",
@@ -1179,7 +1858,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "entertainment"
+      "meaning": "entertainment",
+      "ipa": "ɛjlˈændʒɛ",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "uğraş",
@@ -1191,7 +1877,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "occupation"
+      "meaning": "occupation",
+      "ipa": "uːɾˈaʃ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "boğa",
@@ -1203,7 +1896,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "bull"
+      "meaning": "bull",
+      "ipa": "boːˈa",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "çağrı",
@@ -1215,7 +1915,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "call"
+      "meaning": "call",
+      "ipa": "tʃaːɾˈɯ",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "doğru",
@@ -1227,7 +1934,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "correct"
+      "meaning": "correct",
+      "ipa": "doːɾˈʊ",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "ağartı",
@@ -1239,7 +1953,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "whiteness"
+      "meaning": "whiteness",
+      "ipa": "aːrtˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "yağız",
@@ -1251,7 +1972,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "dark-haired"
+      "meaning": "dark-haired",
+      "ipa": "jˈaːɯz",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "öğreti",
@@ -1263,7 +1991,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "doctrine"
+      "meaning": "doctrine",
+      "ipa": "œːɾetˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "beğendi",
@@ -1275,7 +2010,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "liked"
+      "meaning": "liked",
+      "ipa": "bejændˈɪ",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "uğurlu",
@@ -1287,7 +2029,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "lucky"
+      "meaning": "lucky",
+      "ipa": "ʊːrɫˈʊ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "sığınak",
@@ -1299,7 +2048,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "shelter"
+      "meaning": "shelter",
+      "ipa": "sɯɯɯnˈak",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "değnek",
@@ -1311,7 +2067,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "stick"
+      "meaning": "stick",
+      "ipa": "dɛjnˈɛk",
+      "ipaFocus": [
+        [
+          2,
+          3
+        ]
+      ]
     },
     {
       "word": "yoğurt",
@@ -1323,7 +2086,14 @@ const language = {
         "y",
         "q"
       ],
-      "meaning": "yogurt"
+      "meaning": "yogurt",
+      "ipa": "joːˈʊrt",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "ılık",
@@ -1335,7 +2105,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "warm"
+      "meaning": "warm",
+      "ipa": "ɯɫˈɯk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ırmak",
@@ -1347,7 +2124,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "river"
+      "meaning": "river",
+      "ipa": "ɯrmˈak",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ışık",
@@ -1359,7 +2143,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "light"
+      "meaning": "light",
+      "ipa": "ɯʃˈɯk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ıhlamur",
@@ -1371,7 +2162,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "linden"
+      "meaning": "linden",
+      "ipa": "ɯhɫamˈʊr",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ıspanak",
@@ -1383,7 +2181,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "spinach"
+      "meaning": "spinach",
+      "ipa": "ɯspanˈak",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ıssız",
@@ -1395,7 +2200,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "desolate"
+      "meaning": "desolate",
+      "ipa": "ˈɯssɯz",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "ıslak",
@@ -1407,7 +2219,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "wet"
+      "meaning": "wet",
+      "ipa": "ɯsɫˈak",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ısmarladı",
@@ -1419,7 +2238,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "ordered"
+      "meaning": "ordered",
+      "ipa": "ɯsmˈarɫadɯ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ızgara",
@@ -1431,7 +2257,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "grill"
+      "meaning": "grill",
+      "ipa": "ɯzɡaɾˈa",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ızdırap",
@@ -1443,7 +2276,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "agony"
+      "meaning": "agony",
+      "ipa": "ɯzdɯɾˈap",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "kıta",
@@ -1455,7 +2295,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "continent"
+      "meaning": "continent",
+      "ipa": "kɯtˈa",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "kırmızı",
@@ -1467,7 +2314,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "red"
+      "meaning": "red",
+      "ipa": "kˈɯrmɯzɯ",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "sıcak",
@@ -1479,7 +2333,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "hot"
+      "meaning": "hot",
+      "ipa": "sɯdʒˈak",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "yıldız",
@@ -1491,7 +2352,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "star"
+      "meaning": "star",
+      "ipa": "jˈɯɫdɯz",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "fırın",
@@ -1503,7 +2371,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "oven"
+      "meaning": "oven",
+      "ipa": "fɯɾˈɯn",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "altın",
@@ -1515,7 +2390,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "gold"
+      "meaning": "gold",
+      "ipa": "aɫtˈɯn",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "kapı",
@@ -1527,7 +2409,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "door"
+      "meaning": "door",
+      "ipa": "kapˈɯ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "sarı",
@@ -1539,7 +2428,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "yellow"
+      "meaning": "yellow",
+      "ipa": "saɾˈɯ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "balık",
@@ -1551,7 +2447,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "fish"
+      "meaning": "fish",
+      "ipa": "baɫˈɯk",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "yazı",
@@ -1563,7 +2466,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "writing"
+      "meaning": "writing",
+      "ipa": "jazˈɯ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "kış",
@@ -1575,7 +2485,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "winter"
+      "meaning": "winter",
+      "ipa": "kˈɯʃ",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "ışın",
@@ -1587,7 +2504,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "ray"
+      "meaning": "ray",
+      "ipa": "ɯʃˈɯn",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "sıkı",
@@ -1599,7 +2523,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "tight"
+      "meaning": "tight",
+      "ipa": "sɯkˈɯ",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "bıçak",
@@ -1611,7 +2542,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "knife"
+      "meaning": "knife",
+      "ipa": "bɯtʃˈak",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "zıpladı",
@@ -1623,7 +2561,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "jumped"
+      "meaning": "jumped",
+      "ipa": "zˈɯpɫadɯ",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "ısırdı",
@@ -1635,7 +2580,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "bit"
+      "meaning": "bit",
+      "ipa": "ɯsɯrdˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "kızgın",
@@ -1647,7 +2599,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "angry"
+      "meaning": "angry",
+      "ipa": "kɯzɡˈɯn",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "ışıltı",
@@ -1659,7 +2618,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "glow"
+      "meaning": "glow",
+      "ipa": "ɯʃɯɫtˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "fırtına",
@@ -1671,7 +2637,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "storm"
+      "meaning": "storm",
+      "ipa": "fɯrtɯnˈa",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "ısındı",
@@ -1683,7 +2656,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "warmed up"
+      "meaning": "warmed up",
+      "ipa": "ɯsɯndˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "tanık",
@@ -1695,7 +2675,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "witness"
+      "meaning": "witness",
+      "ipa": "tanˈɯk",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "akıllı",
@@ -1707,7 +2694,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "smart"
+      "meaning": "smart",
+      "ipa": "akɯɫɫˈɯ",
+      "ipaFocus": [
+        [
+          2,
+          3
+        ]
+      ]
     },
     {
       "word": "kalıp",
@@ -1719,7 +2713,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "mold"
+      "meaning": "mold",
+      "ipa": "kaɫˈɯp",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "ayrılık",
@@ -1731,7 +2732,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "separation"
+      "meaning": "separation",
+      "ipa": "ajrɯɫˈɯk",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "yarış",
@@ -1743,7 +2751,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "race"
+      "meaning": "race",
+      "ipa": "jaɾˈɯʃ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "sıkıntı",
@@ -1755,7 +2770,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "trouble"
+      "meaning": "trouble",
+      "ipa": "sɯkɯntˈɯ",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "kıyı",
@@ -1767,7 +2789,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "shore"
+      "meaning": "shore",
+      "ipa": "kɯjˈɯ",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "ıslaklık",
@@ -1779,7 +2808,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "wetness"
+      "meaning": "wetness",
+      "ipa": "ɯsɫakɫˈɯk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "zımba",
@@ -1791,7 +2827,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "stapler"
+      "meaning": "stapler",
+      "ipa": "zɯmbˈa",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "tılsım",
@@ -1803,7 +2846,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "amulet"
+      "meaning": "amulet",
+      "ipa": "tˈɯɫsɯm",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "yırtık",
@@ -1815,7 +2865,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "torn"
+      "meaning": "torn",
+      "ipa": "jɯrtˈɯk",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "sınıf",
@@ -1827,7 +2884,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "class"
+      "meaning": "class",
+      "ipa": "sɯnˈɯf",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "kıvılcım",
@@ -1839,7 +2903,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "spark"
+      "meaning": "spark",
+      "ipa": "kɯvˈɯɫdʒɯm",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "bıyık",
@@ -1851,7 +2922,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "mustache"
+      "meaning": "mustache",
+      "ipa": "bɯjˈɯk",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "ırgat",
@@ -1863,7 +2941,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "farmhand"
+      "meaning": "farmhand",
+      "ipa": "ɯrɡˈat",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ıslık",
@@ -1875,7 +2960,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "whistle"
+      "meaning": "whistle",
+      "ipa": "ɯsɫˈɯk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ıslattı",
@@ -1887,7 +2979,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "soaked"
+      "meaning": "soaked",
+      "ipa": "ɯsɫatːˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "kıdem",
@@ -1899,7 +2998,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "seniority"
+      "meaning": "seniority",
+      "ipa": "kɯdˈæm",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "kırık",
@@ -1911,7 +3017,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "broken"
+      "meaning": "broken",
+      "ipa": "kɯɾˈɯk",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "tırnak",
@@ -1923,7 +3036,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "nail"
+      "meaning": "nail",
+      "ipa": "tɯrnˈak",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "kırlangıç",
@@ -1935,7 +3055,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "swallow"
+      "meaning": "swallow",
+      "ipa": "kɯrɫanɡˈɯtʃ",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "kıraç",
@@ -1947,7 +3074,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "barren"
+      "meaning": "barren",
+      "ipa": "kɯɾˈatʃ",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "cıvata",
@@ -1959,7 +3093,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "bolt"
+      "meaning": "bolt",
+      "ipa": "dʒɯvatˈa",
+      "ipaFocus": [
+        [
+          2,
+          3
+        ]
+      ]
     },
     {
       "word": "bıktı",
@@ -1971,7 +3112,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "got bored"
+      "meaning": "got bored",
+      "ipa": "bɯktˈɯ",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "yığın",
@@ -1983,7 +3131,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "pile"
+      "meaning": "pile",
+      "ipa": "jɯɯˈɯn",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "ılıklaştı",
@@ -1995,7 +3150,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "became warm"
+      "meaning": "became warm",
+      "ipa": "ɯɫɯkɫaʃtˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ırk",
@@ -2007,7 +3169,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "race"
+      "meaning": "race",
+      "ipa": "ˈɯrk",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "ıska",
@@ -2019,7 +3188,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "miss"
+      "meaning": "miss",
+      "ipa": "ɯskˈa",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "pırasa",
@@ -2031,7 +3207,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "leek"
+      "meaning": "leek",
+      "ipa": "pˈɯɾasa",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "kısmet",
@@ -2043,7 +3226,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "fortune"
+      "meaning": "fortune",
+      "ipa": "kɯsmˈɛt",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "kıskanç",
@@ -2055,7 +3245,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "jealous"
+      "meaning": "jealous",
+      "ipa": "kɯskˈantʃ",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "sıkıcı",
@@ -2067,7 +3264,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "boring"
+      "meaning": "boring",
+      "ipa": "sɯkɯdʒˈɯ",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "yıkadı",
@@ -2079,7 +3283,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "washed"
+      "meaning": "washed",
+      "ipa": "jɯkadˈɯ",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "yıldırım",
@@ -2091,7 +3302,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "lightning"
+      "meaning": "lightning",
+      "ipa": "jˈɯɫdɯɾɯm",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "kılıç",
@@ -2103,7 +3321,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "sword"
+      "meaning": "sword",
+      "ipa": "kɯɫˈɯtʃ",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "sınır",
@@ -2115,7 +3340,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "border"
+      "meaning": "border",
+      "ipa": "sɯnˈɯr",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "tıkanık",
@@ -2127,7 +3359,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "clogged"
+      "meaning": "clogged",
+      "ipa": "tɯkanˈɯk",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "kıyamet",
@@ -2139,7 +3378,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "doomsday"
+      "meaning": "doomsday",
+      "ipa": "kɯjamˈɛt",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "bıngıldak",
@@ -2151,7 +3397,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "fontanelle"
+      "meaning": "fontanelle",
+      "ipa": "bɯnɡɯɫdˈak",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "sırık",
@@ -2163,7 +3416,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "pole"
+      "meaning": "pole",
+      "ipa": "sɯɾˈɯk",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "kışlık",
@@ -2175,7 +3435,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "winterwear"
+      "meaning": "winterwear",
+      "ipa": "kɯʃɫˈɯk",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "arıtma",
@@ -2187,7 +3454,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "purification"
+      "meaning": "purification",
+      "ipa": "aɾˈɯtma",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "alışık",
@@ -2199,7 +3473,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "accustomed"
+      "meaning": "accustomed",
+      "ipa": "aɫɯʃˈɯk",
+      "ipaFocus": [
+        [
+          2,
+          3
+        ]
+      ]
     },
     {
       "word": "yakın",
@@ -2211,7 +3492,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "near"
+      "meaning": "near",
+      "ipa": "jakˈɯn",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "yalıtım",
@@ -2223,7 +3511,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "insulation"
+      "meaning": "insulation",
+      "ipa": "jaɫˈɯtɯm",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "kıpırdadı",
@@ -2235,7 +3530,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "moved"
+      "meaning": "moved",
+      "ipa": "kɯpɯrdadˈɯ",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "alıştırma",
@@ -2247,7 +3549,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "exercise"
+      "meaning": "exercise",
+      "ipa": "aɫˈɯʃtɯrma",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "cılız",
@@ -2259,7 +3568,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "scrawny"
+      "meaning": "scrawny",
+      "ipa": "dʒˈɯɫɯz",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "yapışık",
@@ -2271,7 +3587,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "sticky"
+      "meaning": "sticky",
+      "ipa": "japɯʃˈɯk",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "kırıntı",
@@ -2283,7 +3606,14 @@ const language = {
         "u",
         "a"
       ],
-      "meaning": "crumb"
+      "meaning": "crumb",
+      "ipa": "kɯɾɯntˈɯ",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "İstanbul",
@@ -2295,7 +3625,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "Istanbul"
+      "meaning": "Istanbul",
+      "ipa": "ɪstˈanbʊɫ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "İzmir",
@@ -2307,7 +3644,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "Izmir"
+      "meaning": "Izmir",
+      "ipa": "ˈɪzmɪr",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "İpek",
@@ -2319,7 +3663,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "silk"
+      "meaning": "silk",
+      "ipa": "ipˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "İngilizce",
@@ -2331,7 +3682,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "English language"
+      "meaning": "English language",
+      "ipa": "ɪnɟˈilɪzdʒɛ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "İncir",
@@ -2343,7 +3701,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "fig"
+      "meaning": "fig",
+      "ipa": "ɪndʒˈɪr",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "İğde",
@@ -2355,7 +3720,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "oleaster"
+      "meaning": "oleaster",
+      "ipa": "ɪjdˈɛ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "İzin",
@@ -2367,7 +3739,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "permission"
+      "meaning": "permission",
+      "ipa": "izˈɪn",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "İklim",
@@ -2379,7 +3758,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "climate"
+      "meaning": "climate",
+      "ipa": "ˈɪklɪm",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "İkna",
@@ -2391,7 +3777,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "persuasion"
+      "meaning": "persuasion",
+      "ipa": "ɪknˈa",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "İleri",
@@ -2403,7 +3796,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "forward"
+      "meaning": "forward",
+      "ipa": "ileɾˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "İniş",
@@ -2415,7 +3815,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "descent"
+      "meaning": "descent",
+      "ipa": "inˈɪʃ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "İçecek",
@@ -2427,7 +3834,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "beverage"
+      "meaning": "beverage",
+      "ipa": "itʃedʒˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "İthalat",
@@ -2439,7 +3853,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "imports"
+      "meaning": "imports",
+      "ipa": "ɪthaɫˈat",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "İmza",
@@ -2451,7 +3872,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "signature"
+      "meaning": "signature",
+      "ipa": "ɪmzˈa",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "İnat",
@@ -2463,7 +3891,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "stubbornness"
+      "meaning": "stubbornness",
+      "ipa": "inˈat",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "İpucu",
@@ -2475,7 +3910,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "clue"
+      "meaning": "clue",
+      "ipa": "ipudʒˈʊ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "İskele",
@@ -2487,7 +3929,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "pier"
+      "meaning": "pier",
+      "ipa": "ɪskˈelɛ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "İstasyon",
@@ -2499,7 +3948,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "station"
+      "meaning": "station",
+      "ipa": "ɪstasjˈɔn",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "İyilik",
@@ -2511,7 +3967,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "kindness"
+      "meaning": "kindness",
+      "ipa": "ijilˈɪk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "İlkbahar",
@@ -2523,7 +3986,14 @@ const language = {
         "i",
         "Ï"
       ],
-      "meaning": "spring season"
+      "meaning": "spring season",
+      "ipa": "ɪlkbahˈar",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ördek",
@@ -2535,7 +4005,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "duck"
+      "meaning": "duck",
+      "ipa": "œrdˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "öğretmen",
@@ -2547,7 +4024,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "teacher"
+      "meaning": "teacher",
+      "ipa": "œːɾɛtmˈæn",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "özgür",
@@ -2559,7 +4043,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "free"
+      "meaning": "free",
+      "ipa": "œzɟˈør",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "öfke",
@@ -2571,7 +4062,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "anger"
+      "meaning": "anger",
+      "ipa": "œfkˈɛ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "öykü",
@@ -2583,7 +4081,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "story"
+      "meaning": "story",
+      "ipa": "œjkˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ömür",
@@ -2595,7 +4100,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "lifetime"
+      "meaning": "lifetime",
+      "ipa": "œmˈør",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "örümcek",
@@ -2607,7 +4119,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "spider"
+      "meaning": "spider",
+      "ipa": "œɾømdʒˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "öpücük",
@@ -2619,7 +4138,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "kiss"
+      "meaning": "kiss",
+      "ipa": "œpydʒˈøk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "önlük",
@@ -2631,7 +4157,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "apron"
+      "meaning": "apron",
+      "ipa": "œnlˈøk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "özlem",
@@ -2643,7 +4176,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "longing"
+      "meaning": "longing",
+      "ipa": "œzlˈæm",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ödeme",
@@ -2655,7 +4195,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "payment"
+      "meaning": "payment",
+      "ipa": "œdˈemɛ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ödev",
@@ -2667,7 +4214,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "homework"
+      "meaning": "homework",
+      "ipa": "œdˈɛv",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "öteki",
@@ -2679,7 +4233,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "other"
+      "meaning": "other",
+      "ipa": "œtekˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "özen",
@@ -2691,7 +4252,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "care"
+      "meaning": "care",
+      "ipa": "œzˈæn",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "önder",
@@ -2703,7 +4271,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "leader"
+      "meaning": "leader",
+      "ipa": "œndˈɛr",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ölçek",
@@ -2715,7 +4290,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "scale"
+      "meaning": "scale",
+      "ipa": "œltʃˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "öksüz",
@@ -2727,7 +4309,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "orphan"
+      "meaning": "orphan",
+      "ipa": "ˈœksøz",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "öküz",
@@ -2739,7 +4328,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "ox"
+      "meaning": "ox",
+      "ipa": "ˈœkøz",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "öbek",
@@ -2751,7 +4347,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "cluster"
+      "meaning": "cluster",
+      "ipa": "œbˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "övgü",
@@ -2763,7 +4366,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "praise"
+      "meaning": "praise",
+      "ipa": "œvɡˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "öngörü",
@@ -2775,7 +4385,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "foresight"
+      "meaning": "foresight",
+      "ipa": "œnɟœɾˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "örgü",
@@ -2787,7 +4404,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "knitting"
+      "meaning": "knitting",
+      "ipa": "œrɡˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "örnek",
@@ -2799,7 +4423,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "example"
+      "meaning": "example",
+      "ipa": "œrnˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "özür",
@@ -2811,7 +4442,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "apology"
+      "meaning": "apology",
+      "ipa": "œzˈør",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "özenli",
@@ -2823,7 +4461,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "careful"
+      "meaning": "careful",
+      "ipa": "œzænlˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ölmek",
@@ -2835,7 +4480,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "to die"
+      "meaning": "to die",
+      "ipa": "œlmˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "özdeş",
@@ -2847,7 +4499,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "identical"
+      "meaning": "identical",
+      "ipa": "œzdˈɛʃ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ölçü",
@@ -2859,7 +4518,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "measure"
+      "meaning": "measure",
+      "ipa": "œltʃˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ölümsüz",
@@ -2871,7 +4537,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "immortal"
+      "meaning": "immortal",
+      "ipa": "œlˈømsøz",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "öğrendi",
@@ -2883,7 +4556,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "learned"
+      "meaning": "learned",
+      "ipa": "œːɾændˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "örttü",
@@ -2895,7 +4575,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "covered"
+      "meaning": "covered",
+      "ipa": "œrtːˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "öfkeli",
@@ -2907,7 +4594,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "angry"
+      "meaning": "angry",
+      "ipa": "œfkelˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ödül",
@@ -2919,7 +4613,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "award"
+      "meaning": "award",
+      "ipa": "œdˈøl",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "özet",
@@ -2931,7 +4632,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "summary"
+      "meaning": "summary",
+      "ipa": "œzˈɛt",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "özne",
@@ -2943,7 +4651,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "subject"
+      "meaning": "subject",
+      "ipa": "œznˈɛ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "öfkesiz",
@@ -2955,7 +4670,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "calm"
+      "meaning": "calm",
+      "ipa": "œfkˈesɪz",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "özveri",
@@ -2967,7 +4689,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "devotion"
+      "meaning": "devotion",
+      "ipa": "œzveɾˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ölü",
@@ -2979,7 +4708,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "dead"
+      "meaning": "dead",
+      "ipa": "œlˈy",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ödünç",
@@ -2991,7 +4727,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "loan"
+      "meaning": "loan",
+      "ipa": "œdˈøntʃ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "özerk",
@@ -3003,7 +4746,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "autonomous"
+      "meaning": "autonomous",
+      "ipa": "œzˈɛrk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "öneri",
@@ -3015,7 +4765,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "suggestion"
+      "meaning": "suggestion",
+      "ipa": "œneɾˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "örtü",
@@ -3027,7 +4784,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "cover"
+      "meaning": "cover",
+      "ipa": "œrtˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ölçülü",
@@ -3039,7 +4803,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "measured"
+      "meaning": "measured",
+      "ipa": "œltʃylˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "öpüştü",
@@ -3051,7 +4822,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "kissed"
+      "meaning": "kissed",
+      "ipa": "œpøʃtˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "özledi",
@@ -3063,7 +4841,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "missed"
+      "meaning": "missed",
+      "ipa": "ˈœzledɪ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "ötmek",
@@ -3075,7 +4860,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "chirp"
+      "meaning": "chirp",
+      "ipa": "œtmˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ölümlü",
@@ -3087,7 +4879,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "mortal"
+      "meaning": "mortal",
+      "ipa": "ˈœlømlø",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "öngördü",
@@ -3099,7 +4898,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "foresaw"
+      "meaning": "foresaw",
+      "ipa": "œnɟœrdˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "özenle",
@@ -3111,7 +4917,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "carefully"
+      "meaning": "carefully",
+      "ipa": "œzˈænlɛ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "öksürdü",
@@ -3123,7 +4936,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "coughed"
+      "meaning": "coughed",
+      "ipa": "œksørdˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ördü",
@@ -3135,7 +4955,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "knitted"
+      "meaning": "knitted",
+      "ipa": "œrdˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "özsu",
@@ -3147,7 +4974,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "sap"
+      "meaning": "sap",
+      "ipa": "œzsˈʊ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "öç",
@@ -3159,7 +4993,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "revenge"
+      "meaning": "revenge",
+      "ipa": "ˈœtʃ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "ötekileşti",
@@ -3171,7 +5012,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "became alienated"
+      "meaning": "became alienated",
+      "ipa": "œtekilɛʃtˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "övündü",
@@ -3183,7 +5031,14 @@ const language = {
         "ü",
         "ó"
       ],
-      "meaning": "boasted"
+      "meaning": "boasted",
+      "ipa": "œvøndˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şeker",
@@ -3195,7 +5050,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "sugar"
+      "meaning": "sugar",
+      "ipa": "ʃekˈɛr",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şehir",
@@ -3207,7 +5069,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "city"
+      "meaning": "city",
+      "ipa": "ʃehˈɪr",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şemsiye",
@@ -3219,7 +5088,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "umbrella"
+      "meaning": "umbrella",
+      "ipa": "ʃæmsijˈɛ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şaşkın",
@@ -3231,7 +5107,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "surprised"
+      "meaning": "surprised",
+      "ipa": "ʃaʃkˈɯn",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şarkı",
@@ -3243,7 +5126,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "song"
+      "meaning": "song",
+      "ipa": "ʃarkˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şişe",
@@ -3255,7 +5145,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "bottle"
+      "meaning": "bottle",
+      "ipa": "ʃiʃˈɛ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şapka",
@@ -3267,7 +5164,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "hat"
+      "meaning": "hat",
+      "ipa": "ʃapkˈa",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şölen",
@@ -3279,7 +5183,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "feast"
+      "meaning": "feast",
+      "ipa": "ʃœlˈæn",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şoför",
@@ -3291,7 +5202,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "driver"
+      "meaning": "driver",
+      "ipa": "ʃofˈœr",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şubat",
@@ -3303,7 +5221,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "February"
+      "meaning": "February",
+      "ipa": "ʃubˈat",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şair",
@@ -3315,7 +5240,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "poet"
+      "meaning": "poet",
+      "ipa": "ʃaˈɪr",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şahin",
@@ -3327,7 +5259,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "hawk"
+      "meaning": "hawk",
+      "ipa": "ʃahˈɪn",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şifre",
@@ -3339,7 +5278,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "password"
+      "meaning": "password",
+      "ipa": "ʃɪfrˈɛ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şişman",
@@ -3351,7 +5297,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "fat"
+      "meaning": "fat",
+      "ipa": "ʃɪʃmˈan",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şerit",
@@ -3363,7 +5316,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "stripe"
+      "meaning": "stripe",
+      "ipa": "ʃeɾˈɪt",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şans",
@@ -3375,7 +5335,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "luck"
+      "meaning": "luck",
+      "ipa": "ʃˈans",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şefkat",
@@ -3387,7 +5354,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "compassion"
+      "meaning": "compassion",
+      "ipa": "ʃɛfkˈat",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şalgam",
@@ -3399,7 +5373,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "turnip"
+      "meaning": "turnip",
+      "ipa": "ʃaɫɡˈam",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şaşırdı",
@@ -3411,7 +5392,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "was surprised"
+      "meaning": "was surprised",
+      "ipa": "ʃaʃɯrdˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şenlik",
@@ -3423,7 +5411,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "festival"
+      "meaning": "festival",
+      "ipa": "ʃænlˈɪk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şiddet",
@@ -3435,7 +5430,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "violence"
+      "meaning": "violence",
+      "ipa": "ʃidːˈɛt",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şekil",
@@ -3447,7 +5449,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "shape"
+      "meaning": "shape",
+      "ipa": "ʃekˈɪl",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şüphe",
@@ -3459,7 +5468,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "doubt"
+      "meaning": "doubt",
+      "ipa": "ʃøphˈɛ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şurup",
@@ -3471,7 +5487,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "syrup"
+      "meaning": "syrup",
+      "ipa": "ʃuɾˈʊp",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şafak",
@@ -3483,7 +5506,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "dawn"
+      "meaning": "dawn",
+      "ipa": "ʃafˈak",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şato",
@@ -3495,7 +5525,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "chateau"
+      "meaning": "chateau",
+      "ipa": "ʃatˈɔ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şaka",
@@ -3507,7 +5544,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "joke"
+      "meaning": "joke",
+      "ipa": "ʃakˈa",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şöhret",
@@ -3519,7 +5563,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "fame"
+      "meaning": "fame",
+      "ipa": "ʃœhrˈɛt",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şehit",
@@ -3531,7 +5582,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "martyr"
+      "meaning": "martyr",
+      "ipa": "ʃehˈɪt",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şikâyet",
@@ -3543,7 +5601,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "complaint"
+      "meaning": "complaint",
+      "ipa": "ʃikajˈɛt",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şimşek",
@@ -3555,7 +5620,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "lightning"
+      "meaning": "lightning",
+      "ipa": "ʃɪmʃˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şirket",
@@ -3567,7 +5639,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "company"
+      "meaning": "company",
+      "ipa": "ʃɪrkˈɛt",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şef",
@@ -3579,7 +5658,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "chef"
+      "meaning": "chef",
+      "ipa": "ʃˈɛf",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şamdan",
@@ -3591,7 +5677,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "candlestick"
+      "meaning": "candlestick",
+      "ipa": "ʃamdˈan",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şal",
@@ -3603,7 +5696,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "shawl"
+      "meaning": "shawl",
+      "ipa": "ʃˈaɫ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şekerleme",
@@ -3615,7 +5715,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "candy"
+      "meaning": "candy",
+      "ipa": "ʃekˈɛrlemɛ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şırınga",
@@ -3627,7 +5734,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "syringe"
+      "meaning": "syringe",
+      "ipa": "ʃɯɾɯnɡˈa",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şut",
@@ -3639,7 +5753,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "shot"
+      "meaning": "shot",
+      "ipa": "ʃˈʊt",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şakacı",
@@ -3651,7 +5772,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "joker"
+      "meaning": "joker",
+      "ipa": "ʃakadʒˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şiddetli",
@@ -3663,7 +5791,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "severe"
+      "meaning": "severe",
+      "ipa": "ʃidːɛtlˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şömine",
@@ -3675,7 +5810,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "fireplace"
+      "meaning": "fireplace",
+      "ipa": "ʃœminˈɛ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şalgamcı",
@@ -3687,7 +5829,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "turnip seller"
+      "meaning": "turnip seller",
+      "ipa": "ʃaɫɡamdʒˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şampiyon",
@@ -3699,7 +5848,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "champion"
+      "meaning": "champion",
+      "ipa": "ʃampijˈɔn",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şanslı",
@@ -3711,7 +5867,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "lucky"
+      "meaning": "lucky",
+      "ipa": "ʃansɫˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şube",
@@ -3723,7 +5886,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "branch"
+      "meaning": "branch",
+      "ipa": "ʃubˈɛ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şüpheli",
@@ -3735,7 +5905,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "suspicious"
+      "meaning": "suspicious",
+      "ipa": "ʃøphelˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şişirdi",
@@ -3747,7 +5924,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "inflated"
+      "meaning": "inflated",
+      "ipa": "ʃiʃɪrdˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şarkıcı",
@@ -3759,7 +5943,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "singer"
+      "meaning": "singer",
+      "ipa": "ʃarkɯdʒˈɯ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şelale",
@@ -3771,7 +5962,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "waterfall"
+      "meaning": "waterfall",
+      "ipa": "ʃˈeɫalɛ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "şart",
@@ -3783,7 +5981,14 @@ const language = {
         "ś",
         "š"
       ],
-      "meaning": "condition"
+      "meaning": "condition",
+      "ipa": "ʃˈart",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üzüm",
@@ -3795,7 +6000,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "grape"
+      "meaning": "grape",
+      "ipa": "ˈyzøm",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "ütü",
@@ -3807,7 +6019,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "iron"
+      "meaning": "iron",
+      "ipa": "ytˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ülke",
@@ -3819,7 +6038,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "country"
+      "meaning": "country",
+      "ipa": "ølkˈɛ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üzgün",
@@ -3831,7 +6057,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "sad"
+      "meaning": "sad",
+      "ipa": "øzɡˈøn",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ünlü",
@@ -3843,7 +6076,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "famous"
+      "meaning": "famous",
+      "ipa": "ønlˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ümit",
@@ -3855,7 +6095,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "hope"
+      "meaning": "hope",
+      "ipa": "ymˈɪt",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ücret",
@@ -3867,7 +6114,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "fee"
+      "meaning": "fee",
+      "ipa": "ødʒrˈɛt",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üye",
@@ -3879,7 +6133,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "member"
+      "meaning": "member",
+      "ipa": "yjˈe",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ürün",
@@ -3891,7 +6152,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "product"
+      "meaning": "product",
+      "ipa": "yɾˈøn",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üst",
@@ -3903,7 +6171,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "top"
+      "meaning": "top",
+      "ipa": "ˈøst",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "üşüdü",
@@ -3915,7 +6190,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "got cold"
+      "meaning": "got cold",
+      "ipa": "yʃydˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üfledi",
@@ -3927,7 +6209,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "blew"
+      "meaning": "blew",
+      "ipa": "ˈøfledɪ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "üzdü",
@@ -3939,7 +6228,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "upset"
+      "meaning": "upset",
+      "ipa": "øzdˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üretti",
@@ -3951,7 +6247,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "produced"
+      "meaning": "produced",
+      "ipa": "yɾetːˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üniforma",
@@ -3963,7 +6266,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "uniform"
+      "meaning": "uniform",
+      "ipa": "ynifˈɔrma",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ünlem",
@@ -3975,7 +6285,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "exclamation"
+      "meaning": "exclamation",
+      "ipa": "ønlˈæm",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üslup",
@@ -3987,7 +6304,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "style"
+      "meaning": "style",
+      "ipa": "øsɫˈʊp",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üstelik",
@@ -3999,7 +6323,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "moreover"
+      "meaning": "moreover",
+      "ipa": "østelˈɪk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ücra",
@@ -4011,7 +6342,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "remote"
+      "meaning": "remote",
+      "ipa": "ødʒrˈa",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ütücü",
@@ -4023,7 +6361,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "ironer"
+      "meaning": "ironer",
+      "ipa": "ytydʒˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ürkek",
@@ -4035,7 +6380,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "timid"
+      "meaning": "timid",
+      "ipa": "ørkˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üzülmek",
@@ -4047,7 +6399,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "to be sad"
+      "meaning": "to be sad",
+      "ipa": "yzølmˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ünlendi",
@@ -4059,7 +6418,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "became famous"
+      "meaning": "became famous",
+      "ipa": "ønlændˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üşengeç",
@@ -4071,7 +6437,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "lazy"
+      "meaning": "lazy",
+      "ipa": "yʃænɟˈɛtʃ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üreme",
@@ -4083,7 +6456,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "reproduction"
+      "meaning": "reproduction",
+      "ipa": "ˈyɾemɛ",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "üstat",
@@ -4095,7 +6475,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "master"
+      "meaning": "master",
+      "ipa": "østˈat",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ürperti",
@@ -4107,7 +6494,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "shiver"
+      "meaning": "shiver",
+      "ipa": "ørpɛrtˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ücretli",
@@ -4119,7 +6513,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "paid"
+      "meaning": "paid",
+      "ipa": "ødʒrɛtlˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ürktü",
@@ -4131,7 +6532,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "was startled"
+      "meaning": "was startled",
+      "ipa": "ørktˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üvey",
@@ -4143,7 +6551,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "step"
+      "meaning": "step",
+      "ipa": "yvˈɛj",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üzerlik",
@@ -4155,7 +6570,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "rue herb"
+      "meaning": "rue herb",
+      "ipa": "yzɛrlˈɪk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ünsüz",
@@ -4167,7 +6589,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "consonant"
+      "meaning": "consonant",
+      "ipa": "ˈønsøz",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "ütopik",
@@ -4179,7 +6608,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "utopian"
+      "meaning": "utopian",
+      "ipa": "ytopˈɪk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ültimatom",
@@ -4191,7 +6627,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "ultimatum"
+      "meaning": "ultimatum",
+      "ipa": "øltimatˈɔm",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üşüşmek",
@@ -4203,7 +6646,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "to swarm"
+      "meaning": "to swarm",
+      "ipa": "yʃøʃmˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üzgünce",
@@ -4215,7 +6665,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "sadly"
+      "meaning": "sadly",
+      "ipa": "øzɟˈøndʒɛ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üretim",
@@ -4227,7 +6684,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "production"
+      "meaning": "production",
+      "ipa": "yɾˈetɪm",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üfleyiş",
@@ -4239,7 +6703,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "blowing"
+      "meaning": "blowing",
+      "ipa": "øflejˈɪʃ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üroloji",
@@ -4251,7 +6722,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "urology"
+      "meaning": "urology",
+      "ipa": "yɾoɫoʒˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ürkmek",
@@ -4263,7 +6741,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "to be frightened"
+      "meaning": "to be frightened",
+      "ipa": "ørkmˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ümitli",
@@ -4275,7 +6760,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "hopeful"
+      "meaning": "hopeful",
+      "ipa": "ymɪtlˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üzüşmek",
@@ -4287,7 +6779,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "to shrink"
+      "meaning": "to shrink",
+      "ipa": "yzøʃmˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üstlük",
@@ -4299,7 +6798,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "superiority"
+      "meaning": "superiority",
+      "ipa": "østlˈøk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ücralık",
@@ -4311,7 +6817,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "remoteness"
+      "meaning": "remoteness",
+      "ipa": "ˈødʒraɫɯk",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "üryan",
@@ -4323,7 +6836,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "naked"
+      "meaning": "naked",
+      "ipa": "ørjˈan",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üzengi",
@@ -4335,7 +6855,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "stirrup"
+      "meaning": "stirrup",
+      "ipa": "yzænɡˈɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üflemek",
@@ -4347,7 +6874,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "to blow"
+      "meaning": "to blow",
+      "ipa": "øflemˈɛk",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "üvez",
@@ -4359,7 +6893,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "rowan"
+      "meaning": "rowan",
+      "ipa": "yvˈɛz",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ürünlü",
@@ -4371,7 +6912,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "productive"
+      "meaning": "productive",
+      "ipa": "yɾønlˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ülkü",
@@ -4383,7 +6931,14 @@ const language = {
         "ö",
         "ú"
       ],
-      "meaning": "ideal"
+      "meaning": "ideal",
+      "ipa": "ølkˈø",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     }
   ]
 } satisfies LanguageWords

@@ -50,6 +50,8 @@
         :word="word"
         :blank="blank"
         :meaning="meaning"
+        :ipa="ipa"
+        :ipa-focus="ipaFocus"
         :correct-choice="correctChoice"
         :selected-choice="selectedChoice"
         :correct="correct"
@@ -70,6 +72,8 @@
 </template>
 
 <script setup lang="ts">
+import type { IpaFocusRange } from '~/data/words'
+
 defineProps<{
   languageName: string
   englishLanguageName: string
@@ -79,6 +83,8 @@ defineProps<{
   word: string
   blank: string
   meaning: string
+  ipa: string
+  ipaFocus: IpaFocusRange[]
   correctChoice: string
   wordSegments: string[]
   choices: string[]

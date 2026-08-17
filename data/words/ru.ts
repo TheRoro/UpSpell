@@ -15,7 +15,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "Christmas tree"
+      "meaning": "Christmas tree",
+      "ipa": "jˈɵɭka",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "ёж",
@@ -27,7 +34,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "hedgehog"
+      "meaning": "hedgehog",
+      "ipa": "jˈɵʃ",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "ёжик",
@@ -39,7 +53,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "little hedgehog"
+      "meaning": "little hedgehog",
+      "ipa": "jˈɵʒyk",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "ёрш",
@@ -51,7 +72,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "ruffe fish"
+      "meaning": "ruffe fish",
+      "ipa": "jˈɵrʃ",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "ёршик",
@@ -63,7 +91,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "brush"
+      "meaning": "brush",
+      "ipa": "jˈɵrʃyk",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "ёлочка",
@@ -75,7 +110,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "fir tree"
+      "meaning": "fir tree",
+      "ipa": "jˈɵɭʌtʃʲka",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "ёмкость",
@@ -87,7 +129,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "capacity"
+      "meaning": "capacity",
+      "ipa": "jˈɵmkʌstʲ",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "ёмкий",
@@ -99,7 +148,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "spacious"
+      "meaning": "spacious",
+      "ipa": "jˈɵmkʲij",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "ёмко",
@@ -111,7 +167,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "concisely"
+      "meaning": "concisely",
+      "ipa": "jˈɵmkʌ",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "ёрзать",
@@ -123,7 +186,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "to fidget"
+      "meaning": "to fidget",
+      "ipa": "jˈɵrzʌtʲ",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "ёкнуть",
@@ -135,7 +205,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "to give a jolt"
+      "meaning": "to give a jolt",
+      "ipa": "jˈɵknutʲ",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "ёкнул",
@@ -147,7 +224,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "gave a jolt"
+      "meaning": "gave a jolt",
+      "ipa": "jˈɵknuɭ",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "ёжиться",
@@ -159,7 +243,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "to shiver"
+      "meaning": "to shiver",
+      "ipa": "jˈɵʒytsˌʌ",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "ёрничать",
@@ -171,7 +262,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "to sneer"
+      "meaning": "to sneer",
+      "ipa": "jˈɵrnʲitʃʲʌtʲ",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "ёрник",
@@ -183,7 +281,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "mocker"
+      "meaning": "mocker",
+      "ipa": "jˈɵrnʲik",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "мёд",
@@ -195,7 +300,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "honey"
+      "meaning": "honey",
+      "ipa": "mʲˈɵt",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "тётя",
@@ -207,7 +319,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "aunt"
+      "meaning": "aunt",
+      "ipa": "tʲˈɵtʲʌ",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "тёща",
@@ -219,7 +338,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "mother-in-law"
+      "meaning": "mother-in-law",
+      "ipa": "tʲˈɵɕʌ",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "свёкор",
@@ -231,7 +357,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "father-in-law"
+      "meaning": "father-in-law",
+      "ipa": "svʲˈɵkʌr",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "ребёнок",
@@ -243,7 +376,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "child"
+      "meaning": "child",
+      "ipa": "rʲibʲˈɵnʌk",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "телёнок",
@@ -255,7 +395,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "calf"
+      "meaning": "calf",
+      "ipa": "tʲiɭʲˈɵnʌk",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "котёнок",
@@ -267,7 +414,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "kitten"
+      "meaning": "kitten",
+      "ipa": "kʌtʲˈɵnʌk",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "утёнок",
@@ -279,7 +433,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "duckling"
+      "meaning": "duckling",
+      "ipa": "utʲˈɵnʌk",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "гусёнок",
@@ -291,7 +452,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "gosling"
+      "meaning": "gosling",
+      "ipa": "ɡusʲˈɵnʌk",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "цыплёнок",
@@ -303,7 +471,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "chick"
+      "meaning": "chick",
+      "ipa": "tsypɭʲˈɵnʌk",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "ягнёнок",
@@ -315,7 +490,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "lamb"
+      "meaning": "lamb",
+      "ipa": "jaɡnʲˈɵnʌk",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "жеребёнок",
@@ -327,7 +509,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "foal"
+      "meaning": "foal",
+      "ipa": "ʒyrʲibʲˈɵnʌk",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "поросёнок",
@@ -339,7 +528,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "piglet"
+      "meaning": "piglet",
+      "ipa": "pʌrʌsʲˈɵnʌk",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "галчёнок",
@@ -351,7 +547,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "young jackdaw"
+      "meaning": "young jackdaw",
+      "ipa": "ɡaɭtʃʲˈɵnʌk",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "воронёнок",
@@ -363,7 +566,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "young crow"
+      "meaning": "young crow",
+      "ipa": "vʌrʌnʲˈɵnʌk",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "орлёнок",
@@ -375,7 +585,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "eaglet"
+      "meaning": "eaglet",
+      "ipa": "ʌrɭʲˈɵnʌk",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "совёнок",
@@ -387,7 +604,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "owlet"
+      "meaning": "owlet",
+      "ipa": "sʌvʲˈɵnʌk",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "козлёнок",
@@ -399,7 +623,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "kid goat"
+      "meaning": "kid goat",
+      "ipa": "kʌzɭʲˈɵnʌk",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "львёнок",
@@ -411,7 +642,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "lion cub"
+      "meaning": "lion cub",
+      "ipa": "ɭvʲˈɵnʌk",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "тигрёнок",
@@ -423,7 +661,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "tiger cub"
+      "meaning": "tiger cub",
+      "ipa": "tʲiɡrʲˈɵnʌk",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "слонёнок",
@@ -435,7 +680,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "baby elephant"
+      "meaning": "baby elephant",
+      "ipa": "sɭʌnʲˈɵnʌk",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "бельё",
@@ -447,7 +699,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "linen"
+      "meaning": "linen",
+      "ipa": "bʲiɭjˈɵ",
+      "ipaFocus": [
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "жильё",
@@ -459,7 +718,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "housing"
+      "meaning": "housing",
+      "ipa": "ʒyɭjˈɵ",
+      "ipaFocus": [
+        [
+          3,
+          6
+        ]
+      ]
     },
     {
       "word": "ружьё",
@@ -471,7 +737,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "rifle"
+      "meaning": "rifle",
+      "ipa": "ruʒjˈɵ",
+      "ipaFocus": [
+        [
+          3,
+          6
+        ]
+      ]
     },
     {
       "word": "копьё",
@@ -483,7 +756,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "spear"
+      "meaning": "spear",
+      "ipa": "kʌpjˈɵ",
+      "ipaFocus": [
+        [
+          3,
+          6
+        ]
+      ]
     },
     {
       "word": "сырьё",
@@ -495,7 +775,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "raw material"
+      "meaning": "raw material",
+      "ipa": "syrɪ^jˈɵ",
+      "ipaFocus": [
+        [
+          5,
+          8
+        ]
+      ]
     },
     {
       "word": "враньё",
@@ -507,7 +794,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "lies"
+      "meaning": "lies",
+      "ipa": "vranjˈɵ",
+      "ipaFocus": [
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "жульё",
@@ -519,7 +813,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "crooks"
+      "meaning": "crooks",
+      "ipa": "ʒuɭjˈɵ",
+      "ipaFocus": [
+        [
+          3,
+          6
+        ]
+      ]
     },
     {
       "word": "ворьё",
@@ -531,7 +832,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "thieves"
+      "meaning": "thieves",
+      "ipa": "vʌrɪ^jˈɵ",
+      "ipaFocus": [
+        [
+          5,
+          8
+        ]
+      ]
     },
     {
       "word": "зверьё",
@@ -543,7 +851,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "beasts"
+      "meaning": "beasts",
+      "ipa": "zvʲirɪ^jˈɵ",
+      "ipaFocus": [
+        [
+          7,
+          10
+        ]
+      ]
     },
     {
       "word": "бабьё",
@@ -555,7 +870,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "womenfolk"
+      "meaning": "womenfolk",
+      "ipa": "babjˈɵ",
+      "ipaFocus": [
+        [
+          3,
+          6
+        ]
+      ]
     },
     {
       "word": "вороньё",
@@ -567,7 +889,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "crows"
+      "meaning": "crows",
+      "ipa": "vʌrʌnjˈɵ",
+      "ipaFocus": [
+        [
+          5,
+          8
+        ]
+      ]
     },
     {
       "word": "старьё",
@@ -579,7 +908,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "old junk"
+      "meaning": "old junk",
+      "ipa": "stʌrɪ^jˈɵ",
+      "ipaFocus": [
+        [
+          6,
+          9
+        ]
+      ]
     },
     {
       "word": "новьё",
@@ -591,7 +927,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "new stock"
+      "meaning": "new stock",
+      "ipa": "nʌvjˈɵ",
+      "ipaFocus": [
+        [
+          3,
+          6
+        ]
+      ]
     },
     {
       "word": "моё",
@@ -603,7 +946,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "mine"
+      "meaning": "mine",
+      "ipa": "mʌjˈɵ",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "твоё",
@@ -615,7 +965,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "yours"
+      "meaning": "yours",
+      "ipa": "tvʌjˈɵ",
+      "ipaFocus": [
+        [
+          3,
+          6
+        ]
+      ]
     },
     {
       "word": "её",
@@ -627,7 +984,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "hers"
+      "meaning": "hers",
+      "ipa": "jɪjˈɵ",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "всё",
@@ -639,7 +1003,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "everything"
+      "meaning": "everything",
+      "ipa": "fsʲˈɵ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "ещё",
@@ -651,7 +1022,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "still"
+      "meaning": "still",
+      "ipa": "jɪɕˈɵ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "свёкла",
@@ -663,7 +1041,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "beetroot"
+      "meaning": "beetroot",
+      "ipa": "svʲˈɵkɭa",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "пшёнка",
@@ -675,7 +1060,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "millet porridge"
+      "meaning": "millet porridge",
+      "ipa": "pʃˈonka",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "селёдка",
@@ -687,7 +1079,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "herring"
+      "meaning": "herring",
+      "ipa": "sʲiɭʲˈɵtka",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "сёмга",
@@ -699,7 +1098,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "salmon"
+      "meaning": "salmon",
+      "ipa": "sʲˈɵmɡa",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "тёрка",
@@ -711,7 +1117,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "grater"
+      "meaning": "grater",
+      "ipa": "tʲˈɵrka",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "ведёрко",
@@ -723,7 +1136,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "small bucket"
+      "meaning": "small bucket",
+      "ipa": "vʲidʲˈɵrkʌ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "огонёк",
@@ -735,7 +1155,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "little flame"
+      "meaning": "little flame",
+      "ipa": "ʌɡʌnʲˈɵk",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "уголёк",
@@ -747,7 +1174,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "small coal"
+      "meaning": "small coal",
+      "ipa": "uɡʌɭʲˈɵk",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "пенёк",
@@ -759,7 +1193,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "tree stump"
+      "meaning": "tree stump",
+      "ipa": "pʲinʲˈɵk",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "денёк",
@@ -771,7 +1212,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "little day"
+      "meaning": "little day",
+      "ipa": "dʲinʲˈɵk",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "паренёк",
@@ -783,7 +1231,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "young fellow"
+      "meaning": "young fellow",
+      "ipa": "pʌrʲinʲˈɵk",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "мотылёк",
@@ -795,7 +1250,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "moth"
+      "meaning": "moth",
+      "ipa": "mʌtyɭʲˈɵk",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "воробьёк",
@@ -807,7 +1269,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "sparrow"
+      "meaning": "sparrow",
+      "ipa": "vʌrʌbjˈɵk",
+      "ipaFocus": [
+        [
+          5,
+          8
+        ]
+      ]
     },
     {
       "word": "опёнок",
@@ -819,7 +1288,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "honey mushroom"
+      "meaning": "honey mushroom",
+      "ipa": "ʌpʲˈɵnʌk",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "клён",
@@ -831,7 +1307,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "maple"
+      "meaning": "maple",
+      "ipa": "kɭʲˈɵn",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "берёза",
@@ -843,7 +1326,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "birch"
+      "meaning": "birch",
+      "ipa": "bʲirʲˈɵza",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "черёмуха",
@@ -855,7 +1345,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "bird cherry"
+      "meaning": "bird cherry",
+      "ipa": "tʃʲirʲˈɵmuxa",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "жёлудь",
@@ -867,7 +1364,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "acorn"
+      "meaning": "acorn",
+      "ipa": "ʒˈoɭutʲ",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "жёлудок",
@@ -879,7 +1383,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "stomach"
+      "meaning": "stomach",
+      "ipa": "ʒˈoɭudʌk",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "жёлоб",
@@ -891,7 +1402,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "gutter"
+      "meaning": "gutter",
+      "ipa": "ʒˈoɭʌp",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "жёлчь",
@@ -903,7 +1421,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "bile"
+      "meaning": "bile",
+      "ipa": "ʒˈoɭtʃʲ",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "лёгкое",
@@ -915,7 +1440,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "lung"
+      "meaning": "lung",
+      "ipa": "ɭʲˈɵxkʌjɪ",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "щёки",
@@ -927,7 +1459,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "cheeks"
+      "meaning": "cheeks",
+      "ipa": "ɕˈɵkʲɪ",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "чёлка",
@@ -939,7 +1478,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "bangs"
+      "meaning": "bangs",
+      "ipa": "tʃʲˈɵɭka",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "нёбо",
@@ -951,7 +1497,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "palate"
+      "meaning": "palate",
+      "ipa": "nʲˈɵbʌ",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "дёсны",
@@ -963,7 +1516,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "gums"
+      "meaning": "gums",
+      "ipa": "dʲˈɵsny",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "тёмя",
@@ -975,7 +1535,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "crown of head"
+      "meaning": "crown of head",
+      "ipa": "tʲˈɵmʲʌ",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "печёнка",
@@ -987,7 +1554,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "liver"
+      "meaning": "liver",
+      "ipa": "pʲitʃʲˈɵnka",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "шёлк",
@@ -999,7 +1573,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "silk"
+      "meaning": "silk",
+      "ipa": "ʃˈoɭk",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "шёпот",
@@ -1011,7 +1592,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "whisper"
+      "meaning": "whisper",
+      "ipa": "ʃˈopʌt",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "щётка",
@@ -1023,7 +1611,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "brush"
+      "meaning": "brush",
+      "ipa": "ɕˈɵtka",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "щёлочь",
@@ -1035,7 +1630,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "alkali"
+      "meaning": "alkali",
+      "ipa": "ɕˈɵɭʌtʃʲ",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "щёголь",
@@ -1047,7 +1649,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "dandy"
+      "meaning": "dandy",
+      "ipa": "ɕˈɵɡʌɭ",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "щёлка",
@@ -1059,7 +1668,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "slit"
+      "meaning": "slit",
+      "ipa": "ɕˈɵɭka",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "щёлочка",
@@ -1071,7 +1687,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "small gap"
+      "meaning": "small gap",
+      "ipa": "ɕˈɵɭʌtʃʲka",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "матрёшка",
@@ -1083,7 +1706,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "matryoshka"
+      "meaning": "matryoshka",
+      "ipa": "matrʲˈɵʃka",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "серёжка",
@@ -1095,7 +1725,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "earring"
+      "meaning": "earring",
+      "ipa": "sʲirʲˈɵʃka",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "звёзды",
@@ -1107,7 +1744,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "stars"
+      "meaning": "stars",
+      "ipa": "zvʲˈɵzdy",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "звёздочка",
@@ -1119,7 +1763,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "little star"
+      "meaning": "little star",
+      "ipa": "zvʲˈɵzdʌtʃʲka",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "самолёт",
@@ -1131,7 +1782,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "airplane"
+      "meaning": "airplane",
+      "ipa": "sʌmʌɭʲˈɵt",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "вертолёт",
@@ -1143,7 +1801,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "helicopter"
+      "meaning": "helicopter",
+      "ipa": "vʲirtʌɭʲˈɵt",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "полёт",
@@ -1155,7 +1820,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "flight"
+      "meaning": "flight",
+      "ipa": "pʌɭʲˈɵt",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "взлёт",
@@ -1167,7 +1839,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "takeoff"
+      "meaning": "takeoff",
+      "ipa": "vzɭʲˈɵt",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "перелёт",
@@ -1179,7 +1858,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "migration flight"
+      "meaning": "migration flight",
+      "ipa": "pʲirʲiɭʲˈɵt",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "счёт",
@@ -1191,7 +1877,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "count"
+      "meaning": "count",
+      "ipa": "ɕˈɵt",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "счётчик",
@@ -1203,7 +1896,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "meter"
+      "meaning": "meter",
+      "ipa": "ɕˈɵttʃʲik",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "почёт",
@@ -1215,7 +1915,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "honor"
+      "meaning": "honor",
+      "ipa": "pʌtʃʲˈɵt",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "платёж",
@@ -1227,7 +1934,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "payment"
+      "meaning": "payment",
+      "ipa": "pɭatʲˈɵʃ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "чертёж",
@@ -1239,7 +1953,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "drawing"
+      "meaning": "drawing",
+      "ipa": "tʃʲirtʲˈɵʃ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "манёвр",
@@ -1251,7 +1972,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "maneuver"
+      "meaning": "maneuver",
+      "ipa": "manʲˈɵvr",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "сапёр",
@@ -1263,7 +1991,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "sapper"
+      "meaning": "sapper",
+      "ipa": "sapʲˈɵr",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "актёр",
@@ -1275,7 +2010,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "actor"
+      "meaning": "actor",
+      "ipa": "aktʲˈɵr",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "шофёр",
@@ -1287,7 +2029,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "driver"
+      "meaning": "driver",
+      "ipa": "ʃʌfʲˈɵr",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "вахтёр",
@@ -1299,7 +2048,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "caretaker"
+      "meaning": "caretaker",
+      "ipa": "vaxtʲˈɵr",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "контролёр",
@@ -1311,7 +2067,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "inspector"
+      "meaning": "inspector",
+      "ipa": "kʌntrʌɭʲˈɵr",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "дирижёр",
@@ -1323,7 +2086,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "conductor"
+      "meaning": "conductor",
+      "ipa": "dʲirʲiʒˈor",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "тренажёр",
@@ -1335,7 +2105,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "simulator"
+      "meaning": "simulator",
+      "ipa": "trʲinaʒˈor",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "массажёр",
@@ -1347,7 +2124,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "massager"
+      "meaning": "massager",
+      "ipa": "mʌssaʒˈor",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "ухажёр",
@@ -1359,7 +2143,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "suitor"
+      "meaning": "suitor",
+      "ipa": "uxaʒˈor",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "стажёр",
@@ -1371,7 +2162,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "intern"
+      "meaning": "intern",
+      "ipa": "staʒˈor",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "молодёжь",
@@ -1383,7 +2181,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "youth"
+      "meaning": "youth",
+      "ipa": "mʌɭʌdʲˈɵʃ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "чёрт",
@@ -1395,7 +2200,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "devil"
+      "meaning": "devil",
+      "ipa": "tʃʲˈɵrt",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "мёрзлота",
@@ -1407,7 +2219,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "permafrost"
+      "meaning": "permafrost",
+      "ipa": "mʲˈɵrzɭʌta",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "слёзы",
@@ -1419,7 +2238,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "tears"
+      "meaning": "tears",
+      "ipa": "sɭʲˈɵzy",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "блёстка",
@@ -1431,7 +2257,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "sequin"
+      "meaning": "sequin",
+      "ipa": "bɭʲˈɵstka",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "берёт",
@@ -1443,7 +2276,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "takes"
+      "meaning": "takes",
+      "ipa": "bʲirʲˈɵt",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "берёшь",
@@ -1455,7 +2295,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you take"
+      "meaning": "you take",
+      "ipa": "bʲirʲˈɵʃ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "берёте",
@@ -1467,7 +2314,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you take"
+      "meaning": "you take",
+      "ipa": "bʲirʲˈɵtʲi",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "берём",
@@ -1479,7 +2333,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we take"
+      "meaning": "we take",
+      "ipa": "bʲirʲˈɵm",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "несёт",
@@ -1491,7 +2352,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "carries"
+      "meaning": "carries",
+      "ipa": "nʲisʲˈɵt",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "несёшь",
@@ -1503,7 +2371,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you carry"
+      "meaning": "you carry",
+      "ipa": "nʲisʲˈɵʃ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "несёте",
@@ -1515,7 +2390,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you carry"
+      "meaning": "you carry",
+      "ipa": "nʲisʲˈɵtʲi",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "несём",
@@ -1527,7 +2409,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we carry"
+      "meaning": "we carry",
+      "ipa": "nʲisʲˈɵm",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "везёт",
@@ -1539,7 +2428,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "transports"
+      "meaning": "transports",
+      "ipa": "vʲiʑˈɵt",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "везёшь",
@@ -1551,7 +2447,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you transport"
+      "meaning": "you transport",
+      "ipa": "vʲiʑˈɵʃ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "везёте",
@@ -1563,7 +2466,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you transport"
+      "meaning": "you transport",
+      "ipa": "vʲiʑˈɵtʲi",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "везём",
@@ -1575,7 +2485,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we transport"
+      "meaning": "we transport",
+      "ipa": "vʲiʑˈɵm",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "идёт",
@@ -1587,7 +2504,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "goes"
+      "meaning": "goes",
+      "ipa": "ɪdʲˈɵt",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "идёшь",
@@ -1599,7 +2523,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you go"
+      "meaning": "you go",
+      "ipa": "ɪdʲˈɵʃ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "идёте",
@@ -1611,7 +2542,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you go"
+      "meaning": "you go",
+      "ipa": "ɪdʲˈɵtʲi",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "идём",
@@ -1623,7 +2561,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we go"
+      "meaning": "we go",
+      "ipa": "ɪdʲˈɵm",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "плывёт",
@@ -1635,7 +2580,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "swims"
+      "meaning": "swims",
+      "ipa": "pɭyvʲˈɵt",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "плывёшь",
@@ -1647,7 +2599,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you swim"
+      "meaning": "you swim",
+      "ipa": "pɭyvʲˈɵʃ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "плывёте",
@@ -1659,7 +2618,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you swim"
+      "meaning": "you swim",
+      "ipa": "pɭyvʲˈɵtʲi",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "плывём",
@@ -1671,7 +2637,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we swim"
+      "meaning": "we swim",
+      "ipa": "pɭyvʲˈɵm",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "живёт",
@@ -1683,7 +2656,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "lives"
+      "meaning": "lives",
+      "ipa": "ʒyvʲˈɵt",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "живёшь",
@@ -1695,7 +2675,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you live"
+      "meaning": "you live",
+      "ipa": "ʒyvʲˈɵʃ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "живёте",
@@ -1707,7 +2694,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you live"
+      "meaning": "you live",
+      "ipa": "ʒyvʲˈɵtʲi",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "живём",
@@ -1719,7 +2713,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we live"
+      "meaning": "we live",
+      "ipa": "ʒyvʲˈɵm",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "поёт",
@@ -1731,7 +2732,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "sings"
+      "meaning": "sings",
+      "ipa": "pʌjˈɵt",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "поёшь",
@@ -1743,7 +2751,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you sing"
+      "meaning": "you sing",
+      "ipa": "pʌjˈɵʃ",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "поёте",
@@ -1755,7 +2770,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you sing"
+      "meaning": "you sing",
+      "ipa": "pʌjˈɵtʲi",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "поём",
@@ -1767,7 +2789,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we sing"
+      "meaning": "we sing",
+      "ipa": "pʌjˈɵm",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "даёт",
@@ -1779,7 +2808,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "gives"
+      "meaning": "gives",
+      "ipa": "dajˈɵt",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "даёшь",
@@ -1791,7 +2827,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you give"
+      "meaning": "you give",
+      "ipa": "dajˈɵʃ",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "даёте",
@@ -1803,7 +2846,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you give"
+      "meaning": "you give",
+      "ipa": "dajˈɵtʲi",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "даём",
@@ -1815,7 +2865,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we give"
+      "meaning": "we give",
+      "ipa": "dajˈɵm",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "жуёт",
@@ -1827,7 +2884,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "chews"
+      "meaning": "chews",
+      "ipa": "ʒujˈɵt",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "жуёшь",
@@ -1839,7 +2903,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you chew"
+      "meaning": "you chew",
+      "ipa": "ʒujˈɵʃ",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "жуёте",
@@ -1851,7 +2922,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you chew"
+      "meaning": "you chew",
+      "ipa": "ʒujˈɵtʲi",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "жуём",
@@ -1863,7 +2941,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we chew"
+      "meaning": "we chew",
+      "ipa": "ʒujˈɵm",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "клюёт",
@@ -1875,7 +2960,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "pecks"
+      "meaning": "pecks",
+      "ipa": "kɭʲu\"jˈɵt",
+      "ipaFocus": [
+        [
+          5,
+          8
+        ]
+      ]
     },
     {
       "word": "клюёшь",
@@ -1887,7 +2979,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you peck"
+      "meaning": "you peck",
+      "ipa": "kɭʲu\"jˈɵʃ",
+      "ipaFocus": [
+        [
+          5,
+          8
+        ]
+      ]
     },
     {
       "word": "клюёте",
@@ -1899,7 +2998,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you peck"
+      "meaning": "you peck",
+      "ipa": "kɭʲu\"jˈɵtʲi",
+      "ipaFocus": [
+        [
+          5,
+          8
+        ]
+      ]
     },
     {
       "word": "клюём",
@@ -1911,7 +3017,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we peck"
+      "meaning": "we peck",
+      "ipa": "kɭʲu\"jˈɵm",
+      "ipaFocus": [
+        [
+          5,
+          8
+        ]
+      ]
     },
     {
       "word": "шьёт",
@@ -1923,7 +3036,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "sews"
+      "meaning": "sews",
+      "ipa": "ʃjˈɵt",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "шьёшь",
@@ -1935,7 +3055,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you sew"
+      "meaning": "you sew",
+      "ipa": "ʃjˈɵʃ",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "шьёте",
@@ -1947,7 +3074,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you sew"
+      "meaning": "you sew",
+      "ipa": "ʃjˈɵtʲi",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "шьём",
@@ -1959,7 +3093,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we sew"
+      "meaning": "we sew",
+      "ipa": "ʃjˈɵm",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "пьёт",
@@ -1971,7 +3112,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "drinks"
+      "meaning": "drinks",
+      "ipa": "pjˈɵt",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "пьёшь",
@@ -1983,7 +3131,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you drink"
+      "meaning": "you drink",
+      "ipa": "pjˈɵʃ",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "пьёте",
@@ -1995,7 +3150,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you drink"
+      "meaning": "you drink",
+      "ipa": "pjˈɵtʲi",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "пьём",
@@ -2007,7 +3169,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we drink"
+      "meaning": "we drink",
+      "ipa": "pjˈɵm",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "бьёт",
@@ -2019,7 +3188,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "hits"
+      "meaning": "hits",
+      "ipa": "bjˈɵt",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "бьёшь",
@@ -2031,7 +3207,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you hit"
+      "meaning": "you hit",
+      "ipa": "bjˈɵʃ",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "бьёте",
@@ -2043,7 +3226,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you hit"
+      "meaning": "you hit",
+      "ipa": "bjˈɵtʲi",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "бьём",
@@ -2055,7 +3245,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we hit"
+      "meaning": "we hit",
+      "ipa": "bjˈɵm",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "льёт",
@@ -2067,7 +3264,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "pours"
+      "meaning": "pours",
+      "ipa": "ɭjˈɵt",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "льёшь",
@@ -2079,7 +3283,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you pour"
+      "meaning": "you pour",
+      "ipa": "ɭjˈɵʃ",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "льёте",
@@ -2091,7 +3302,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you pour"
+      "meaning": "you pour",
+      "ipa": "ɭjˈɵtʲi",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "льём",
@@ -2103,7 +3321,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we pour"
+      "meaning": "we pour",
+      "ipa": "ɭjˈɵm",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "рвёт",
@@ -2115,7 +3340,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "tears"
+      "meaning": "tears",
+      "ipa": "rvʲˈɵt",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "рвёшь",
@@ -2127,7 +3359,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you tear"
+      "meaning": "you tear",
+      "ipa": "rvʲˈɵʃ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "рвёте",
@@ -2139,7 +3378,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you tear"
+      "meaning": "you tear",
+      "ipa": "rvʲˈɵtʲi",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "рвём",
@@ -2151,7 +3397,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we tear"
+      "meaning": "we tear",
+      "ipa": "rvʲˈɵm",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "трёт",
@@ -2163,7 +3416,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "rubs"
+      "meaning": "rubs",
+      "ipa": "trʲˈɵt",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "трёшь",
@@ -2175,7 +3435,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you rub"
+      "meaning": "you rub",
+      "ipa": "trʲˈɵʃ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "трёте",
@@ -2187,7 +3454,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you rub"
+      "meaning": "you rub",
+      "ipa": "trʲˈɵtʲi",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "трём",
@@ -2199,7 +3473,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we rub"
+      "meaning": "we rub",
+      "ipa": "trʲˈɵm",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "ждёт",
@@ -2211,7 +3492,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "waits"
+      "meaning": "waits",
+      "ipa": "ʒdʲˈɵt",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "ждёшь",
@@ -2223,7 +3511,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you wait"
+      "meaning": "you wait",
+      "ipa": "ʒdʲˈɵʃ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "ждёте",
@@ -2235,7 +3530,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you wait"
+      "meaning": "you wait",
+      "ipa": "ʒdʲˈɵtʲi",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "ждём",
@@ -2247,7 +3549,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we wait"
+      "meaning": "we wait",
+      "ipa": "ʒdʲˈɵm",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "ведёт",
@@ -2259,7 +3568,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "leads"
+      "meaning": "leads",
+      "ipa": "vʲidʲˈɵt",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "ведёшь",
@@ -2271,7 +3587,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you lead"
+      "meaning": "you lead",
+      "ipa": "vʲidʲˈɵʃ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "ведёте",
@@ -2283,7 +3606,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you lead"
+      "meaning": "you lead",
+      "ipa": "vʲidʲˈɵtʲi",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "ведём",
@@ -2295,7 +3625,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we lead"
+      "meaning": "we lead",
+      "ipa": "vʲidʲˈɵm",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "растёт",
@@ -2307,7 +3644,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "grows"
+      "meaning": "grows",
+      "ipa": "rasʲtʲˈɵt",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "растёшь",
@@ -2319,7 +3663,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you grow"
+      "meaning": "you grow",
+      "ipa": "rasʲtʲˈɵʃ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "растёте",
@@ -2331,7 +3682,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you grow"
+      "meaning": "you grow",
+      "ipa": "rasʲtʲˈɵtʲi",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "растём",
@@ -2343,7 +3701,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we grow"
+      "meaning": "we grow",
+      "ipa": "rasʲtʲˈɵm",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "врёт",
@@ -2355,7 +3720,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "lies"
+      "meaning": "lies",
+      "ipa": "vrʲˈɵt",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "врёшь",
@@ -2367,7 +3739,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you lie"
+      "meaning": "you lie",
+      "ipa": "vrʲˈɵʃ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "врёте",
@@ -2379,7 +3758,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you lie"
+      "meaning": "you lie",
+      "ipa": "vrʲˈɵtʲi",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "врём",
@@ -2391,7 +3777,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we lie"
+      "meaning": "we lie",
+      "ipa": "vrʲˈɵm",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "смеётся",
@@ -2403,7 +3796,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "laughs"
+      "meaning": "laughs",
+      "ipa": "smʲijˈɵtsʌ",
+      "ipaFocus": [
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "смеёшься",
@@ -2415,7 +3815,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you laugh"
+      "meaning": "you laugh",
+      "ipa": "smʲijˈɵʃsʲʌ",
+      "ipaFocus": [
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "смеётесь",
@@ -2427,7 +3834,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you laugh"
+      "meaning": "you laugh",
+      "ipa": "smʲijˈɵtʲisʲ",
+      "ipaFocus": [
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "смеёмся",
@@ -2439,7 +3853,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we laugh"
+      "meaning": "we laugh",
+      "ipa": "smʲijˈɵmsʲʌ",
+      "ipaFocus": [
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "остаётся",
@@ -2451,7 +3872,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "remains"
+      "meaning": "remains",
+      "ipa": "ʌstajˈɵtsʌ",
+      "ipaFocus": [
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "остаёшься",
@@ -2463,7 +3891,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you remain"
+      "meaning": "you remain",
+      "ipa": "ʌstajˈɵʃsʲʌ",
+      "ipaFocus": [
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "остаётесь",
@@ -2475,7 +3910,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "you remain"
+      "meaning": "you remain",
+      "ipa": "ʌstajˈɵtʲisʲ",
+      "ipaFocus": [
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "остаёмся",
@@ -2487,7 +3929,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "we remain"
+      "meaning": "we remain",
+      "ipa": "ʌstajˈɵmsʲʌ",
+      "ipaFocus": [
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "жёлтый",
@@ -2499,7 +3948,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "yellow"
+      "meaning": "yellow",
+      "ipa": "ʒˈoɭtyj",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "чёрный",
@@ -2511,7 +3967,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "black"
+      "meaning": "black",
+      "ipa": "tʃʲˈɵrnyj",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "зелёный",
@@ -2523,7 +3986,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "green"
+      "meaning": "green",
+      "ipa": "ʑiɭʲˈɵnyj",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "тёплый",
@@ -2535,7 +4005,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "warm"
+      "meaning": "warm",
+      "ipa": "tʲˈɵpɭyj",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "тяжёлый",
@@ -2547,7 +4024,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "heavy"
+      "meaning": "heavy",
+      "ipa": "tʲaʒˈoɭyj",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "лёгкий",
@@ -2559,7 +4043,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "light"
+      "meaning": "light",
+      "ipa": "ɭʲˈɵxkʲij",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "весёлый",
@@ -2571,7 +4062,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "cheerful"
+      "meaning": "cheerful",
+      "ipa": "vʲisʲˈɵɭyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "дешёвый",
@@ -2583,7 +4081,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "cheap"
+      "meaning": "cheap",
+      "ipa": "dʲiʃˈovyj",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "жёсткий",
@@ -2595,7 +4100,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "hard"
+      "meaning": "hard",
+      "ipa": "ʒˈostkʲij",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "шёлковый",
@@ -2607,7 +4119,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "silken"
+      "meaning": "silken",
+      "ipa": "ʃˈoɭkʌvyj",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "мёртвый",
@@ -2619,7 +4138,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "dead"
+      "meaning": "dead",
+      "ipa": "mʲˈɵrtvyj",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "тёмный",
@@ -2631,7 +4157,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "dark"
+      "meaning": "dark",
+      "ipa": "tʲˈɵmnyj",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "мудрёный",
@@ -2643,7 +4176,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "fancy"
+      "meaning": "fancy",
+      "ipa": "mudrʲˈɵnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "учёный",
@@ -2655,7 +4195,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "learned"
+      "meaning": "learned",
+      "ipa": "utʃʲˈɵnyj",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "чёткий",
@@ -2667,7 +4214,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "clear"
+      "meaning": "clear",
+      "ipa": "tʃʲˈɵtkʲij",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "чёткость",
@@ -2679,7 +4233,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "clarity"
+      "meaning": "clarity",
+      "ipa": "tʃʲˈɵtkʌstʲ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "нечётный",
@@ -2691,7 +4252,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "odd-numbered"
+      "meaning": "odd-numbered",
+      "ipa": "nʲitʃʲˈɵtnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "жёлтенький",
@@ -2703,7 +4271,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "yellowish"
+      "meaning": "yellowish",
+      "ipa": "ʒˈoɭtʲinkʲij",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "зелёненький",
@@ -2715,7 +4290,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "greenish"
+      "meaning": "greenish",
+      "ipa": "ʑiɭʲˈɵnʲinkʲij",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "чёрненький",
@@ -2727,7 +4309,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "blackish"
+      "meaning": "blackish",
+      "ipa": "tʃʲˈɵrnʲinkʲij",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "тёпленький",
@@ -2739,7 +4328,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "nicely warm"
+      "meaning": "nicely warm",
+      "ipa": "tʲˈɵpɭʲinkʲij",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "лёгонький",
@@ -2751,7 +4347,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "very light"
+      "meaning": "very light",
+      "ipa": "ɭʲˈɵɡʌnkʲij",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "весёленький",
@@ -2763,7 +4366,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "cheery"
+      "meaning": "cheery",
+      "ipa": "vʲisʲˈɵɭʲinkʲij",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "дешёвенький",
@@ -2775,7 +4385,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "rather cheap"
+      "meaning": "rather cheap",
+      "ipa": "dʲiʃˈovʲinkʲij",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "тяжёленький",
@@ -2787,7 +4404,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "rather heavy"
+      "meaning": "rather heavy",
+      "ipa": "tʲaʒˈoɭʲinkʲij",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "мёрзлый",
@@ -2799,7 +4423,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "frozen"
+      "meaning": "frozen",
+      "ipa": "mʲˈɵrzɭyj",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "блёклый",
@@ -2811,7 +4442,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "pale"
+      "meaning": "pale",
+      "ipa": "bɭʲˈɵkɭyj",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "белёный",
@@ -2823,7 +4461,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "whitewashed"
+      "meaning": "whitewashed",
+      "ipa": "bʲiɭʲˈɵnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "варёный",
@@ -2835,7 +4480,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "boiled"
+      "meaning": "boiled",
+      "ipa": "varʲˈɵnyj",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "печёный",
@@ -2847,7 +4499,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "baked"
+      "meaning": "baked",
+      "ipa": "pʲitʃʲˈɵnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "солёный",
@@ -2859,7 +4518,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "salty"
+      "meaning": "salty",
+      "ipa": "sʌɭʲˈɵnyj",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "копчёный",
@@ -2871,7 +4537,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "smoked"
+      "meaning": "smoked",
+      "ipa": "kʌptʃʲˈɵnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "тушёный",
@@ -2883,7 +4556,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "stewed"
+      "meaning": "stewed",
+      "ipa": "tuʃˈonyj",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "сушёный",
@@ -2895,7 +4575,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "dried"
+      "meaning": "dried",
+      "ipa": "suʃˈonyj",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "мочёный",
@@ -2907,7 +4594,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "soaked"
+      "meaning": "soaked",
+      "ipa": "mʌtʃʲˈɵnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "тёртый",
@@ -2919,7 +4613,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "grated"
+      "meaning": "grated",
+      "ipa": "tʲˈɵrtyj",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "жжёный",
@@ -2931,7 +4632,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "burnt"
+      "meaning": "burnt",
+      "ipa": "ʒʒˈonyj",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "печёночный",
@@ -2943,7 +4651,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "hepatic"
+      "meaning": "hepatic",
+      "ipa": "pʲitʃʲˈɵnʌtʃʲnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "всерьёз",
@@ -2955,7 +4670,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "seriously"
+      "meaning": "seriously",
+      "ipa": "fsʲirɪ^jˈɵs",
+      "ipaFocus": [
+        [
+          7,
+          10
+        ]
+      ]
     },
     {
       "word": "тёпленько",
@@ -2967,7 +4689,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "warmly"
+      "meaning": "warmly",
+      "ipa": "tʲˈɵpɭʲinkʌ",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "искривлённый",
@@ -2979,7 +4708,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "curved"
+      "meaning": "curved",
+      "ipa": "ɪskrʲivɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "определённый",
@@ -2991,7 +4727,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "definite"
+      "meaning": "definite",
+      "ipa": "ʌprʲidʲiɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "отдалённый",
@@ -3003,7 +4746,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "distant"
+      "meaning": "distant",
+      "ipa": "ʌddaɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "закалённый",
@@ -3015,7 +4765,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "hardened"
+      "meaning": "hardened",
+      "ipa": "zʌkaɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "включённый",
@@ -3027,7 +4784,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "switched on"
+      "meaning": "switched on",
+      "ipa": "fkɭʲu\"tʃʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "увлечённый",
@@ -3039,7 +4803,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "absorbed"
+      "meaning": "absorbed",
+      "ipa": "uvɭʲitʃʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "населённый",
@@ -3051,7 +4822,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "inhabited"
+      "meaning": "inhabited",
+      "ipa": "nʌsʲiɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "завершённый",
@@ -3063,7 +4841,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "completed"
+      "meaning": "completed",
+      "ipa": "zʌvʲirʃˈonnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "смущённый",
@@ -3075,7 +4860,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "embarrassed"
+      "meaning": "embarrassed",
+      "ipa": "smuɕˈɵnnyj",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "изощрённый",
@@ -3087,7 +4879,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "refined"
+      "meaning": "refined",
+      "ipa": "ɪzʌɕrʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "утончённый",
@@ -3099,7 +4898,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "subtle"
+      "meaning": "subtle",
+      "ipa": "utʌntʃʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "отрешённый",
@@ -3111,7 +4917,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "detached"
+      "meaning": "detached",
+      "ipa": "ʌtrʲiʃˈonnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "обнажённый",
@@ -3123,7 +4936,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "naked"
+      "meaning": "naked",
+      "ipa": "ʌbnaʒˈonnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "поражённый",
@@ -3135,7 +4955,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "struck"
+      "meaning": "struck",
+      "ipa": "pʌraʒˈonnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "суждённый",
@@ -3147,7 +4974,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "destined"
+      "meaning": "destined",
+      "ipa": "suʒdʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "врождённый",
@@ -3159,7 +4993,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "innate"
+      "meaning": "innate",
+      "ipa": "vrʌʒdʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "новорождённый",
@@ -3171,7 +5012,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "newborn"
+      "meaning": "newborn",
+      "ipa": "nʌvʌrʌʒdʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "принуждённый",
@@ -3183,7 +5031,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "forced"
+      "meaning": "forced",
+      "ipa": "prʲinuʒdʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "побеждённый",
@@ -3195,7 +5050,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "defeated"
+      "meaning": "defeated",
+      "ipa": "pʌbʲiʒdʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "утверждённый",
@@ -3207,7 +5069,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "approved"
+      "meaning": "approved",
+      "ipa": "utvʲirʒdʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "окружённый",
@@ -3219,7 +5088,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "surrounded"
+      "meaning": "surrounded",
+      "ipa": "ʌkruʒˈonnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "вооружённый",
@@ -3231,7 +5107,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "armed"
+      "meaning": "armed",
+      "ipa": "vʌʌruʒˈonnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "напряжённый",
@@ -3243,7 +5126,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "tense"
+      "meaning": "tense",
+      "ipa": "nʌprʲaʒˈonnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "сопряжённый",
@@ -3255,7 +5145,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "conjugate"
+      "meaning": "conjugate",
+      "ipa": "sʌprʲaʒˈonnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "заряжённый",
@@ -3267,7 +5164,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "charged"
+      "meaning": "charged",
+      "ipa": "zʌrʲaʒˈonnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "разъярённый",
@@ -3279,7 +5183,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "enraged"
+      "meaning": "enraged",
+      "ipa": "rʌzjjarʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "озарённый",
@@ -3291,7 +5202,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "illuminated"
+      "meaning": "illuminated",
+      "ipa": "ʌzarʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "ослеплённый",
@@ -3303,7 +5221,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "blinded"
+      "meaning": "blinded",
+      "ipa": "ʌsɭʲipɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "окрылённый",
@@ -3315,7 +5240,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "inspired"
+      "meaning": "inspired",
+      "ipa": "ʌkryɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "утомлённый",
@@ -3327,7 +5259,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "tired"
+      "meaning": "tired",
+      "ipa": "utʌmɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "влюблённый",
@@ -3339,7 +5278,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "in love"
+      "meaning": "in love",
+      "ipa": "vɭʲu\"bɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "разделённый",
@@ -3351,7 +5297,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "divided"
+      "meaning": "divided",
+      "ipa": "rʌʑdʲiɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "удалённый",
@@ -3363,7 +5316,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "remote"
+      "meaning": "remote",
+      "ipa": "udaɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "приглушённый",
@@ -3375,7 +5335,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "muted"
+      "meaning": "muted",
+      "ipa": "prʲiɡɭuʃˈonnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "сокращённый",
@@ -3387,7 +5354,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "shortened"
+      "meaning": "shortened",
+      "ipa": "sʌkraɕˈɵnnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "ускорённый",
@@ -3399,7 +5373,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "accelerated"
+      "meaning": "accelerated",
+      "ipa": "uskʌrʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "замедлённый",
@@ -3411,7 +5392,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "slowed"
+      "meaning": "slowed",
+      "ipa": "zʌmʲidɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "просвещённый",
@@ -3423,7 +5411,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "enlightened"
+      "meaning": "enlightened",
+      "ipa": "prʌsvʲiɕˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "посвящённый",
@@ -3435,7 +5430,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "dedicated"
+      "meaning": "dedicated",
+      "ipa": "pʌsvʲaɕˈɵnnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "запрещённый",
@@ -3447,7 +5449,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "forbidden"
+      "meaning": "forbidden",
+      "ipa": "zʌprʲiɕˈɵnnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "разрешённый",
@@ -3459,7 +5468,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "allowed"
+      "meaning": "allowed",
+      "ipa": "rʌzrʲiʃˈonnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "упрощённый",
@@ -3471,7 +5487,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "simplified"
+      "meaning": "simplified",
+      "ipa": "uprʌɕˈɵnnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "осложнённый",
@@ -3483,7 +5506,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "complicated"
+      "meaning": "complicated",
+      "ipa": "ʌsɭʌʒnʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "превращённый",
@@ -3495,7 +5525,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "transformed"
+      "meaning": "transformed",
+      "ipa": "prʲivraɕˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "искажённый",
@@ -3507,7 +5544,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "distorted"
+      "meaning": "distorted",
+      "ipa": "ɪskaʒˈonnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "обобщённый",
@@ -3519,7 +5563,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "generalized"
+      "meaning": "generalized",
+      "ipa": "ʌbʌpɕˈɵnnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "уточнённый",
@@ -3531,7 +5582,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "clarified"
+      "meaning": "clarified",
+      "ipa": "utʌtʃʲnʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "заселённый",
@@ -3543,7 +5601,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "settled"
+      "meaning": "settled",
+      "ipa": "zʌsʲiɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "переселённый",
@@ -3555,7 +5620,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "relocated"
+      "meaning": "relocated",
+      "ipa": "pʲirʲisʲiɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          11,
+          13
+        ]
+      ]
     },
     {
       "word": "застеклённый",
@@ -3567,7 +5639,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "glazed"
+      "meaning": "glazed",
+      "ipa": "zʌsʲtʲikɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "закопчённый",
@@ -3579,7 +5658,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "smoke-blackened"
+      "meaning": "smoke-blackened",
+      "ipa": "zʌkʌptʃʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "золочёный",
@@ -3591,7 +5677,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "gilded"
+      "meaning": "gilded",
+      "ipa": "zʌɭʌtʃʲˈɵnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "чернёный",
@@ -3603,7 +5696,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "blackened"
+      "meaning": "blackened",
+      "ipa": "tʃʲirnʲˈɵnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "краплёный",
@@ -3615,7 +5715,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "marked"
+      "meaning": "marked",
+      "ipa": "krapɭʲˈɵnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "слоёный",
@@ -3627,7 +5734,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "layered"
+      "meaning": "layered",
+      "ipa": "sɭʌjˈɵnyj",
+      "ipaFocus": [
+        [
+          3,
+          6
+        ]
+      ]
     },
     {
       "word": "гравлёный",
@@ -3639,7 +5753,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "engraved"
+      "meaning": "engraved",
+      "ipa": "ɡravɭʲˈɵnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "клеёный",
@@ -3651,7 +5772,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "glued"
+      "meaning": "glued",
+      "ipa": "kɭʲijˈɵnyj",
+      "ipaFocus": [
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "гранёный",
@@ -3663,7 +5791,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "faceted"
+      "meaning": "faceted",
+      "ipa": "ɡranʲˈɵnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "кручёный",
@@ -3675,7 +5810,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "twisted"
+      "meaning": "twisted",
+      "ipa": "krutʃʲˈɵnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "учтённый",
@@ -3687,7 +5829,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "accounted for"
+      "meaning": "accounted for",
+      "ipa": "utʃʲtʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "сбережённый",
@@ -3699,7 +5848,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "saved"
+      "meaning": "saved",
+      "ipa": "zbʲirʲiʒˈonnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "бережёный",
@@ -3711,7 +5867,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "carefully kept"
+      "meaning": "carefully kept",
+      "ipa": "bʲirʲiʒˈonyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "стережёный",
@@ -3723,7 +5886,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "guarded"
+      "meaning": "guarded",
+      "ipa": "sʲtʲirʲiʒˈonyj",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "сожжённый",
@@ -3735,7 +5905,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "burned down"
+      "meaning": "burned down",
+      "ipa": "sʌʒʒˈonnyj",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "заражённый",
@@ -3747,7 +5924,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "infected"
+      "meaning": "infected",
+      "ipa": "zʌraʒˈonnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "отражённый",
@@ -3759,7 +5943,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "reflected"
+      "meaning": "reflected",
+      "ipa": "ʌtraʒˈonnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "встревожённый",
@@ -3771,7 +5962,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "alarmed"
+      "meaning": "alarmed",
+      "ipa": "fstrʲivʌʒˈonnyj",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "возбуждённый",
@@ -3783,7 +5981,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "excited"
+      "meaning": "excited",
+      "ipa": "vʌzbuʒdʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "обречённый",
@@ -3795,7 +6000,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "doomed"
+      "meaning": "doomed",
+      "ipa": "ʌbrʲitʃʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "отвлечённый",
@@ -3807,7 +6019,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "abstracted"
+      "meaning": "abstracted",
+      "ipa": "ʌtvɭʲitʃʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "развлечённый",
@@ -3819,7 +6038,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "entertained"
+      "meaning": "entertained",
+      "ipa": "rʌzvɭʲitʃʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "замечённый",
@@ -3831,7 +6057,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "noticed"
+      "meaning": "noticed",
+      "ipa": "zʌmʲitʃʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "помещённый",
@@ -3843,7 +6076,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "placed"
+      "meaning": "placed",
+      "ipa": "pʌmʲiɕˈɵnnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "сообщённый",
@@ -3855,7 +6095,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "reported"
+      "meaning": "reported",
+      "ipa": "sʌʌpɕˈɵnnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "упоённый",
@@ -3867,7 +6114,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "enraptured"
+      "meaning": "enraptured",
+      "ipa": "upʌjˈɵnnyj",
+      "ipaFocus": [
+        [
+          3,
+          6
+        ]
+      ]
     },
     {
       "word": "умудрённый",
@@ -3879,7 +6133,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "seasoned"
+      "meaning": "seasoned",
+      "ipa": "umudrʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "искушённый",
@@ -3891,7 +6152,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "experienced"
+      "meaning": "experienced",
+      "ipa": "ɪskuʃˈonnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "лишённый",
@@ -3903,7 +6171,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "deprived"
+      "meaning": "deprived",
+      "ipa": "ɭʲiʃˈonnyj",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "смягчённый",
@@ -3915,7 +6190,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "softened"
+      "meaning": "softened",
+      "ipa": "smʲaktʃʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "утолщённый",
@@ -3927,7 +6209,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "thickened"
+      "meaning": "thickened",
+      "ipa": "utʌɭɕˈɵnnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "истончённый",
@@ -3939,7 +6228,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "thinned"
+      "meaning": "thinned",
+      "ipa": "ɪstʌntʃʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "оснащённый",
@@ -3951,7 +6247,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "equipped"
+      "meaning": "equipped",
+      "ipa": "ʌsnaɕˈɵnnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "совмещённый",
@@ -3963,7 +6266,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "combined"
+      "meaning": "combined",
+      "ipa": "sʌvmʲiɕˈɵnnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "подкреплённый",
@@ -3975,7 +6285,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "reinforced"
+      "meaning": "reinforced",
+      "ipa": "pʌtkrʲipɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "скреплённый",
@@ -3987,7 +6304,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "fastened"
+      "meaning": "fastened",
+      "ipa": "skrʲipɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "закреплённый",
@@ -3999,7 +6323,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "fixed"
+      "meaning": "fixed",
+      "ipa": "zʌkrʲipɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "осветлённый",
@@ -4011,7 +6342,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "lightened"
+      "meaning": "lightened",
+      "ipa": "ʌsvʲitɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "затемнённый",
@@ -4023,7 +6361,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "darkened"
+      "meaning": "darkened",
+      "ipa": "zʌtʲimnʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "подчинённый",
@@ -4035,7 +6380,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "subordinate"
+      "meaning": "subordinate",
+      "ipa": "pʌttʃʲinʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "подожжённый",
@@ -4047,7 +6399,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "set on fire"
+      "meaning": "set on fire",
+      "ipa": "pʌdʌʒʒˈonnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "зажжённый",
@@ -4059,7 +6418,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "lit"
+      "meaning": "lit",
+      "ipa": "zaʒʒˈonnyj",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "охлаждённый",
@@ -4071,7 +6437,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "chilled"
+      "meaning": "chilled",
+      "ipa": "ʌxɭaʒdʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "пересечённый",
@@ -4083,7 +6456,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "rugged"
+      "meaning": "rugged",
+      "ipa": "pʲirʲisʲitʃʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          12,
+          14
+        ]
+      ]
     },
     {
       "word": "отсечённый",
@@ -4095,7 +6475,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "cut off"
+      "meaning": "cut off",
+      "ipa": "ʌtʲsʲitʃʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "привлечённый",
@@ -4107,7 +6494,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "attracted"
+      "meaning": "attracted",
+      "ipa": "prʲivɭʲitʃʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          11,
+          13
+        ]
+      ]
     },
     {
       "word": "выключённый",
@@ -4119,7 +6513,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "switched off"
+      "meaning": "switched off",
+      "ipa": "vykɭʲu\"tʃʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "расчленённый",
@@ -4131,7 +6532,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "dismembered"
+      "meaning": "dismembered",
+      "ipa": "rʌɕɭʲinʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "отчуждённый",
@@ -4143,7 +6551,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "alienated"
+      "meaning": "alienated",
+      "ipa": "ʌttʃʲuʒdʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "углублённый",
@@ -4155,7 +6570,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "in-depth"
+      "meaning": "in-depth",
+      "ipa": "uɡɭubɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "усыплённый",
@@ -4167,7 +6589,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "put to sleep"
+      "meaning": "put to sleep",
+      "ipa": "usypɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "вдохновлённый",
@@ -4179,7 +6608,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "inspired"
+      "meaning": "inspired",
+      "ipa": "vdʌxnʌvɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "подавлённый",
@@ -4191,7 +6627,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "depressed"
+      "meaning": "depressed",
+      "ipa": "pʌdavɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "обновлённый",
@@ -4203,7 +6646,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "renewed"
+      "meaning": "renewed",
+      "ipa": "ʌbnʌvɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "распалённый",
@@ -4215,7 +6665,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "heated up"
+      "meaning": "heated up",
+      "ipa": "rʌspaɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "раскалённый",
@@ -4227,7 +6684,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "red-hot"
+      "meaning": "red-hot",
+      "ipa": "rʌskaɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "раскрепощённый",
@@ -4239,7 +6703,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "uninhibited"
+      "meaning": "uninhibited",
+      "ipa": "rʌskrʲipʌɕˈɵnnyj",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "поощрённый",
@@ -4251,7 +6722,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "encouraged"
+      "meaning": "encouraged",
+      "ipa": "pʌʌɕrʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "закрепощённый",
@@ -4263,7 +6741,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "enslaved"
+      "meaning": "enslaved",
+      "ipa": "zʌkrʲipʌɕˈɵnnyj",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "непобеждённый",
@@ -4275,7 +6760,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "unbeaten"
+      "meaning": "unbeaten",
+      "ipa": "nʲipʌbʲiʒdʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          11,
+          13
+        ]
+      ]
     },
     {
       "word": "неразрешённый",
@@ -4287,7 +6779,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "unresolved"
+      "meaning": "unresolved",
+      "ipa": "nʲirʌzrʲiʃˈonnyj",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "незавершённый",
@@ -4299,7 +6798,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "unfinished"
+      "meaning": "unfinished",
+      "ipa": "nʲizʌvʲirʃˈonnyj",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "облегчённый",
@@ -4311,7 +6817,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "lightened"
+      "meaning": "lightened",
+      "ipa": "ʌbɭʲixtʃʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "отягчённый",
@@ -4323,7 +6836,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "burdened"
+      "meaning": "burdened",
+      "ipa": "ʌtʲaktʃʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "закруглённый",
@@ -4335,7 +6855,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "rounded"
+      "meaning": "rounded",
+      "ipa": "zʌkruɡɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "умалённый",
@@ -4347,7 +6874,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "diminished"
+      "meaning": "diminished",
+      "ipa": "umaɭʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "удручённый",
@@ -4359,7 +6893,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "dejected"
+      "meaning": "dejected",
+      "ipa": "udrutʃʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "пригвождённый",
@@ -4371,7 +6912,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "nailed down"
+      "meaning": "nailed down",
+      "ipa": "prʲiɡvʌʒdʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "приурочённый",
@@ -4383,7 +6931,14 @@ const language = {
         "э",
         "ě"
       ],
-      "meaning": "timed for"
+      "meaning": "timed for",
+      "ipa": "prʲiurʌtʃʲˈɵnnyj",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     }
   ]
 } satisfies LanguageWords

@@ -165,7 +165,13 @@ export function useHomeGame() {
     practiceWord.value = null
     speechStatus.value = ''
     selectedChoice.value = ''
-    missedWords.value = readMissedWords(storageGet(getMissedKey(code)))
+    const storedMissedWords = readMissedWords(storageGet(getMissedKey(code)))
+    missedWords.value = storedMissedWords.flatMap((storedWord) => {
+      const currentWord = currentLangData.value?.words.find(
+        word => word.word === storedWord.word,
+      )
+      return currentWord ? [currentWord] : []
+    })
 
     if (storageGet(getLastPlayedKey(code)) === currentDayKey.value) {
       answered.value = true

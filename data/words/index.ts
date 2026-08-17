@@ -1,6 +1,6 @@
 import type { LanguageWords } from './types'
 
-export type { LanguageWords, Word } from './types'
+export type { IpaFocusRange, LanguageWords, StoredWord, Word } from './types'
 
 export interface LanguageSummary {
   code: string

@@ -15,7 +15,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "beautiful"
+      "meaning": "beautiful",
+      "ipa": "dɛp˧˩",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đen",
@@ -27,7 +34,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "black"
+      "meaning": "black",
+      "ipa": "dɛn˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đỏ",
@@ -39,7 +53,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "red"
+      "meaning": "red",
+      "ipa": "dɔ˧˩˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đói",
@@ -51,7 +72,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "hungry"
+      "meaning": "hungry",
+      "ipa": "dɔj˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đủ",
@@ -63,7 +91,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "enough"
+      "meaning": "enough",
+      "ipa": "du˧˩˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đất",
@@ -75,7 +110,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "land"
+      "meaning": "land",
+      "ipa": "dɤ̆t˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đá",
@@ -87,7 +129,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "stone"
+      "meaning": "stone",
+      "ipa": "da˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đáy",
@@ -99,7 +148,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "bottom"
+      "meaning": "bottom",
+      "ipa": "dăj˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đầu",
@@ -111,7 +167,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "head"
+      "meaning": "head",
+      "ipa": "dɤ̆w˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đôi",
@@ -123,7 +186,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "pair"
+      "meaning": "pair",
+      "ipa": "doj˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đêm",
@@ -135,7 +205,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "night"
+      "meaning": "night",
+      "ipa": "dem˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đeo",
@@ -147,7 +224,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "wear"
+      "meaning": "wear",
+      "ipa": "dew˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đếm",
@@ -159,7 +243,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "count"
+      "meaning": "count",
+      "ipa": "dem˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đọc",
@@ -171,7 +262,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "read"
+      "meaning": "read",
+      "ipa": "dɔk˧˩",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đóng",
@@ -183,7 +281,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "close"
+      "meaning": "close",
+      "ipa": "dɔŋ˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đổ",
@@ -195,7 +300,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "pour"
+      "meaning": "pour",
+      "ipa": "do˧˩˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đỗ",
@@ -207,7 +319,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "pass"
+      "meaning": "pass",
+      "ipa": "do˧˥",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đón",
@@ -219,7 +338,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "welcome"
+      "meaning": "welcome",
+      "ipa": "dɔn˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đốt",
@@ -231,7 +357,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "burn"
+      "meaning": "burn",
+      "ipa": "dot˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đồ",
@@ -243,7 +376,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "thing"
+      "meaning": "thing",
+      "ipa": "do˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đi",
@@ -255,7 +395,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "go"
+      "meaning": "go",
+      "ipa": "di˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đứng",
@@ -267,7 +414,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "stand"
+      "meaning": "stand",
+      "ipa": "dɯŋ˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đưa",
@@ -279,7 +433,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "bring"
+      "meaning": "bring",
+      "ipa": "dɯə˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đường",
@@ -291,7 +452,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "road"
+      "meaning": "road",
+      "ipa": "dɯəŋ˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đắng",
@@ -303,7 +471,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "bitter"
+      "meaning": "bitter",
+      "ipa": "dăŋ˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đồng",
@@ -315,7 +490,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "field"
+      "meaning": "field",
+      "ipa": "doŋ˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đơn",
@@ -327,7 +509,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "simple"
+      "meaning": "simple",
+      "ipa": "dɤn˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đệm",
@@ -339,7 +528,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "mattress"
+      "meaning": "mattress",
+      "ipa": "dem˧˩",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "điện",
@@ -351,7 +547,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "electricity"
+      "meaning": "electricity",
+      "ipa": "diən˧˩",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "điệu",
@@ -363,7 +566,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "melody"
+      "meaning": "melody",
+      "ipa": "diəw˧˩",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đỉnh",
@@ -375,7 +585,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "peak"
+      "meaning": "peak",
+      "ipa": "diɲ˧˩˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "định",
@@ -387,7 +604,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "decide"
+      "meaning": "decide",
+      "ipa": "diɲ˧˩",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đinh",
@@ -399,7 +623,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "nail"
+      "meaning": "nail",
+      "ipa": "diɲ˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đoán",
@@ -411,7 +642,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "guess"
+      "meaning": "guess",
+      "ipa": "dwan˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đoạt",
@@ -423,7 +661,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "seize"
+      "meaning": "seize",
+      "ipa": "dwat˧˩",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đoàn",
@@ -435,7 +680,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "group"
+      "meaning": "group",
+      "ipa": "dwan˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đoạn",
@@ -447,7 +699,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "section"
+      "meaning": "section",
+      "ipa": "dwan˧˩",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đông",
@@ -459,7 +718,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "east"
+      "meaning": "east",
+      "ipa": "doŋ˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "động",
@@ -471,7 +737,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "move"
+      "meaning": "move",
+      "ipa": "doŋ˧˩",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đun",
@@ -483,7 +756,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "boil"
+      "meaning": "boil",
+      "ipa": "dun˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đẩy",
@@ -495,7 +775,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "push"
+      "meaning": "push",
+      "ipa": "dɤ̆j˧˩˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đời",
@@ -507,7 +794,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "life"
+      "meaning": "life",
+      "ipa": "dɤj˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đối",
@@ -519,7 +813,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "oppose"
+      "meaning": "oppose",
+      "ipa": "doj˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đội",
@@ -531,7 +832,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "team"
+      "meaning": "team",
+      "ipa": "doj˧˩",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "điểm",
@@ -543,7 +851,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "point"
+      "meaning": "point",
+      "ipa": "diəm˧˩˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "điều",
@@ -555,7 +870,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "thing"
+      "meaning": "thing",
+      "ipa": "diəw˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đàn",
@@ -567,7 +889,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "instrument"
+      "meaning": "instrument",
+      "ipa": "dan˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đạp",
@@ -579,7 +908,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "pedal"
+      "meaning": "pedal",
+      "ipa": "dap˧˩",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đâm",
@@ -591,7 +927,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "stab"
+      "meaning": "stab",
+      "ipa": "dɤ̆m˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đặt",
@@ -603,7 +946,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "put"
+      "meaning": "put",
+      "ipa": "dăt˧˩",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đậu",
@@ -615,7 +965,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "bean"
+      "meaning": "bean",
+      "ipa": "dɤ̆w˧˩",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đầy",
@@ -627,7 +984,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "full"
+      "meaning": "full",
+      "ipa": "dɤ̆j˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đánh",
@@ -639,7 +1003,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "hit"
+      "meaning": "hit",
+      "ipa": "daɲ˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đau",
@@ -651,7 +1022,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "hurt"
+      "meaning": "hurt",
+      "ipa": "dăw˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "đùa",
@@ -663,7 +1041,14 @@ const language = {
         "ð",
         "ď"
       ],
-      "meaning": "joke"
+      "meaning": "joke",
+      "ipa": "duə˧",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ăn",
@@ -675,7 +1060,18 @@ const language = {
         "â",
         "o"
       ],
-      "meaning": "eat"
+      "meaning": "eat",
+      "ipa": "ʔăn˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "bắp",
@@ -687,7 +1083,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "corn"
+      "meaning": "corn",
+      "ipa": "băp˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "bắn",
@@ -699,7 +1106,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "shoot"
+      "meaning": "shoot",
+      "ipa": "băn˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "bắt",
@@ -711,7 +1129,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "catch"
+      "meaning": "catch",
+      "ipa": "băt˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "bằng",
@@ -723,7 +1152,18 @@ const language = {
         "ầ",
         "ò"
       ],
-      "meaning": "equal"
+      "meaning": "equal",
+      "ipa": "băŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "băng",
@@ -735,7 +1175,18 @@ const language = {
         "â",
         "o"
       ],
-      "meaning": "ice"
+      "meaning": "ice",
+      "ipa": "băŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "cắn",
@@ -747,7 +1198,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "bite"
+      "meaning": "bite",
+      "ipa": "kăn˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "căng",
@@ -759,7 +1221,18 @@ const language = {
         "â",
         "o"
       ],
-      "meaning": "tight"
+      "meaning": "tight",
+      "ipa": "kăŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "cắp",
@@ -771,7 +1244,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "clip"
+      "meaning": "clip",
+      "ipa": "kăp˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "chăn",
@@ -783,7 +1267,18 @@ const language = {
         "â",
         "o"
       ],
-      "meaning": "blanket"
+      "meaning": "blanket",
+      "ipa": "căn˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "chắc",
@@ -795,7 +1290,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "sure"
+      "meaning": "sure",
+      "ipa": "căk˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "chặn",
@@ -807,7 +1313,18 @@ const language = {
         "ậ",
         "ọ"
       ],
-      "meaning": "block"
+      "meaning": "block",
+      "ipa": "căn˧˩",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "dặn",
@@ -819,7 +1336,18 @@ const language = {
         "ậ",
         "ọ"
       ],
-      "meaning": "remind"
+      "meaning": "remind",
+      "ipa": "zăn˧˩",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "gắng",
@@ -831,7 +1359,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "strive"
+      "meaning": "strive",
+      "ipa": "ɣăŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "gắt",
@@ -843,7 +1382,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "harsh"
+      "meaning": "harsh",
+      "ipa": "ɣăt˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "gắn",
@@ -855,7 +1405,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "attach"
+      "meaning": "attach",
+      "ipa": "ɣăn˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "hăng",
@@ -867,7 +1428,18 @@ const language = {
         "â",
         "o"
       ],
-      "meaning": "eager"
+      "meaning": "eager",
+      "ipa": "hăŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "hắt",
@@ -879,7 +1451,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "splash"
+      "meaning": "splash",
+      "ipa": "hăt˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "khăn",
@@ -891,7 +1474,18 @@ const language = {
         "â",
         "o"
       ],
-      "meaning": "towel"
+      "meaning": "towel",
+      "ipa": "xăn˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "lặng",
@@ -903,7 +1497,18 @@ const language = {
         "ậ",
         "ọ"
       ],
-      "meaning": "silent"
+      "meaning": "silent",
+      "ipa": "lăŋ˧˩",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "lăn",
@@ -915,7 +1520,18 @@ const language = {
         "â",
         "o"
       ],
-      "meaning": "roll"
+      "meaning": "roll",
+      "ipa": "lăn˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "măng",
@@ -927,7 +1543,18 @@ const language = {
         "â",
         "o"
       ],
-      "meaning": "bamboo shoot"
+      "meaning": "bamboo shoot",
+      "ipa": "măŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "mặn",
@@ -939,7 +1566,18 @@ const language = {
         "ậ",
         "ọ"
       ],
-      "meaning": "salty"
+      "meaning": "salty",
+      "ipa": "măn˧˩",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "mắt",
@@ -951,7 +1589,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "eye"
+      "meaning": "eye",
+      "ipa": "măt˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "nắng",
@@ -963,7 +1612,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "sunshine"
+      "meaning": "sunshine",
+      "ipa": "năŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "nằm",
@@ -975,7 +1635,18 @@ const language = {
         "ầ",
         "ò"
       ],
-      "meaning": "lie down"
+      "meaning": "lie down",
+      "ipa": "năm˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "nắn",
@@ -987,7 +1658,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "shape"
+      "meaning": "shape",
+      "ipa": "năn˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "rắn",
@@ -999,7 +1681,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "snake"
+      "meaning": "snake",
+      "ipa": "zăn˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "sắn",
@@ -1011,7 +1704,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "cassava"
+      "meaning": "cassava",
+      "ipa": "săn˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "sẵn",
@@ -1023,7 +1727,18 @@ const language = {
         "ẫ",
         "õ"
       ],
-      "meaning": "ready"
+      "meaning": "ready",
+      "ipa": "săn˧˥",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "tắm",
@@ -1035,7 +1750,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "bathe"
+      "meaning": "bathe",
+      "ipa": "tăm˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "tặng",
@@ -1047,7 +1773,18 @@ const language = {
         "ậ",
         "ọ"
       ],
-      "meaning": "give"
+      "meaning": "give",
+      "ipa": "tăŋ˧˩",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "vắng",
@@ -1059,7 +1796,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "absent"
+      "meaning": "absent",
+      "ipa": "văŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "vặn",
@@ -1071,7 +1819,18 @@ const language = {
         "ậ",
         "ọ"
       ],
-      "meaning": "twist"
+      "meaning": "twist",
+      "ipa": "văn˧˩",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "vắt",
@@ -1083,7 +1842,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "squeeze"
+      "meaning": "squeeze",
+      "ipa": "văt˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "xăng",
@@ -1095,7 +1865,18 @@ const language = {
         "â",
         "o"
       ],
-      "meaning": "gasoline"
+      "meaning": "gasoline",
+      "ipa": "săŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "mặt",
@@ -1107,7 +1888,18 @@ const language = {
         "ậ",
         "ọ"
       ],
-      "meaning": "face"
+      "meaning": "face",
+      "ipa": "măt˧˩",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "trắng",
@@ -1119,7 +1911,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "white"
+      "meaning": "white",
+      "ipa": "căŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "thẳng",
@@ -1131,7 +1934,18 @@ const language = {
         "ẩ",
         "ỏ"
       ],
-      "meaning": "straight"
+      "meaning": "straight",
+      "ipa": "tʰăŋ˧˩˧",
+      "ipaFocus": [
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "lắng",
@@ -1143,7 +1957,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "listen"
+      "meaning": "listen",
+      "ipa": "lăŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "chẳng",
@@ -1155,7 +1980,18 @@ const language = {
         "ẩ",
         "ỏ"
       ],
-      "meaning": "not"
+      "meaning": "not",
+      "ipa": "căŋ˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          6
+        ]
+      ]
     },
     {
       "word": "hẳn",
@@ -1167,7 +2003,18 @@ const language = {
         "ẩ",
         "ỏ"
       ],
-      "meaning": "definitely"
+      "meaning": "definitely",
+      "ipa": "hăn˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          6
+        ]
+      ]
     },
     {
       "word": "nhắc",
@@ -1179,7 +2026,18 @@ const language = {
         "ấ",
         "ó"
       ],
-      "meaning": "remind"
+      "meaning": "remind",
+      "ipa": "ɲăk˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "cằm",
@@ -1191,7 +2049,18 @@ const language = {
         "ầ",
         "ò"
       ],
-      "meaning": "chin"
+      "meaning": "chin",
+      "ipa": "kăm˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "rằng",
@@ -1203,7 +2072,18 @@ const language = {
         "ầ",
         "ò"
       ],
-      "meaning": "that"
+      "meaning": "that",
+      "ipa": "zăŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "ân",
@@ -1215,7 +2095,18 @@ const language = {
         "ă",
         "ê"
       ],
-      "meaning": "grace"
+      "meaning": "grace",
+      "ipa": "ʔɤ̆n˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "ấm",
@@ -1227,7 +2118,18 @@ const language = {
         "ắ",
         "é"
       ],
-      "meaning": "warm"
+      "meaning": "warm",
+      "ipa": "ʔɤ̆m˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "cần",
@@ -1239,7 +2141,18 @@ const language = {
         "ằ",
         "è"
       ],
-      "meaning": "need"
+      "meaning": "need",
+      "ipa": "kɤ̆n˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "cấm",
@@ -1251,7 +2164,18 @@ const language = {
         "ắ",
         "é"
       ],
-      "meaning": "forbid"
+      "meaning": "forbid",
+      "ipa": "kɤ̆m˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "cẩn",
@@ -1263,7 +2187,18 @@ const language = {
         "ẳ",
         "ẻ"
       ],
-      "meaning": "careful"
+      "meaning": "careful",
+      "ipa": "kɤ̆n˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "chấm",
@@ -1275,7 +2210,18 @@ const language = {
         "ắ",
         "é"
       ],
-      "meaning": "dot"
+      "meaning": "dot",
+      "ipa": "cɤ̆m˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "chân",
@@ -1287,7 +2233,18 @@ const language = {
         "ă",
         "ê"
       ],
-      "meaning": "foot"
+      "meaning": "foot",
+      "ipa": "cɤ̆n˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "chậm",
@@ -1299,7 +2256,18 @@ const language = {
         "ặ",
         "ẹ"
       ],
-      "meaning": "slow"
+      "meaning": "slow",
+      "ipa": "cɤ̆m˧˩",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "dân",
@@ -1311,7 +2279,18 @@ const language = {
         "ă",
         "ê"
       ],
-      "meaning": "people"
+      "meaning": "people",
+      "ipa": "zɤ̆n˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "dẫn",
@@ -1323,7 +2302,18 @@ const language = {
         "ẵ",
         "ẽ"
       ],
-      "meaning": "lead"
+      "meaning": "lead",
+      "ipa": "zɤ̆n˧˥",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "gần",
@@ -1335,7 +2325,18 @@ const language = {
         "ằ",
         "è"
       ],
-      "meaning": "near"
+      "meaning": "near",
+      "ipa": "ɣɤ̆n˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "gấm",
@@ -1347,7 +2348,18 @@ const language = {
         "ắ",
         "é"
       ],
-      "meaning": "brocade"
+      "meaning": "brocade",
+      "ipa": "ɣɤ̆m˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "hầm",
@@ -1359,7 +2371,18 @@ const language = {
         "ằ",
         "è"
       ],
-      "meaning": "tunnel"
+      "meaning": "tunnel",
+      "ipa": "hɤ̆m˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "hận",
@@ -1371,7 +2394,18 @@ const language = {
         "ặ",
         "ẹ"
       ],
-      "meaning": "hatred"
+      "meaning": "hatred",
+      "ipa": "hɤ̆n˧˩",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "lần",
@@ -1383,7 +2417,18 @@ const language = {
         "ằ",
         "è"
       ],
-      "meaning": "time"
+      "meaning": "time",
+      "ipa": "lɤ̆n˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "lẫn",
@@ -1395,7 +2440,18 @@ const language = {
         "ẵ",
         "ẽ"
       ],
-      "meaning": "mixed"
+      "meaning": "mixed",
+      "ipa": "lɤ̆n˧˥",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "mận",
@@ -1407,7 +2463,18 @@ const language = {
         "ặ",
         "ẹ"
       ],
-      "meaning": "plum"
+      "meaning": "plum",
+      "ipa": "mɤ̆n˧˩",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "mầm",
@@ -1419,7 +2486,18 @@ const language = {
         "ằ",
         "è"
       ],
-      "meaning": "sprout"
+      "meaning": "sprout",
+      "ipa": "mɤ̆m˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "nấm",
@@ -1431,7 +2509,18 @@ const language = {
         "ắ",
         "é"
       ],
-      "meaning": "mushroom"
+      "meaning": "mushroom",
+      "ipa": "nɤ̆m˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "nhẫn",
@@ -1443,7 +2532,18 @@ const language = {
         "ẵ",
         "ẽ"
       ],
-      "meaning": "ring"
+      "meaning": "ring",
+      "ipa": "ɲɤ̆n˧˥",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "phấn",
@@ -1455,7 +2555,18 @@ const language = {
         "ắ",
         "é"
       ],
-      "meaning": "powder"
+      "meaning": "powder",
+      "ipa": "fɤ̆n˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "quần",
@@ -1467,7 +2578,14 @@ const language = {
         "ằ",
         "è"
       ],
-      "meaning": "pants"
+      "meaning": "pants",
+      "ipa": "kwɤ̆˧n˧",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "sân",
@@ -1479,7 +2597,18 @@ const language = {
         "ă",
         "ê"
       ],
-      "meaning": "yard"
+      "meaning": "yard",
+      "ipa": "sɤ̆n˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "sấm",
@@ -1491,7 +2620,18 @@ const language = {
         "ắ",
         "é"
       ],
-      "meaning": "thunder"
+      "meaning": "thunder",
+      "ipa": "sɤ̆m˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "tấm",
@@ -1503,7 +2643,18 @@ const language = {
         "ắ",
         "é"
       ],
-      "meaning": "sheet"
+      "meaning": "sheet",
+      "ipa": "tɤ̆m˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "thân",
@@ -1515,7 +2666,18 @@ const language = {
         "ă",
         "ê"
       ],
-      "meaning": "body"
+      "meaning": "body",
+      "ipa": "tʰɤ̆n˧",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ],
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "trần",
@@ -1527,7 +2689,18 @@ const language = {
         "ằ",
         "è"
       ],
-      "meaning": "bare"
+      "meaning": "bare",
+      "ipa": "cɤ̆n˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "trận",
@@ -1539,7 +2712,18 @@ const language = {
         "ặ",
         "ẹ"
       ],
-      "meaning": "match"
+      "meaning": "match",
+      "ipa": "cɤ̆n˧˩",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "vẫn",
@@ -1551,7 +2735,18 @@ const language = {
         "ẵ",
         "ẽ"
       ],
-      "meaning": "still"
+      "meaning": "still",
+      "ipa": "vɤ̆n˧˥",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "vận",
@@ -1563,7 +2758,18 @@ const language = {
         "ặ",
         "ẹ"
       ],
-      "meaning": "transport"
+      "meaning": "transport",
+      "ipa": "vɤ̆n˧˩",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "xuân",
@@ -1575,7 +2781,18 @@ const language = {
         "ă",
         "ê"
       ],
-      "meaning": "spring"
+      "meaning": "spring",
+      "ipa": "swɤ̆n˧",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ],
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "bẩn",
@@ -1587,7 +2804,18 @@ const language = {
         "ẳ",
         "ẻ"
       ],
-      "meaning": "dirty"
+      "meaning": "dirty",
+      "ipa": "bɤ̆n˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "bận",
@@ -1599,7 +2827,18 @@ const language = {
         "ặ",
         "ẹ"
       ],
-      "meaning": "busy"
+      "meaning": "busy",
+      "ipa": "bɤ̆n˧˩",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "cận",
@@ -1611,7 +2850,18 @@ const language = {
         "ặ",
         "ẹ"
       ],
-      "meaning": "near-sighted"
+      "meaning": "near-sighted",
+      "ipa": "kɤ̆n˧˩",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "gậy",
@@ -1623,7 +2873,14 @@ const language = {
         "ặ",
         "ẹ"
       ],
-      "meaning": "stick"
+      "meaning": "stick",
+      "ipa": "ɣɤ̆j˧˩",
+      "ipaFocus": [
+        [
+          1,
+          6
+        ]
+      ]
     },
     {
       "word": "giận",
@@ -1635,7 +2892,18 @@ const language = {
         "ặ",
         "ẹ"
       ],
-      "meaning": "angry"
+      "meaning": "angry",
+      "ipa": "zɤ̆˧n˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          7
+        ]
+      ]
     },
     {
       "word": "bẫy",
@@ -1647,7 +2915,14 @@ const language = {
         "ẵ",
         "ẽ"
       ],
-      "meaning": "trap"
+      "meaning": "trap",
+      "ipa": "bɤ̆j˧˥",
+      "ipaFocus": [
+        [
+          1,
+          6
+        ]
+      ]
     },
     {
       "word": "chấy",
@@ -1659,7 +2934,14 @@ const language = {
         "ắ",
         "é"
       ],
-      "meaning": "lice"
+      "meaning": "lice",
+      "ipa": "cɤ̆j˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "giẫm",
@@ -1671,7 +2953,18 @@ const language = {
         "ẵ",
         "ẽ"
       ],
-      "meaning": "step on"
+      "meaning": "step on",
+      "ipa": "zɤ̆˧m˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          7
+        ]
+      ]
     },
     {
       "word": "rẫy",
@@ -1683,7 +2976,14 @@ const language = {
         "ẵ",
         "ẽ"
       ],
-      "meaning": "field"
+      "meaning": "field",
+      "ipa": "zɤ̆j˧˥",
+      "ipaFocus": [
+        [
+          1,
+          6
+        ]
+      ]
     },
     {
       "word": "sẩy",
@@ -1695,7 +2995,14 @@ const language = {
         "ẳ",
         "ẻ"
       ],
-      "meaning": "slip"
+      "meaning": "slip",
+      "ipa": "sɤ̆j˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          7
+        ]
+      ]
     },
     {
       "word": "tẩy",
@@ -1707,7 +3014,14 @@ const language = {
         "ẳ",
         "ẻ"
       ],
-      "meaning": "bleach"
+      "meaning": "bleach",
+      "ipa": "tɤ̆j˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          7
+        ]
+      ]
     },
     {
       "word": "vẫy",
@@ -1719,7 +3033,14 @@ const language = {
         "ẵ",
         "ẽ"
       ],
-      "meaning": "wave"
+      "meaning": "wave",
+      "ipa": "vɤ̆j˧˥",
+      "ipaFocus": [
+        [
+          1,
+          6
+        ]
+      ]
     },
     {
       "word": "dậy",
@@ -1731,7 +3052,14 @@ const language = {
         "ặ",
         "ẹ"
       ],
-      "meaning": "wake up"
+      "meaning": "wake up",
+      "ipa": "zɤ̆j˧˩",
+      "ipaFocus": [
+        [
+          1,
+          6
+        ]
+      ]
     },
     {
       "word": "cấy",
@@ -1743,7 +3071,14 @@ const language = {
         "ắ",
         "é"
       ],
-      "meaning": "transplant"
+      "meaning": "transplant",
+      "ipa": "kɤ̆j˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "xây",
@@ -1755,7 +3090,14 @@ const language = {
         "ă",
         "ê"
       ],
-      "meaning": "build"
+      "meaning": "build",
+      "ipa": "sɤ̆j˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "bậc",
@@ -1767,7 +3109,18 @@ const language = {
         "ặ",
         "ẹ"
       ],
-      "meaning": "level"
+      "meaning": "level",
+      "ipa": "bɤ̆k˧˩",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "nhất",
@@ -1779,7 +3132,18 @@ const language = {
         "ắ",
         "é"
       ],
-      "meaning": "first"
+      "meaning": "first",
+      "ipa": "ɲɤ̆t˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "tầng",
@@ -1791,7 +3155,18 @@ const language = {
         "ằ",
         "è"
       ],
-      "meaning": "floor"
+      "meaning": "floor",
+      "ipa": "tɤ̆ŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "mật",
@@ -1803,7 +3178,18 @@ const language = {
         "ặ",
         "ẹ"
       ],
-      "meaning": "honey"
+      "meaning": "honey",
+      "ipa": "mɤ̆t˧˩",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "bê",
@@ -1815,7 +3201,14 @@ const language = {
         "i",
         "ơ"
       ],
-      "meaning": "carry"
+      "meaning": "carry",
+      "ipa": "be˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "bế",
@@ -1827,7 +3220,14 @@ const language = {
         "í",
         "ớ"
       ],
-      "meaning": "hold"
+      "meaning": "hold",
+      "ipa": "be˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "bề",
@@ -1839,7 +3239,14 @@ const language = {
         "ì",
         "ờ"
       ],
-      "meaning": "side"
+      "meaning": "side",
+      "ipa": "be˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "bể",
@@ -1851,7 +3258,14 @@ const language = {
         "ỉ",
         "ở"
       ],
-      "meaning": "tank"
+      "meaning": "tank",
+      "ipa": "be˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "bệ",
@@ -1863,7 +3277,14 @@ const language = {
         "ị",
         "ợ"
       ],
-      "meaning": "pedestal"
+      "meaning": "pedestal",
+      "ipa": "be˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "chê",
@@ -1875,7 +3296,14 @@ const language = {
         "i",
         "ơ"
       ],
-      "meaning": "criticize"
+      "meaning": "criticize",
+      "ipa": "ce˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "chế",
@@ -1887,7 +3315,14 @@ const language = {
         "í",
         "ớ"
       ],
-      "meaning": "make"
+      "meaning": "make",
+      "ipa": "ce˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "dễ",
@@ -1899,7 +3334,14 @@ const language = {
         "ĩ",
         "ỡ"
       ],
-      "meaning": "easy"
+      "meaning": "easy",
+      "ipa": "ze˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "đề",
@@ -1911,7 +3353,14 @@ const language = {
         "ì",
         "ờ"
       ],
-      "meaning": "topic"
+      "meaning": "topic",
+      "ipa": "de˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "ghế",
@@ -1923,7 +3372,14 @@ const language = {
         "í",
         "ớ"
       ],
-      "meaning": "chair"
+      "meaning": "chair",
+      "ipa": "ɣe˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "hề",
@@ -1935,7 +3391,14 @@ const language = {
         "ì",
         "ờ"
       ],
-      "meaning": "clown"
+      "meaning": "clown",
+      "ipa": "he˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "hệ",
@@ -1947,7 +3410,14 @@ const language = {
         "ị",
         "ợ"
       ],
-      "meaning": "system"
+      "meaning": "system",
+      "ipa": "he˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "kể",
@@ -1959,7 +3429,14 @@ const language = {
         "ỉ",
         "ở"
       ],
-      "meaning": "tell"
+      "meaning": "tell",
+      "ipa": "ke˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "kệ",
@@ -1971,7 +3448,14 @@ const language = {
         "ị",
         "ợ"
       ],
-      "meaning": "shelf"
+      "meaning": "shelf",
+      "ipa": "ke˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "lễ",
@@ -1983,7 +3467,14 @@ const language = {
         "ĩ",
         "ỡ"
       ],
-      "meaning": "ceremony"
+      "meaning": "ceremony",
+      "ipa": "le˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "lệ",
@@ -1995,7 +3486,14 @@ const language = {
         "ị",
         "ợ"
       ],
-      "meaning": "tear"
+      "meaning": "tear",
+      "ipa": "le˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "lề",
@@ -2007,7 +3505,14 @@ const language = {
         "ì",
         "ờ"
       ],
-      "meaning": "margin"
+      "meaning": "margin",
+      "ipa": "le˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "mê",
@@ -2019,7 +3524,14 @@ const language = {
         "i",
         "ơ"
       ],
-      "meaning": "adore"
+      "meaning": "adore",
+      "ipa": "me˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "mề",
@@ -2031,7 +3543,14 @@ const language = {
         "ì",
         "ờ"
       ],
-      "meaning": "soft"
+      "meaning": "soft",
+      "ipa": "me˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "mệt",
@@ -2043,7 +3562,18 @@ const language = {
         "ị",
         "ợ"
       ],
-      "meaning": "tired"
+      "meaning": "tired",
+      "ipa": "met˧˩",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "nghề",
@@ -2055,7 +3585,14 @@ const language = {
         "ì",
         "ờ"
       ],
-      "meaning": "job"
+      "meaning": "job",
+      "ipa": "ŋe˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "nếu",
@@ -2067,7 +3604,14 @@ const language = {
         "í",
         "ớ"
       ],
-      "meaning": "if"
+      "meaning": "if",
+      "ipa": "nɛu˧",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "nếm",
@@ -2079,7 +3623,18 @@ const language = {
         "í",
         "ớ"
       ],
-      "meaning": "taste"
+      "meaning": "taste",
+      "ipa": "nem˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "nến",
@@ -2091,7 +3646,18 @@ const language = {
         "í",
         "ớ"
       ],
-      "meaning": "candle"
+      "meaning": "candle",
+      "ipa": "nen˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "nể",
@@ -2103,7 +3669,14 @@ const language = {
         "ỉ",
         "ở"
       ],
-      "meaning": "respect"
+      "meaning": "respect",
+      "ipa": "ne˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "phê",
@@ -2115,7 +3688,14 @@ const language = {
         "i",
         "ơ"
       ],
-      "meaning": "approve"
+      "meaning": "approve",
+      "ipa": "fe˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "phế",
@@ -2127,7 +3707,14 @@ const language = {
         "í",
         "ớ"
       ],
-      "meaning": "waste"
+      "meaning": "waste",
+      "ipa": "fe˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "quê",
@@ -2139,7 +3726,14 @@ const language = {
         "i",
         "ơ"
       ],
-      "meaning": "homeland"
+      "meaning": "homeland",
+      "ipa": "kwe˧˧",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "quế",
@@ -2151,7 +3745,14 @@ const language = {
         "í",
         "ớ"
       ],
-      "meaning": "cinnamon"
+      "meaning": "cinnamon",
+      "ipa": "kwe˧˧",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "rễ",
@@ -2163,7 +3764,14 @@ const language = {
         "ĩ",
         "ỡ"
       ],
-      "meaning": "root"
+      "meaning": "root",
+      "ipa": "ze˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "rể",
@@ -2175,7 +3783,14 @@ const language = {
         "ỉ",
         "ở"
       ],
-      "meaning": "son-in-law"
+      "meaning": "son-in-law",
+      "ipa": "ze˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "thế",
@@ -2187,7 +3802,14 @@ const language = {
         "í",
         "ớ"
       ],
-      "meaning": "world"
+      "meaning": "world",
+      "ipa": "tʰe˧",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "sệ",
@@ -2199,7 +3821,14 @@ const language = {
         "ị",
         "ợ"
       ],
-      "meaning": "sagging"
+      "meaning": "sagging",
+      "ipa": "se˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "tê",
@@ -2211,7 +3840,14 @@ const language = {
         "i",
         "ơ"
       ],
-      "meaning": "numb"
+      "meaning": "numb",
+      "ipa": "te˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "tế",
@@ -2223,7 +3859,14 @@ const language = {
         "í",
         "ớ"
       ],
-      "meaning": "fine"
+      "meaning": "fine",
+      "ipa": "te˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "tề",
@@ -2235,7 +3878,14 @@ const language = {
         "ì",
         "ờ"
       ],
-      "meaning": "aligned"
+      "meaning": "aligned",
+      "ipa": "te˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "thề",
@@ -2247,7 +3897,14 @@ const language = {
         "ì",
         "ờ"
       ],
-      "meaning": "swear"
+      "meaning": "swear",
+      "ipa": "tʰe˧",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "thể",
@@ -2259,7 +3916,14 @@ const language = {
         "ỉ",
         "ở"
       ],
-      "meaning": "form"
+      "meaning": "form",
+      "ipa": "tʰe˧˩˧",
+      "ipaFocus": [
+        [
+          2,
+          6
+        ]
+      ]
     },
     {
       "word": "thuê",
@@ -2271,7 +3935,14 @@ const language = {
         "i",
         "ơ"
       ],
-      "meaning": "rent"
+      "meaning": "rent",
+      "ipa": "tʰwe˧",
+      "ipaFocus": [
+        [
+          2,
+          5
+        ]
+      ]
     },
     {
       "word": "tuệ",
@@ -2283,7 +3954,14 @@ const language = {
         "ị",
         "ợ"
       ],
-      "meaning": "wisdom"
+      "meaning": "wisdom",
+      "ipa": "twe˧˩",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "về",
@@ -2295,7 +3973,14 @@ const language = {
         "ì",
         "ờ"
       ],
-      "meaning": "return"
+      "meaning": "return",
+      "ipa": "ve˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "vệ",
@@ -2307,7 +3992,14 @@ const language = {
         "ị",
         "ợ"
       ],
-      "meaning": "guard"
+      "meaning": "guard",
+      "ipa": "ve˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "xê",
@@ -2319,7 +4011,14 @@ const language = {
         "i",
         "ơ"
       ],
-      "meaning": "move aside"
+      "meaning": "move aside",
+      "ipa": "se˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "xế",
@@ -2331,7 +4030,14 @@ const language = {
         "í",
         "ớ"
       ],
-      "meaning": "afternoon"
+      "meaning": "afternoon",
+      "ipa": "se˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "xệ",
@@ -2343,7 +4049,14 @@ const language = {
         "ị",
         "ợ"
       ],
-      "meaning": "droopy"
+      "meaning": "droopy",
+      "ipa": "se˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "kênh",
@@ -2355,7 +4068,18 @@ const language = {
         "i",
         "ơ"
       ],
-      "meaning": "canal"
+      "meaning": "canal",
+      "ipa": "keɲ˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "mềm",
@@ -2367,7 +4091,18 @@ const language = {
         "ì",
         "ờ"
       ],
-      "meaning": "soft"
+      "meaning": "soft",
+      "ipa": "mem˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "nền",
@@ -2379,7 +4114,18 @@ const language = {
         "ì",
         "ờ"
       ],
-      "meaning": "foundation"
+      "meaning": "foundation",
+      "ipa": "nen˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "hến",
@@ -2391,7 +4137,18 @@ const language = {
         "í",
         "ớ"
       ],
-      "meaning": "clam"
+      "meaning": "clam",
+      "ipa": "hen˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "kết",
@@ -2403,7 +4160,18 @@ const language = {
         "í",
         "ớ"
       ],
-      "meaning": "connect"
+      "meaning": "connect",
+      "ipa": "ket˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "vết",
@@ -2415,7 +4183,18 @@ const language = {
         "í",
         "ớ"
       ],
-      "meaning": "mark"
+      "meaning": "mark",
+      "ipa": "vet˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "hết",
@@ -2427,7 +4206,18 @@ const language = {
         "í",
         "ớ"
       ],
-      "meaning": "finish"
+      "meaning": "finish",
+      "ipa": "het˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "bến",
@@ -2439,7 +4229,18 @@ const language = {
         "í",
         "ớ"
       ],
-      "meaning": "wharf"
+      "meaning": "wharf",
+      "ipa": "ben˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "tên",
@@ -2451,7 +4252,18 @@ const language = {
         "i",
         "ơ"
       ],
-      "meaning": "name"
+      "meaning": "name",
+      "ipa": "ten˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "sên",
@@ -2463,7 +4275,18 @@ const language = {
         "i",
         "ơ"
       ],
-      "meaning": "snail"
+      "meaning": "snail",
+      "ipa": "sen˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "bố",
@@ -2475,7 +4298,14 @@ const language = {
         "ớ",
         "ú"
       ],
-      "meaning": "father"
+      "meaning": "father",
+      "ipa": "bo˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "bộ",
@@ -2487,7 +4317,14 @@ const language = {
         "ợ",
         "ụ"
       ],
-      "meaning": "set"
+      "meaning": "set",
+      "ipa": "bo˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "cô",
@@ -2499,7 +4336,14 @@ const language = {
         "ơ",
         "u"
       ],
-      "meaning": "aunt"
+      "meaning": "aunt",
+      "ipa": "ko˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "cố",
@@ -2511,7 +4355,14 @@ const language = {
         "ớ",
         "ú"
       ],
-      "meaning": "try"
+      "meaning": "try",
+      "ipa": "ko˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "cổ",
@@ -2523,7 +4374,14 @@ const language = {
         "ở",
         "ủ"
       ],
-      "meaning": "neck"
+      "meaning": "neck",
+      "ipa": "ko˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "cỗ",
@@ -2535,7 +4393,14 @@ const language = {
         "ỡ",
         "ũ"
       ],
-      "meaning": "feast"
+      "meaning": "feast",
+      "ipa": "ko˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "chỗ",
@@ -2547,7 +4412,14 @@ const language = {
         "ỡ",
         "ũ"
       ],
-      "meaning": "place"
+      "meaning": "place",
+      "ipa": "co˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "chộp",
@@ -2559,7 +4431,18 @@ const language = {
         "ợ",
         "ụ"
       ],
-      "meaning": "snatch"
+      "meaning": "snatch",
+      "ipa": "cop˧˩",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "dỗ",
@@ -2571,7 +4454,14 @@ const language = {
         "ỡ",
         "ũ"
       ],
-      "meaning": "soothe"
+      "meaning": "soothe",
+      "ipa": "zo˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "đô",
@@ -2583,7 +4473,14 @@ const language = {
         "ơ",
         "u"
       ],
-      "meaning": "dollar"
+      "meaning": "dollar",
+      "ipa": "do˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "đố",
@@ -2595,7 +4492,14 @@ const language = {
         "ớ",
         "ú"
       ],
-      "meaning": "riddle"
+      "meaning": "riddle",
+      "ipa": "do˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "gỗ",
@@ -2607,7 +4511,14 @@ const language = {
         "ỡ",
         "ũ"
       ],
-      "meaning": "wood"
+      "meaning": "wood",
+      "ipa": "ɣo˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "gốm",
@@ -2619,7 +4530,18 @@ const language = {
         "ớ",
         "ú"
       ],
-      "meaning": "ceramics"
+      "meaning": "ceramics",
+      "ipa": "ɣom˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "hộ",
@@ -2631,7 +4553,14 @@ const language = {
         "ợ",
         "ụ"
       ],
-      "meaning": "household"
+      "meaning": "household",
+      "ipa": "ho˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "hồ",
@@ -2643,7 +4572,14 @@ const language = {
         "ờ",
         "ù"
       ],
-      "meaning": "lake"
+      "meaning": "lake",
+      "ipa": "ho˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "hố",
@@ -2655,7 +4591,14 @@ const language = {
         "ớ",
         "ú"
       ],
-      "meaning": "pit"
+      "meaning": "pit",
+      "ipa": "ho˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "hồi",
@@ -2667,7 +4610,14 @@ const language = {
         "ờ",
         "ù"
       ],
-      "meaning": "return"
+      "meaning": "return",
+      "ipa": "hoj˧",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "hổ",
@@ -2679,7 +4629,14 @@ const language = {
         "ở",
         "ủ"
       ],
-      "meaning": "tiger"
+      "meaning": "tiger",
+      "ipa": "ho˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "hỗn",
@@ -2691,7 +4648,18 @@ const language = {
         "ỡ",
         "ũ"
       ],
-      "meaning": "mixed"
+      "meaning": "mixed",
+      "ipa": "hon˧˥",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "khô",
@@ -2703,7 +4671,14 @@ const language = {
         "ơ",
         "u"
       ],
-      "meaning": "dry"
+      "meaning": "dry",
+      "ipa": "xo˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "khổ",
@@ -2715,7 +4690,14 @@ const language = {
         "ở",
         "ủ"
       ],
-      "meaning": "hardship"
+      "meaning": "hardship",
+      "ipa": "xo˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "lỗ",
@@ -2727,7 +4709,14 @@ const language = {
         "ỡ",
         "ũ"
       ],
-      "meaning": "hole"
+      "meaning": "hole",
+      "ipa": "lo˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "lộ",
@@ -2739,7 +4728,14 @@ const language = {
         "ợ",
         "ụ"
       ],
-      "meaning": "reveal"
+      "meaning": "reveal",
+      "ipa": "lo˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "mồ",
@@ -2751,7 +4747,14 @@ const language = {
         "ờ",
         "ù"
       ],
-      "meaning": "grave"
+      "meaning": "grave",
+      "ipa": "mo˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "mổ",
@@ -2763,7 +4766,14 @@ const language = {
         "ở",
         "ủ"
       ],
-      "meaning": "operate"
+      "meaning": "operate",
+      "ipa": "mo˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "một",
@@ -2775,7 +4785,18 @@ const language = {
         "ợ",
         "ụ"
       ],
-      "meaning": "one"
+      "meaning": "one",
+      "ipa": "mot˧˩",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "nổ",
@@ -2787,7 +4808,14 @@ const language = {
         "ở",
         "ủ"
       ],
-      "meaning": "explode"
+      "meaning": "explode",
+      "ipa": "no˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "nộ",
@@ -2799,7 +4827,14 @@ const language = {
         "ợ",
         "ụ"
       ],
-      "meaning": "rage"
+      "meaning": "rage",
+      "ipa": "no˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "phố",
@@ -2811,7 +4846,14 @@ const language = {
         "ớ",
         "ú"
       ],
-      "meaning": "street"
+      "meaning": "street",
+      "ipa": "fo˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "phổi",
@@ -2823,7 +4865,14 @@ const language = {
         "ở",
         "ủ"
       ],
-      "meaning": "lung"
+      "meaning": "lung",
+      "ipa": "foj˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          6
+        ]
+      ]
     },
     {
       "word": "rổ",
@@ -2835,7 +4884,14 @@ const language = {
         "ở",
         "ủ"
       ],
-      "meaning": "basket"
+      "meaning": "basket",
+      "ipa": "zo˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "số",
@@ -2847,7 +4903,14 @@ const language = {
         "ớ",
         "ú"
       ],
-      "meaning": "number"
+      "meaning": "number",
+      "ipa": "so˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "sổ",
@@ -2859,7 +4922,14 @@ const language = {
         "ở",
         "ủ"
       ],
-      "meaning": "notebook"
+      "meaning": "notebook",
+      "ipa": "so˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "tô",
@@ -2871,7 +4941,14 @@ const language = {
         "ơ",
         "u"
       ],
-      "meaning": "bowl"
+      "meaning": "bowl",
+      "ipa": "to˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "tối",
@@ -2883,7 +4960,14 @@ const language = {
         "ớ",
         "ú"
       ],
-      "meaning": "dark"
+      "meaning": "dark",
+      "ipa": "toj˧",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "tổ",
@@ -2895,7 +4979,14 @@ const language = {
         "ở",
         "ủ"
       ],
-      "meaning": "nest"
+      "meaning": "nest",
+      "ipa": "to˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "vỗ",
@@ -2907,7 +4998,14 @@ const language = {
         "ỡ",
         "ũ"
       ],
-      "meaning": "pat"
+      "meaning": "pat",
+      "ipa": "vo˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "vô",
@@ -2919,7 +5017,14 @@ const language = {
         "ơ",
         "u"
       ],
-      "meaning": "into"
+      "meaning": "into",
+      "ipa": "vo˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "xô",
@@ -2931,7 +5036,14 @@ const language = {
         "ơ",
         "u"
       ],
-      "meaning": "bucket"
+      "meaning": "bucket",
+      "ipa": "so˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "hôn",
@@ -2943,7 +5055,18 @@ const language = {
         "ơ",
         "u"
       ],
-      "meaning": "kiss"
+      "meaning": "kiss",
+      "ipa": "hon˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "gối",
@@ -2955,7 +5078,14 @@ const language = {
         "ớ",
         "ú"
       ],
-      "meaning": "pillow"
+      "meaning": "pillow",
+      "ipa": "ɣoj˧",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "cột",
@@ -2967,7 +5097,18 @@ const language = {
         "ợ",
         "ụ"
       ],
-      "meaning": "pillar"
+      "meaning": "pillar",
+      "ipa": "kot˧˩",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "cồn",
@@ -2979,7 +5120,18 @@ const language = {
         "ờ",
         "ù"
       ],
-      "meaning": "alcohol"
+      "meaning": "alcohol",
+      "ipa": "kon˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "bồn",
@@ -2991,7 +5143,18 @@ const language = {
         "ờ",
         "ù"
       ],
-      "meaning": "basin"
+      "meaning": "basin",
+      "ipa": "bon˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "tốn",
@@ -3003,7 +5166,18 @@ const language = {
         "ớ",
         "ú"
       ],
-      "meaning": "cost"
+      "meaning": "cost",
+      "ipa": "ton˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "bơ",
@@ -3015,7 +5189,14 @@ const language = {
         "ô",
         "e"
       ],
-      "meaning": "butter"
+      "meaning": "butter",
+      "ipa": "bɤ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "bờ",
@@ -3027,7 +5208,14 @@ const language = {
         "ồ",
         "è"
       ],
-      "meaning": "shore"
+      "meaning": "shore",
+      "ipa": "bɤ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "bớt",
@@ -3039,7 +5227,18 @@ const language = {
         "ố",
         "é"
       ],
-      "meaning": "reduce"
+      "meaning": "reduce",
+      "ipa": "bɤt˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "bởi",
@@ -3051,7 +5250,14 @@ const language = {
         "ổ",
         "ẻ"
       ],
-      "meaning": "because of"
+      "meaning": "because of",
+      "ipa": "bɤj˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          6
+        ]
+      ]
     },
     {
       "word": "cờ",
@@ -3063,7 +5269,14 @@ const language = {
         "ồ",
         "è"
       ],
-      "meaning": "flag"
+      "meaning": "flag",
+      "ipa": "kɤ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "cơ",
@@ -3075,7 +5288,14 @@ const language = {
         "ô",
         "e"
       ],
-      "meaning": "chance"
+      "meaning": "chance",
+      "ipa": "kɤ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "cớ",
@@ -3087,7 +5307,14 @@ const language = {
         "ố",
         "é"
       ],
-      "meaning": "reason"
+      "meaning": "reason",
+      "ipa": "kɤ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "cơn",
@@ -3099,7 +5326,18 @@ const language = {
         "ô",
         "e"
       ],
-      "meaning": "spell"
+      "meaning": "spell",
+      "ipa": "kɤn˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "cởi",
@@ -3111,7 +5349,14 @@ const language = {
         "ổ",
         "ẻ"
       ],
-      "meaning": "remove"
+      "meaning": "remove",
+      "ipa": "kɤj˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          6
+        ]
+      ]
     },
     {
       "word": "dở",
@@ -3123,7 +5368,14 @@ const language = {
         "ổ",
         "ẻ"
       ],
-      "meaning": "bad"
+      "meaning": "bad",
+      "ipa": "zɤ˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "dỡ",
@@ -3135,7 +5387,14 @@ const language = {
         "ỗ",
         "ẽ"
       ],
-      "meaning": "take down"
+      "meaning": "take down",
+      "ipa": "zɤ˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "đỡ",
@@ -3147,7 +5406,14 @@ const language = {
         "ỗ",
         "ẽ"
       ],
-      "meaning": "support"
+      "meaning": "support",
+      "ipa": "dɤ˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "gờ",
@@ -3159,7 +5425,14 @@ const language = {
         "ồ",
         "è"
       ],
-      "meaning": "edge"
+      "meaning": "edge",
+      "ipa": "ɣɤ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "gớm",
@@ -3171,7 +5444,18 @@ const language = {
         "ố",
         "é"
       ],
-      "meaning": "awful"
+      "meaning": "awful",
+      "ipa": "ɣɤm˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "gỡ",
@@ -3183,7 +5467,14 @@ const language = {
         "ỗ",
         "ẽ"
       ],
-      "meaning": "remove"
+      "meaning": "remove",
+      "ipa": "ɣɤ˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "hở",
@@ -3195,7 +5486,14 @@ const language = {
         "ổ",
         "ẻ"
       ],
-      "meaning": "open"
+      "meaning": "open",
+      "ipa": "hɤ˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "hỡi",
@@ -3207,7 +5505,14 @@ const language = {
         "ỗ",
         "ẽ"
       ],
-      "meaning": "oh"
+      "meaning": "oh",
+      "ipa": "hɤj˧˥",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "lớp",
@@ -3219,7 +5524,18 @@ const language = {
         "ố",
         "é"
       ],
-      "meaning": "class"
+      "meaning": "class",
+      "ipa": "lɤp˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "lờ",
@@ -3231,7 +5547,14 @@ const language = {
         "ồ",
         "è"
       ],
-      "meaning": "ignore"
+      "meaning": "ignore",
+      "ipa": "lɤ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "lỡ",
@@ -3243,7 +5566,14 @@ const language = {
         "ỗ",
         "ẽ"
       ],
-      "meaning": "miss"
+      "meaning": "miss",
+      "ipa": "lɤ˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "mờ",
@@ -3255,7 +5585,14 @@ const language = {
         "ồ",
         "è"
       ],
-      "meaning": "blurred"
+      "meaning": "blurred",
+      "ipa": "mɤ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "mở",
@@ -3267,7 +5604,14 @@ const language = {
         "ổ",
         "ẻ"
       ],
-      "meaning": "open"
+      "meaning": "open",
+      "ipa": "mɤ˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "mỡ",
@@ -3279,7 +5623,14 @@ const language = {
         "ỗ",
         "ẽ"
       ],
-      "meaning": "fat"
+      "meaning": "fat",
+      "ipa": "mɤ˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "nợ",
@@ -3291,7 +5642,14 @@ const language = {
         "ộ",
         "ẹ"
       ],
-      "meaning": "debt"
+      "meaning": "debt",
+      "ipa": "nɤ˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "nở",
@@ -3303,7 +5661,14 @@ const language = {
         "ổ",
         "ẻ"
       ],
-      "meaning": "bloom"
+      "meaning": "bloom",
+      "ipa": "nɤ˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "phở",
@@ -3315,7 +5680,14 @@ const language = {
         "ổ",
         "ẻ"
       ],
-      "meaning": "pho"
+      "meaning": "pho",
+      "ipa": "fɤ˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "phớt",
@@ -3327,7 +5699,18 @@ const language = {
         "ố",
         "é"
       ],
-      "meaning": "ignore"
+      "meaning": "ignore",
+      "ipa": "fɤt˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "sợ",
@@ -3339,7 +5722,14 @@ const language = {
         "ộ",
         "ẹ"
       ],
-      "meaning": "fear"
+      "meaning": "fear",
+      "ipa": "sɤ˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "sờ",
@@ -3351,7 +5741,14 @@ const language = {
         "ồ",
         "è"
       ],
-      "meaning": "touch"
+      "meaning": "touch",
+      "ipa": "sɤ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "sớm",
@@ -3363,7 +5760,18 @@ const language = {
         "ố",
         "é"
       ],
-      "meaning": "early"
+      "meaning": "early",
+      "ipa": "sɤm˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "tờ",
@@ -3375,7 +5783,14 @@ const language = {
         "ồ",
         "è"
       ],
-      "meaning": "sheet"
+      "meaning": "sheet",
+      "ipa": "tɤ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "tới",
@@ -3387,7 +5802,14 @@ const language = {
         "ố",
         "é"
       ],
-      "meaning": "arrive"
+      "meaning": "arrive",
+      "ipa": "tɤj˧",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "tởm",
@@ -3399,7 +5821,18 @@ const language = {
         "ổ",
         "ẻ"
       ],
-      "meaning": "disgusting"
+      "meaning": "disgusting",
+      "ipa": "tɤm˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          6
+        ]
+      ]
     },
     {
       "word": "trở",
@@ -3411,7 +5844,14 @@ const language = {
         "ổ",
         "ẻ"
       ],
-      "meaning": "become"
+      "meaning": "become",
+      "ipa": "cɤ˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "vợ",
@@ -3423,7 +5863,14 @@ const language = {
         "ộ",
         "ẹ"
       ],
-      "meaning": "wife"
+      "meaning": "wife",
+      "ipa": "vɤ˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "vở",
@@ -3435,7 +5882,14 @@ const language = {
         "ổ",
         "ẻ"
       ],
-      "meaning": "notebook"
+      "meaning": "notebook",
+      "ipa": "vɤ˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "giờ",
@@ -3447,7 +5901,14 @@ const language = {
         "ồ",
         "è"
       ],
-      "meaning": "hour"
+      "meaning": "hour",
+      "ipa": "zɤ˧˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "hơn",
@@ -3459,7 +5920,18 @@ const language = {
         "ô",
         "e"
       ],
-      "meaning": "more than"
+      "meaning": "more than",
+      "ipa": "hɤn˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "lớn",
@@ -3471,7 +5943,18 @@ const language = {
         "ố",
         "é"
       ],
-      "meaning": "big"
+      "meaning": "big",
+      "ipa": "lɤn˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "mơ",
@@ -3483,7 +5966,14 @@ const language = {
         "ô",
         "e"
       ],
-      "meaning": "dream"
+      "meaning": "dream",
+      "ipa": "mɤ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "thơ",
@@ -3495,7 +5985,14 @@ const language = {
         "ô",
         "e"
       ],
-      "meaning": "poetry"
+      "meaning": "poetry",
+      "ipa": "tʰɤ˧",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "chợ",
@@ -3507,7 +6004,14 @@ const language = {
         "ộ",
         "ẹ"
       ],
-      "meaning": "market"
+      "meaning": "market",
+      "ipa": "cɤ˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "lợn",
@@ -3519,7 +6023,18 @@ const language = {
         "ộ",
         "ẹ"
       ],
-      "meaning": "pig"
+      "meaning": "pig",
+      "ipa": "lɤn˧˩",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "mới",
@@ -3531,7 +6046,14 @@ const language = {
         "ố",
         "é"
       ],
-      "meaning": "new"
+      "meaning": "new",
+      "ipa": "mɤj˧",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "nơi",
@@ -3543,7 +6065,14 @@ const language = {
         "ô",
         "e"
       ],
-      "meaning": "place"
+      "meaning": "place",
+      "ipa": "nɤj˧",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "tơi",
@@ -3555,7 +6084,14 @@ const language = {
         "ô",
         "e"
       ],
-      "meaning": "loose"
+      "meaning": "loose",
+      "ipa": "tɤj˧",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "bơi",
@@ -3567,7 +6103,14 @@ const language = {
         "ô",
         "e"
       ],
-      "meaning": "swim"
+      "meaning": "swim",
+      "ipa": "bɤj˧",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "ngỡ",
@@ -3579,7 +6122,14 @@ const language = {
         "ỗ",
         "ẽ"
       ],
-      "meaning": "mistakenly"
+      "meaning": "mistakenly",
+      "ipa": "ŋɤ˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "ngờ",
@@ -3591,7 +6141,14 @@ const language = {
         "ồ",
         "è"
       ],
-      "meaning": "suspect"
+      "meaning": "suspect",
+      "ipa": "ŋɤ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "trời",
@@ -3603,7 +6160,14 @@ const language = {
         "ồ",
         "è"
       ],
-      "meaning": "sky"
+      "meaning": "sky",
+      "ipa": "cɤj˧",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "phơi",
@@ -3615,7 +6179,14 @@ const language = {
         "ô",
         "e"
       ],
-      "meaning": "sun-dry"
+      "meaning": "sun-dry",
+      "ipa": "fɤj˧",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "dời",
@@ -3627,7 +6198,14 @@ const language = {
         "ồ",
         "è"
       ],
-      "meaning": "move"
+      "meaning": "move",
+      "ipa": "zɤj˧",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "vời",
@@ -3639,7 +6217,14 @@ const language = {
         "ồ",
         "è"
       ],
-      "meaning": "invite"
+      "meaning": "invite",
+      "ipa": "vɤj˧",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "cỡ",
@@ -3651,7 +6236,14 @@ const language = {
         "ỗ",
         "ẽ"
       ],
-      "meaning": "size"
+      "meaning": "size",
+      "ipa": "kɤ˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "đờm",
@@ -3663,7 +6255,18 @@ const language = {
         "ồ",
         "è"
       ],
-      "meaning": "phlegm"
+      "meaning": "phlegm",
+      "ipa": "dɤm˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "lở",
@@ -3675,7 +6278,14 @@ const language = {
         "ổ",
         "ẻ"
       ],
-      "meaning": "ulcer"
+      "meaning": "ulcer",
+      "ipa": "lɤ˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "nhờ",
@@ -3687,7 +6297,14 @@ const language = {
         "ồ",
         "è"
       ],
-      "meaning": "ask a favor"
+      "meaning": "ask a favor",
+      "ipa": "ɲɤ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "rời",
@@ -3699,7 +6316,14 @@ const language = {
         "ồ",
         "è"
       ],
-      "meaning": "leave"
+      "meaning": "leave",
+      "ipa": "zɤj˧",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "sởi",
@@ -3711,7 +6335,14 @@ const language = {
         "ổ",
         "ẻ"
       ],
-      "meaning": "measles"
+      "meaning": "measles",
+      "ipa": "sɤj˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          6
+        ]
+      ]
     },
     {
       "word": "tớ",
@@ -3723,7 +6354,14 @@ const language = {
         "ố",
         "é"
       ],
-      "meaning": "me"
+      "meaning": "me",
+      "ipa": "tɤ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "cứ",
@@ -3735,7 +6373,14 @@ const language = {
         "ớ",
         "í"
       ],
-      "meaning": "keep"
+      "meaning": "keep",
+      "ipa": "kɯ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "cử",
@@ -3747,7 +6392,14 @@ const language = {
         "ở",
         "ỉ"
       ],
-      "meaning": "elect"
+      "meaning": "elect",
+      "ipa": "kɯ˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "chữ",
@@ -3759,7 +6411,14 @@ const language = {
         "ỡ",
         "ĩ"
       ],
-      "meaning": "letter"
+      "meaning": "letter",
+      "ipa": "cɯ˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "chứ",
@@ -3771,7 +6430,14 @@ const language = {
         "ớ",
         "í"
       ],
-      "meaning": "but"
+      "meaning": "but",
+      "ipa": "cɯ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "dư",
@@ -3783,7 +6449,14 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "extra"
+      "meaning": "extra",
+      "ipa": "zɯ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "dữ",
@@ -3795,7 +6468,14 @@ const language = {
         "ỡ",
         "ĩ"
       ],
-      "meaning": "fierce"
+      "meaning": "fierce",
+      "ipa": "zɯ˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "gửi",
@@ -3807,7 +6487,14 @@ const language = {
         "ở",
         "ỉ"
       ],
-      "meaning": "send"
+      "meaning": "send",
+      "ipa": "ɣɯj˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          6
+        ]
+      ]
     },
     {
       "word": "giữ",
@@ -3819,7 +6506,18 @@ const language = {
         "ỡ",
         "ĩ"
       ],
-      "meaning": "keep"
+      "meaning": "keep",
+      "ipa": "zɯ˧˧˥",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "hư",
@@ -3831,7 +6529,14 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "broken"
+      "meaning": "broken",
+      "ipa": "hɯ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "hứa",
@@ -3843,7 +6548,14 @@ const language = {
         "ớ",
         "í"
       ],
-      "meaning": "promise"
+      "meaning": "promise",
+      "ipa": "hɯə˧",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "lửa",
@@ -3855,7 +6567,14 @@ const language = {
         "ở",
         "ỉ"
       ],
-      "meaning": "fire"
+      "meaning": "fire",
+      "ipa": "lɯə˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          6
+        ]
+      ]
     },
     {
       "word": "mứt",
@@ -3867,7 +6586,18 @@ const language = {
         "ớ",
         "í"
       ],
-      "meaning": "jam"
+      "meaning": "jam",
+      "ipa": "mɯt˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "nứt",
@@ -3879,7 +6609,18 @@ const language = {
         "ớ",
         "í"
       ],
-      "meaning": "crack"
+      "meaning": "crack",
+      "ipa": "nɯt˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "nữ",
@@ -3891,7 +6632,14 @@ const language = {
         "ỡ",
         "ĩ"
       ],
-      "meaning": "female"
+      "meaning": "female",
+      "ipa": "nɯ˧˥",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "rừng",
@@ -3903,7 +6651,18 @@ const language = {
         "ờ",
         "ì"
       ],
-      "meaning": "forest"
+      "meaning": "forest",
+      "ipa": "zɯŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "sử",
@@ -3915,7 +6674,14 @@ const language = {
         "ở",
         "ỉ"
       ],
-      "meaning": "history"
+      "meaning": "history",
+      "ipa": "sɯ˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "sữa",
@@ -3927,7 +6693,14 @@ const language = {
         "ỡ",
         "ĩ"
       ],
-      "meaning": "milk"
+      "meaning": "milk",
+      "ipa": "sɯə˧˥",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "sứ",
@@ -3939,7 +6712,14 @@ const language = {
         "ớ",
         "í"
       ],
-      "meaning": "porcelain"
+      "meaning": "porcelain",
+      "ipa": "sɯ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "sự",
@@ -3951,7 +6731,14 @@ const language = {
         "ợ",
         "ị"
       ],
-      "meaning": "matter"
+      "meaning": "matter",
+      "ipa": "sɯ˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "từ",
@@ -3963,7 +6750,14 @@ const language = {
         "ờ",
         "ì"
       ],
-      "meaning": "from"
+      "meaning": "from",
+      "ipa": "tɯ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "tử",
@@ -3975,7 +6769,14 @@ const language = {
         "ở",
         "ỉ"
       ],
-      "meaning": "death"
+      "meaning": "death",
+      "ipa": "tɯ˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "tứ",
@@ -3987,7 +6788,14 @@ const language = {
         "ớ",
         "í"
       ],
-      "meaning": "four"
+      "meaning": "four",
+      "ipa": "tɯ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "trừ",
@@ -3999,7 +6807,14 @@ const language = {
         "ờ",
         "ì"
       ],
-      "meaning": "subtract"
+      "meaning": "subtract",
+      "ipa": "cɯ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "thử",
@@ -4011,7 +6826,14 @@ const language = {
         "ở",
         "ỉ"
       ],
-      "meaning": "try"
+      "meaning": "try",
+      "ipa": "tʰɯ˧˩˧",
+      "ipaFocus": [
+        [
+          2,
+          6
+        ]
+      ]
     },
     {
       "word": "thứ",
@@ -4023,7 +6845,14 @@ const language = {
         "ớ",
         "í"
       ],
-      "meaning": "thing"
+      "meaning": "thing",
+      "ipa": "tʰɯ˧",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "vừa",
@@ -4035,7 +6864,14 @@ const language = {
         "ờ",
         "ì"
       ],
-      "meaning": "just"
+      "meaning": "just",
+      "ipa": "vɯə˧",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "vững",
@@ -4047,7 +6883,18 @@ const language = {
         "ỡ",
         "ĩ"
       ],
-      "meaning": "steady"
+      "meaning": "steady",
+      "ipa": "vɯŋ˧˥",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "xứ",
@@ -4059,7 +6906,14 @@ const language = {
         "ớ",
         "í"
       ],
-      "meaning": "region"
+      "meaning": "region",
+      "ipa": "sɯ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "xử",
@@ -4071,7 +6925,14 @@ const language = {
         "ở",
         "ỉ"
       ],
-      "meaning": "handle"
+      "meaning": "handle",
+      "ipa": "sɯ˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "dự",
@@ -4083,7 +6944,14 @@ const language = {
         "ợ",
         "ị"
       ],
-      "meaning": "attend"
+      "meaning": "attend",
+      "ipa": "zɯ˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "cưới",
@@ -4095,7 +6963,14 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "marry"
+      "meaning": "marry",
+      "ipa": "kɯəj˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "lưới",
@@ -4107,7 +6982,14 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "net"
+      "meaning": "net",
+      "ipa": "lɯəj˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "tươi",
@@ -4119,7 +7001,14 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "fresh"
+      "meaning": "fresh",
+      "ipa": "tɯəj˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "ngửi",
@@ -4131,7 +7020,14 @@ const language = {
         "ở",
         "ỉ"
       ],
-      "meaning": "smell"
+      "meaning": "smell",
+      "ipa": "ŋɯj˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          6
+        ]
+      ]
     },
     {
       "word": "bưởi",
@@ -4143,7 +7039,14 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "pomelo"
+      "meaning": "pomelo",
+      "ipa": "bɯəj˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          7
+        ]
+      ]
     },
     {
       "word": "cười",
@@ -4155,7 +7058,14 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "laugh"
+      "meaning": "laugh",
+      "ipa": "kɯəj˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "dưới",
@@ -4167,7 +7077,14 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "under"
+      "meaning": "under",
+      "ipa": "zɯəj˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "lười",
@@ -4179,7 +7096,14 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "lazy"
+      "meaning": "lazy",
+      "ipa": "lɯəj˧",
+      "ipaFocus": [
+        [
+          1,
+          5
+        ]
+      ]
     },
     {
       "word": "nướng",
@@ -4191,7 +7115,18 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "grill"
+      "meaning": "grill",
+      "ipa": "nɯəŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "nước",
@@ -4203,7 +7138,18 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "water"
+      "meaning": "water",
+      "ipa": "nɯək˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "mượn",
@@ -4215,7 +7161,18 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "borrow"
+      "meaning": "borrow",
+      "ipa": "mɯən˧˩",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "hướng",
@@ -4227,7 +7184,18 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "direction"
+      "meaning": "direction",
+      "ipa": "hɯəŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "sương",
@@ -4239,7 +7207,18 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "dew"
+      "meaning": "dew",
+      "ipa": "sɯəŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "tưởng",
@@ -4251,7 +7230,18 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "imagine"
+      "meaning": "imagine",
+      "ipa": "tɯəŋ˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "tướng",
@@ -4263,7 +7253,18 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "general"
+      "meaning": "general",
+      "ipa": "tɯəŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "thương",
@@ -4275,7 +7276,18 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "love"
+      "meaning": "love",
+      "ipa": "tʰɯəŋ˧",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ],
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "trường",
@@ -4287,7 +7299,18 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "school"
+      "meaning": "school",
+      "ipa": "cɯəŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "vườn",
@@ -4299,7 +7322,18 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "garden"
+      "meaning": "garden",
+      "ipa": "vɯən˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "xưởng",
@@ -4311,7 +7345,18 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "workshop"
+      "meaning": "workshop",
+      "ipa": "sɯəŋ˧˩˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          7
+        ]
+      ]
     },
     {
       "word": "bướng",
@@ -4323,7 +7368,18 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "stubborn"
+      "meaning": "stubborn",
+      "ipa": "bɯəŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "sườn",
@@ -4335,7 +7391,18 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "rib"
+      "meaning": "rib",
+      "ipa": "sɯən˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "cương",
@@ -4347,7 +7414,18 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "strong"
+      "meaning": "strong",
+      "ipa": "kɯəŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "bự",
@@ -4359,7 +7437,14 @@ const language = {
         "ợ",
         "ị"
       ],
-      "meaning": "big"
+      "meaning": "big",
+      "ipa": "bɯ˧˩",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "nương",
@@ -4371,7 +7456,18 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "rely on"
+      "meaning": "rely on",
+      "ipa": "nɯəŋ˧",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "dưỡng",
@@ -4383,7 +7479,18 @@ const language = {
         "ơ",
         "i"
       ],
-      "meaning": "nourish"
+      "meaning": "nourish",
+      "ipa": "zɯəŋ˧˥",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ]
     }
   ]
 } satisfies LanguageWords

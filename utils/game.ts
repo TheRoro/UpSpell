@@ -1,4 +1,4 @@
-import type { Word } from '~/data/words'
+import type { StoredWord, Word } from '~/data/words'
 
 const DAY_MS = 86_400_000
 
@@ -142,14 +142,14 @@ export function parseStoredCount(value: string | null): number {
   return Number.isFinite(parsed) && parsed >= 0 ? parsed : 0
 }
 
-export function readMissedWords(value: string | null): Word[] {
+export function readMissedWords(value: string | null): StoredWord[] {
   if (!value) return []
   try {
     const parsed: unknown = JSON.parse(value)
     if (!Array.isArray(parsed)) return []
-    return parsed.filter((item): item is Word => {
+    return parsed.filter((item): item is StoredWord => {
       if (!item || typeof item !== 'object') return false
-      const word = item as Partial<Word>
+      const word = item as Partial<StoredWord>
       return (
         typeof word.word === 'string' &&
         typeof word.blank === 'string' &&

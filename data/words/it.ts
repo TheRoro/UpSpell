@@ -15,7 +15,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "city"
+      "meaning": "city",
+      "ipa": "tʃitːˈa",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "università",
@@ -27,7 +34,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "university"
+      "meaning": "university",
+      "ipa": "ʊniversitˈa",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "qualità",
@@ -39,7 +53,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "quality"
+      "meaning": "quality",
+      "ipa": "kwalitˈa",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "quantità",
@@ -51,7 +72,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "quantity"
+      "meaning": "quantity",
+      "ipa": "kwantitˈa",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "realtà",
@@ -63,7 +91,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "reality"
+      "meaning": "reality",
+      "ipa": "realtˈa",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "verità",
@@ -75,7 +110,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "truth"
+      "meaning": "truth",
+      "ipa": "veritˈa",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "libertà",
@@ -87,7 +129,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "freedom"
+      "meaning": "freedom",
+      "ipa": "libertˈa",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "bontà",
@@ -99,7 +148,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "kindness"
+      "meaning": "kindness",
+      "ipa": "bontˈa",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "pietà",
@@ -111,7 +167,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "pity"
+      "meaning": "pity",
+      "ipa": "pjetˈa",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "sanità",
@@ -123,7 +186,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "healthcare"
+      "meaning": "healthcare",
+      "ipa": "sanitˈa",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "metà",
@@ -135,7 +205,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "half"
+      "meaning": "half",
+      "ipa": "metˈa",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "età",
@@ -147,7 +224,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "age"
+      "meaning": "age",
+      "ipa": "etˈa",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "società",
@@ -159,7 +243,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "society"
+      "meaning": "society",
+      "ipa": "sotʃetˈa",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "attività",
@@ -171,7 +262,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "activity"
+      "meaning": "activity",
+      "ipa": "atːivitˈa",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "novità",
@@ -183,7 +281,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "novelty"
+      "meaning": "novelty",
+      "ipa": "novitˈa",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "comunità",
@@ -195,7 +300,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "community"
+      "meaning": "community",
+      "ipa": "komʊnitˈa",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "felicità",
@@ -207,7 +319,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "happiness"
+      "meaning": "happiness",
+      "ipa": "felitʃitˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "povertà",
@@ -219,7 +338,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "poverty"
+      "meaning": "poverty",
+      "ipa": "povertˈa",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "onestà",
@@ -231,7 +357,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "honesty"
+      "meaning": "honesty",
+      "ipa": "onestˈa",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "dignità",
@@ -243,7 +376,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "dignity"
+      "meaning": "dignity",
+      "ipa": "diɲitˈa",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "umiltà",
@@ -255,7 +395,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "humility"
+      "meaning": "humility",
+      "ipa": "ʊmiltˈa",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "civiltà",
@@ -267,7 +414,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "civilization"
+      "meaning": "civilization",
+      "ipa": "tʃiviltˈa",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "possibilità",
@@ -279,7 +433,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "possibility"
+      "meaning": "possibility",
+      "ipa": "possibilitˈa",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "difficoltà",
@@ -291,7 +452,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "difficulty"
+      "meaning": "difficulty",
+      "ipa": "diffikoltˈa",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "specialità",
@@ -303,7 +471,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "specialty"
+      "meaning": "specialty",
+      "ipa": "spetʃalitˈa",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "proprietà",
@@ -315,7 +490,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "property"
+      "meaning": "property",
+      "ipa": "proprietˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "varietà",
@@ -327,7 +509,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "variety"
+      "meaning": "variety",
+      "ipa": "varietˈa",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "curiosità",
@@ -339,7 +528,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "curiosity"
+      "meaning": "curiosity",
+      "ipa": "kʊriozitˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "necessità",
@@ -351,7 +547,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "necessity"
+      "meaning": "necessity",
+      "ipa": "netʃessitˈa",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "opportunità",
@@ -363,7 +566,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "opportunity"
+      "meaning": "opportunity",
+      "ipa": "opːortʊnitˈa",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "probabilità",
@@ -375,7 +585,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "probability"
+      "meaning": "probability",
+      "ipa": "probabilitˈa",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "responsabilità",
@@ -387,7 +604,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "responsibility"
+      "meaning": "responsibility",
+      "ipa": "responsabilitˈa",
+      "ipaFocus": [
+        [
+          13,
+          15
+        ]
+      ]
     },
     {
       "word": "velocità",
@@ -399,7 +623,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "speed"
+      "meaning": "speed",
+      "ipa": "velotʃitˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "profondità",
@@ -411,7 +642,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "depth"
+      "meaning": "depth",
+      "ipa": "profonditˈa",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "identità",
@@ -423,7 +661,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "identity"
+      "meaning": "identity",
+      "ipa": "identitˈa",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "legalità",
@@ -435,7 +680,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "legality"
+      "meaning": "legality",
+      "ipa": "leɡalitˈa",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "mortalità",
@@ -447,7 +699,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "mortality"
+      "meaning": "mortality",
+      "ipa": "mortalitˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "natalità",
@@ -459,7 +718,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "birth rate"
+      "meaning": "birth rate",
+      "ipa": "natalitˈa",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "casualità",
@@ -471,7 +737,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "chance"
+      "meaning": "chance",
+      "ipa": "kazʊalitˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "abilità",
@@ -483,7 +756,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "skill"
+      "meaning": "skill",
+      "ipa": "abilitˈa",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "stabilità",
@@ -495,7 +775,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "stability"
+      "meaning": "stability",
+      "ipa": "stabilitˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "fragilità",
@@ -507,7 +794,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "fragility"
+      "meaning": "fragility",
+      "ipa": "fradʒilitˈa",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "utilità",
@@ -519,7 +813,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "usefulness"
+      "meaning": "usefulness",
+      "ipa": "ʊtilitˈa",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "serenità",
@@ -531,7 +832,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "serenity"
+      "meaning": "serenity",
+      "ipa": "serenitˈa",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "tranquillità",
@@ -543,7 +851,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "calm"
+      "meaning": "calm",
+      "ipa": "trankwillitˈa",
+      "ipaFocus": [
+        [
+          11,
+          13
+        ]
+      ]
     },
     {
       "word": "intensità",
@@ -555,7 +870,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "intensity"
+      "meaning": "intensity",
+      "ipa": "intensitˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "semplicità",
@@ -567,7 +889,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "simplicity"
+      "meaning": "simplicity",
+      "ipa": "semplitʃitˈa",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "complicità",
@@ -579,7 +908,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "complicity"
+      "meaning": "complicity",
+      "ipa": "komplitʃitˈa",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "autorità",
@@ -591,7 +927,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "authority"
+      "meaning": "authority",
+      "ipa": "aʊtoritˈa",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "personalità",
@@ -603,7 +946,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "personality"
+      "meaning": "personality",
+      "ipa": "personalitˈa",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "nazionalità",
@@ -615,7 +965,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "nationality"
+      "meaning": "nationality",
+      "ipa": "natsjonalitˈa",
+      "ipaFocus": [
+        [
+          11,
+          13
+        ]
+      ]
     },
     {
       "word": "brutalità",
@@ -627,7 +984,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "brutality"
+      "meaning": "brutality",
+      "ipa": "brʊtalitˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "festività",
@@ -639,7 +1003,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "holiday"
+      "meaning": "holiday",
+      "ipa": "festivitˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "fedeltà",
@@ -651,7 +1022,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "faithfulness"
+      "meaning": "faithfulness",
+      "ipa": "fedeltˈa",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "lealtà",
@@ -663,7 +1041,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "loyalty"
+      "meaning": "loyalty",
+      "ipa": "lealtˈa",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "crudeltà",
@@ -675,7 +1060,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "cruelty"
+      "meaning": "cruelty",
+      "ipa": "krʊdeltˈa",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "maturità",
@@ -687,7 +1079,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "maturity"
+      "meaning": "maturity",
+      "ipa": "matʊritˈa",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "rarità",
@@ -699,7 +1098,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "rarity"
+      "meaning": "rarity",
+      "ipa": "raritˈa",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "modernità",
@@ -711,7 +1117,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "modernity"
+      "meaning": "modernity",
+      "ipa": "modernitˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "diversità",
@@ -723,7 +1136,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "diversity"
+      "meaning": "diversity",
+      "ipa": "diversitˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "sincerità",
@@ -735,7 +1155,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "sincerity"
+      "meaning": "sincerity",
+      "ipa": "sintʃeritˈa",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "periodicità",
@@ -747,7 +1174,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "periodicity"
+      "meaning": "periodicity",
+      "ipa": "perioditʃitˈa",
+      "ipaFocus": [
+        [
+          11,
+          13
+        ]
+      ]
     },
     {
       "word": "priorità",
@@ -759,7 +1193,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "priority"
+      "meaning": "priority",
+      "ipa": "prioritˈa",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "comodità",
@@ -771,7 +1212,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "comfort"
+      "meaning": "comfort",
+      "ipa": "komoditˈa",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "capacità",
@@ -783,7 +1231,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "capacity"
+      "meaning": "capacity",
+      "ipa": "kapatʃitˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "volontà",
@@ -795,7 +1250,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "willpower"
+      "meaning": "willpower",
+      "ipa": "volontˈa",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "avidità",
@@ -807,7 +1269,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "greed"
+      "meaning": "greed",
+      "ipa": "aviditˈa",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "sensibilità",
@@ -819,7 +1288,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "sensitivity"
+      "meaning": "sensitivity",
+      "ipa": "sensibilitˈa",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "creatività",
@@ -831,7 +1307,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "creativity"
+      "meaning": "creativity",
+      "ipa": "kreativitˈa",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "fertilità",
@@ -843,7 +1326,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "fertility"
+      "meaning": "fertility",
+      "ipa": "fertilitˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "oscurità",
@@ -855,7 +1345,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "darkness"
+      "meaning": "darkness",
+      "ipa": "oskʊritˈa",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "immensità",
@@ -867,7 +1364,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "immensity"
+      "meaning": "immensity",
+      "ipa": "immensitˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "solidarietà",
@@ -879,7 +1383,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "solidarity"
+      "meaning": "solidarity",
+      "ipa": "solidarietˈa",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "austerità",
@@ -891,7 +1402,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "austerity"
+      "meaning": "austerity",
+      "ipa": "aʊsteritˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "normalità",
@@ -903,7 +1421,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "normality"
+      "meaning": "normality",
+      "ipa": "normalitˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "ospitalità",
@@ -915,7 +1440,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "hospitality"
+      "meaning": "hospitality",
+      "ipa": "ospitalitˈa",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "rivalità",
@@ -927,7 +1459,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "rivalry"
+      "meaning": "rivalry",
+      "ipa": "rivalitˈa",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "genialità",
@@ -939,7 +1478,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "brilliance"
+      "meaning": "brilliance",
+      "ipa": "dʒenjalitˈa",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "stupidità",
@@ -951,7 +1497,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "stupidity"
+      "meaning": "stupidity",
+      "ipa": "stʊpiditˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "maternità",
@@ -963,7 +1516,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "motherhood"
+      "meaning": "motherhood",
+      "ipa": "maternitˈa",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "dà",
@@ -975,7 +1535,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "gives"
+      "meaning": "gives",
+      "ipa": "dˈa",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "là",
@@ -987,7 +1554,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "there"
+      "meaning": "there",
+      "ipa": "lˈa",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "già",
@@ -999,7 +1573,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "already"
+      "meaning": "already",
+      "ipa": "dʒˈa",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "chissà",
@@ -1011,7 +1592,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "who knows"
+      "meaning": "who knows",
+      "ipa": "kissˈa",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "sarà",
@@ -1023,7 +1611,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "will be"
+      "meaning": "will be",
+      "ipa": "saɾˈa",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "andrà",
@@ -1035,7 +1630,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "will go"
+      "meaning": "will go",
+      "ipa": "andrˈa",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "avrà",
@@ -1047,7 +1649,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "will have"
+      "meaning": "will have",
+      "ipa": "avrˈa",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "berrà",
@@ -1059,7 +1668,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "will drink"
+      "meaning": "will drink",
+      "ipa": "berɾˈa",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "cadrà",
@@ -1071,7 +1687,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "will fall"
+      "meaning": "will fall",
+      "ipa": "kadrˈa",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "capirà",
@@ -1083,7 +1706,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "will understand"
+      "meaning": "will understand",
+      "ipa": "kapiɾˈa",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "dirà",
@@ -1095,7 +1725,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "will say"
+      "meaning": "will say",
+      "ipa": "diɾˈa",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "dormirà",
@@ -1107,7 +1744,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "will sleep"
+      "meaning": "will sleep",
+      "ipa": "dormiɾˈa",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "farà",
@@ -1119,7 +1763,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "will do"
+      "meaning": "will do",
+      "ipa": "faɾˈa",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "finirà",
@@ -1131,7 +1782,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "will finish"
+      "meaning": "will finish",
+      "ipa": "finiɾˈa",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "mangerà",
@@ -1143,7 +1801,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "will eat"
+      "meaning": "will eat",
+      "ipa": "mandʒeɾˈa",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "parlerà",
@@ -1155,7 +1820,14 @@ const language = {
         "á",
         "â"
       ],
-      "meaning": "will speak"
+      "meaning": "will speak",
+      "ipa": "parleɾˈa",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "virtù",
@@ -1167,7 +1839,14 @@ const language = {
         "ú",
         "û"
       ],
-      "meaning": "virtue"
+      "meaning": "virtue",
+      "ipa": "virtˈu",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "menù",
@@ -1179,7 +1858,14 @@ const language = {
         "ú",
         "û"
       ],
-      "meaning": "menu"
+      "meaning": "menu",
+      "ipa": "menˈu",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "tribù",
@@ -1191,7 +1877,14 @@ const language = {
         "ú",
         "û"
       ],
-      "meaning": "tribe"
+      "meaning": "tribe",
+      "ipa": "tribˈu",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "laggiù",
@@ -1203,7 +1896,14 @@ const language = {
         "ú",
         "û"
       ],
-      "meaning": "down there"
+      "meaning": "down there",
+      "ipa": "ladʒːˈu",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "quaggiù",
@@ -1215,7 +1915,14 @@ const language = {
         "ú",
         "û"
       ],
-      "meaning": "down here"
+      "meaning": "down here",
+      "ipa": "kwadʒːˈu",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "lassù",
@@ -1227,7 +1934,14 @@ const language = {
         "ú",
         "û"
       ],
-      "meaning": "up there"
+      "meaning": "up there",
+      "ipa": "lassˈu",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "più",
@@ -1239,7 +1953,14 @@ const language = {
         "ú",
         "û"
       ],
-      "meaning": "more"
+      "meaning": "more",
+      "ipa": "pjˈu",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "gioventù",
@@ -1251,7 +1972,14 @@ const language = {
         "ú",
         "û"
       ],
-      "meaning": "youth"
+      "meaning": "youth",
+      "ipa": "dʒoventˈu",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "servitù",
@@ -1263,7 +1991,14 @@ const language = {
         "ú",
         "û"
       ],
-      "meaning": "servitude"
+      "meaning": "servitude",
+      "ipa": "servitˈu",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "schiavitù",
@@ -1275,7 +2010,14 @@ const language = {
         "ú",
         "û"
       ],
-      "meaning": "slavery"
+      "meaning": "slavery",
+      "ipa": "skjavitˈu",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "giù",
@@ -1287,7 +2029,14 @@ const language = {
         "ú",
         "û"
       ],
-      "meaning": "down"
+      "meaning": "down",
+      "ipa": "dʒˈu",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "tabù",
@@ -1299,7 +2048,14 @@ const language = {
         "ú",
         "û"
       ],
-      "meaning": "taboo"
+      "meaning": "taboo",
+      "ipa": "tabˈu",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "ragù",
@@ -1311,7 +2067,14 @@ const language = {
         "ú",
         "û"
       ],
-      "meaning": "meat sauce"
+      "meaning": "meat sauce",
+      "ipa": "raɡˈu",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "tiramisù",
@@ -1323,7 +2086,14 @@ const language = {
         "ú",
         "û"
       ],
-      "meaning": "tiramisu"
+      "meaning": "tiramisu",
+      "ipa": "tiramɪsˈu",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "quassù",
@@ -1335,7 +2105,14 @@ const language = {
         "ú",
         "û"
       ],
-      "meaning": "up here"
+      "meaning": "up here",
+      "ipa": "kwassˈu",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "lunedì",
@@ -1347,7 +2124,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "Monday"
+      "meaning": "Monday",
+      "ipa": "lʊnedˈi",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "martedì",
@@ -1359,7 +2143,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "Tuesday"
+      "meaning": "Tuesday",
+      "ipa": "martedˈi",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "mercoledì",
@@ -1371,7 +2162,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "Wednesday"
+      "meaning": "Wednesday",
+      "ipa": "merkoledˈi",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "giovedì",
@@ -1383,7 +2181,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "Thursday"
+      "meaning": "Thursday",
+      "ipa": "dʒovedˈi",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "venerdì",
@@ -1395,7 +2200,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "Friday"
+      "meaning": "Friday",
+      "ipa": "venerdˈi",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "così",
@@ -1407,7 +2219,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "like this"
+      "meaning": "like this",
+      "ipa": "kozˈi",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "sì",
@@ -1419,7 +2238,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "yes"
+      "meaning": "yes",
+      "ipa": "sˈiː",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "lì",
@@ -1431,7 +2257,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "there"
+      "meaning": "there",
+      "ipa": "lˈi",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "dì",
@@ -1443,7 +2276,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "day"
+      "meaning": "day",
+      "ipa": "dˈi",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "colibrì",
@@ -1455,7 +2295,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "hummingbird"
+      "meaning": "hummingbird",
+      "ipa": "kolibrˈi",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "partì",
@@ -1467,7 +2314,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "left"
+      "meaning": "left",
+      "ipa": "partˈi",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "dormì",
@@ -1479,7 +2333,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "slept"
+      "meaning": "slept",
+      "ipa": "dormˈi",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "finì",
@@ -1491,7 +2352,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "finished"
+      "meaning": "finished",
+      "ipa": "finˈi",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "capì",
@@ -1503,7 +2371,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "understood"
+      "meaning": "understood",
+      "ipa": "kapˈi",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "sentì",
@@ -1515,7 +2390,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "heard"
+      "meaning": "heard",
+      "ipa": "sentˈi",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "preferì",
@@ -1527,7 +2409,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "preferred"
+      "meaning": "preferred",
+      "ipa": "preferˈi",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "offrì",
@@ -1539,7 +2428,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "offered"
+      "meaning": "offered",
+      "ipa": "offrˈi",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "aprì",
@@ -1551,7 +2447,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "opened"
+      "meaning": "opened",
+      "ipa": "aprˈi",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "uscì",
@@ -1563,7 +2466,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "went out"
+      "meaning": "went out",
+      "ipa": "ʊʃˈi",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "riuscì",
@@ -1575,7 +2485,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "succeeded"
+      "meaning": "succeeded",
+      "ipa": "riʊʃˈi",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "colpì",
@@ -1587,7 +2504,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "hit"
+      "meaning": "hit",
+      "ipa": "kolpˈi",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "punì",
@@ -1599,7 +2523,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "punished"
+      "meaning": "punished",
+      "ipa": "pʊnˈi",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "guarì",
@@ -1611,7 +2542,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "recovered"
+      "meaning": "recovered",
+      "ipa": "ɡwarˈi",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "sparì",
@@ -1623,7 +2561,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "disappeared"
+      "meaning": "disappeared",
+      "ipa": "sparˈi",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "salì",
@@ -1635,7 +2580,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "went up"
+      "meaning": "went up",
+      "ipa": "salˈi",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "scoprì",
@@ -1647,7 +2599,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "discovered"
+      "meaning": "discovered",
+      "ipa": "skoprˈi",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "coprì",
@@ -1659,7 +2618,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "covered"
+      "meaning": "covered",
+      "ipa": "koprˈi",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "costruì",
@@ -1671,7 +2637,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "built"
+      "meaning": "built",
+      "ipa": "kostrʊˈi",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "distribuì",
@@ -1683,7 +2656,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "distributed"
+      "meaning": "distributed",
+      "ipa": "distribʊˈi",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "intuì",
@@ -1695,7 +2675,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "intuited"
+      "meaning": "intuited",
+      "ipa": "intʊˈi",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "contribuì",
@@ -1707,7 +2694,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "contributed"
+      "meaning": "contributed",
+      "ipa": "kontribʊˈi",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "seguì",
@@ -1719,7 +2713,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "followed"
+      "meaning": "followed",
+      "ipa": "seɡwˈi",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "restituì",
@@ -1731,7 +2732,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "returned"
+      "meaning": "returned",
+      "ipa": "restitʊˈi",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "mentì",
@@ -1743,7 +2751,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "lied"
+      "meaning": "lied",
+      "ipa": "mentˈi",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "soffrì",
@@ -1755,7 +2770,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "suffered"
+      "meaning": "suffered",
+      "ipa": "soffrˈi",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "vestì",
@@ -1767,7 +2789,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "dressed"
+      "meaning": "dressed",
+      "ipa": "vestˈi",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "cucì",
@@ -1779,7 +2808,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "sewed"
+      "meaning": "sewed",
+      "ipa": "kʊtʃˈi",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "pulì",
@@ -1791,7 +2827,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "cleaned"
+      "meaning": "cleaned",
+      "ipa": "pʊlˈi",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "tossì",
@@ -1803,7 +2846,14 @@ const language = {
         "í",
         "î"
       ],
-      "meaning": "coughed"
+      "meaning": "coughed",
+      "ipa": "tossˈi",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "caffè",
@@ -1815,7 +2865,14 @@ const language = {
         "é",
         "ê"
       ],
-      "meaning": "coffee"
+      "meaning": "coffee",
+      "ipa": "kaffˈɛ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "tè",
@@ -1827,7 +2884,14 @@ const language = {
         "é",
         "ê"
       ],
-      "meaning": "tea"
+      "meaning": "tea",
+      "ipa": "tˈɛ",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "è",
@@ -1839,7 +2903,14 @@ const language = {
         "é",
         "ê"
       ],
-      "meaning": "is"
+      "meaning": "is",
+      "ipa": "ˈɛː",
+      "ipaFocus": [
+        [
+          0,
+          3
+        ]
+      ]
     },
     {
       "word": "cioè",
@@ -1851,7 +2922,14 @@ const language = {
         "é",
         "ê"
       ],
-      "meaning": "that is"
+      "meaning": "that is",
+      "ipa": "tʃoˈɛ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "perché",
@@ -1863,7 +2941,14 @@ const language = {
         "è",
         "ê"
       ],
-      "meaning": "because"
+      "meaning": "because",
+      "ipa": "perkˈe",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "poiché",
@@ -1875,7 +2960,14 @@ const language = {
         "è",
         "ê"
       ],
-      "meaning": "since"
+      "meaning": "since",
+      "ipa": "poikˈe",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "finché",
@@ -1887,7 +2979,14 @@ const language = {
         "è",
         "ê"
       ],
-      "meaning": "until"
+      "meaning": "until",
+      "ipa": "finkˈe",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "affinché",
@@ -1899,7 +2998,14 @@ const language = {
         "è",
         "ê"
       ],
-      "meaning": "so that"
+      "meaning": "so that",
+      "ipa": "affinkˈe",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "né",
@@ -1911,7 +3017,14 @@ const language = {
         "è",
         "ê"
       ],
-      "meaning": "neither"
+      "meaning": "neither",
+      "ipa": "nˈe",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "sé",
@@ -1923,7 +3036,14 @@ const language = {
         "è",
         "ê"
       ],
-      "meaning": "self"
+      "meaning": "self",
+      "ipa": "sˈe",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "purché",
@@ -1935,7 +3055,14 @@ const language = {
         "è",
         "ê"
       ],
-      "meaning": "provided that"
+      "meaning": "provided that",
+      "ipa": "pʊrkˈe",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "nonché",
@@ -1947,7 +3074,14 @@ const language = {
         "è",
         "ê"
       ],
-      "meaning": "as well as"
+      "meaning": "as well as",
+      "ipa": "nonkˈe",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "benché",
@@ -1959,7 +3093,14 @@ const language = {
         "è",
         "ê"
       ],
-      "meaning": "although"
+      "meaning": "although",
+      "ipa": "benkˈe",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "ventitré",
@@ -1971,7 +3112,14 @@ const language = {
         "è",
         "ê"
       ],
-      "meaning": "twenty-three"
+      "meaning": "twenty-three",
+      "ipa": "ventitrˈe",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "trentatré",
@@ -1983,7 +3131,14 @@ const language = {
         "è",
         "ê"
       ],
-      "meaning": "thirty-three"
+      "meaning": "thirty-three",
+      "ipa": "trentatrˈe",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "quarantatré",
@@ -1995,7 +3150,14 @@ const language = {
         "è",
         "ê"
       ],
-      "meaning": "forty-three"
+      "meaning": "forty-three",
+      "ipa": "kwaɾantatrˈe",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "cinquantatré",
@@ -2007,7 +3169,14 @@ const language = {
         "è",
         "ê"
       ],
-      "meaning": "fifty-three"
+      "meaning": "fifty-three",
+      "ipa": "tʃinkwantatrˈe",
+      "ipaFocus": [
+        [
+          12,
+          14
+        ]
+      ]
     },
     {
       "word": "sessantatré",
@@ -2019,7 +3188,14 @@ const language = {
         "è",
         "ê"
       ],
-      "meaning": "sixty-three"
+      "meaning": "sixty-three",
+      "ipa": "sessantatrˈe",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "settantatré",
@@ -2031,7 +3207,14 @@ const language = {
         "è",
         "ê"
       ],
-      "meaning": "seventy-three"
+      "meaning": "seventy-three",
+      "ipa": "setːantatrˈe",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "ottantatré",
@@ -2043,7 +3226,14 @@ const language = {
         "è",
         "ê"
       ],
-      "meaning": "eighty-three"
+      "meaning": "eighty-three",
+      "ipa": "otːantatrˈe",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "novantatré",
@@ -2055,7 +3245,14 @@ const language = {
         "è",
         "ê"
       ],
-      "meaning": "ninety-three"
+      "meaning": "ninety-three",
+      "ipa": "novantatrˈe",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "ahimè",
@@ -2067,7 +3264,14 @@ const language = {
         "é",
         "ê"
       ],
-      "meaning": "alas"
+      "meaning": "alas",
+      "ipa": "aimˈɛ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "ohimè",
@@ -2079,7 +3283,14 @@ const language = {
         "é",
         "ê"
       ],
-      "meaning": "oh no"
+      "meaning": "oh no",
+      "ipa": "oimˈɛ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "bebè",
@@ -2091,7 +3302,14 @@ const language = {
         "é",
         "ê"
       ],
-      "meaning": "baby"
+      "meaning": "baby",
+      "ipa": "bebˈɛ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "canapè",
@@ -2103,7 +3321,14 @@ const language = {
         "é",
         "ê"
       ],
-      "meaning": "canapé"
+      "meaning": "canapé",
+      "ipa": "kanapˈɛ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "gilè",
@@ -2115,7 +3340,14 @@ const language = {
         "é",
         "ê"
       ],
-      "meaning": "vest"
+      "meaning": "vest",
+      "ipa": "dʒilˈɛ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "karatè",
@@ -2127,7 +3359,14 @@ const language = {
         "é",
         "ê"
       ],
-      "meaning": "karate"
+      "meaning": "karate",
+      "ipa": "kaɾatˈɛ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "bignè",
@@ -2139,7 +3378,14 @@ const language = {
         "é",
         "ê"
       ],
-      "meaning": "cream puff"
+      "meaning": "cream puff",
+      "ipa": "biɲɲˈɛ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "purè",
@@ -2151,7 +3397,14 @@ const language = {
         "é",
         "ê"
       ],
-      "meaning": "mash"
+      "meaning": "mash",
+      "ipa": "pʊrˈɛ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "toupè",
@@ -2163,7 +3416,14 @@ const language = {
         "é",
         "ê"
       ],
-      "meaning": "toupee"
+      "meaning": "toupee",
+      "ipa": "toʊpˈɛ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "vabbè",
@@ -2175,7 +3435,14 @@ const language = {
         "é",
         "ê"
       ],
-      "meaning": "alright"
+      "meaning": "alright",
+      "ipa": "vabːˈɛ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "macramè",
@@ -2187,7 +3454,14 @@ const language = {
         "é",
         "ê"
       ],
-      "meaning": "macramé"
+      "meaning": "macramé",
+      "ipa": "makramˈɛ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "lacchè",
@@ -2199,7 +3473,14 @@ const language = {
         "é",
         "ê"
       ],
-      "meaning": "lackey"
+      "meaning": "lackey",
+      "ipa": "lakːˈɛ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "andrò",
@@ -2211,7 +3492,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will go"
+      "meaning": "I will go",
+      "ipa": "andrˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "avrò",
@@ -2223,7 +3511,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will have"
+      "meaning": "I will have",
+      "ipa": "avrˈɔ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "berrò",
@@ -2235,7 +3530,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will drink"
+      "meaning": "I will drink",
+      "ipa": "berɾˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "cadrò",
@@ -2247,7 +3549,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will fall"
+      "meaning": "I will fall",
+      "ipa": "kadrˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "capirò",
@@ -2259,7 +3568,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will understand"
+      "meaning": "I will understand",
+      "ipa": "kapiɾˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "cercherò",
@@ -2271,7 +3587,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will look for"
+      "meaning": "I will look for",
+      "ipa": "tʃerkeɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "chiederò",
@@ -2283,7 +3606,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will ask"
+      "meaning": "I will ask",
+      "ipa": "kjedeɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "comincerò",
@@ -2295,7 +3625,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will begin"
+      "meaning": "I will begin",
+      "ipa": "komintʃeɾˈɔ",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "comprerò",
@@ -2307,7 +3644,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will buy"
+      "meaning": "I will buy",
+      "ipa": "kompreɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "conoscerò",
@@ -2319,7 +3663,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will know"
+      "meaning": "I will know",
+      "ipa": "konoʃeɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "correrò",
@@ -2331,7 +3682,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will run"
+      "meaning": "I will run",
+      "ipa": "korɾeɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "crederò",
@@ -2343,7 +3701,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will believe"
+      "meaning": "I will believe",
+      "ipa": "kredeɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "cucinerò",
@@ -2355,7 +3720,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will cook"
+      "meaning": "I will cook",
+      "ipa": "kʊtʃineɾˈɔ",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "dirò",
@@ -2367,7 +3739,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will say"
+      "meaning": "I will say",
+      "ipa": "diɾˈɔ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "dormirò",
@@ -2379,7 +3758,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will sleep"
+      "meaning": "I will sleep",
+      "ipa": "dormiɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "farò",
@@ -2391,7 +3777,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will do"
+      "meaning": "I will do",
+      "ipa": "faɾˈɔ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "finirò",
@@ -2403,7 +3796,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will finish"
+      "meaning": "I will finish",
+      "ipa": "finiɾˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "giocherò",
@@ -2415,7 +3815,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will play"
+      "meaning": "I will play",
+      "ipa": "dʒokeɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "guarderò",
@@ -2427,7 +3834,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will watch"
+      "meaning": "I will watch",
+      "ipa": "ɡwardeɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "imparerò",
@@ -2439,7 +3853,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will learn"
+      "meaning": "I will learn",
+      "ipa": "impareɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "laverò",
@@ -2451,7 +3872,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will wash"
+      "meaning": "I will wash",
+      "ipa": "laveɾˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "leggerò",
@@ -2463,7 +3891,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will read"
+      "meaning": "I will read",
+      "ipa": "ledʒːeɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "mangerò",
@@ -2475,7 +3910,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will eat"
+      "meaning": "I will eat",
+      "ipa": "mandʒeɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "metterò",
@@ -2487,7 +3929,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will put"
+      "meaning": "I will put",
+      "ipa": "metːeɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "morirò",
@@ -2499,7 +3948,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will die"
+      "meaning": "I will die",
+      "ipa": "moriɾˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "nuoterò",
@@ -2511,7 +3967,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will swim"
+      "meaning": "I will swim",
+      "ipa": "nʊoteɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "offrirò",
@@ -2523,7 +3986,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will offer"
+      "meaning": "I will offer",
+      "ipa": "offriɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "pagherò",
@@ -2535,7 +4005,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will pay"
+      "meaning": "I will pay",
+      "ipa": "paɡeɾˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "parlerò",
@@ -2547,7 +4024,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will speak"
+      "meaning": "I will speak",
+      "ipa": "parleɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "partirò",
@@ -2559,7 +4043,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will leave"
+      "meaning": "I will leave",
+      "ipa": "partiɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "penserò",
@@ -2571,7 +4062,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will think"
+      "meaning": "I will think",
+      "ipa": "penseɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "perderò",
@@ -2583,7 +4081,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will lose"
+      "meaning": "I will lose",
+      "ipa": "perdeɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "porterò",
@@ -2595,7 +4100,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will bring"
+      "meaning": "I will bring",
+      "ipa": "porteɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "prenderò",
@@ -2607,7 +4119,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will take"
+      "meaning": "I will take",
+      "ipa": "prendeɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "proverò",
@@ -2619,7 +4138,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will try"
+      "meaning": "I will try",
+      "ipa": "proveɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "pulirò",
@@ -2631,7 +4157,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will clean"
+      "meaning": "I will clean",
+      "ipa": "pʊliɾˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "resterò",
@@ -2643,7 +4176,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will stay"
+      "meaning": "I will stay",
+      "ipa": "resteɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "riderò",
@@ -2655,7 +4195,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will laugh"
+      "meaning": "I will laugh",
+      "ipa": "rideɾˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "ripeterò",
@@ -2667,7 +4214,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will repeat"
+      "meaning": "I will repeat",
+      "ipa": "ripeteɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "risponderò",
@@ -2679,7 +4233,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will answer"
+      "meaning": "I will answer",
+      "ipa": "rispondeɾˈɔ",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "romperò",
@@ -2691,7 +4252,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will break"
+      "meaning": "I will break",
+      "ipa": "rompeɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "salterò",
@@ -2703,7 +4271,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will jump"
+      "meaning": "I will jump",
+      "ipa": "salteɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "saprò",
@@ -2715,7 +4290,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will know"
+      "meaning": "I will know",
+      "ipa": "saprˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "sceglierò",
@@ -2727,7 +4309,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will choose"
+      "meaning": "I will choose",
+      "ipa": "ʃeʎeɾˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "scriverò",
@@ -2739,7 +4328,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will write"
+      "meaning": "I will write",
+      "ipa": "skriveɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "sentirò",
@@ -2751,7 +4347,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will hear"
+      "meaning": "I will hear",
+      "ipa": "sentiɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "servirò",
@@ -2763,7 +4366,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will serve"
+      "meaning": "I will serve",
+      "ipa": "serviɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "studierò",
@@ -2775,7 +4385,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will study"
+      "meaning": "I will study",
+      "ipa": "stʊdieɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "suonerò",
@@ -2787,7 +4404,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will play music"
+      "meaning": "I will play music",
+      "ipa": "sʊoneɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "taglierò",
@@ -2799,7 +4423,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will cut"
+      "meaning": "I will cut",
+      "ipa": "taʎeɾˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "terrò",
@@ -2811,7 +4442,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will keep"
+      "meaning": "I will keep",
+      "ipa": "terɾˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "tornerò",
@@ -2823,7 +4461,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will return"
+      "meaning": "I will return",
+      "ipa": "torneɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "troverò",
@@ -2835,7 +4480,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will find"
+      "meaning": "I will find",
+      "ipa": "troveɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "userò",
@@ -2847,7 +4499,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will use"
+      "meaning": "I will use",
+      "ipa": "ʊzeɾˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "vedrò",
@@ -2859,7 +4518,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will see"
+      "meaning": "I will see",
+      "ipa": "vedrˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "venderò",
@@ -2871,7 +4537,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will sell"
+      "meaning": "I will sell",
+      "ipa": "vendeɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "verrò",
@@ -2883,7 +4556,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will come"
+      "meaning": "I will come",
+      "ipa": "verɾˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "vivrò",
@@ -2895,7 +4575,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will live"
+      "meaning": "I will live",
+      "ipa": "vivrˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "volerò",
@@ -2907,7 +4594,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will fly"
+      "meaning": "I will fly",
+      "ipa": "voleɾˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "vorrò",
@@ -2919,7 +4613,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will want"
+      "meaning": "I will want",
+      "ipa": "vorɾˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "uscirò",
@@ -2931,7 +4632,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will go out"
+      "meaning": "I will go out",
+      "ipa": "ʊʃiɾˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "aspetterò",
@@ -2943,7 +4651,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will wait"
+      "meaning": "I will wait",
+      "ipa": "aspetːeɾˈɔ",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "entrerò",
@@ -2955,7 +4670,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will enter"
+      "meaning": "I will enter",
+      "ipa": "entreɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "visiterò",
@@ -2967,7 +4689,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will visit"
+      "meaning": "I will visit",
+      "ipa": "viziteɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "chiamerò",
@@ -2979,7 +4708,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will call"
+      "meaning": "I will call",
+      "ipa": "kjameɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "aiuterò",
@@ -2991,7 +4727,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will help"
+      "meaning": "I will help",
+      "ipa": "ajʊteɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "cambierò",
@@ -3003,7 +4746,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will change"
+      "meaning": "I will change",
+      "ipa": "kambieɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "chiuderò",
@@ -3015,7 +4765,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will close"
+      "meaning": "I will close",
+      "ipa": "kjʊdeɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "cucirò",
@@ -3027,7 +4784,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will sew"
+      "meaning": "I will sew",
+      "ipa": "kʊtʃiɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "deciderò",
@@ -3039,7 +4803,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will decide"
+      "meaning": "I will decide",
+      "ipa": "detʃideɾˈɔ",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "descriverò",
@@ -3051,7 +4822,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will describe"
+      "meaning": "I will describe",
+      "ipa": "deskriveɾˈɔ",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "disegnerò",
@@ -3063,7 +4841,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will draw"
+      "meaning": "I will draw",
+      "ipa": "dizeɲeɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "discuterò",
@@ -3075,7 +4860,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will discuss"
+      "meaning": "I will discuss",
+      "ipa": "diskʊteɾˈɔ",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "dividerò",
@@ -3087,7 +4879,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will divide"
+      "meaning": "I will divide",
+      "ipa": "divideɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "domanderò",
@@ -3099,7 +4898,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will ask"
+      "meaning": "I will ask",
+      "ipa": "domandeɾˈɔ",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "dimenticherò",
@@ -3111,7 +4917,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will forget"
+      "meaning": "I will forget",
+      "ipa": "dimentikeɾˈɔ",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "fingerò",
@@ -3123,7 +4936,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will pretend"
+      "meaning": "I will pretend",
+      "ipa": "findʒeɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "fisserò",
@@ -3135,7 +4955,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will fix"
+      "meaning": "I will fix",
+      "ipa": "fisseɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "girerò",
@@ -3147,7 +4974,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will turn"
+      "meaning": "I will turn",
+      "ipa": "dʒireɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "guiderò",
@@ -3159,7 +4993,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will drive"
+      "meaning": "I will drive",
+      "ipa": "ɡwideɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "indosserò",
@@ -3171,7 +5012,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will wear"
+      "meaning": "I will wear",
+      "ipa": "indosseɾˈɔ",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "incontrerò",
@@ -3183,7 +5031,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will meet"
+      "meaning": "I will meet",
+      "ipa": "inkontreɾˈɔ",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "insegnerò",
@@ -3195,7 +5050,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will teach"
+      "meaning": "I will teach",
+      "ipa": "inseɲeɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "inviterò",
@@ -3207,7 +5069,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will invite"
+      "meaning": "I will invite",
+      "ipa": "inviteɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "libererò",
@@ -3219,7 +5088,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will free"
+      "meaning": "I will free",
+      "ipa": "libereɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "lotterò",
@@ -3231,7 +5107,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will fight"
+      "meaning": "I will fight",
+      "ipa": "lotːeɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "manterrò",
@@ -3243,7 +5126,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will keep"
+      "meaning": "I will keep",
+      "ipa": "manterɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "mostrerò",
@@ -3255,7 +5145,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will show"
+      "meaning": "I will show",
+      "ipa": "mostreɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "nascerò",
@@ -3267,7 +5164,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will be born"
+      "meaning": "I will be born",
+      "ipa": "naʃeɾˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "noterò",
@@ -3279,7 +5183,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will notice"
+      "meaning": "I will notice",
+      "ipa": "noteɾˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "ordinerò",
@@ -3291,7 +5202,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will order"
+      "meaning": "I will order",
+      "ipa": "ordineɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "passerò",
@@ -3303,7 +5221,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will pass"
+      "meaning": "I will pass",
+      "ipa": "passeɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "patirò",
@@ -3315,7 +5240,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will suffer"
+      "meaning": "I will suffer",
+      "ipa": "patiɾˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "peserò",
@@ -3327,7 +5259,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will weigh"
+      "meaning": "I will weigh",
+      "ipa": "pezeɾˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "pioverò",
@@ -3339,7 +5278,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "it will rain"
+      "meaning": "it will rain",
+      "ipa": "pjoveɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "preparerò",
@@ -3351,7 +5297,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will prepare"
+      "meaning": "I will prepare",
+      "ipa": "prepareɾˈɔ",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "prometterò",
@@ -3363,7 +5316,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will promise"
+      "meaning": "I will promise",
+      "ipa": "prometːeɾˈɔ",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "proteggerò",
@@ -3375,7 +5335,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will protect"
+      "meaning": "I will protect",
+      "ipa": "protedʒːeɾˈɔ",
+      "ipaFocus": [
+        [
+          10,
+          12
+        ]
+      ]
     },
     {
       "word": "racconterò",
@@ -3387,7 +5354,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will tell"
+      "meaning": "I will tell",
+      "ipa": "rakːonteɾˈɔ",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "raccoglierò",
@@ -3399,7 +5373,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will gather"
+      "meaning": "I will gather",
+      "ipa": "rakːoʎeɾˈɔ",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "riconoscerò",
@@ -3411,7 +5392,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will recognize"
+      "meaning": "I will recognize",
+      "ipa": "rikonoʃeɾˈɔ",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "ricorderò",
@@ -3423,7 +5411,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will remember"
+      "meaning": "I will remember",
+      "ipa": "rikordeɾˈɔ",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "riempirò",
@@ -3435,7 +5430,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will fill"
+      "meaning": "I will fill",
+      "ipa": "riempiɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "ringrazierò",
@@ -3447,7 +5449,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will thank"
+      "meaning": "I will thank",
+      "ipa": "riŋɡratsieɾˈɔ",
+      "ipaFocus": [
+        [
+          11,
+          13
+        ]
+      ]
     },
     {
       "word": "riceverò",
@@ -3459,7 +5468,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will receive"
+      "meaning": "I will receive",
+      "ipa": "ritʃeveɾˈɔ",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "salverò",
@@ -3471,7 +5487,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will save"
+      "meaning": "I will save",
+      "ipa": "salveɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "seguirò",
@@ -3483,7 +5506,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will follow"
+      "meaning": "I will follow",
+      "ipa": "seɡwiɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "seminerò",
@@ -3495,7 +5525,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will sow"
+      "meaning": "I will sow",
+      "ipa": "semineɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "sorriderò",
@@ -3507,7 +5544,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will smile"
+      "meaning": "I will smile",
+      "ipa": "sorɾideɾˈɔ",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "spezzerò",
@@ -3519,7 +5563,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will break"
+      "meaning": "I will break",
+      "ipa": "spetsːeɾˈɔ",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "spiegherò",
@@ -3531,7 +5582,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will explain"
+      "meaning": "I will explain",
+      "ipa": "spjeɡeɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "spegnerò",
@@ -3543,7 +5601,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will switch off"
+      "meaning": "I will switch off",
+      "ipa": "speɲeɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "supererò",
@@ -3555,7 +5620,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will overcome"
+      "meaning": "I will overcome",
+      "ipa": "sʊpereɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "tradurrò",
@@ -3567,7 +5639,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will translate"
+      "meaning": "I will translate",
+      "ipa": "tradʊrɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "tremerò",
@@ -3579,7 +5658,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will tremble"
+      "meaning": "I will tremble",
+      "ipa": "tremeɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "ubbidirò",
@@ -3591,7 +5677,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will obey"
+      "meaning": "I will obey",
+      "ipa": "ʊbːidiɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "unirò",
@@ -3603,7 +5696,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will unite"
+      "meaning": "I will unite",
+      "ipa": "ʊniɾˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "viaggerò",
@@ -3615,7 +5715,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will travel"
+      "meaning": "I will travel",
+      "ipa": "vjadʒːeɾˈɔ",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "vincerò",
@@ -3627,7 +5734,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will win"
+      "meaning": "I will win",
+      "ipa": "vintʃeɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "lavorerò",
@@ -3639,7 +5753,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "I will work"
+      "meaning": "I will work",
+      "ipa": "lavoreɾˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "amò",
@@ -3651,7 +5772,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she loved"
+      "meaning": "he/she loved",
+      "ipa": "amˈɔ",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "arrivò",
@@ -3663,7 +5791,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she arrived"
+      "meaning": "he/she arrived",
+      "ipa": "arɾivˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "cercò",
@@ -3675,7 +5810,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she searched"
+      "meaning": "he/she searched",
+      "ipa": "tʃerkˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "comprò",
@@ -3687,7 +5829,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she bought"
+      "meaning": "he/she bought",
+      "ipa": "komprˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "guardò",
@@ -3699,7 +5848,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she watched"
+      "meaning": "he/she watched",
+      "ipa": "ɡwardˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "parlò",
@@ -3711,7 +5867,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she spoke"
+      "meaning": "he/she spoke",
+      "ipa": "parlˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "pensò",
@@ -3723,7 +5886,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she thought"
+      "meaning": "he/she thought",
+      "ipa": "pensˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "portò",
@@ -3735,7 +5905,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she brought"
+      "meaning": "he/she brought",
+      "ipa": "portˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "tornò",
@@ -3747,7 +5924,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she returned"
+      "meaning": "he/she returned",
+      "ipa": "tornˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "trovò",
@@ -3759,7 +5943,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she found"
+      "meaning": "he/she found",
+      "ipa": "trovˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "usò",
@@ -3771,7 +5962,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she used"
+      "meaning": "he/she used",
+      "ipa": "ʊzˈɔ",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "volò",
@@ -3783,7 +5981,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she flew"
+      "meaning": "he/she flew",
+      "ipa": "volˈɔ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "cenò",
@@ -3795,7 +6000,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she dined"
+      "meaning": "he/she dined",
+      "ipa": "tʃenˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "chiamò",
@@ -3807,7 +6019,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she called"
+      "meaning": "he/she called",
+      "ipa": "kjamˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "salutò",
@@ -3819,7 +6038,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she greeted"
+      "meaning": "he/she greeted",
+      "ipa": "salʊtˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "aspettò",
@@ -3831,7 +6057,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she waited"
+      "meaning": "he/she waited",
+      "ipa": "aspetːˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "cucinò",
@@ -3843,7 +6076,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she cooked"
+      "meaning": "he/she cooked",
+      "ipa": "kʊtʃinˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "studiò",
@@ -3855,7 +6095,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she studied"
+      "meaning": "he/she studied",
+      "ipa": "stʊdjˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "telefonò",
@@ -3867,7 +6114,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she phoned"
+      "meaning": "he/she phoned",
+      "ipa": "telefonˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "pagò",
@@ -3879,7 +6133,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she paid"
+      "meaning": "he/she paid",
+      "ipa": "paɡˈɔ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "viaggiò",
@@ -3891,7 +6152,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she traveled"
+      "meaning": "he/she traveled",
+      "ipa": "vjadʒːˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "giocò",
@@ -3903,7 +6171,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she played"
+      "meaning": "he/she played",
+      "ipa": "dʒokˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "nuotò",
@@ -3915,7 +6190,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she swam"
+      "meaning": "he/she swam",
+      "ipa": "nʊotˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "lavorò",
@@ -3927,7 +6209,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she worked"
+      "meaning": "he/she worked",
+      "ipa": "lavoɾˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "camminò",
@@ -3939,7 +6228,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she walked"
+      "meaning": "he/she walked",
+      "ipa": "kamminˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "saltò",
@@ -3951,7 +6247,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she jumped"
+      "meaning": "he/she jumped",
+      "ipa": "saltˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "gridò",
@@ -3963,7 +6266,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she shouted"
+      "meaning": "he/she shouted",
+      "ipa": "ɡridˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "bussò",
@@ -3975,7 +6285,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she knocked"
+      "meaning": "he/she knocked",
+      "ipa": "bʊssˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "lasciò",
@@ -3987,7 +6304,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she left"
+      "meaning": "he/she left",
+      "ipa": "laʃˈɔ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "mostrò",
@@ -3999,7 +6323,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she showed"
+      "meaning": "he/she showed",
+      "ipa": "mostrˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "spiegò",
@@ -4011,7 +6342,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she explained"
+      "meaning": "he/she explained",
+      "ipa": "spjeɡˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "insegnò",
@@ -4023,7 +6361,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she taught"
+      "meaning": "he/she taught",
+      "ipa": "inseɲɲˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "aiutò",
@@ -4035,7 +6380,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she helped"
+      "meaning": "he/she helped",
+      "ipa": "ajʊtˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "disegnò",
@@ -4047,7 +6399,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she drew"
+      "meaning": "he/she drew",
+      "ipa": "dizeɲɲˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "incontrò",
@@ -4059,7 +6418,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she met"
+      "meaning": "he/she met",
+      "ipa": "inkontrˈɔ",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "ordinò",
@@ -4071,7 +6437,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she ordered"
+      "meaning": "he/she ordered",
+      "ipa": "ordinˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "preparò",
@@ -4083,7 +6456,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she prepared"
+      "meaning": "he/she prepared",
+      "ipa": "prepaɾˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "suonò",
@@ -4095,7 +6475,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she played music"
+      "meaning": "he/she played music",
+      "ipa": "sʊonˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "visitò",
@@ -4107,7 +6494,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she visited"
+      "meaning": "he/she visited",
+      "ipa": "vizitˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "scherzò",
@@ -4119,7 +6513,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she joked"
+      "meaning": "he/she joked",
+      "ipa": "skertsˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "cantò",
@@ -4131,7 +6532,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she sang"
+      "meaning": "he/she sang",
+      "ipa": "kantˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "danzò",
@@ -4143,7 +6551,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she danced"
+      "meaning": "he/she danced",
+      "ipa": "dantsˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "fumò",
@@ -4155,7 +6570,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she smoked"
+      "meaning": "he/she smoked",
+      "ipa": "fʊmˈɔ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "nevicò",
@@ -4167,7 +6589,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "it snowed"
+      "meaning": "it snowed",
+      "ipa": "nevikˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "iniziò",
@@ -4179,7 +6608,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she began"
+      "meaning": "he/she began",
+      "ipa": "initsjˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "migliorò",
@@ -4191,7 +6627,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she improved"
+      "meaning": "he/she improved",
+      "ipa": "miʎoɾˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "provò",
@@ -4203,7 +6646,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she tried"
+      "meaning": "he/she tried",
+      "ipa": "provˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "rientrò",
@@ -4215,7 +6665,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she came back"
+      "meaning": "he/she came back",
+      "ipa": "rientrˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "sognò",
@@ -4227,7 +6684,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she dreamed"
+      "meaning": "he/she dreamed",
+      "ipa": "soɲɲˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "urlò",
@@ -4239,7 +6703,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she yelled"
+      "meaning": "he/she yelled",
+      "ipa": "ʊrlˈɔ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "mangiò",
@@ -4251,7 +6722,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she ate"
+      "meaning": "he/she ate",
+      "ipa": "mandʒˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "ascoltò",
@@ -4263,7 +6741,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she listened"
+      "meaning": "he/she listened",
+      "ipa": "askoltˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "entrò",
@@ -4275,7 +6760,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she entered"
+      "meaning": "he/she entered",
+      "ipa": "entrˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "osservò",
@@ -4287,7 +6779,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she observed"
+      "meaning": "he/she observed",
+      "ipa": "osservˈɔ",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "guidò",
@@ -4299,7 +6798,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she drove"
+      "meaning": "he/she drove",
+      "ipa": "ɡwidˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "lavò",
@@ -4311,7 +6817,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she washed"
+      "meaning": "he/she washed",
+      "ipa": "lavˈɔ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "tagliò",
@@ -4323,7 +6836,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she cut"
+      "meaning": "he/she cut",
+      "ipa": "taʎˈɔ",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "ballò",
@@ -4335,7 +6855,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she danced"
+      "meaning": "he/she danced",
+      "ipa": "ballˈɔ",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "brindò",
@@ -4347,7 +6874,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she toasted"
+      "meaning": "he/she toasted",
+      "ipa": "brindˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "cambiò",
@@ -4359,7 +6893,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she changed"
+      "meaning": "he/she changed",
+      "ipa": "kambjˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "dimenticò",
@@ -4371,7 +6912,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she forgot"
+      "meaning": "he/she forgot",
+      "ipa": "dimentikˈɔ",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "invitò",
@@ -4383,7 +6931,14 @@ const language = {
         "ó",
         "ô"
       ],
-      "meaning": "he/she invited"
+      "meaning": "he/she invited",
+      "ipa": "invitˈɔ",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     }
   ]
 } satisfies LanguageWords

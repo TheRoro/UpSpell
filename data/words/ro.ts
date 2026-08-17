@@ -15,7 +15,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "water"
+      "meaning": "water",
+      "ipa": "ˈapə",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "casă",
@@ -27,7 +34,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "house"
+      "meaning": "house",
+      "ipa": "kˈasə",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "masă",
@@ -39,7 +53,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "table"
+      "meaning": "table",
+      "ipa": "mˈasə",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "mamă",
@@ -51,7 +72,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "mother"
+      "meaning": "mother",
+      "ipa": "mˈamə",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "tată",
@@ -63,7 +91,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "father"
+      "meaning": "father",
+      "ipa": "tˈatə",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "fată",
@@ -75,7 +110,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "girl"
+      "meaning": "girl",
+      "ipa": "fˈatə",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "băiat",
@@ -87,7 +129,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "boy"
+      "meaning": "boy",
+      "ipa": "bəjˈat",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "grădină",
@@ -99,7 +148,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "garden"
+      "meaning": "garden",
+      "ipa": "ɡrədˈinə",
+      "ipaFocus": [
+        [
+          2,
+          3
+        ]
+      ]
     },
     {
       "word": "pădure",
@@ -111,7 +167,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "forest"
+      "meaning": "forest",
+      "ipa": "pədˈuɾe",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "căldură",
@@ -123,7 +186,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "heat"
+      "meaning": "heat",
+      "ipa": "kəldˈuɾə",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "mână",
@@ -135,7 +205,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "hand"
+      "meaning": "hand",
+      "ipa": "mˈɨnə",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "lampă",
@@ -147,7 +224,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "lamp"
+      "meaning": "lamp",
+      "ipa": "lˈampə",
+      "ipaFocus": [
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "ceapă",
@@ -159,7 +243,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "onion"
+      "meaning": "onion",
+      "ipa": "tʃˈeapə",
+      "ipaFocus": [
+        [
+          6,
+          7
+        ]
+      ]
     },
     {
       "word": "iarbă",
@@ -171,7 +262,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "grass"
+      "meaning": "grass",
+      "ipa": "jˈarbə",
+      "ipaFocus": [
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "toamnă",
@@ -183,7 +281,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "autumn"
+      "meaning": "autumn",
+      "ipa": "tˈɔamnə",
+      "ipaFocus": [
+        [
+          6,
+          7
+        ]
+      ]
     },
     {
       "word": "iarnă",
@@ -195,7 +300,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "winter"
+      "meaning": "winter",
+      "ipa": "jˈarnə",
+      "ipaFocus": [
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "seară",
@@ -207,7 +319,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "evening"
+      "meaning": "evening",
+      "ipa": "sˈeaɾə",
+      "ipaFocus": [
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "prăjitură",
@@ -219,7 +338,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "cake"
+      "meaning": "cake",
+      "ipa": "prˌəʒitˈuɾə",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "cămașă",
@@ -231,7 +357,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "shirt"
+      "meaning": "shirt",
+      "ipa": "kəmˈaʃə",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "pălărie",
@@ -243,7 +376,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "hat"
+      "meaning": "hat",
+      "ipa": "pˌələɾˈie",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "oglindă",
@@ -255,7 +395,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "mirror"
+      "meaning": "mirror",
+      "ipa": "oɡlˈində",
+      "ipaFocus": [
+        [
+          7,
+          8
+        ]
+      ]
     },
     {
       "word": "cană",
@@ -267,7 +414,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "mug"
+      "meaning": "mug",
+      "ipa": "kˈanə",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "lingură",
@@ -279,7 +433,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "spoon"
+      "meaning": "spoon",
+      "ipa": "lˈiŋɡuɾˌə",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "cărare",
@@ -291,7 +452,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "path"
+      "meaning": "path",
+      "ipa": "kəɾˈaɾe",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "gară",
@@ -303,7 +471,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "station"
+      "meaning": "station",
+      "ipa": "ɡˈaɾə",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "stradă",
@@ -315,7 +490,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "street"
+      "meaning": "street",
+      "ipa": "strˈadə",
+      "ipaFocus": [
+        [
+          6,
+          7
+        ]
+      ]
     },
     {
       "word": "cămară",
@@ -327,7 +509,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "pantry"
+      "meaning": "pantry",
+      "ipa": "kəmˈaɾə",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "mătase",
@@ -339,7 +528,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "silk"
+      "meaning": "silk",
+      "ipa": "mətˈase",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "zăpadă",
@@ -351,7 +547,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "snow"
+      "meaning": "snow",
+      "ipa": "zəpˈadə",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "bunătate",
@@ -363,7 +566,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "kindness"
+      "meaning": "kindness",
+      "ipa": "bˌunətˈate",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "răbdare",
@@ -375,7 +585,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "patience"
+      "meaning": "patience",
+      "ipa": "rəbdˈaɾe",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "pătură",
@@ -387,7 +604,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "blanket"
+      "meaning": "blanket",
+      "ipa": "pˈətuɾˌə",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "mănușă",
@@ -399,7 +623,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "glove"
+      "meaning": "glove",
+      "ipa": "mənˈuʃə",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "săpun",
@@ -411,7 +642,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "soap"
+      "meaning": "soap",
+      "ipa": "səpˈun",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "răcoare",
@@ -423,7 +661,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "coolness"
+      "meaning": "coolness",
+      "ipa": "rəkˈɔaɾe",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "păcat",
@@ -435,7 +680,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "sin"
+      "meaning": "sin",
+      "ipa": "pəkˈat",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "cămin",
@@ -447,7 +699,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "dormitory"
+      "meaning": "dormitory",
+      "ipa": "kəmˈin",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "măr",
@@ -459,7 +718,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "apple"
+      "meaning": "apple",
+      "ipa": "mˈər",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "vată",
@@ -471,7 +737,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "cotton"
+      "meaning": "cotton",
+      "ipa": "vˈatə",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "lână",
@@ -483,7 +756,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "wool"
+      "meaning": "wool",
+      "ipa": "lˈɨnə",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "bucătărie",
@@ -495,7 +775,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "kitchen"
+      "meaning": "kitchen",
+      "ipa": "bˌukətəɾˈie",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "căpșună",
@@ -507,7 +794,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "strawberry"
+      "meaning": "strawberry",
+      "ipa": "kəpʃˈunə",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "lăcustă",
@@ -519,7 +813,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "locust"
+      "meaning": "locust",
+      "ipa": "ləkˈustə",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "măgar",
@@ -531,7 +832,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "donkey"
+      "meaning": "donkey",
+      "ipa": "məɡˈar",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "cărbune",
@@ -543,7 +851,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "coal"
+      "meaning": "coal",
+      "ipa": "kərbˈune",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "joacă",
@@ -555,7 +870,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "play"
+      "meaning": "play",
+      "ipa": "ʒˈɔakə",
+      "ipaFocus": [
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "cădere",
@@ -567,7 +889,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "fall"
+      "meaning": "fall",
+      "ipa": "kədˈeɾe",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "măsură",
@@ -579,7 +908,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "measure"
+      "meaning": "measure",
+      "ipa": "məsˈuɾə",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "rădăcină",
@@ -591,7 +927,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "root"
+      "meaning": "root",
+      "ipa": "rˌədətʃˈinə",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "făină",
@@ -603,7 +946,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "flour"
+      "meaning": "flour",
+      "ipa": "fəˈinə",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "tăcere",
@@ -615,7 +965,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "silence"
+      "meaning": "silence",
+      "ipa": "tətʃˈeɾe",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "adăpost",
@@ -627,7 +984,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "shelter"
+      "meaning": "shelter",
+      "ipa": "ˌadəpˈost",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "nădejde",
@@ -639,7 +1003,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "hope"
+      "meaning": "hope",
+      "ipa": "nədˈeʒde",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "păpușă",
@@ -651,7 +1022,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "doll"
+      "meaning": "doll",
+      "ipa": "pəpˈuʃə",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "broască",
@@ -663,7 +1041,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "frog"
+      "meaning": "frog",
+      "ipa": "brˈɔaskə",
+      "ipaFocus": [
+        [
+          7,
+          8
+        ]
+      ]
     },
     {
       "word": "căprioară",
@@ -675,7 +1060,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "doe"
+      "meaning": "doe",
+      "ipa": "kˌəprjɔˈaɾə",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "frățior",
@@ -687,7 +1079,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "little brother"
+      "meaning": "little brother",
+      "ipa": "frətsjˈor",
+      "ipaFocus": [
+        [
+          2,
+          3
+        ]
+      ]
     },
     {
       "word": "pădurar",
@@ -699,7 +1098,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "forester"
+      "meaning": "forester",
+      "ipa": "pˌəduɾˈar",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "răsărit",
@@ -711,7 +1117,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "sunrise"
+      "meaning": "sunrise",
+      "ipa": "rˌəsəɾˈit",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "grămadă",
@@ -723,7 +1136,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "pile"
+      "meaning": "pile",
+      "ipa": "ɡrəmˈadə",
+      "ipaFocus": [
+        [
+          2,
+          3
+        ]
+      ]
     },
     {
       "word": "păstor",
@@ -735,7 +1155,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "shepherd"
+      "meaning": "shepherd",
+      "ipa": "pəstˈor",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "măsea",
@@ -747,7 +1174,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "molar"
+      "meaning": "molar",
+      "ipa": "mˈəsea",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "păpușar",
@@ -759,7 +1193,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "puppeteer"
+      "meaning": "puppeteer",
+      "ipa": "pˌəpuʃˈar",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "tămâie",
@@ -771,7 +1212,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "incense"
+      "meaning": "incense",
+      "ipa": "tˈəmyɪˌe",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "cătun",
@@ -783,7 +1231,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "hamlet"
+      "meaning": "hamlet",
+      "ipa": "kətˈun",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "tăbliță",
@@ -795,7 +1250,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "blackboard"
+      "meaning": "blackboard",
+      "ipa": "tˈəblitsˌə",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "daltă",
@@ -807,7 +1269,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "chisel"
+      "meaning": "chisel",
+      "ipa": "dˈaltə",
+      "ipaFocus": [
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "capră",
@@ -819,7 +1288,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "goat"
+      "meaning": "goat",
+      "ipa": "kˈaprə",
+      "ipaFocus": [
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "fereastră",
@@ -831,7 +1307,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "window"
+      "meaning": "window",
+      "ipa": "feɾˈeastrə",
+      "ipaFocus": [
+        [
+          9,
+          10
+        ]
+      ]
     },
     {
       "word": "scară",
@@ -843,7 +1326,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "ladder"
+      "meaning": "ladder",
+      "ipa": "skˈaɾə",
+      "ipaFocus": [
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "tablă",
@@ -855,7 +1345,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "board"
+      "meaning": "board",
+      "ipa": "tˈablə",
+      "ipaFocus": [
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "găleată",
@@ -867,7 +1364,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "bucket"
+      "meaning": "bucket",
+      "ipa": "ɡəlˈeatə",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "păstaie",
@@ -879,7 +1383,14 @@ const language = {
         "â",
         "á"
       ],
-      "meaning": "pod"
+      "meaning": "pod",
+      "ipa": "pəstˈaɪe",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "română",
@@ -891,7 +1402,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "Romanian"
+      "meaning": "Romanian",
+      "ipa": "romˈɨnə",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "pâine",
@@ -903,7 +1421,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "bread"
+      "meaning": "bread",
+      "ipa": "pˈyɪne",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "câine",
@@ -915,7 +1440,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "dog"
+      "meaning": "dog",
+      "ipa": "kˈyɪne",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "mâine",
@@ -927,7 +1459,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "tomorrow"
+      "meaning": "tomorrow",
+      "ipa": "mˈyɪne",
+      "ipaFocus": [
+        [
+          1,
+          4
+        ]
+      ]
     },
     {
       "word": "sâmbătă",
@@ -939,7 +1478,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "Saturday"
+      "meaning": "Saturday",
+      "ipa": "sˈɨmbətə",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "vânt",
@@ -951,7 +1497,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "wind"
+      "meaning": "wind",
+      "ipa": "vˈɨnt",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "câmp",
@@ -963,7 +1516,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "field"
+      "meaning": "field",
+      "ipa": "kˈɨmp",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "gând",
@@ -975,7 +1535,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "thought"
+      "meaning": "thought",
+      "ipa": "ɡˈɨnd",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "sfânt",
@@ -987,7 +1554,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "holy"
+      "meaning": "holy",
+      "ipa": "sfˈɨnt",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "adânc",
@@ -999,7 +1573,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "deep"
+      "meaning": "deep",
+      "ipa": "adˈɨnk",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "tânăr",
@@ -1011,7 +1592,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "young man"
+      "meaning": "young man",
+      "ipa": "tˈɨnər",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "fântână",
@@ -1023,7 +1611,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "fountain"
+      "meaning": "fountain",
+      "ipa": "fɨntˈɨnə",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "lumânare",
@@ -1035,7 +1630,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "candle"
+      "meaning": "candle",
+      "ipa": "lˌumɨnˈaɾe",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "lămâie",
@@ -1047,7 +1649,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "lemon"
+      "meaning": "lemon",
+      "ipa": "lˈəmyɪˌe",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "frână",
@@ -1059,7 +1668,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "brake"
+      "meaning": "brake",
+      "ipa": "frˈɨnə",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "mâncare",
@@ -1071,7 +1687,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "food"
+      "meaning": "food",
+      "ipa": "mɨnkˈaɾe",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "mâncăm",
@@ -1083,7 +1706,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "we eat"
+      "meaning": "we eat",
+      "ipa": "mɨnkˈəm",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "mâncat",
@@ -1095,7 +1725,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "eaten"
+      "meaning": "eaten",
+      "ipa": "mɨnkˈat",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "cântec",
@@ -1107,7 +1744,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "song"
+      "meaning": "song",
+      "ipa": "kˈɨntek",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "cântă",
@@ -1119,7 +1763,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "sings"
+      "meaning": "sings",
+      "ipa": "kˈɨntə",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "cântăm",
@@ -1131,7 +1782,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "we sing"
+      "meaning": "we sing",
+      "ipa": "kɨntˈəm",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "vânător",
@@ -1143,7 +1801,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "hunter"
+      "meaning": "hunter",
+      "ipa": "vˌɨnətˈor",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "vânătoare",
@@ -1155,7 +1820,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "hunting"
+      "meaning": "hunting",
+      "ipa": "vˌɨnətˈɔaɾe",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "stâncă",
@@ -1167,7 +1839,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "cliff"
+      "meaning": "cliff",
+      "ipa": "stˈɨnkə",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "rând",
@@ -1179,7 +1858,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "row"
+      "meaning": "row",
+      "ipa": "rˈɨnd",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "gândire",
@@ -1191,7 +1877,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "thinking"
+      "meaning": "thinking",
+      "ipa": "ɡɨndˈiɾe",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "pământ",
@@ -1203,7 +1896,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "earth"
+      "meaning": "earth",
+      "ipa": "pəmˈɨnt",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "mormânt",
@@ -1215,7 +1915,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "grave"
+      "meaning": "grave",
+      "ipa": "mormˈɨnt",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "cuvânt",
@@ -1227,7 +1934,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "word"
+      "meaning": "word",
+      "ipa": "kuvˈɨnt",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "sârmă",
@@ -1239,7 +1953,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "wire"
+      "meaning": "wire",
+      "ipa": "sˈɨrmə",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "târziu",
@@ -1251,7 +1972,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "late"
+      "meaning": "late",
+      "ipa": "tɨrzˈiu",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "târg",
@@ -1263,7 +1991,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "market"
+      "meaning": "market",
+      "ipa": "tˈɨrɡ",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "sâmbure",
@@ -1275,7 +2010,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "seed"
+      "meaning": "seed",
+      "ipa": "sɨmbˈuɾe",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "sânge",
@@ -1287,7 +2029,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "blood"
+      "meaning": "blood",
+      "ipa": "sˈɨŋdʒe",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "vânzare",
@@ -1299,7 +2048,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "sale"
+      "meaning": "sale",
+      "ipa": "vɨnzˈaɾe",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "vânzător",
@@ -1311,7 +2067,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "seller"
+      "meaning": "seller",
+      "ipa": "vˌɨnzətˈor",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "vână",
@@ -1323,7 +2086,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "vein"
+      "meaning": "vein",
+      "ipa": "vˈɨnə",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "mânecă",
@@ -1335,7 +2105,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "sleeve"
+      "meaning": "sleeve",
+      "ipa": "mˈɨnekˌə",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "fân",
@@ -1347,7 +2124,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "hay"
+      "meaning": "hay",
+      "ipa": "fˈɨn",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "cârlig",
@@ -1359,7 +2143,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "hook"
+      "meaning": "hook",
+      "ipa": "kɨrlˈiɡ",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "cârjă",
@@ -1371,7 +2162,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "crutch"
+      "meaning": "crutch",
+      "ipa": "kˈɨrʒə",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "pârâu",
@@ -1383,7 +2181,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "stream"
+      "meaning": "stream",
+      "ipa": "pˈɨɾyʊ",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "cârciumă",
@@ -1395,7 +2200,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "tavern"
+      "meaning": "tavern",
+      "ipa": "kɨrtʃˈumə",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "rămân",
@@ -1407,7 +2219,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "I stay"
+      "meaning": "I stay",
+      "ipa": "rəmˈɨn",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "rămâne",
@@ -1419,7 +2238,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "remains"
+      "meaning": "remains",
+      "ipa": "rəmˈɨne",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "strâmb",
@@ -1431,7 +2257,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "crooked"
+      "meaning": "crooked",
+      "ipa": "strˈɨmb",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "dărâmă",
@@ -1443,7 +2276,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "demolishes"
+      "meaning": "demolishes",
+      "ipa": "dəɾˈɨmə",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "dărâmat",
@@ -1455,7 +2295,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "demolished"
+      "meaning": "demolished",
+      "ipa": "dˌəɾɨmˈat",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "coborând",
@@ -1467,7 +2314,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "descending"
+      "meaning": "descending",
+      "ipa": "kˌoboɾˈɨnd",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "urcând",
@@ -1479,7 +2333,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "climbing"
+      "meaning": "climbing",
+      "ipa": "urkˈɨnd",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "alergând",
@@ -1491,7 +2352,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "running"
+      "meaning": "running",
+      "ipa": "ˌalerɡˈɨnd",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "zburând",
@@ -1503,7 +2371,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "flying"
+      "meaning": "flying",
+      "ipa": "zbuɾˈɨnd",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "tremurând",
@@ -1515,7 +2390,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "trembling"
+      "meaning": "trembling",
+      "ipa": "trˌemuɾˈɨnd",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "lucrând",
@@ -1527,7 +2409,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "working"
+      "meaning": "working",
+      "ipa": "lukrˈɨnd",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "zâmbet",
@@ -1539,7 +2428,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "smile"
+      "meaning": "smile",
+      "ipa": "zˈɨmbet",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "zâmbi",
@@ -1551,7 +2447,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "smile"
+      "meaning": "smile",
+      "ipa": "zɨmbʲˈi",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "zâmbim",
@@ -1563,7 +2466,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "we smile"
+      "meaning": "we smile",
+      "ipa": "zɨmbˈim",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "zâmbește",
@@ -1575,7 +2485,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "smiles"
+      "meaning": "smiles",
+      "ipa": "zɨmbˈeʃte",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "zână",
@@ -1587,7 +2504,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "fairy"
+      "meaning": "fairy",
+      "ipa": "zˈɨnə",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "vârstă",
@@ -1599,7 +2523,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "age"
+      "meaning": "age",
+      "ipa": "vˈɨrstə",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "vârf",
@@ -1611,7 +2542,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "peak"
+      "meaning": "peak",
+      "ipa": "vˈɨrf",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "stăpân",
@@ -1623,7 +2561,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "master"
+      "meaning": "master",
+      "ipa": "stəpˈɨn",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "stăpână",
@@ -1635,7 +2580,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "mistress"
+      "meaning": "mistress",
+      "ipa": "stəpˈɨnə",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "amânare",
@@ -1647,7 +2599,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "postponement"
+      "meaning": "postponement",
+      "ipa": "ˌamɨnˈaɾe",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "amânat",
@@ -1659,7 +2618,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "postponed"
+      "meaning": "postponed",
+      "ipa": "ˌamɨnˈat",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "frământat",
@@ -1671,7 +2637,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "kneaded"
+      "meaning": "kneaded",
+      "ipa": "frˌəmɨntˈat",
+      "ipaFocus": [
+        [
+          5,
+          6
+        ]
+      ]
     },
     {
       "word": "frământa",
@@ -1683,7 +2656,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "to knead"
+      "meaning": "to knead",
+      "ipa": "frəmˈɨnta",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "pârghie",
@@ -1695,7 +2675,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "lever"
+      "meaning": "lever",
+      "ipa": "pˈɨrɡje",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "sângerare",
@@ -1707,7 +2694,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "bleeding"
+      "meaning": "bleeding",
+      "ipa": "sˌɨŋdʒeɾˈaɾe",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "mângâiere",
@@ -1719,7 +2713,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "caress"
+      "meaning": "caress",
+      "ipa": "mˌɨŋɡyɪˈeɾe",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "rânjet",
@@ -1731,7 +2732,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "grin"
+      "meaning": "grin",
+      "ipa": "rˈɨnʒet",
+      "ipaFocus": [
+        [
+          1,
+          3
+        ]
+      ]
     },
     {
       "word": "tâmplar",
@@ -1743,7 +2751,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "carpenter"
+      "meaning": "carpenter",
+      "ipa": "tɨmplˈar",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "fărâmă",
@@ -1755,7 +2770,14 @@ const language = {
         "a",
         "î"
       ],
-      "meaning": "crumb"
+      "meaning": "crumb",
+      "ipa": "fəɾˈɨmə",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "înger",
@@ -1767,7 +2789,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "angel"
+      "meaning": "angel",
+      "ipa": "ɨŋdʒˈer",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "înalt",
@@ -1779,7 +2808,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "tall"
+      "meaning": "tall",
+      "ipa": "ɨnˈalt",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "încă",
@@ -1791,7 +2827,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "still"
+      "meaning": "still",
+      "ipa": "ˈɨnkə",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "început",
@@ -1803,7 +2846,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "beginning"
+      "meaning": "beginning",
+      "ipa": "ˌɨntʃepˈut",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "încăpere",
@@ -1815,7 +2865,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "room"
+      "meaning": "room",
+      "ipa": "ˌɨnkəpˈeɾe",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "încălțăminte",
@@ -1827,7 +2884,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "footwear"
+      "meaning": "footwear",
+      "ipa": "ˌɨnkəltsəmˈinte",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "încălzire",
@@ -1839,7 +2903,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "heating"
+      "meaning": "heating",
+      "ipa": "ˌɨnkəlzˈiɾe",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "închis",
@@ -1851,7 +2922,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "closed"
+      "meaning": "closed",
+      "ipa": "ɨnkˈis",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "închide",
@@ -1863,7 +2941,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "closes"
+      "meaning": "closes",
+      "ipa": "ɨnkˈide",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "înțelege",
@@ -1875,7 +2960,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "understands"
+      "meaning": "understands",
+      "ipa": "ˌɨntselˈedʒe",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "înțeles",
@@ -1887,7 +2979,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "understood"
+      "meaning": "understood",
+      "ipa": "ˌɨntselˈes",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "întins",
@@ -1899,7 +2998,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "stretched"
+      "meaning": "stretched",
+      "ipa": "ɨntˈins",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "întinde",
@@ -1911,7 +3017,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "stretches"
+      "meaning": "stretches",
+      "ipa": "ɨntˈinde",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "întreg",
@@ -1923,7 +3036,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "whole"
+      "meaning": "whole",
+      "ipa": "ɨntrˈeɡ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "întrebare",
@@ -1935,7 +3055,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "question"
+      "meaning": "question",
+      "ipa": "ˌɨntrebˈaɾe",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "întâlnire",
@@ -1947,7 +3074,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "meeting"
+      "meaning": "meeting",
+      "ipa": "ˌɨntɨlnˈiɾe",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "întâlni",
@@ -1959,7 +3093,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "meet"
+      "meaning": "meet",
+      "ipa": "ˌɨntɨlnʲˈi",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "înflori",
@@ -1971,7 +3112,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "bloom"
+      "meaning": "bloom",
+      "ipa": "ˌɨnfloɾʲˈi",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "înflorit",
@@ -1983,7 +3131,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "bloomed"
+      "meaning": "bloomed",
+      "ipa": "ˌɨnfloɾˈit",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "înot",
@@ -1995,7 +3150,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "swimming"
+      "meaning": "swimming",
+      "ipa": "ɨnˈot",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "înota",
@@ -2007,7 +3169,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "to swim"
+      "meaning": "to swim",
+      "ipa": "ɨnˈota",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "înotăm",
@@ -2019,7 +3188,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "we swim"
+      "meaning": "we swim",
+      "ipa": "ˌɨnotˈəm",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "însorit",
@@ -2031,7 +3207,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "sunny"
+      "meaning": "sunny",
+      "ipa": "ˌɨnsoɾˈit",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "înscrie",
@@ -2043,7 +3226,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "enrolls"
+      "meaning": "enrolls",
+      "ipa": "ɨnskrˈie",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "înscris",
@@ -2055,7 +3245,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "enrolled"
+      "meaning": "enrolled",
+      "ipa": "ɨnskrˈis",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "împreună",
@@ -2067,7 +3264,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "together"
+      "meaning": "together",
+      "ipa": "ˌɨmpreˈunə",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "împărți",
@@ -2079,7 +3283,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "divide"
+      "meaning": "divide",
+      "ipa": "ˌɨmpərtsʲˈi",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "împarte",
@@ -2091,7 +3302,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "divides"
+      "meaning": "divides",
+      "ipa": "ɨmpˈarte",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "împinge",
@@ -2103,7 +3321,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "pushes"
+      "meaning": "pushes",
+      "ipa": "ɨmpˈiŋdʒe",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "împrumut",
@@ -2115,7 +3340,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "loan"
+      "meaning": "loan",
+      "ipa": "ˌɨmprumˈut",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "îmbogățit",
@@ -2127,7 +3359,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "enriched"
+      "meaning": "enriched",
+      "ipa": "ˌɨmboɡətsˈit",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "încurcă",
@@ -2139,7 +3378,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "tangles"
+      "meaning": "tangles",
+      "ipa": "ɨnkˈurkə",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "încercare",
@@ -2151,7 +3397,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "attempt"
+      "meaning": "attempt",
+      "ipa": "ˌɨntʃerkˈaɾe",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "încredere",
@@ -2163,7 +3416,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "trust"
+      "meaning": "trust",
+      "ipa": "ˌɨnkredˈeɾe",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "îndrăzneț",
@@ -2175,7 +3435,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "bold"
+      "meaning": "bold",
+      "ipa": "ˌɨndrəznˈets",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "îndrumare",
@@ -2187,7 +3454,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "guidance"
+      "meaning": "guidance",
+      "ipa": "ˌɨndrumˈaɾe",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "înghețată",
@@ -2199,7 +3473,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "ice cream"
+      "meaning": "ice cream",
+      "ipa": "ˌɨŋɡetsˈatə",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "îngheț",
@@ -2211,7 +3492,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "freeze"
+      "meaning": "freeze",
+      "ipa": "ɨŋɡˈets",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "îngrijire",
@@ -2223,7 +3511,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "care"
+      "meaning": "care",
+      "ipa": "ˌɨŋɡriʒˈiɾe",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "îngust",
@@ -2235,7 +3530,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "narrow"
+      "meaning": "narrow",
+      "ipa": "ɨŋɡˈust",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "înfundat",
@@ -2247,7 +3549,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "clogged"
+      "meaning": "clogged",
+      "ipa": "ˌɨnfundˈat",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "înfățișare",
@@ -2259,7 +3568,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "appearance"
+      "meaning": "appearance",
+      "ipa": "ˌɨnfətsiʃˈaɾe",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "înnoda",
@@ -2271,7 +3587,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "knot"
+      "meaning": "knot",
+      "ipa": "ɨnnˈoda",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "întuneric",
@@ -2283,7 +3606,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "darkness"
+      "meaning": "darkness",
+      "ipa": "ˌɨntunˈeɾik",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "întârziat",
@@ -2295,7 +3625,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "delayed"
+      "meaning": "delayed",
+      "ipa": "ˌɨntɨrzjˈat",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "întoarce",
@@ -2307,7 +3644,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "returns"
+      "meaning": "returns",
+      "ipa": "ɨntˈɔartʃe",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "învinge",
@@ -2319,7 +3663,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "defeats"
+      "meaning": "defeats",
+      "ipa": "ɨnvˈiŋdʒe",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "înviere",
@@ -2331,7 +3682,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "resurrection"
+      "meaning": "resurrection",
+      "ipa": "ɨnvjˈeɾe",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "înțepătură",
@@ -2343,7 +3701,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "sting"
+      "meaning": "sting",
+      "ipa": "ˌɨntsepətˈuɾə",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "înșelat",
@@ -2355,7 +3720,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "deceived"
+      "meaning": "deceived",
+      "ipa": "ˌɨnʃelˈat",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "înșira",
@@ -2367,7 +3739,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "string up"
+      "meaning": "string up",
+      "ipa": "ɨnʃˈiɾa",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "îmbrățișare",
@@ -2379,7 +3758,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "hug"
+      "meaning": "hug",
+      "ipa": "ˌɨmbrətsiʃˈaɾe",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "îmbunătăți",
@@ -2391,7 +3777,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "improve"
+      "meaning": "improve",
+      "ipa": "ˌɨmbunˌətətsʲˈi",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "împăcare",
@@ -2403,7 +3796,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "reconciliation"
+      "meaning": "reconciliation",
+      "ipa": "ˌɨmpəkˈaɾe",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "împodobit",
@@ -2415,7 +3815,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "decorated"
+      "meaning": "decorated",
+      "ipa": "ˌɨmpodobˈit",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "însemna",
@@ -2427,7 +3834,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "mean"
+      "meaning": "mean",
+      "ipa": "ˌɨnsemnˈa",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "însemnat",
@@ -2439,7 +3853,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "significant"
+      "meaning": "significant",
+      "ipa": "ˌɨnsemnˈat",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "îndoit",
@@ -2451,7 +3872,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "bent"
+      "meaning": "bent",
+      "ipa": "ˌɨndoˈit",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "îndeajuns",
@@ -2463,7 +3891,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "enough"
+      "meaning": "enough",
+      "ipa": "ˌɨndeaʒˈuns",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "încet",
@@ -2475,7 +3910,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "slow"
+      "meaning": "slow",
+      "ipa": "ɨntʃˈet",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "încolți",
@@ -2487,7 +3929,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "sprout"
+      "meaning": "sprout",
+      "ipa": "ɨnkˈoltsʲʲ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "înțepător",
@@ -2499,7 +3948,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "stinging"
+      "meaning": "stinging",
+      "ipa": "ˌɨntsepətˈor",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "înroși",
@@ -2511,7 +3967,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "redden"
+      "meaning": "redden",
+      "ipa": "ˌɨnroʃʲˈi",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "însuflețit",
@@ -2523,7 +3986,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "animated"
+      "meaning": "animated",
+      "ipa": "ˌɨnsufletsˈit",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "îmblânzi",
@@ -2535,7 +4005,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "tame"
+      "meaning": "tame",
+      "ipa": "ɨmblˈɨnzʲʲ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "împotrivă",
@@ -2547,7 +4024,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "against"
+      "meaning": "against",
+      "ipa": "ˌɨmpotrˈivə",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "îngăduință",
@@ -2559,7 +4043,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "tolerance"
+      "meaning": "tolerance",
+      "ipa": "ˌɨŋɡədwˈintsə",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "împlinire",
@@ -2571,7 +4062,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "fulfillment"
+      "meaning": "fulfillment",
+      "ipa": "ˌɨmplinˈiɾe",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "împletit",
@@ -2583,7 +4081,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "braided"
+      "meaning": "braided",
+      "ipa": "ˌɨmpletˈit",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "înflăcărat",
@@ -2595,7 +4100,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "impassioned"
+      "meaning": "impassioned",
+      "ipa": "ˌɨnfləkəɾˈat",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "înmugurit",
@@ -2607,7 +4119,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "budded"
+      "meaning": "budded",
+      "ipa": "ˌɨnmuɡuɾˈit",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "încheiere",
@@ -2619,7 +4138,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "ending"
+      "meaning": "ending",
+      "ipa": "ˌɨnkejˈeɾe",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "îngrijorat",
@@ -2631,7 +4157,14 @@ const language = {
         "â",
         "ă"
       ],
-      "meaning": "worried"
+      "meaning": "worried",
+      "ipa": "ˌɨŋɡriʒoɾˈat",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "ușă",
@@ -2643,7 +4176,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "door"
+      "meaning": "door",
+      "ipa": "ˈuʃə",
+      "ipaFocus": [
+        [
+          2,
+          3
+        ]
+      ]
     },
     {
       "word": "moș",
@@ -2655,7 +4195,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "old man"
+      "meaning": "old man",
+      "ipa": "mˈoʃ",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "naș",
@@ -2667,7 +4214,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "godfather"
+      "meaning": "godfather",
+      "ipa": "nˈaʃ",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "oraș",
@@ -2679,7 +4233,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "city"
+      "meaning": "city",
+      "ipa": "oɾˈaʃ",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "așa",
@@ -2691,7 +4252,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "thus"
+      "meaning": "thus",
+      "ipa": "aʃˈa",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "mașină",
@@ -2703,7 +4271,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "car"
+      "meaning": "car",
+      "ipa": "maʃˈinə",
+      "ipaFocus": [
+        [
+          2,
+          3
+        ]
+      ]
     },
     {
       "word": "școală",
@@ -2715,7 +4290,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "school"
+      "meaning": "school",
+      "ipa": "ʃkˈɔalə",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șarpe",
@@ -2727,7 +4309,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "snake"
+      "meaning": "snake",
+      "ipa": "ʃˈarpe",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șosetă",
@@ -2739,7 +4328,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "sock"
+      "meaning": "sock",
+      "ipa": "ʃosˈetə",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șapcă",
@@ -2751,7 +4347,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "cap"
+      "meaning": "cap",
+      "ipa": "ʃˈapkə",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șal",
@@ -2763,7 +4366,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "shawl"
+      "meaning": "shawl",
+      "ipa": "ʃˈal",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șervețel",
@@ -2775,7 +4385,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "napkin"
+      "meaning": "napkin",
+      "ipa": "ʃˌervetsˈel",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "știre",
@@ -2787,7 +4404,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "news"
+      "meaning": "news",
+      "ipa": "ʃtˈiɾe",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șoarece",
@@ -2799,7 +4423,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "mouse"
+      "meaning": "mouse",
+      "ipa": "ʃˈɔaɾetʃˌe",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șuncă",
@@ -2811,7 +4442,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "ham"
+      "meaning": "ham",
+      "ipa": "ʃˈunkə",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șurub",
@@ -2823,7 +4461,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "screw"
+      "meaning": "screw",
+      "ipa": "ʃuɾˈub",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șampon",
@@ -2835,7 +4480,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "shampoo"
+      "meaning": "shampoo",
+      "ipa": "ʃampˈon",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șosete",
@@ -2847,7 +4499,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "socks"
+      "meaning": "socks",
+      "ipa": "ʃosˈete",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șah",
@@ -2859,7 +4518,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "chess"
+      "meaning": "chess",
+      "ipa": "ʃˈah",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șiret",
@@ -2871,7 +4537,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "shoelace"
+      "meaning": "shoelace",
+      "ipa": "ʃiɾˈet",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șină",
@@ -2883,7 +4556,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "rail"
+      "meaning": "rail",
+      "ipa": "ʃˈinə",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șir",
@@ -2895,7 +4575,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "row"
+      "meaning": "row",
+      "ipa": "ʃˈir",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șoptit",
@@ -2907,7 +4594,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "whispered"
+      "meaning": "whispered",
+      "ipa": "ʃoptˈit",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șoptește",
@@ -2919,7 +4613,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "whispers"
+      "meaning": "whispers",
+      "ipa": "ʃoptˈeʃte",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șters",
@@ -2931,7 +4632,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "erased"
+      "meaning": "erased",
+      "ipa": "ʃtˈers",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șterge",
@@ -2943,7 +4651,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "wipes"
+      "meaning": "wipes",
+      "ipa": "ʃtˈerdʒe",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ședință",
@@ -2955,7 +4670,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "meeting"
+      "meaning": "meeting",
+      "ipa": "ʃedˈintsə",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șef",
@@ -2967,7 +4689,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "boss"
+      "meaning": "boss",
+      "ipa": "ʃˈef",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ștrand",
@@ -2979,7 +4708,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "lido"
+      "meaning": "lido",
+      "ipa": "ʃtrˈand",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șezlong",
@@ -2991,7 +4727,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "deck chair"
+      "meaning": "deck chair",
+      "ipa": "ʃezlˈoŋɡ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șemineu",
@@ -3003,7 +4746,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "fireplace"
+      "meaning": "fireplace",
+      "ipa": "ʃˌeminˈeʊ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "ștampilă",
@@ -3015,7 +4765,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "stamp"
+      "meaning": "stamp",
+      "ipa": "ʃtampˈilə",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "știa",
@@ -3027,7 +4784,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "knew"
+      "meaning": "knew",
+      "ipa": "ʃtjˈa",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "știe",
@@ -3039,7 +4803,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "knows"
+      "meaning": "knows",
+      "ipa": "ʃtˈie",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "și",
@@ -3051,7 +4822,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "and"
+      "meaning": "and",
+      "ipa": "ʃi",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șirag",
@@ -3063,7 +4841,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "strand"
+      "meaning": "strand",
+      "ipa": "ʃiɾˈaɡ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șuviță",
@@ -3075,7 +4860,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "lock of hair"
+      "meaning": "lock of hair",
+      "ipa": "ʃˈuvitsˌə",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "cenușă",
@@ -3087,7 +4879,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "ash"
+      "meaning": "ash",
+      "ipa": "tʃenˈuʃə",
+      "ipaFocus": [
+        [
+          6,
+          7
+        ]
+      ]
     },
     {
       "word": "greșeală",
@@ -3099,7 +4898,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "mistake"
+      "meaning": "mistake",
+      "ipa": "ɡreʃˈealə",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "pește",
@@ -3111,7 +4917,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "fish"
+      "meaning": "fish",
+      "ipa": "pˈeʃte",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "veșnic",
@@ -3123,7 +4936,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "eternal"
+      "meaning": "eternal",
+      "ipa": "vˈeʃnik",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "deșert",
@@ -3135,7 +4955,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "desert"
+      "meaning": "desert",
+      "ipa": "deʃˈert",
+      "ipaFocus": [
+        [
+          2,
+          3
+        ]
+      ]
     },
     {
       "word": "deșeu",
@@ -3147,7 +4974,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "waste"
+      "meaning": "waste",
+      "ipa": "deʃˈeʊ",
+      "ipaFocus": [
+        [
+          2,
+          3
+        ]
+      ]
     },
     {
       "word": "gingaș",
@@ -3159,7 +4993,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "delicate"
+      "meaning": "delicate",
+      "ipa": "dʒiŋɡˈaʃ",
+      "ipaFocus": [
+        [
+          7,
+          8
+        ]
+      ]
     },
     {
       "word": "rușine",
@@ -3171,7 +5012,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "shame"
+      "meaning": "shame",
+      "ipa": "ruʃˈine",
+      "ipaFocus": [
+        [
+          2,
+          3
+        ]
+      ]
     },
     {
       "word": "moștenire",
@@ -3183,7 +5031,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "inheritance"
+      "meaning": "inheritance",
+      "ipa": "mˌoʃtenˈiɾe",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "ieșire",
@@ -3195,7 +5050,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "exit"
+      "meaning": "exit",
+      "ipa": "jeʃˈiɾe",
+      "ipaFocus": [
+        [
+          2,
+          3
+        ]
+      ]
     },
     {
       "word": "ieșit",
@@ -3207,7 +5069,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "gone out"
+      "meaning": "gone out",
+      "ipa": "jeʃˈit",
+      "ipaFocus": [
+        [
+          2,
+          3
+        ]
+      ]
     },
     {
       "word": "ușor",
@@ -3219,7 +5088,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "easy"
+      "meaning": "easy",
+      "ipa": "uʃˈor",
+      "ipaFocus": [
+        [
+          1,
+          2
+        ]
+      ]
     },
     {
       "word": "ușurat",
@@ -3231,7 +5107,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "relieved"
+      "meaning": "relieved",
+      "ipa": "ˌuʃuɾˈat",
+      "ipaFocus": [
+        [
+          2,
+          3
+        ]
+      ]
     },
     {
       "word": "croșetat",
@@ -3243,7 +5126,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "crocheted"
+      "meaning": "crocheted",
+      "ipa": "krˌoʃetˈat",
+      "ipaFocus": [
+        [
+          4,
+          5
+        ]
+      ]
     },
     {
       "word": "broșură",
@@ -3255,7 +5145,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "brochure"
+      "meaning": "brochure",
+      "ipa": "broʃˈuɾə",
+      "ipaFocus": [
+        [
+          3,
+          4
+        ]
+      ]
     },
     {
       "word": "ștrengar",
@@ -3267,7 +5164,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "rascal"
+      "meaning": "rascal",
+      "ipa": "ʃtreŋɡˈar",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șofer",
@@ -3279,7 +5183,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "driver"
+      "meaning": "driver",
+      "ipa": "ʃofˈer",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șopârlă",
@@ -3291,7 +5202,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "lizard"
+      "meaning": "lizard",
+      "ipa": "ʃopˈɨrlə",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șase",
@@ -3303,7 +5221,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "six"
+      "meaning": "six",
+      "ipa": "ʃˈase",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șapte",
@@ -3315,7 +5240,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "seven"
+      "meaning": "seven",
+      "ipa": "ʃˈapte",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șlefuire",
@@ -3327,7 +5259,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "polishing"
+      "meaning": "polishing",
+      "ipa": "ʃlefwˈiɾe",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șlefui",
@@ -3339,7 +5278,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "polish"
+      "meaning": "polish",
+      "ipa": "ʃlefˈuɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "știut",
@@ -3351,7 +5297,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "known"
+      "meaning": "known",
+      "ipa": "ʃtjˈut",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "știință",
@@ -3363,7 +5316,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "science"
+      "meaning": "science",
+      "ipa": "ʃtˈiɪntsə",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șold",
@@ -3375,7 +5335,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "hip"
+      "meaning": "hip",
+      "ipa": "ʃˈold",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șiretlic",
@@ -3387,7 +5354,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "trick"
+      "meaning": "trick",
+      "ipa": "ʃiɾˈetlik",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șuier",
@@ -3399,7 +5373,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "whistle"
+      "meaning": "whistle",
+      "ipa": "ʃwˈier",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șuierat",
@@ -3411,7 +5392,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "whistled"
+      "meaning": "whistled",
+      "ipa": "ʃwˌieɾˈat",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șicană",
@@ -3423,7 +5411,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "harassment"
+      "meaning": "harassment",
+      "ipa": "ʃikˈanə",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șifonier",
@@ -3435,7 +5430,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "wardrobe"
+      "meaning": "wardrobe",
+      "ipa": "ʃˌifonjˈer",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șotron",
@@ -3447,7 +5449,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "hopscotch"
+      "meaning": "hopscotch",
+      "ipa": "ʃotrˈon",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șut",
@@ -3459,7 +5468,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "kick"
+      "meaning": "kick",
+      "ipa": "ʃˈut",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șnur",
@@ -3471,7 +5487,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "string"
+      "meaning": "string",
+      "ipa": "ʃnˈur",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șoc",
@@ -3483,7 +5506,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "shock"
+      "meaning": "shock",
+      "ipa": "ʃˈok",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șovăi",
@@ -3495,7 +5525,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "hesitate"
+      "meaning": "hesitate",
+      "ipa": "ʃˈovəɪ",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "șubred",
@@ -3507,7 +5544,14 @@ const language = {
         "ț",
         "z"
       ],
-      "meaning": "frail"
+      "meaning": "frail",
+      "ipa": "ʃˈubred",
+      "ipaFocus": [
+        [
+          0,
+          1
+        ]
+      ]
     },
     {
       "word": "țară",
@@ -3519,7 +5563,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "country"
+      "meaning": "country",
+      "ipa": "tsˈaɾə",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "față",
@@ -3531,7 +5582,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "face"
+      "meaning": "face",
+      "ipa": "fˈatsə",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "viață",
@@ -3543,7 +5601,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "life"
+      "meaning": "life",
+      "ipa": "vjˈatsə",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "piață",
@@ -3555,7 +5620,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "market"
+      "meaning": "market",
+      "ipa": "pjˈatsə",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "dimineață",
@@ -3567,7 +5639,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "morning"
+      "meaning": "morning",
+      "ipa": "dˌiminˈeatsə",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "vacanță",
@@ -3579,7 +5658,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "vacation"
+      "meaning": "vacation",
+      "ipa": "vakˈantsə",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "speranță",
@@ -3591,7 +5677,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "hope"
+      "meaning": "hope",
+      "ipa": "speɾˈantsə",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "cățel",
@@ -3603,7 +5696,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "puppy"
+      "meaning": "puppy",
+      "ipa": "kətsˈel",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "rață",
@@ -3615,7 +5715,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "duck"
+      "meaning": "duck",
+      "ipa": "rˈatsə",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "braț",
@@ -3627,7 +5734,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "arm"
+      "meaning": "arm",
+      "ipa": "brˈats",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "gheață",
@@ -3639,7 +5753,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "ice"
+      "meaning": "ice",
+      "ipa": "ɡˈeatsə",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "ață",
@@ -3651,7 +5772,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "thread"
+      "meaning": "thread",
+      "ipa": "ˈatsə",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "linguriță",
@@ -3663,7 +5791,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "teaspoon"
+      "meaning": "teaspoon",
+      "ipa": "liŋɡˈuɾitsˌə",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "furculiță",
@@ -3675,7 +5810,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "fork"
+      "meaning": "fork",
+      "ipa": "furkˈulitsˌə",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "căruță",
@@ -3687,7 +5829,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "cart"
+      "meaning": "cart",
+      "ipa": "kəɾˈutsə",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "frumusețe",
@@ -3699,7 +5848,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "beauty"
+      "meaning": "beauty",
+      "ipa": "frˌumusˈetse",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "tristețe",
@@ -3711,7 +5867,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "sadness"
+      "meaning": "sadness",
+      "ipa": "tristˈetse",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "cetățean",
@@ -3723,7 +5886,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "citizen"
+      "meaning": "citizen",
+      "ipa": "tʃˌetətsˈean",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "înălțime",
@@ -3735,7 +5905,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "height"
+      "meaning": "height",
+      "ipa": "ˌɨnəltsˈime",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "lădiță",
@@ -3747,7 +5924,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "small box"
+      "meaning": "small box",
+      "ipa": "lˈəditsˌə",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "fetiță",
@@ -3759,7 +5943,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "little girl"
+      "meaning": "little girl",
+      "ipa": "fˈetitsˌə",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "bătrânețe",
@@ -3771,7 +5962,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "old age"
+      "meaning": "old age",
+      "ipa": "bˌətrɨnˈetse",
+      "ipaFocus": [
+        [
+          9,
+          11
+        ]
+      ]
     },
     {
       "word": "tinerețe",
@@ -3783,7 +5981,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "youth"
+      "meaning": "youth",
+      "ipa": "tˌineɾˈetse",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "portiță",
@@ -3795,7 +6000,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "small gate"
+      "meaning": "small gate",
+      "ipa": "pˈortitsˌə",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "ușiță",
@@ -3807,7 +6019,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "small door"
+      "meaning": "small door",
+      "ipa": "ˈuʃitsˌə",
+      "ipaFocus": [
+        [
+          4,
+          6
+        ]
+      ]
     },
     {
       "word": "plăcuță",
@@ -3819,7 +6038,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "plaque"
+      "meaning": "plaque",
+      "ipa": "pləkˈutsə",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "grădiniță",
@@ -3831,7 +6057,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "kindergarten"
+      "meaning": "kindergarten",
+      "ipa": "ɡrədˈinitsˌə",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "cratiță",
@@ -3843,7 +6076,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "saucepan"
+      "meaning": "saucepan",
+      "ipa": "krˈatitsˌə",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "hârtiuță",
@@ -3855,7 +6095,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "slip of paper"
+      "meaning": "slip of paper",
+      "ipa": "hɨrtjˈutsə",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "rochiță",
@@ -3867,7 +6114,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "dress"
+      "meaning": "dress",
+      "ipa": "rˈokitsˌə",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "codiță",
@@ -3879,7 +6133,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "ponytail"
+      "meaning": "ponytail",
+      "ipa": "kˈoditsˌə",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "căpiță",
@@ -3891,7 +6152,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "haystack"
+      "meaning": "haystack",
+      "ipa": "kˈəpitsˌə",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "căsuță",
@@ -3903,7 +6171,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "cottage"
+      "meaning": "cottage",
+      "ipa": "kəsˈutsə",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "nepoțel",
@@ -3915,7 +6190,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "grandson"
+      "meaning": "grandson",
+      "ipa": "nˌepotsˈel",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "nepoțică",
@@ -3927,7 +6209,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "granddaughter"
+      "meaning": "granddaughter",
+      "ipa": "nˌepotsˈikə",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "suliță",
@@ -3939,7 +6228,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "spear"
+      "meaning": "spear",
+      "ipa": "sˈulitsˌə",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "răniță",
@@ -3951,7 +6247,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "backpack"
+      "meaning": "backpack",
+      "ipa": "rˈənitsˌə",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "drăguță",
@@ -3963,7 +6266,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "cute"
+      "meaning": "cute",
+      "ipa": "drəɡˈutsə",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "ascuțit",
@@ -3975,7 +6285,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "sharp"
+      "meaning": "sharp",
+      "ipa": "ˌaskutsˈit",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "învață",
@@ -3987,7 +6304,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "learns"
+      "meaning": "learns",
+      "ipa": "ɨnvˈatsə",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "învățăm",
@@ -3999,7 +6323,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "we learn"
+      "meaning": "we learn",
+      "ipa": "ˌɨnvətsˈəm",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "învățat",
@@ -4011,7 +6342,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "learned"
+      "meaning": "learned",
+      "ipa": "ˌɨnvətsˈat",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "simți",
@@ -4023,7 +6361,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "feel"
+      "meaning": "feel",
+      "ipa": "sˈimtsʲʲ",
+      "ipaFocus": [
+        [
+          4,
+          8
+        ]
+      ]
     },
     {
       "word": "simțit",
@@ -4035,7 +6380,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "felt"
+      "meaning": "felt",
+      "ipa": "simtsˈit",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "simțire",
@@ -4047,7 +6399,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "feeling"
+      "meaning": "feeling",
+      "ipa": "simtsˈiɾe",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "minți",
@@ -4059,7 +6418,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "lie"
+      "meaning": "lie",
+      "ipa": "mˈintsʲʲ",
+      "ipaFocus": [
+        [
+          4,
+          8
+        ]
+      ]
     },
     {
       "word": "mințit",
@@ -4071,7 +6437,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "lied"
+      "meaning": "lied",
+      "ipa": "mintsˈit",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "pățește",
@@ -4083,7 +6456,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "undergoes"
+      "meaning": "undergoes",
+      "ipa": "pətsˈeʃte",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "pățit",
@@ -4095,7 +6475,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "experienced"
+      "meaning": "experienced",
+      "ipa": "pətsˈit",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "înălța",
@@ -4107,7 +6494,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "raise"
+      "meaning": "raise",
+      "ipa": "ˌɨnəltsˈa",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "înălțat",
@@ -4119,7 +6513,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "raised"
+      "meaning": "raised",
+      "ipa": "ˌɨnəltsˈat",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "curățat",
@@ -4131,7 +6532,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "cleaned"
+      "meaning": "cleaned",
+      "ipa": "kˌuɾətsˈat",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "curăță",
@@ -4143,7 +6551,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "cleans"
+      "meaning": "cleans",
+      "ipa": "kˈuɾətsˌə",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "însoțit",
@@ -4155,7 +6570,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "accompanied"
+      "meaning": "accompanied",
+      "ipa": "ˌɨnsotsˈit",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "însoțește",
@@ -4167,7 +6589,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "accompanies"
+      "meaning": "accompanies",
+      "ipa": "ˌɨnsotsˈeʃte",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "mustață",
@@ -4179,7 +6608,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "mustache"
+      "meaning": "mustache",
+      "ipa": "mustˈatsə",
+      "ipaFocus": [
+        [
+          6,
+          8
+        ]
+      ]
     },
     {
       "word": "măreție",
@@ -4191,7 +6627,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "grandeur"
+      "meaning": "grandeur",
+      "ipa": "məɾˈetsje",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "verigheță",
@@ -4203,7 +6646,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "wedding ring"
+      "meaning": "wedding ring",
+      "ipa": "vˌeɾiɡˈetsə",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "măicuță",
@@ -4215,7 +6665,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "little mother"
+      "meaning": "little mother",
+      "ipa": "mˌəikˈutsə",
+      "ipaFocus": [
+        [
+          7,
+          9
+        ]
+      ]
     },
     {
       "word": "troiță",
@@ -4227,7 +6684,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "wayside cross"
+      "meaning": "wayside cross",
+      "ipa": "trˈoitsˌə",
+      "ipaFocus": [
+        [
+          5,
+          7
+        ]
+      ]
     },
     {
       "word": "potecuță",
@@ -4239,7 +6703,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "trail"
+      "meaning": "trail",
+      "ipa": "pˌotekˈutsə",
+      "ipaFocus": [
+        [
+          8,
+          10
+        ]
+      ]
     },
     {
       "word": "puțin",
@@ -4251,7 +6722,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "little"
+      "meaning": "little",
+      "ipa": "putsˈin",
+      "ipaFocus": [
+        [
+          2,
+          4
+        ]
+      ]
     },
     {
       "word": "puț",
@@ -4263,7 +6741,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "well"
+      "meaning": "well",
+      "ipa": "pˈuts",
+      "ipaFocus": [
+        [
+          3,
+          5
+        ]
+      ]
     },
     {
       "word": "țelină",
@@ -4275,7 +6760,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "celery"
+      "meaning": "celery",
+      "ipa": "tsˈelinˌə",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "țărm",
@@ -4287,7 +6779,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "shore"
+      "meaning": "shore",
+      "ipa": "tsˈərm",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "țintă",
@@ -4299,7 +6798,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "target"
+      "meaning": "target",
+      "ipa": "tsˈintə",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "țigară",
@@ -4311,7 +6817,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "cigarette"
+      "meaning": "cigarette",
+      "ipa": "tsiɡˈaɾə",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "țeavă",
@@ -4323,7 +6836,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "pipe"
+      "meaning": "pipe",
+      "ipa": "tsˈeavə",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "țesut",
@@ -4335,7 +6855,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "tissue"
+      "meaning": "tissue",
+      "ipa": "tsesˈut",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "țipăt",
@@ -4347,7 +6874,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "scream"
+      "meaning": "scream",
+      "ipa": "tsipˈət",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "țambal",
@@ -4359,7 +6893,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "dulcimer"
+      "meaning": "dulcimer",
+      "ipa": "tsambˈal",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "țânțar",
@@ -4371,7 +6912,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "mosquito"
+      "meaning": "mosquito",
+      "ipa": "tsɨntsˈar",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     },
     {
       "word": "țol",
@@ -4383,7 +6931,14 @@ const language = {
         "ș",
         "z"
       ],
-      "meaning": "rug"
+      "meaning": "rug",
+      "ipa": "tsˈol",
+      "ipaFocus": [
+        [
+          0,
+          2
+        ]
+      ]
     }
   ]
 } satisfies LanguageWords

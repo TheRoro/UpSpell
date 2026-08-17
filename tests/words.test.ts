@@ -34,6 +34,32 @@ describe('word dataset', () => {
           new Set(prompt.choices).size,
           `${language.code}: ${prompt.word} unique choices`,
         ).toBe(prompt.choices.length)
+        expect(prompt.ipa, `${language.code}: ${prompt.word} IPA`).not.toBe('')
+        expect(
+          prompt.ipa.normalize('NFC'),
+          `${language.code}: ${prompt.word} normalized IPA`,
+        ).toBe(prompt.ipa)
+        expect(
+          prompt.ipa,
+          `${language.code}: ${prompt.word} IPA engine artifacts`,
+        ).not.toMatch(/[\u0000-\u001F\u007F\uFFFD\d_|]|(?:\([a-z]{2,3}\))/u)
+        expect(
+          prompt.ipaFocus.length,
+          `${language.code}: ${prompt.word} IPA focus`,
+        ).toBeGreaterThan(0)
+
+        let previousEnd = -1
+        for (const [start, end] of prompt.ipaFocus) {
+          expect(start, `${language.code}: ${prompt.word} IPA focus order`).toBeGreaterThanOrEqual(previousEnd)
+          expect(start, `${language.code}: ${prompt.word} IPA focus start`).toBeGreaterThanOrEqual(0)
+          expect(end, `${language.code}: ${prompt.word} IPA focus end`).toBeLessThanOrEqual(prompt.ipa.length)
+          expect(end, `${language.code}: ${prompt.word} IPA focus content`).toBeGreaterThan(start)
+          expect(
+            prompt.ipa.slice(start, end),
+            `${language.code}: ${prompt.word} highlighted IPA`,
+          ).not.toBe('')
+          previousEnd = end
+        }
       }
     }
   })
