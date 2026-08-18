@@ -1,33 +1,28 @@
 <template>
-  <AtlasPanel class="mx-auto my-6 max-w-xl px-6 py-8 sm:my-10 sm:px-10">
-    <AtlasNavigation
-      class="mb-6"
-      back-label="Back to the map"
-      label="Challenge navigation"
-      @back="$emit('back')"
-    />
+  <AtlasPanel
+    class="challenge-shell mx-auto my-6 px-4 py-6 sm:my-10 sm:px-8 lg:px-10"
+    :class="answered ? 'max-w-5xl' : 'max-w-xl'"
+  >
+    <div class="challenge-toolbar mb-6">
+      <AtlasNavigation
+        class="min-w-0 flex-1"
+        back-label="Back to the map"
+        label="Challenge navigation"
+        @back="$emit('back')"
+      />
+      <span class="streak-label rounded-full px-3 py-1 text-sm font-medium">
+        🔥 Streak: {{ currentStreak }}
+      </span>
+    </div>
 
-    <div class="field-note-card relative rounded-2xl border p-8">
-      <div class="mb-6 flex items-center justify-between">
-        <span class="entry-label text-sm">
-          Field note · {{ languageName }} · {{ practiceMode ? 'Revisit' : 'Daily word' }}
-        </span>
-        <span class="streak-label rounded-full px-3 py-1 text-sm font-medium">
-          🔥 Streak: {{ currentStreak }}
-        </span>
-      </div>
-
-      <div class="mb-8 text-center">
+    <div class="challenge-content">
+      <div v-if="!answered" class="mb-8 text-center">
         <p class="mb-4 text-5xl font-bold tracking-wide text-gray-800 dark:text-white">
           <span v-for="(segment, index) in wordSegments" :key="index">
             <span
               v-if="segment === '_'"
               class="answer-slot mx-0.5 inline-block w-8 border-b-4"
-              :class="{
-                'answer-letter answer-letter-correct': answered && correct,
-                'answer-letter answer-letter-incorrect': answered && !correct,
-              }"
-            >{{ answered ? selectedChoice || correctChoice : '\u00a0' }}</span>
+            >{{ '\u00a0' }}</span>
             <span v-else>{{ segment }}</span>
           </span>
         </p>
@@ -58,11 +53,11 @@
         :accent-rule="accentRule"
         :language-code="languageCode"
         :language-name="englishLanguageName"
-        :speech-status="speechStatus"
+        :active-pronunciation="activePronunciation"
         :share-text="shareText"
         :practice-mode="practiceMode"
         :missed-count="missedCount"
-        @speak="$emit('speak')"
+        @speak="mode => $emit('speak', mode)"
         @share="$emit('share')"
         @practice-another="$emit('practice-another')"
         @start-practice="$emit('start-practice')"
@@ -73,9 +68,9 @@
 
 <script setup lang="ts">
 import type { IpaFocusRange } from '~/data/words'
+import type { PronunciationMode } from '~/utils/pronunciation'
 
 defineProps<{
-  languageName: string
   englishLanguageName: string
   languageCode: string
   practiceMode: boolean
@@ -92,7 +87,7 @@ defineProps<{
   selectedChoice: string
   correct: boolean
   accentRule: string
-  speechStatus: string
+  activePronunciation: PronunciationMode | null
   shareText: string
   missedCount: number
 }>()
@@ -100,7 +95,7 @@ defineProps<{
 defineEmits<{
   back: []
   guess: [choice: string]
-  speak: []
+  speak: [mode: PronunciationMode]
   share: []
   'practice-another': []
   'start-practice': []
@@ -108,29 +103,19 @@ defineEmits<{
 </script>
 
 <style scoped>
-.field-note-card {
-  isolation: isolate;
-  border-color: var(--atlas-card-border);
-  background: var(--atlas-card);
-  box-shadow: var(--atlas-card-shadow);
+.challenge-shell {
+  transition: max-width 360ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.field-note-card::after {
-  position: absolute;
-  inset: 0.65rem;
-  z-index: -1;
-  border: 1px dashed var(--atlas-panel-inner-border);
-  border-radius: 0.7rem;
-  content: '';
-  pointer-events: none;
+.challenge-content {
+  padding: 0.25rem;
 }
 
-.entry-label {
-  color: var(--atlas-muted);
-  font-family: 'Source Serif 4', Georgia, serif;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+.challenge-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .streak-label {
@@ -140,16 +125,6 @@ defineEmits<{
 
 .answer-slot {
   border-color: var(--atlas-accent);
-}
-
-.answer-letter-correct {
-  border-color: rgb(34 197 94);
-  color: rgb(22 163 74);
-}
-
-.answer-letter-incorrect {
-  border-color: rgb(239 68 68);
-  color: rgb(220 38 38);
 }
 
 .choice-marker {
@@ -164,10 +139,6 @@ defineEmits<{
   border-color: var(--atlas-accent-strong);
   background: rgb(240 253 250);
   transform: translateY(-0.15rem);
-}
-
-.answer-letter {
-  animation: answer-letter-pop 480ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 html.dark .streak-label {
@@ -187,32 +158,19 @@ html.dark .choice-marker:focus-visible {
   background: rgb(83 58 41);
 }
 
-@keyframes answer-letter-pop {
-  0% {
-    opacity: 0;
-    transform: translateY(-0.75rem) scale(1.5);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
 @media (max-width: 520px) {
-  .field-note-card {
-    padding: 1.35rem;
+  .challenge-toolbar {
+    align-items: flex-start;
   }
 
-  .field-note-card > div:first-child {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.75rem;
+  .challenge-content {
+    padding: 0;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .answer-letter {
-    animation: none;
+  .challenge-shell {
+    transition: none;
   }
 
   .choice-marker {

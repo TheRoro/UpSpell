@@ -12,29 +12,24 @@
       :accent-rule="accentRule"
       :language-code="languageCode"
       :language-name="languageName"
-      :speech-status="speechStatus"
-      @speak="$emit('speak')"
+      :active-pronunciation="activePronunciation"
+      @speak="mode => $emit('speak', mode)"
     />
 
-    <button
-      class="share-discovery mt-6 rounded-lg px-6 py-3 font-bold focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#6F9692]/40"
-      @click="$emit('share')"
-    >
-      {{ shareText }}
-    </button>
-
-    <p v-if="!practiceMode" class="mt-4 text-gray-600 dark:text-[#D7C3A3]">
-      Come back tomorrow for a new word!
-    </p>
-
-    <div class="mt-6 flex flex-wrap justify-center gap-4">
+    <footer class="result-action-buttons mt-5">
+      <button
+        class="share-discovery rounded-lg px-5 py-3 font-bold"
+        @click="$emit('share')"
+      >
+        {{ shareText }}
+      </button>
       <button
         v-if="practiceMode && missedCount"
         type="button"
         class="practice-action"
         @click="$emit('practice-another')"
       >
-        Practice another missed word
+        Practice another
       </button>
       <button
         v-else-if="!practiceMode && missedCount"
@@ -44,15 +39,13 @@
       >
         Practice missed words ({{ missedCount }})
       </button>
-      <p v-else-if="practiceMode" class="practice-complete">
-        You cleared every missed word!
-      </p>
-    </div>
+    </footer>
   </div>
 </template>
 
 <script setup lang="ts">
 import type { IpaFocusRange } from '~/data/words'
+import type { PronunciationMode } from '~/utils/pronunciation'
 
 defineProps<{
   word: string
@@ -66,14 +59,14 @@ defineProps<{
   accentRule: string
   languageCode: string
   languageName: string
-  speechStatus: string
+  activePronunciation: PronunciationMode | null
   shareText: string
   practiceMode: boolean
   missedCount: number
 }>()
 
 defineEmits<{
-  speak: []
+  speak: [mode: PronunciationMode]
   share: []
   'practice-another': []
   'start-practice': []
@@ -81,33 +74,50 @@ defineEmits<{
 </script>
 
 <style scoped>
+.result-action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+}
+
 .share-discovery {
-  border: 1px solid rgb(53 110 105 / 72%);
-  background: rgb(238 224 193);
+  border: 1px solid rgb(113 56 31 / 88%);
+  background: rgb(145 76 43);
   box-shadow:
-    3px 5px 0 rgb(120 53 15 / 13%),
-    inset 0 0 0 2px rgb(255 255 255 / 26%);
-  color: rgb(36 78 77);
+    3px 5px 0 rgb(94 44 22 / 20%),
+    inset 0 0 0 1px rgb(255 255 255 / 20%);
+  color: rgb(255 248 232);
   transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 
 .share-discovery:hover {
-  background: rgb(230 213 178);
+  background: rgb(124 62 34);
   box-shadow:
-    4px 6px 0 rgb(120 53 15 / 16%),
-    inset 0 0 0 2px rgb(255 255 255 / 26%);
+    4px 6px 0 rgb(94 44 22 / 24%),
+    inset 0 0 0 1px rgb(255 255 255 / 20%);
   transform: translateY(-0.12rem);
+}
+
+.share-discovery:focus-visible {
+  outline: 3px solid rgb(185 111 63 / 48%);
+  outline-offset: 3px;
 }
 
 .practice-action,
 .practice-complete {
+  border: 1px solid var(--atlas-card-border);
+  border-radius: 0.5rem;
+  background: var(--atlas-flag-background);
+  padding: 0.7rem 1rem;
   color: var(--atlas-accent-text);
   font-size: 0.875rem;
   font-weight: 600;
 }
 
 .practice-action:hover {
-  text-decoration: underline;
+  border-color: var(--atlas-accent-strong);
+  background: rgb(111 150 146 / 13%);
 }
 
 .practice-action:focus-visible {
@@ -117,19 +127,19 @@ defineEmits<{
 }
 
 html.dark .share-discovery {
-  border-color: rgb(111 150 146 / 70%);
-  background: var(--atlas-flag-background);
+  border-color: rgb(225 166 105 / 78%);
+  background: rgb(176 104 57);
   box-shadow:
-    3px 5px 0 rgb(0 0 0 / 24%),
-    inset 0 0 0 2px rgb(209 190 162 / 5%);
-  color: var(--atlas-accent-text);
+    3px 5px 0 rgb(0 0 0 / 28%),
+    inset 0 0 0 1px rgb(255 244 224 / 18%);
+  color: rgb(255 248 232);
 }
 
 html.dark .share-discovery:hover {
-  background: rgb(58 42 31);
+  background: rgb(198 123 72);
   box-shadow:
-    4px 6px 0 rgb(0 0 0 / 28%),
-    inset 0 0 0 2px rgb(209 190 162 / 5%);
+    4px 6px 0 rgb(0 0 0 / 32%),
+    inset 0 0 0 1px rgb(255 244 224 / 20%);
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -18,6 +18,10 @@ import {
   removeMissedWord,
   shuffleChoices,
 } from '~/utils/game'
+import {
+  getPronunciationPlayback,
+  type PronunciationMode,
+} from '~/utils/pronunciation'
 
 interface LanguageProgress {
   status: 'play' | 'completed' | 'practice'
@@ -60,7 +64,7 @@ export function useHomeGame() {
   const practiceAttempt = ref(0)
   const practiceWord = ref<Word | null>(null)
   const missedWords = ref<Word[]>([])
-  const speechStatus = ref('')
+  const activePronunciation = ref<PronunciationMode | null>(null)
   const announcement = ref('')
   const shareText = ref('Share result')
   const progressRevision = ref(0)
@@ -69,6 +73,7 @@ export function useHomeGame() {
   const currentLangData = ref<LanguageWords | null>(null)
   const currentDayKey = useLocalDayKey()
   let languageRequest = 0
+  let speechRequest = 0
   let shareResetTimer: ReturnType<typeof setTimeout> | undefined
 
   const todayWord = computed(() => {
@@ -157,13 +162,13 @@ export function useHomeGame() {
   }
 
   function selectLanguage(code: string) {
+    cancelPronunciation()
     selectedLang.value = code
     currentStreak.value = getStreak(code)
     practiceMode.value = false
     practiceIndex.value = 0
     practiceAttempt.value = 0
     practiceWord.value = null
-    speechStatus.value = ''
     selectedChoice.value = ''
     const storedMissedWords = readMissedWords(storageGet(getMissedKey(code)))
     missedWords.value = storedMissedWords.flatMap((storedWord) => {
@@ -274,6 +279,7 @@ export function useHomeGame() {
   }
 
   function goBack() {
+    cancelPronunciation()
     languageRequest++
     loadingLanguageCode.value = null
     selectedLang.value = null
@@ -282,19 +288,18 @@ export function useHomeGame() {
     practiceMode.value = false
     practiceAttempt.value = 0
     practiceWord.value = null
-    speechStatus.value = ''
     selectedChoice.value = ''
     progressRevision.value++
   }
 
   function startPractice() {
     if (!missedWords.value.length) return
+    cancelPronunciation()
     practiceMode.value = true
     practiceIndex.value = 0
     practiceAttempt.value = 0
     practiceWord.value = missedWords.value[0] ?? null
     answered.value = false
-    speechStatus.value = ''
     selectedChoice.value = ''
   }
 
@@ -303,35 +308,65 @@ export function useHomeGame() {
       goBack()
       return
     }
+    cancelPronunciation()
     practiceIndex.value = correct.value
       ? practiceIndex.value % missedWords.value.length
       : (practiceIndex.value + 1) % missedWords.value.length
     practiceAttempt.value++
     practiceWord.value = missedWords.value[practiceIndex.value] ?? null
     answered.value = false
-    speechStatus.value = ''
     selectedChoice.value = ''
   }
 
-  function speakWord() {
+  function cancelPronunciation() {
+    speechRequest++
+    activePronunciation.value = null
+    if (import.meta.client && 'speechSynthesis' in window) {
+      window.speechSynthesis.cancel()
+    }
+  }
+
+  function speakWord(mode: PronunciationMode = 'word') {
     if (!todayWord.value || !import.meta.client || !('speechSynthesis' in window)) {
-      speechStatus.value = 'Pronunciation is not supported by this browser.'
-      announcement.value = speechStatus.value
+      announcement.value = 'Pronunciation is not supported by this browser.'
       return
     }
 
-    window.speechSynthesis.cancel()
-    const utterance = new SpeechSynthesisUtterance(todayWord.value.word)
-    utterance.lang = selectedMetadata.value.speechLocale
+    cancelPronunciation()
+    const request = speechRequest
+    const word = todayWord.value
+    const metadata = selectedMetadata.value
+    const playback = getPronunciationPlayback(
+      word.word,
+      metadata.englishName,
+      mode,
+    )
+    const utterance = new SpeechSynthesisUtterance(playback.text)
+    const locale = metadata.speechLocale.toLowerCase()
+    const language = locale.split('-')[0]
+    const voices = window.speechSynthesis.getVoices()
+    utterance.voice = voices.find(voice => voice.lang.toLowerCase() === locale)
+      ?? voices.find(voice => voice.lang.toLowerCase().split('-')[0] === language)
+      ?? null
+    utterance.lang = metadata.speechLocale
+    utterance.rate = playback.rate
     utterance.onstart = () => {
-      speechStatus.value = `Playing ${selectedMetadata.value.englishName} pronunciation.`
-      announcement.value = speechStatus.value
+      if (request !== speechRequest) return
+      activePronunciation.value = mode
+      announcement.value = playback.playingStatus
     }
-    utterance.onerror = () => {
-      speechStatus.value = 'The pronunciation could not be played.'
-      announcement.value = speechStatus.value
+    utterance.onend = () => {
+      if (request !== speechRequest) return
+      activePronunciation.value = null
+      announcement.value = playback.finishedStatus
     }
-    speechStatus.value = 'Preparing pronunciation…'
+    utterance.onerror = (event) => {
+      if (request !== speechRequest || event.error === 'canceled') return
+      activePronunciation.value = null
+      announcement.value = 'The pronunciation could not be played.'
+    }
+    activePronunciation.value = mode
+    announcement.value = playback.preparingStatus
     window.speechSynthesis.speak(utterance)
   }
 
@@ -367,6 +402,7 @@ export function useHomeGame() {
 
   onBeforeUnmount(() => {
     if (shareResetTimer) clearTimeout(shareResetTimer)
+    cancelPronunciation()
   })
 
   watch(currentDayKey, () => {
@@ -377,6 +413,7 @@ export function useHomeGame() {
   })
 
   return {
+    activePronunciation,
     announcement,
     answered,
     correct,
@@ -400,7 +437,6 @@ export function useHomeGame() {
     shareText,
     shuffledChoices,
     speakWord,
-    speechStatus,
     startPractice,
     todayWord,
     wordSegments,

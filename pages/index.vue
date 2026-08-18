@@ -45,7 +45,6 @@
 
     <DailyChallenge
       v-else-if="todayWord && selectedLang"
-      :language-name="currentLangData?.name || selectedMetadata.name"
       :english-language-name="selectedMetadata.englishName"
       :language-code="selectedLang"
       :practice-mode="practiceMode"
@@ -62,7 +61,7 @@
       :selected-choice="selectedChoice"
       :correct="correct"
       :accent-rule="selectedMetadata.accentRule"
-      :speech-status="speechStatus"
+      :active-pronunciation="activePronunciation"
       :share-text="shareText"
       :missed-count="missedWords.length"
       @back="goBack"
@@ -83,6 +82,7 @@ usePageSeo({
 })
 
 const {
+  activePronunciation,
   announcement,
   answered,
   correct,
@@ -106,7 +106,6 @@ const {
   shareText,
   shuffledChoices,
   speakWord,
-  speechStatus,
   startPractice,
   todayWord,
   wordSegments,

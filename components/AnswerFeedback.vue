@@ -1,10 +1,8 @@
 <template>
   <Transition name="feedback" appear>
     <article
-      class="feedback-card relative mt-6 overflow-hidden rounded-2xl border p-5 text-left sm:p-6"
-      :class="correct
-        ? 'feedback-card-correct border-emerald-200 bg-emerald-50/80 dark:border-emerald-800 dark:bg-emerald-950/30'
-        : 'feedback-card-incorrect border-rose-200 bg-rose-50/80 dark:border-rose-800 dark:bg-rose-950/30'"
+      class="feedback-card relative text-left"
+      :class="correct ? 'feedback-card-correct' : 'feedback-card-incorrect'"
       :aria-labelledby="feedbackTitleId"
     >
       <div v-if="correct" class="sparkles" aria-hidden="true">
@@ -13,7 +11,7 @@
         <span>✦</span>
       </div>
 
-      <header class="relative flex items-center gap-4">
+      <header class="result-header relative flex flex-wrap items-center gap-4">
         <span
           class="result-icon flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl text-3xl shadow-sm"
           :class="correct
@@ -23,7 +21,7 @@
         >
           {{ correct ? '✓' : '↗' }}
         </span>
-        <div>
+        <div class="min-w-0 flex-1">
           <p class="text-xs font-bold uppercase tracking-[0.18em]" :class="correct ? 'text-emerald-700 dark:text-emerald-300' : 'text-rose-700 dark:text-rose-300'">
             {{ correct ? 'Discovery recorded' : 'Field note added' }}
           </p>
@@ -33,15 +31,31 @@
         </div>
       </header>
 
-      <div class="feedback-surface relative mt-6 rounded-xl border p-5 text-center">
-        <p class="text-xs font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">
-          Correct spelling
-        </p>
-        <p :lang="languageCode" class="word-reveal mt-2 text-4xl font-black tracking-wide text-gray-900 dark:text-white">
-          {{ wordBefore }}<mark class="rounded-md bg-emerald-200 px-1 text-emerald-900 dark:bg-emerald-800 dark:text-emerald-50">{{ correctChoice }}</mark>{{ wordAfter }}
-        </p>
-        <div class="ipa-guide mt-4">
-          <p class="ipa-label">Pronunciation · IPA</p>
+      <div v-if="!correct" class="answer-correction relative mt-5 grid grid-cols-[1fr_auto_1fr] items-center gap-3 rounded-xl border p-3">
+        <div class="answer-chip answer-chip-wrong">
+          <span class="answer-label">Your choice</span>
+          <strong :lang="languageCode">{{ selectedChoice || '—' }}</strong>
+        </div>
+        <span class="text-xl text-gray-400" aria-hidden="true">→</span>
+        <div class="answer-chip answer-chip-correct">
+          <span class="answer-label">Correct</span>
+          <strong :lang="languageCode">{{ correctChoice }}</strong>
+        </div>
+      </div>
+
+      <div class="learning-grid relative mt-5">
+        <section class="word-study feedback-surface rounded-xl border p-5 sm:p-6">
+          <p class="section-label">Word</p>
+          <p :lang="languageCode" class="word-reveal mt-2 font-black tracking-wide text-gray-900 dark:text-white">
+            {{ wordBefore }}<mark class="rounded-md bg-emerald-200 px-1 text-emerald-900 dark:bg-emerald-800 dark:text-emerald-50">{{ correctChoice }}</mark>{{ wordAfter }}
+          </p>
+          <p class="word-meaning mt-2 text-gray-600 dark:text-gray-300">
+            {{ meaning }}
+          </p>
+        </section>
+
+        <section class="pronunciation-study feedback-surface rounded-xl border p-5 sm:p-6">
+          <p class="section-label">Pronunciation · IPA</p>
           <p class="ipa-transcription">
             <span aria-hidden="true">/<template
                 v-for="(segment, index) in ipaSegments"
@@ -57,52 +71,43 @@
             <span aria-hidden="true">→</span>
             <span class="ipa-focus-text">/{{ focusedIpa }}/</span>
           </p>
-        </div>
-        <p class="mt-2 text-lg text-gray-600 dark:text-gray-300">
-          {{ meaning }}
+        </section>
+      </div>
+
+      <section class="spelling-insight feedback-surface relative mt-4 rounded-xl border px-4 py-4 sm:px-5">
+        <h3 class="section-label">Why this character?</h3>
+        <p class="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+          {{ accentRule }}
         </p>
-      </div>
+      </section>
 
-      <div v-if="!correct" class="relative mt-4 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
-        <div class="answer-chip answer-chip-wrong">
-          <span class="answer-label">Your choice</span>
-          <strong :lang="languageCode">{{ selectedChoice || '—' }}</strong>
-        </div>
-        <span class="text-xl text-gray-400" aria-hidden="true">→</span>
-        <div class="answer-chip answer-chip-correct">
-          <span class="answer-label">Correct</span>
-          <strong :lang="languageCode">{{ correctChoice }}</strong>
-        </div>
-      </div>
-
-      <div class="relative mt-4 grid gap-3 sm:grid-cols-2">
-        <section class="feedback-surface rounded-xl border p-4">
-          <h3 class="text-sm font-bold text-gray-900 dark:text-white">Why this character?</h3>
-          <p class="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
-            {{ accentRule }}
+      <section class="pronunciation-studio relative mt-4 pt-5">
+        <div class="text-center">
+          <p class="pronunciation-heading">Listen closely in {{ languageName }}</p>
+          <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
+            Hear the word naturally or slow it down to notice each sound.
           </p>
-        </section>
+        </div>
 
-        <section class="feedback-surface rounded-xl border p-4">
-          <h3 class="text-sm font-bold text-gray-900 dark:text-white">Lock it into memory</h3>
-          <p class="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
-            <strong :lang="languageCode" class="text-gray-900 dark:text-white">{{ word }}</strong>
-            means “{{ meaning }}” in English.
-          </p>
-        </section>
-      </div>
-
-      <button
-        type="button"
-        class="pronunciation-button relative mt-4 flex w-full items-center justify-center gap-2 rounded-xl border px-4 py-3 font-bold focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#6F9692]/40"
-        @click="$emit('speak')"
-      >
-        <span class="speaker-icon" aria-hidden="true">🔊</span>
-        Hear {{ languageName }} pronunciation
-      </button>
-      <p v-if="speechStatus" class="mt-2 text-center text-sm text-gray-600 dark:text-gray-300" role="status">
-        {{ speechStatus }}
-      </p>
+        <div class="pronunciation-controls mx-auto mt-4 grid max-w-xl grid-cols-2 gap-3">
+          <button
+            v-for="control in pronunciationControls"
+            :key="control.mode"
+            type="button"
+            class="pronunciation-button"
+            :class="{ 'pronunciation-button-active': activePronunciation === control.mode }"
+            :aria-label="control.ariaLabel"
+            :aria-pressed="activePronunciation === control.mode"
+            @click="$emit('speak', control.mode)"
+          >
+            <span class="pronunciation-icon" aria-hidden="true">{{ control.icon }}</span>
+            <span>
+              <strong>{{ control.label }}</strong>
+              <small>{{ control.detail }}</small>
+            </span>
+          </button>
+        </div>
+      </section>
     </article>
   </Transition>
 </template>
@@ -110,6 +115,10 @@
 <script setup lang="ts">
 import { computed, useId } from 'vue'
 import type { IpaFocusRange } from '~/data/words'
+import {
+  getFocusedIpa,
+  type PronunciationMode,
+} from '~/utils/pronunciation'
 
 const props = defineProps<{
   word: string
@@ -123,11 +132,11 @@ const props = defineProps<{
   accentRule: string
   languageCode: string
   languageName: string
-  speechStatus: string
+  activePronunciation: PronunciationMode | null
 }>()
 
 defineEmits<{
-  speak: []
+  speak: [mode: PronunciationMode]
 }>()
 
 const feedbackTitleId = useId()
@@ -152,14 +161,39 @@ const ipaSegments = computed(() => {
 
   return segments
 })
-const focusedIpa = computed(() =>
-  props.ipaFocus.map(([start, end]) => props.ipa.slice(start, end)).join(''),
-)
+const focusedIpa = computed(() => getFocusedIpa(props.ipa, props.ipaFocus))
+const pronunciationControls = computed<Array<{
+  mode: PronunciationMode
+  label: string
+  detail: string
+  icon: string
+  ariaLabel: string
+}>>(() => [
+  {
+    mode: 'word',
+    label: 'Word',
+    detail: 'Natural pace',
+    icon: '▶',
+    ariaLabel: `Hear ${props.word} at a natural pace`,
+  },
+  {
+    mode: 'slow',
+    label: 'Slow',
+    detail: 'Hear each sound',
+    icon: '½×',
+    ariaLabel: `Hear ${props.word} slowly`,
+  },
+])
 </script>
 
 <style scoped>
-.feedback-card {
-  isolation: isolate;
+.result-header {
+  min-height: 3.5rem;
+}
+
+.learning-grid {
+  display: grid;
+  gap: 1rem;
 }
 
 .feedback-surface {
@@ -170,12 +204,24 @@ const focusedIpa = computed(() =>
     inset 0 0 0 1px rgb(255 255 255 / 24%);
 }
 
-.ipa-guide {
-  border-top: 1px solid var(--atlas-card-border);
-  padding-top: 1rem;
+.word-study {
+  display: flex;
+  min-height: 13rem;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
-.ipa-label {
+.pronunciation-study {
+  display: flex;
+  min-height: 13rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-label {
   color: var(--atlas-muted);
   font-size: 0.68rem;
   font-weight: 800;
@@ -183,11 +229,21 @@ const focusedIpa = computed(() =>
   text-transform: uppercase;
 }
 
+.word-reveal {
+  font-size: clamp(2.75rem, 7vw, 4.5rem);
+  line-height: 1.05;
+}
+
+.word-meaning {
+  font-size: 1.15rem;
+  font-style: italic;
+}
+
 .ipa-transcription {
-  margin-top: 0.3rem;
+  margin-top: 0.45rem;
   color: var(--atlas-text);
   font-family: 'Segoe UI', 'Noto Sans', 'DejaVu Sans', sans-serif;
-  font-size: clamp(1.4rem, 4vw, 1.8rem);
+  font-size: clamp(1.55rem, 4vw, 2rem);
   font-weight: 650;
   letter-spacing: 0.04em;
 }
@@ -204,6 +260,7 @@ const focusedIpa = computed(() =>
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: 0.5rem;
   color: var(--atlas-muted);
@@ -227,33 +284,120 @@ const focusedIpa = computed(() =>
   font-size: 1rem;
 }
 
+.answer-correction {
+  border-color: var(--atlas-card-border);
+  background: rgb(255 251 235 / 48%);
+}
+
+.pronunciation-studio {
+  border-top: 1px solid var(--atlas-card-border);
+}
+
+.pronunciation-heading {
+  color: var(--atlas-text);
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
 .pronunciation-button {
-  border-color: rgb(36 82 79 / 74%);
+  display: flex;
+  min-height: 3.75rem;
+  align-items: center;
+  gap: 0.65rem;
+  border: 1px solid var(--atlas-card-border);
+  border-radius: 0.65rem;
+  background: var(--atlas-flag-background);
+  padding: 0.7rem 0.8rem;
+  color: var(--atlas-accent-text);
+  text-align: left;
+  transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.pronunciation-button strong,
+.pronunciation-button small {
+  display: block;
+}
+
+.pronunciation-button strong {
+  font-size: 0.88rem;
+}
+
+.pronunciation-button small {
+  margin-top: 0.12rem;
+  color: var(--atlas-muted);
+  font-size: 0.67rem;
+  line-height: 1.2;
+}
+
+.pronunciation-icon {
+  display: inline-grid;
+  width: 1.75rem;
+  min-width: 1.75rem;
+  height: 1.75rem;
+  place-items: center;
+  border-radius: 9999px;
+  background: rgb(111 150 146 / 20%);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.pronunciation-button:hover,
+.pronunciation-button:focus-visible {
+  border-color: rgb(139 91 54 / 68%);
+  background: rgb(111 150 146 / 16%);
+  box-shadow:
+    2px 3px 0 rgb(35 14 8 / 10%),
+    inset 0 0 0 1px rgb(255 255 255 / 12%);
+  outline: none;
+  transform: translateY(-0.1rem);
+}
+
+.pronunciation-button:focus-visible {
+  box-shadow:
+    0 0 0 4px rgb(111 150 146 / 28%),
+    2px 3px 0 rgb(35 14 8 / 10%);
+}
+
+.pronunciation-button-active {
+  border-color: var(--atlas-accent-strong);
   background: var(--atlas-accent-strong);
   box-shadow:
-    3px 5px 0 rgb(35 14 8 / 16%),
+    3px 4px 0 rgb(35 14 8 / 16%),
     inset 0 0 0 1px rgb(255 255 255 / 12%);
   color: rgb(255 250 238);
-  transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 
-.pronunciation-button:hover {
-  background: rgb(44 93 89);
-  box-shadow:
-    4px 6px 0 rgb(35 14 8 / 18%),
-    inset 0 0 0 1px rgb(255 255 255 / 12%);
-  transform: translateY(-0.12rem);
+.pronunciation-button-active small {
+  color: rgb(239 229 209);
 }
 
-.feedback-card::after {
-  position: absolute;
-  inset: 0.6rem;
-  z-index: -1;
-  border: 1px dashed currentColor;
-  border-radius: 0.8rem;
-  content: '';
-  opacity: 0.12;
-  pointer-events: none;
+.pronunciation-button-active .pronunciation-icon {
+  background: rgb(255 255 255 / 15%);
+}
+
+@media (min-width: 768px) {
+  .learning-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .spelling-insight {
+    display: grid;
+    grid-template-columns: 11rem minmax(0, 1fr);
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .spelling-insight p {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 639px) {
+  .word-study,
+  .pronunciation-study {
+    min-height: auto;
+  }
 }
 
 .feedback-card-correct {
@@ -330,11 +474,6 @@ const focusedIpa = computed(() =>
   text-transform: uppercase;
 }
 
-.speaker-icon {
-  display: inline-block;
-  animation: speaker-pulse 1.8s ease-in-out infinite;
-}
-
 .feedback-enter-active,
 .feedback-leave-active {
   transition: opacity 300ms ease, transform 450ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -375,18 +514,12 @@ const focusedIpa = computed(() =>
   50% { opacity: 1; transform: scale(1.2) rotate(18deg); }
 }
 
-@keyframes speaker-pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.14); }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .feedback-card-correct,
   .feedback-card-incorrect,
   .result-icon,
   .word-reveal mark,
-  .sparkles span,
-  .speaker-icon {
+  .sparkles span {
     animation: none;
   }
 
@@ -414,20 +547,33 @@ html.dark .feedback-surface {
     inset 0 0 0 1px rgb(209 190 162 / 5%);
 }
 
-html.dark .pronunciation-button {
-  border-color: rgb(130 184 184 / 58%);
-  background: rgb(53 110 105);
-  box-shadow:
-    3px 5px 0 rgb(0 0 0 / 22%),
-    inset 0 0 0 1px rgb(240 228 207 / 9%);
-  color: rgb(255 250 238);
+html.dark .answer-correction {
+  border-color: rgb(209 190 162 / 22%);
+  background: rgb(47 34 25 / 72%);
 }
 
-html.dark .pronunciation-button:hover {
-  background: rgb(65 126 121);
+html.dark .pronunciation-button {
+  border-color: rgb(209 190 162 / 28%);
+  background: rgb(47 33 25);
   box-shadow:
-    4px 6px 0 rgb(0 0 0 / 26%),
+    2px 3px 0 rgb(0 0 0 / 20%),
     inset 0 0 0 1px rgb(240 228 207 / 9%);
+  color: var(--atlas-accent-text);
+}
+
+html.dark .pronunciation-button:hover,
+html.dark .pronunciation-button:focus-visible {
+  border-color: rgb(209 190 162 / 48%);
+  background: rgb(58 43 32);
+  box-shadow:
+    3px 4px 0 rgb(0 0 0 / 24%),
+    inset 0 0 0 1px rgb(240 228 207 / 9%);
+}
+
+html.dark .pronunciation-button-active {
+  border-color: rgb(130 184 184 / 72%);
+  background: rgb(53 110 105);
+  color: rgb(255 250 238);
 }
 
 html.dark .answer-chip-wrong {

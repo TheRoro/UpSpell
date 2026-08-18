@@ -59,8 +59,80 @@ test('offers missed words as practice', async ({ page }) => {
   await page.getByRole('button', { name: 'Back to the map' }).click()
   await page.getByRole('button', { name: 'Revisit route French challenge' }).click()
 
-  await expect(page.getByText('Field note · Français · Revisit')).toBeVisible()
   await expect(page.getByRole('button', { name: correctChoice, exact: true })).toBeVisible()
+})
+
+test('offers natural and slow pronunciation playback', async ({ page }) => {
+  await page.addInitScript(() => {
+    interface RecordedSpeech {
+      text: string
+      lang: string
+      rate: number
+    }
+
+    const recorded: RecordedSpeech[] = []
+    class MockUtterance {
+      text: string
+      lang = ''
+      rate = 1
+      voice = null
+      onstart: (() => void) | null = null
+      onend: (() => void) | null = null
+      onerror: (() => void) | null = null
+
+      constructor(text: string) {
+        this.text = text
+      }
+    }
+
+    Object.defineProperty(window, '__upspellSpeech', {
+      configurable: true,
+      value: recorded,
+    })
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', {
+      configurable: true,
+      value: MockUtterance,
+    })
+    Object.defineProperty(window, 'speechSynthesis', {
+      configurable: true,
+      value: {
+        cancel() {},
+        getVoices() {
+          return []
+        },
+        speak(utterance: MockUtterance) {
+          recorded.push({
+            text: utterance.text,
+            lang: utterance.lang,
+            rate: utterance.rate,
+          })
+          utterance.onstart?.()
+          utterance.onend?.()
+        },
+      },
+    })
+  })
+
+  await openAppAt(page)
+  await openFrenchChallenge(page)
+  await page.getByRole('button', { name: correctChoice, exact: true }).click()
+
+  await page.getByRole('button', {
+    name: `Hear ${dailyWord.word} at a natural pace`,
+  }).click()
+  await page.getByRole('button', {
+    name: `Hear ${dailyWord.word} slowly`,
+  }).click()
+  const spoken = await page.evaluate(() => (
+    window as typeof window & {
+      __upspellSpeech: Array<{ text: string; lang: string; rate: number }>
+    }
+  ).__upspellSpeech)
+
+  expect(spoken).toEqual([
+    { text: dailyWord.word, lang: 'fr-FR', rate: 0.9 },
+    { text: dailyWord.word, lang: 'fr-FR', rate: 0.58 },
+  ])
 })
 
 test('navigates between the map, stats, and character collection', async ({ page }) => {
