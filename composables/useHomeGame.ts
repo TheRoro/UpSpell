@@ -20,6 +20,7 @@ import {
 } from '~/utils/game'
 import {
   getPronunciationPlayback,
+  getSpeechVoice,
   type PronunciationMode,
 } from '~/utils/pronunciation'
 
@@ -343,11 +344,8 @@ export function useHomeGame() {
     )
     const utterance = new SpeechSynthesisUtterance(playback.text)
     const locale = metadata.speechLocale.toLowerCase()
-    const language = locale.split('-')[0]
     const voices = window.speechSynthesis.getVoices()
-    utterance.voice = voices.find(voice => voice.lang.toLowerCase() === locale)
-      ?? voices.find(voice => voice.lang.toLowerCase().split('-')[0] === language)
-      ?? null
+    utterance.voice = getSpeechVoice(voices, locale)
     utterance.lang = metadata.speechLocale
     utterance.rate = playback.rate
     utterance.onstart = () => {

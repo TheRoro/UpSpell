@@ -1,5 +1,5 @@
 <template>
-  <AtlasPageShell>
+  <AtlasPageShell :language-code="selectedLang">
     <p class="sr-only" role="status" aria-live="polite">{{ announcement }}</p>
 
     <AtlasHero
@@ -40,7 +40,6 @@
         </div>
       </section>
 
-      <AtlasResourceNavigation class="relative z-10 mx-auto mt-8 max-w-5xl" />
     </AtlasPanel>
 
     <DailyChallenge

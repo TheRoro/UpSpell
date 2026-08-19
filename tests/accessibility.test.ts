@@ -10,7 +10,7 @@ function page(path: string) {
 }
 
 describe('interactive cards', () => {
-  it('keeps character copy available to keyboards and assistive technology', () => {
+  it('keeps instant character copy available to keyboards and assistive technology', () => {
     const source = component('CharCard.vue')
     expect(source).toContain('<button')
     expect(source).toContain('type="button"')
@@ -29,5 +29,13 @@ describe('interactive cards', () => {
     expect(component('LanguageDetails.vue')).not.toContain(
       "window.addEventListener('keydown'",
     )
+  })
+
+  it('uses persistent semantic navigation for primary destinations', () => {
+    const source = component('AtlasBottomNavigation.vue')
+    expect(source).toContain('<nav')
+    expect(source).toContain('aria-label="Primary navigation"')
+    expect(source).toContain('<NuxtLink')
+    expect(source).toContain(':aria-current=')
   })
 })

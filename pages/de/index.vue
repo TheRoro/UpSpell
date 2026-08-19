@@ -3,10 +3,7 @@
 </template>
 
 <script setup lang="ts">
-const chars = [
-  { letter: 'ä', name: 'A Umlaut' },
-  { letter: 'ö', name: 'O Umlaut' },
-  { letter: 'ü', name: 'U Umlaut' },
-  { letter: 'ß', name: 'Eszett (scharfes S)' },
-]
+import { getLanguageCharacters } from '~/data/characterProfiles'
+
+const chars = getLanguageCharacters('de')
 </script>

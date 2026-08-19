@@ -40,3 +40,14 @@ export function getPronunciationPlayback(
     finishedStatus: `Finished the pronunciation of ${word}.`,
   }
 }
+
+export function getSpeechVoice(
+  voices: SpeechSynthesisVoice[],
+  locale: string,
+): SpeechSynthesisVoice | null {
+  const normalizedLocale = locale.toLowerCase()
+  const language = normalizedLocale.split('-')[0]
+  return voices.find(voice => voice.lang.toLowerCase() === normalizedLocale)
+    ?? voices.find(voice => voice.lang.toLowerCase().split('-')[0] === language)
+    ?? null
+}

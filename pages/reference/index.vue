@@ -2,7 +2,7 @@
   <AtlasPageShell>
     <AtlasHero
       title="Characters"
-      subtitle="Browse special characters for every language."
+      subtitle="A fast copy library for special characters."
     />
 
     <AtlasPanel class="mx-auto my-6 max-w-6xl px-5 py-8 sm:my-10 sm:px-10 sm:py-10">
@@ -22,7 +22,7 @@
             Choose a language
           </h2>
           <p class="mt-3 max-w-2xl text-stone-600 dark:text-[#D7C3A3]">
-            View each language’s special characters and copy any mark.
+            Choose a language, then select any character to copy it instantly.
           </p>
         </div>
 
@@ -52,7 +52,7 @@
             <span class="rule-note">{{ language.accentRule }}</span>
 
             <span class="card-footer">
-              <span>View characters</span>
+              <span>Copy characters</span>
               <span class="card-arrow" aria-hidden="true">→</span>
             </span>
           </NuxtLink>
@@ -69,7 +69,7 @@ import { languages } from '~/data/words'
 
 usePageSeo({
   title: 'Special Character Atlas | UpSpell',
-  description: 'Browse, learn, and copy special characters from all 12 languages in the UpSpell atlas.',
+  description: 'Quickly find and copy special characters from all 12 languages in the UpSpell atlas.',
   path: '/reference',
 })
 

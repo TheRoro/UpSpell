@@ -10,7 +10,7 @@
 
     <AtlasHero
       :title="metadata.name"
-      :subtitle="`Special characters for ${metadata.englishName.toLowerCase()}`"
+      :subtitle="`Copy special characters for ${metadata.englishName.toLowerCase()}`"
       :language="metadata.code"
     />
 
@@ -18,13 +18,13 @@
       <AtlasNavigation
         back-label="Back to characters"
         back-to="/reference"
-        forward-label="Daily map"
-        forward-to="/"
+        forward-label="Pronunciation guide"
+        :forward-to="`/phonetics/${metadata.code}`"
         label="Character reference navigation"
       />
 
       <section class="guide-summary mx-auto mt-7 max-w-6xl">
-        <p class="rule-note">{{ metadata.accentRule }}</p>
+        <p class="rule-note">{{ metadata.accentRule }} Select any card to copy its character.</p>
 
         <div class="collection-controls">
           <span class="collection-count">
@@ -84,7 +84,10 @@ let toastTimer: ReturnType<typeof setTimeout> | undefined
 
 const displayChars = computed(() => {
   if (!isUpperCase.value) return props.chars
-  return props.chars.map(character => ({ ...character, letter: character.letter.toUpperCase() }))
+  return props.chars.map(character => ({
+    ...character,
+    letter: character.letter.toLocaleUpperCase(metadata.code),
+  }))
 })
 
 function onCopied(success: boolean) {

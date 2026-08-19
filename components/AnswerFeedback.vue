@@ -76,9 +76,30 @@
 
       <section class="spelling-insight feedback-surface relative mt-4 rounded-xl border px-4 py-4 sm:px-5">
         <h3 class="section-label">Why this character?</h3>
-        <p class="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
-          {{ accentRule }}
-        </p>
+        <div>
+          <p class="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+            {{ accentRule }}
+          </p>
+          <span class="phonetic-sound-links">
+            <NuxtLink
+              v-for="sound in characterSounds"
+              :key="sound.symbol"
+              :to="getIpaSoundPath(sound.symbol)"
+              class="phonetic-profile-link"
+            >
+              Study /{{ sound.symbol }}/
+              <span aria-hidden="true">→</span>
+            </NuxtLink>
+            <NuxtLink
+              v-if="!characterSounds.length"
+              :to="`/phonetics/${languageCode}`"
+              class="phonetic-profile-link"
+            >
+              Explore {{ languageName }} vowels
+              <span aria-hidden="true">→</span>
+            </NuxtLink>
+          </span>
+        </div>
       </section>
 
       <section class="pronunciation-studio relative mt-4 pt-5">
@@ -114,6 +135,11 @@
 
 <script setup lang="ts">
 import { computed, useId } from 'vue'
+import {
+  getCharacterProfile,
+  getIpaSoundProfile,
+  getIpaSoundPath,
+} from '~/data/characterProfiles'
 import type { IpaFocusRange } from '~/data/words'
 import {
   getFocusedIpa,
@@ -140,6 +166,10 @@ defineEmits<{
 }>()
 
 const feedbackTitleId = useId()
+const characterSounds = computed(() =>
+  (getCharacterProfile(props.languageCode, props.correctChoice)?.sounds ?? [])
+    .filter(sound => getIpaSoundProfile(sound.symbol)),
+)
 const blankIndex = computed(() => props.blank.indexOf('_'))
 const wordBefore = computed(() => props.blank.slice(0, blankIndex.value))
 const wordAfter = computed(() => props.blank.slice(blankIndex.value + 1))
@@ -282,6 +312,31 @@ const pronunciationControls = computed<Array<{
   background: var(--atlas-flag-background);
   padding: 0.12rem 0.35rem;
   font-size: 1rem;
+}
+
+.phonetic-profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.65rem;
+  color: var(--atlas-accent-text);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: rgb(111 150 146 / 45%);
+  text-underline-offset: 0.2rem;
+}
+
+.phonetic-sound-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.85rem;
+}
+
+.phonetic-profile-link:focus-visible {
+  border-radius: 0.2rem;
+  outline: 3px solid var(--atlas-focus);
+  outline-offset: 3px;
 }
 
 .answer-correction {
