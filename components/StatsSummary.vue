@@ -1,11 +1,11 @@
 <template>
   <section aria-labelledby="expedition-summary">
-    <div class="summary-heading">
-      <h2 id="expedition-summary" class="text-3xl font-black sm:text-4xl">
-        Your progress
-      </h2>
-      <p class="summary-note">Stored privately on this device</p>
-    </div>
+    <AtlasSectionHeader
+      heading-id="expedition-summary"
+      eyebrow="Challenge progress"
+      title="Your progress"
+      description="Stored privately on this device."
+    />
 
     <div class="summary-grid mt-7">
       <article class="summary-card">
@@ -48,16 +48,11 @@
 
       <article class="summary-card">
         <span class="summary-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <path d="M4 18.5c4.5-1 5.5-5 8-7s4.5-1 8-6" />
-            <circle cx="4" cy="18.5" r="1.5" />
-            <circle cx="12" cy="11.5" r="1.5" />
-            <circle cx="20" cy="5.5" r="1.5" />
-          </svg>
+          <span class="summary-ipa">/ə/</span>
         </span>
         <span>
-          <strong>{{ languagesExplored }}<em>/{{ languageCount }}</em></strong>
-          <small>Routes charted</small>
+          <strong>{{ vowelsExplored }}<em>/{{ vowelCount }}</em></strong>
+          <small>Vowels explored</small>
         </span>
       </article>
     </div>
@@ -69,40 +64,15 @@ defineProps<{
   totalPlayed: number
   accuracy: number
   overallBestStreak: number
-  languagesExplored: number
-  languageCount: number
+  vowelsExplored: number
+  vowelCount: number
 }>()
 </script>
 
 <style scoped>
-.summary-heading {
-  position: relative;
-  border-bottom: 1px solid var(--atlas-panel-inner-border);
-  padding-bottom: 1.25rem;
-}
-
-.summary-heading::after {
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  height: 3px;
-  width: 4.5rem;
-  border-radius: 9999px;
-  background: var(--atlas-accent-strong);
-  content: '';
-}
-
-.summary-heading h2,
 .summary-card strong {
   color: var(--atlas-text);
   font-family: 'Source Serif 4', Georgia, serif;
-}
-
-.summary-note {
-  margin-top: 0.65rem;
-  color: var(--atlas-muted);
-  font-family: 'Overpass Mono', monospace;
-  font-size: 0.9rem;
 }
 
 .summary-grid {
@@ -142,6 +112,12 @@ defineProps<{
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 1.5;
+}
+
+.summary-ipa {
+  font-family: 'Overpass Mono', monospace;
+  font-size: 0.9rem;
+  font-weight: 800;
 }
 
 .summary-card strong {

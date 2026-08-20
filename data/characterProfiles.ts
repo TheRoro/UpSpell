@@ -488,20 +488,6 @@ const characterCatalog: Record<string, CharacterSeed[]> = {
     { letter: 'ú', name: 'U con tilde aguda', ipa: ['u'], soundNote: 'The accent marks stress and may separate a vowel sequence.' },
     { letter: 'ü', name: 'U con diéresis', ipa: ['w'], soundNote: 'Shows that u is pronounced in güe and güi sequences.' },
     { letter: 'ñ', name: 'Eñe', ipa: ['ɲ'], soundNote: 'Represents a single palatal nasal consonant.' },
-    {
-      letter: '¿',
-      name: 'Signo de interrogación invertido',
-      phonetic: false,
-      soundNote: 'This punctuation mark has no independent sound. It marks the beginning of a question.',
-      commonMistake: 'Do not pronounce the mark or omit it in formal Spanish writing.',
-    },
-    {
-      letter: '¡',
-      name: 'Signo de exclamación invertido',
-      phonetic: false,
-      soundNote: 'This punctuation mark has no independent sound. It marks the beginning of an exclamation.',
-      commonMistake: 'Do not pronounce the mark or omit it in formal Spanish writing.',
-    },
   ],
   pt: [
     { letter: 'á', name: 'A com acento agudo', ipa: ['a'], soundNote: 'Marks a stressed open a vowel.' },
@@ -702,8 +688,18 @@ export const languageVowelInventories: Record<string, string[]> = {
   tr: ['i', 'y', 'ɯ', 'u', 'e', 'ø', 'o', 'a'],
   pl: ['i', 'ɨ', 'ɛ', 'a', 'ɔ', 'u', 'ɛ̃', 'ɔ̃'],
   cs: ['iː', 'ɪ', 'ɛː', 'ɛ', 'aː', 'a', 'oː', 'o', 'uː', 'u'],
-  vi: ['i', 'e', 'ɛ', 'a', 'ɯ', 'ɨ', 'u', 'o', 'ɔ'],
+  vi: ['i', 'e', 'ɛ', 'a', 'ɯ', 'ɤ', 'u', 'o', 'ɔ'],
   is: ['i', 'ɪ', 'e', 'ɛ', 'a', 'ɔ', 'o', 'u'],
+}
+
+const languageVowelSpellings: Record<string, Record<string, string[]>> = {
+  es: {
+    a: ['a'],
+    e: ['e'],
+    i: ['i'],
+    o: ['o'],
+    u: ['u'],
+  },
 }
 
 export function getLanguageCharacters(code: string): CharacterSummary[] {
@@ -760,6 +756,22 @@ export function getIpaSoundProfiles(languageCode?: string): IpaSoundProfile[] {
       if (!profile.languageCodes.includes(code)) {
         profile.languageCodes.push(code)
       }
+      const guidance = languageGuidance[code]
+      for (const letter of languageVowelSpellings[code]?.[symbol] ?? []) {
+        if (!guidance || profile.spellings.some(spelling =>
+          spelling.languageCode === code && spelling.letter === letter,
+        )) {
+          continue
+        }
+        profile.spellings.push({
+          languageCode: code,
+          letter,
+          characterName: `${letter.toUpperCase()} vowel`,
+          soundNote: `Spanish ${letter} keeps the same vowel quality with or without a written accent.`,
+          commonMistake: guidance.commonMistake,
+          regionalVariants: guidance.regionalVariants,
+        })
+      }
       profiles.set(symbol, profile)
     }
   }
@@ -773,6 +785,7 @@ export function getIpaSoundProfiles(languageCode?: string): IpaSoundProfile[] {
 
       for (const sound of characterProfile.sounds) {
         if (!languageVowelInventories[code]?.includes(sound.symbol)) continue
+        if (languageVowelSpellings[code]?.[sound.symbol]) continue
         const profile = profiles.get(sound.symbol)
         if (!profile) continue
         if (!profile.spellings.some(spelling =>

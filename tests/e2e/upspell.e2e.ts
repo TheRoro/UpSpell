@@ -2,6 +2,7 @@ import { expect, test, type Page } from '@playwright/test'
 import french from '../../data/words/fr'
 import {
   getCharacterProfile,
+  getIpaSoundProfile,
   getIpaSoundPath,
 } from '../../data/characterProfiles'
 import { getDailyIndexForDayKey } from '../../utils/game'
@@ -34,7 +35,7 @@ async function openAppAt(page: Page, time = '2026-09-04T12:00:00-07:00') {
 
 async function openFrenchChallenge(page: Page) {
   await page.getByRole('button', { name: /French challenge$/ }).click()
-  await expect(page.getByRole('button', { name: 'Back to the map' })).toBeVisible()
+  await expect(page.getByRole('button', { name: 'Back to challenges' })).toBeVisible()
 }
 
 test('records and restores the daily result', async ({ page }) => {
@@ -74,7 +75,7 @@ test('offers missed words as practice', async ({ page }) => {
   await expect(page.getByRole('link', {
     name: `Study /${dailySound.symbol}/`,
   })).toBeVisible()
-  await page.getByRole('button', { name: 'Back to the map' }).click()
+  await page.getByRole('button', { name: 'Back to challenges' }).click()
   await page.getByRole('button', { name: 'Revisit route French challenge' }).click()
 
   await expect(page.getByRole('button', { name: correctChoice, exact: true })).toBeVisible()
@@ -155,10 +156,21 @@ test('offers natural and slow pronunciation playback', async ({ page }) => {
 
 test('navigates between the map, stats, and character collection', async ({ page }) => {
   await openAppAt(page)
+  await expect(page.locator('.bottom-navigation-link > span:last-child')).toHaveText([
+    'Challenge',
+    'Phonetics',
+    'Characters',
+    'Stats',
+  ])
+  const phoneticsGlyph = await page.locator('.phonetics-glyph').evaluate(element => ({
+    clientWidth: element.clientWidth,
+    scrollWidth: element.scrollWidth,
+  }))
+  expect(phoneticsGlyph.scrollWidth).toBeLessThanOrEqual(phoneticsGlyph.clientWidth)
   await page.getByRole('link', { name: 'Stats', exact: true }).click()
   await expect(page).toHaveURL('/stats')
   await expect(page.getByRole('heading', { name: 'Stats', exact: true })).toBeVisible()
-  await page.getByRole('button', { name: 'Back to the map' }).click()
+  await page.getByRole('button', { name: 'Challenge', exact: true }).click()
 
   await page.getByRole('link', { name: 'Characters', exact: true }).click()
   await expect(page).toHaveURL('/reference')
@@ -166,10 +178,183 @@ test('navigates between the map, stats, and character collection', async ({ page
   await page.getByRole('link', { name: 'Phonetics', exact: true }).click()
   await expect(page).toHaveURL('/phonetics')
   await expect(page.getByRole('heading', { name: 'Phonetics', exact: true })).toBeVisible()
-  await page.getByRole('link', { name: 'Map', exact: true }).click()
+  await page.getByRole('link', { name: 'Challenge', exact: true }).click()
 
   await expect(page).toHaveURL('/')
-  await expect(page.getByRole('heading', { name: 'Choose your next language' })).toBeVisible()
+  await expect(page.getByRole('heading', { name: 'Choose a language to begin' })).toBeVisible()
+})
+
+test('cycles through the main pages with the header arrows', async ({ page }) => {
+  await openAppAt(page)
+
+  const clockwise = [
+    { button: 'Phonetics', path: '/phonetics' },
+    { button: 'Characters', path: '/reference' },
+    { button: 'Stats', path: '/stats' },
+    { button: 'Challenge', path: '/' },
+  ]
+  for (const step of clockwise) {
+    await page.getByRole('button', { name: step.button, exact: true }).click()
+    await expect(page).toHaveURL(step.path)
+  }
+
+  const counterclockwise = [
+    { button: 'Stats', path: '/stats' },
+    { button: 'Characters', path: '/reference' },
+    { button: 'Phonetics', path: '/phonetics' },
+    { button: 'Challenge', path: '/' },
+  ]
+  for (const step of counterclockwise) {
+    await page.getByRole('button', { name: step.button, exact: true }).click()
+    await expect(page).toHaveURL(step.path)
+  }
+})
+
+test('uses the same section header styling across the main pages', async ({ page }) => {
+  await openAppAt(page)
+
+  const pages = [
+    {
+      path: '/',
+      eyebrow: '12 languages, one daily challenge',
+      heroTitle: 'Daily Spelling Challenge',
+      title: 'Choose a language to begin',
+    },
+    {
+      path: '/phonetics',
+      eyebrow: 'UpSpell Language Atlas',
+      heroTitle: 'Phonetics',
+      title: 'Explore sounds',
+    },
+    {
+      path: '/reference',
+      eyebrow: 'UpSpell Language Atlas',
+      heroTitle: 'Characters',
+      title: 'Choose a language',
+    },
+    {
+      path: '/stats',
+      eyebrow: 'UpSpell Language Atlas',
+      heroTitle: 'Stats',
+      title: 'Your progress',
+    },
+  ]
+  const headerStyles = []
+  const pageLayouts = []
+
+  for (const destination of pages) {
+    await page.goto(destination.path)
+    await waitForHydration(page)
+    await expect(page.locator('.atlas-hero').getByText(destination.eyebrow, {
+      exact: true,
+    })).toBeVisible()
+    await expect(page.getByRole('heading', {
+      name: destination.heroTitle,
+      exact: true,
+      level: 1,
+    })).toBeVisible()
+    await expect(page.getByRole('heading', {
+      name: destination.title,
+      exact: true,
+    })).toBeVisible()
+
+    headerStyles.push(await page.locator('.atlas-section-heading').evaluate((element) => {
+      const heading = element.querySelector('h2')
+      const eyebrow = element.querySelector('.atlas-section-eyebrow')
+      const description = element.querySelector('.atlas-section-description')
+      const headingStyle = heading ? window.getComputedStyle(heading) : null
+      const eyebrowStyle = eyebrow ? window.getComputedStyle(eyebrow) : null
+      const descriptionStyle = description ? window.getComputedStyle(description) : null
+      const headerStyle = window.getComputedStyle(element)
+      const accentStyle = window.getComputedStyle(element, '::after')
+
+      return {
+        title: {
+          fontFamily: headingStyle?.fontFamily,
+          fontSize: headingStyle?.fontSize,
+          fontWeight: headingStyle?.fontWeight,
+          lineHeight: headingStyle?.lineHeight,
+          marginTop: headingStyle?.marginTop,
+        },
+        eyebrow: {
+          fontFamily: eyebrowStyle?.fontFamily,
+          fontSize: eyebrowStyle?.fontSize,
+          fontWeight: eyebrowStyle?.fontWeight,
+          letterSpacing: eyebrowStyle?.letterSpacing,
+        },
+        description: {
+          fontFamily: descriptionStyle?.fontFamily,
+          fontSize: descriptionStyle?.fontSize,
+          lineHeight: descriptionStyle?.lineHeight,
+          marginTop: descriptionStyle?.marginTop,
+        },
+        divider: {
+          borderWidth: headerStyle.borderBottomWidth,
+          paddingBottom: headerStyle.paddingBottom,
+          accentWidth: accentStyle.width,
+          accentHeight: accentStyle.height,
+          accentColor: accentStyle.backgroundColor,
+        },
+      }
+    }))
+
+    pageLayouts.push(await page.evaluate(() => {
+      const hero = document.querySelector('.atlas-hero')
+      const panel = document.querySelector('.atlas-panel')
+      const panelBody = document.querySelector('.atlas-panel-body')
+      const heading = document.querySelector('.atlas-section-heading')
+      const navigation = document.querySelector('.atlas-navigation')
+      const heroTitle = hero?.querySelector('h1')
+      const heroSubtitle = hero?.querySelector('p:last-child')
+
+      if (!hero || !panel || !panelBody || !heading || !heroTitle || !heroSubtitle) {
+        throw new Error('Expected the shared page layout to be present')
+      }
+
+      const heroRect = hero.getBoundingClientRect()
+      const panelRect = panel.getBoundingClientRect()
+      const panelBodyRect = panelBody.getBoundingClientRect()
+      const headingRect = heading.getBoundingClientRect()
+      const navigationRect = navigation?.getBoundingClientRect()
+      const heroTitleStyle = window.getComputedStyle(heroTitle)
+      const heroSubtitleStyle = window.getComputedStyle(heroSubtitle)
+
+      return {
+        heroHeight: Math.round(heroRect.height),
+        heroTitleLines: Math.round(
+          heroTitle.getBoundingClientRect().height / Number.parseFloat(heroTitleStyle.lineHeight),
+        ),
+        heroSubtitleLines: Math.round(
+          heroSubtitle.getBoundingClientRect().height / Number.parseFloat(heroSubtitleStyle.lineHeight),
+        ),
+        panelGap: Math.round(panelRect.top - heroRect.bottom),
+        bodyWidth: Math.round(panelBodyRect.width),
+        bodyLeftInset: Math.round(panelBodyRect.left - panelRect.left),
+        headingLeftOffset: Math.round(headingRect.left - panelBodyRect.left),
+        navigationLeftOffset: navigationRect
+          ? Math.round(navigationRect.left - panelBodyRect.left)
+          : null,
+        navigationHeadingGap: navigationRect
+          ? Math.round(headingRect.top - navigationRect.bottom)
+          : null,
+      }
+    }))
+  }
+
+  expect(new Set(headerStyles.map(style => JSON.stringify(style))).size).toBe(1)
+  expect(new Set(pageLayouts.map(layout => layout.heroHeight)).size).toBe(1)
+  expect(pageLayouts.every(layout => layout.heroTitleLines === 1)).toBe(true)
+  expect(pageLayouts.every(layout => layout.heroSubtitleLines === 1)).toBe(true)
+  expect(new Set(pageLayouts.map(layout => layout.panelGap)).size).toBe(1)
+  expect(new Set(pageLayouts.map(layout => layout.bodyWidth)).size).toBe(1)
+  expect(new Set(pageLayouts.map(layout => layout.bodyLeftInset)).size).toBe(1)
+  expect(pageLayouts.every(layout => layout.headingLeftOffset === 0)).toBe(true)
+
+  const pagesWithNavigation = pageLayouts.filter(
+    layout => layout.navigationLeftOffset !== null,
+  )
+  expect(pagesWithNavigation.every(layout => layout.navigationLeftOffset === 0)).toBe(true)
+  expect(new Set(pagesWithNavigation.map(layout => layout.navigationHeadingGap)).size).toBe(1)
 })
 
 test('opens an IPA sound profile and plays an example', async ({ page }) => {
@@ -219,6 +404,13 @@ test('opens an IPA sound profile and plays an example', async ({ page }) => {
 
   await expect(page).toHaveURL('/phonetics/sounds/e')
   await expect(page.getByRole('heading', { name: 'How this sound is written' })).toBeVisible()
+  const examplesTop = await page.getByRole('heading', { name: 'Example words' }).evaluate(element =>
+    element.getBoundingClientRect().top,
+  )
+  const spellingsTop = await page.getByRole('heading', { name: 'How this sound is written' }).evaluate(element =>
+    element.getBoundingClientRect().top,
+  )
+  expect(examplesTop).toBeLessThan(spellingsTop)
   await expect(page.getByRole('heading', {
     name: 'close-mid front unrounded vowel',
     exact: true,
@@ -231,6 +423,9 @@ test('opens an IPA sound profile and plays an example', async ({ page }) => {
     name: 'Phonetics',
     exact: true,
   })).toHaveAttribute('aria-current', 'page')
+  const exampleLanguages = await page.locator('.example-language').allTextContents()
+  expect(new Set(exampleLanguages).size).toBe(exampleLanguages.length)
+  expect(exampleLanguages).toHaveLength(getIpaSoundProfile('e')?.languageCodes.length ?? 0)
 
   const exampleButton = page.getByRole('button', { name: /^Hear .+ pronounced in .+$/ }).first()
   await exampleButton.click()
@@ -238,6 +433,37 @@ test('opens an IPA sound profile and plays an example', async ({ page }) => {
     window as typeof window & { __upspellProfileSpeech: string[] }
   ).__upspellProfileSpeech)
   expect(spoken).toHaveLength(1)
+
+  await page.getByRole('link', { name: 'Stats', exact: true }).click()
+  await expect(page.getByText('Vowels explored', { exact: true }).first()).toBeVisible()
+  await expect(page.locator('.route-card').filter({ hasText: 'French' }))
+    .toContainText('1/14')
+})
+
+test('uses ordinary Spanish vowel spellings in phonetics', async ({ page }) => {
+  await openAppAt(page)
+  await page.goto('/phonetics/es')
+  await waitForHydration(page)
+
+  for (const symbol of ['a', 'e', 'i', 'o', 'u']) {
+    const card = page.getByRole('link', {
+      name: `Open IPA vowel /${symbol}/`,
+    })
+    await expect(card).toContainText(`Written as ${symbol}`)
+  }
+  const symbolAlignment = await page.locator('.sound-symbol').first().evaluate((element) => {
+    const range = document.createRange()
+    range.selectNodeContents(element)
+    const textRect = range.getBoundingClientRect()
+    const containerRect = element.getBoundingClientRect()
+    return Math.abs(
+      (textRect.top + textRect.height / 2)
+      - (containerRect.top + containerRect.height / 2),
+    )
+  })
+  expect(symbolAlignment).toBeLessThan(2)
+  const spanishCardText = await page.locator('.sound-card').allTextContents()
+  expect(spanishCardText.join(' ')).not.toMatch(/[áéíóú]/u)
 })
 
 test('shows the complete Romanian vowel inventory without a scrolling filter row', async ({ page }) => {
@@ -333,6 +559,38 @@ test('copies a special character directly from its character card', async ({ pag
     window as typeof window & { __upspellCopiedCharacters: string[] }
   ).__upspellCopiedCharacters)
   expect(copied).toEqual(['é'])
+})
+
+test('uses the character card hover treatment on reference cards', async ({ page }) => {
+  async function readHoverStyle(path: string, selector: string) {
+    await page.goto(path)
+    await waitForHydration(page)
+    const card = page.locator(selector).first()
+    await card.hover()
+    return card.evaluate((element) => {
+      const style = window.getComputedStyle(element)
+      return {
+        borderColor: style.borderColor,
+        boxShadow: style.boxShadow,
+        transform: style.transform,
+        accentColor: window.getComputedStyle(element, '::before').backgroundColor,
+      }
+    })
+  }
+
+  await openAppAt(page)
+  const lightReferenceStyle = await readHoverStyle('/reference', '.language-guide-card')
+  const lightCharacterStyle = await readHoverStyle('/es', '.character-card')
+  expect(lightReferenceStyle).toEqual(lightCharacterStyle)
+  const lightSoundStyle = await readHoverStyle('/phonetics/es', '.sound-card')
+  expect(lightSoundStyle).toEqual(lightCharacterStyle)
+
+  await page.getByRole('button', { name: 'Switch to dark mode' }).click()
+  const darkCharacterStyle = await readHoverStyle('/es', '.character-card')
+  const darkReferenceStyle = await readHoverStyle('/reference', '.language-guide-card')
+  expect(darkReferenceStyle).toEqual(darkCharacterStyle)
+  const darkSoundStyle = await readHoverStyle('/phonetics/es', '.sound-card')
+  expect(darkSoundStyle).toEqual(darkCharacterStyle)
 })
 
 test('persists the selected theme', async ({ page }) => {

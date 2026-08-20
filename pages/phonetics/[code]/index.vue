@@ -7,50 +7,52 @@
     />
 
     <AtlasPanel class="mx-auto my-6 max-w-6xl px-5 py-8 sm:my-10 sm:px-10 sm:py-10">
-      <AtlasNavigation
-        class="mb-8"
-        back-label="All IPA sounds"
-        back-to="/phonetics"
-        forward-label="Copy characters"
-        :forward-to="metadata.route"
-        label="Language phonetics navigation"
-      />
+      <AtlasPanelBody>
+        <AtlasNavigation
+          class="mb-8"
+          back-label="All IPA sounds"
+          back-to="/phonetics"
+          forward-label="Copy characters"
+          :forward-to="metadata.route"
+          label="Language phonetics navigation"
+        />
 
-      <PhoneticsDirectoryHeader
-        heading-id="language-sounds-heading"
-        kicker="Language sound inventory"
-        :title="`Explore ${metadata.englishName} sounds`"
-        description="Sounds are grouped by IPA rather than by character. Open one to compare its spellings, articulation, and examples."
-        :count="sounds.length"
-      />
+        <PhoneticsDirectoryHeader
+          heading-id="language-sounds-heading"
+          kicker="Language sound inventory"
+          :title="`Explore ${metadata.englishName} sounds`"
+          description="Sounds are grouped by IPA rather than by character. Open one to compare its spellings, articulation, and examples."
+          :count="sounds.length"
+        />
 
-      <nav class="language-switcher" aria-label="Choose another language">
-        <NuxtLink to="/phonetics">All sounds</NuxtLink>
-        <NuxtLink
-          v-for="language in languageMetadata"
-          :key="language.code"
-          :to="`/phonetics/${language.code}`"
-          :aria-current="language.code === metadata.code ? 'page' : undefined"
-        >
-          <img :src="language.flag" alt="" />
-          {{ language.englishName }}
-        </NuxtLink>
-      </nav>
+        <nav class="language-switcher" aria-label="Choose another language">
+          <NuxtLink to="/phonetics">All sounds</NuxtLink>
+          <NuxtLink
+            v-for="language in languageMetadata"
+            :key="language.code"
+            :to="`/phonetics/${language.code}`"
+            :aria-current="language.code === metadata.code ? 'page' : undefined"
+          >
+            <img :src="language.flag" alt="" />
+            {{ language.englishName }}
+          </NuxtLink>
+        </nav>
 
-      <section class="sound-group" aria-labelledby="language-vowels">
-        <div class="group-heading">
-          <h3 id="language-vowels">Vowels</h3>
-          <span>{{ sounds.length }}</span>
-        </div>
-        <div class="sound-grid">
-          <IpaSoundCard
-            v-for="sound in sounds"
-            :key="sound.symbol"
-            :sound="sound"
-            :language="metadata.code"
-          />
-        </div>
-      </section>
+        <section class="sound-group" aria-labelledby="language-vowels">
+          <div class="group-heading">
+            <h3 id="language-vowels">Vowels</h3>
+            <span>{{ sounds.length }}</span>
+          </div>
+          <div class="sound-grid">
+            <IpaSoundCard
+              v-for="sound in sounds"
+              :key="sound.symbol"
+              :sound="sound"
+              :language="metadata.code"
+            />
+          </div>
+        </section>
+      </AtlasPanelBody>
     </AtlasPanel>
   </AtlasPageShell>
 </template>

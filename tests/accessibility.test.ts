@@ -37,5 +37,7 @@ describe('interactive cards', () => {
     expect(source).toContain('aria-label="Primary navigation"')
     expect(source).toContain('<NuxtLink')
     expect(source).toContain(':aria-current=')
+    expect(source).toContain('<AtlasBottomNavigationIcon')
+    expect(component('AtlasBottomNavigationIcon.vue')).toContain('<svg')
   })
 })

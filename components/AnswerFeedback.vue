@@ -86,6 +86,7 @@
               :key="sound.symbol"
               :to="getIpaSoundPath(sound.symbol)"
               class="phonetic-profile-link"
+              @click="recordSound(sound.symbol)"
             >
               Study /{{ sound.symbol }}/
               <span aria-hidden="true">→</span>
@@ -145,6 +146,7 @@ import {
   getFocusedIpa,
   type PronunciationMode,
 } from '~/utils/pronunciation'
+import { recordExploredVowel } from '~/utils/progress'
 
 const props = defineProps<{
   word: string
@@ -214,6 +216,16 @@ const pronunciationControls = computed<Array<{
     ariaLabel: `Hear ${props.word} slowly`,
   },
 ])
+
+function recordSound(symbol: string) {
+  if (!import.meta.client) return
+
+  try {
+    recordExploredVowel(localStorage, props.languageCode, symbol)
+  } catch {
+    // The pronunciation link remains available when storage is unavailable.
+  }
+}
 </script>
 
 <style scoped>

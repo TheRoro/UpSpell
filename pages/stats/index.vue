@@ -6,54 +6,58 @@
     />
 
     <AtlasPanel class="mx-auto my-6 max-w-6xl px-5 py-8 sm:my-10 sm:px-10 sm:py-10">
-      <AtlasNavigation
-        class="mb-8"
-        back-label="Back to the map"
-        back-to="/"
-        label="Stats navigation"
-      />
+      <AtlasPanelBody>
+        <AtlasCarouselNavigation
+          class="mb-8"
+          current-section="stats"
+        />
 
-      <StatsSummary
-        class="mx-auto max-w-5xl"
-        :total-played="totalPlayed"
-        :accuracy="accuracy"
-        :overall-best-streak="overallBestStreak"
-        :languages-explored="languagesExplored"
-        :language-count="langStats.length"
-      />
+        <StatsSummary
+          :total-played="totalPlayed"
+          :accuracy="accuracy"
+          :overall-best-streak="overallBestStreak"
+          :vowels-explored="vowelsExplored"
+          :vowel-count="vowelCount"
+        />
 
-      <section class="relative z-10 mx-auto mt-12 max-w-5xl" aria-labelledby="route-records">
-        <div class="routes-heading">
-          <h2 id="route-records" class="text-2xl font-black">
-            Language progress
-          </h2>
-        </div>
+        <section class="mt-12" aria-labelledby="route-records">
+          <div class="routes-heading">
+            <h2 id="route-records" class="text-2xl font-black">
+              Language progress
+            </h2>
+          </div>
 
-        <div v-if="totalPlayed === 0" class="empty-log mt-6">
-          <span class="empty-log-mark" aria-hidden="true">⌖</span>
-          <h3>Your stats are waiting for their first entry.</h3>
-          <p>Choose a destination and complete one daily word to begin charting progress.</p>
-          <button type="button" @click="navigateTo('/')">Explore a language</button>
-        </div>
+          <div v-if="totalPlayed === 0 && vowelsExplored === 0" class="empty-log mt-6">
+            <span class="empty-log-mark" aria-hidden="true">⌖</span>
+            <h3>Your stats are waiting for their first entry.</h3>
+            <p>Choose a destination and complete one daily word to begin charting progress.</p>
+            <button type="button" @click="navigateTo('/')">Explore a language</button>
+          </div>
 
-        <div v-else class="route-grid mt-6">
-          <LanguageProgressCard
-            v-for="(stat, index) in langStats"
-            :key="stat.code"
-            v-bind="stat"
-            :index="index"
-          />
-        </div>
-      </section>
+          <div v-else class="route-grid mt-6">
+            <LanguageProgressCard
+              v-for="(stat, index) in langStats"
+              :key="stat.code"
+              v-bind="stat"
+              :index="index"
+            />
+          </div>
+        </section>
+      </AtlasPanelBody>
     </AtlasPanel>
   </AtlasPageShell>
 </template>
 
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
+import { getIpaSoundProfiles } from '~/data/characterProfiles'
 import { getLanguageMetadata } from '~/data/languageMetadata'
 import { languages } from '~/data/words'
 import { getActiveStreak, parseStoredCount } from '~/utils/game'
+import {
+  getExploredVowelsKey,
+  readExploredVowels,
+} from '~/utils/progress'
 
 usePageSeo({
   title: 'Language Progress | UpSpell',
@@ -71,6 +75,8 @@ interface LangStat {
   accuracy: number
   currentStreak: number
   bestStreak: number
+  vowelsExplored: number
+  vowelCount: number
 }
 
 const langStats = ref<LangStat[]>([])
@@ -81,6 +87,7 @@ function loadStats() {
     const played = readCount(`upspell-played-${language.code}`)
     const won = readCount(`upspell-won-${language.code}`)
     const metadata = getLanguageMetadata(language.code)
+    const vowelCount = getIpaSoundProfiles(language.code).length
 
     return {
       code: language.code,
@@ -96,6 +103,10 @@ function loadStats() {
         currentDayKey.value,
       ),
       bestStreak: readCount(`upspell-best-${language.code}`),
+      vowelsExplored: readExploredVowels(
+        readValue(getExploredVowelsKey(language.code)),
+      ).length,
+      vowelCount,
     }
   })
 }
@@ -119,7 +130,12 @@ const totalPlayed = computed(() => langStats.value.reduce((sum, stat) => sum + s
 const totalWon = computed(() => langStats.value.reduce((sum, stat) => sum + stat.won, 0))
 const accuracy = computed(() => totalPlayed.value > 0 ? Math.round((totalWon.value / totalPlayed.value) * 100) : 0)
 const overallBestStreak = computed(() => Math.max(0, ...langStats.value.map(stat => stat.bestStreak)))
-const languagesExplored = computed(() => langStats.value.filter(stat => stat.played > 0).length)
+const vowelsExplored = computed(() =>
+  langStats.value.reduce((sum, stat) => sum + stat.vowelsExplored, 0),
+)
+const vowelCount = computed(() =>
+  langStats.value.reduce((sum, stat) => sum + stat.vowelCount, 0),
+)
 </script>
 
 <style scoped>

@@ -9,11 +9,12 @@ import {
   getLanguagePhoneticCharacters,
   languageVowelInventories,
 } from '../data/characterProfiles'
+import { getIpaSoundExamples } from '../data/soundExamples'
 import { loadLanguageWords } from '../data/words'
 
 const expectedCounts: Record<string, number> = {
   fr: 14,
-  es: 9,
+  es: 7,
   pt: 12,
   it: 6,
   ro: 5,
@@ -63,9 +64,9 @@ describe('character pronunciation profiles', () => {
     }
   })
 
-  it('keeps punctuation in the copy library but out of Spanish phonetics', () => {
+  it('excludes Spanish punctuation from character and phonetics collections', () => {
     expect(getLanguageCharacters('es').map(character => character.letter))
-      .toEqual(expect.arrayContaining(['¿', '¡']))
+      .not.toEqual(expect.arrayContaining(['¿', '¡']))
     expect(getLanguagePhoneticCharacters('es').map(character => character.letter))
       .not.toEqual(expect.arrayContaining(['¿', '¡']))
     expect(getCharacterProfile('es', '¿')).toBeUndefined()
@@ -103,6 +104,16 @@ describe('character pronunciation profiles', () => {
       'o',
       'a',
       'ə',
+    ])
+    expect(getIpaSoundProfiles('es').map(sound => ({
+      symbol: sound.symbol,
+      spellings: sound.spellings.map(spelling => spelling.letter),
+    }))).toEqual([
+      { symbol: 'a', spellings: ['a'] },
+      { symbol: 'e', spellings: ['e'] },
+      { symbol: 'i', spellings: ['i'] },
+      { symbol: 'o', spellings: ['o'] },
+      { symbol: 'u', spellings: ['u'] },
     ])
   })
 
@@ -148,5 +159,21 @@ describe('character pronunciation profiles', () => {
       }
     }
     expect([...new Set(missingProfiles)].sort()).toEqual([])
+  })
+
+  it('provides one example for every language using each vowel', async () => {
+    const missingExamples: string[] = []
+
+    for (const sound of getIpaSoundProfiles()) {
+      const examples = await getIpaSoundExamples(sound.symbol)
+      const exampleLanguages = new Set(examples.map(example => example.languageCode))
+      for (const languageCode of sound.languageCodes) {
+        if (!exampleLanguages.has(languageCode)) {
+          missingExamples.push(`${languageCode}:/${sound.symbol}/`)
+        }
+      }
+    }
+
+    expect(missingExamples).toEqual([])
   })
 })

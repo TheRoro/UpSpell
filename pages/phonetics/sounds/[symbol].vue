@@ -34,6 +34,44 @@
         </span>
       </header>
 
+      <section class="profile-section" aria-labelledby="examples-heading">
+        <div class="section-heading">
+          <span>
+            <p class="profile-kicker">Listen in context</p>
+            <h2 id="examples-heading">Example words</h2>
+          </span>
+          <span class="section-count">{{ examples.length }} examples</span>
+        </div>
+
+        <div v-if="examples.length" class="example-grid">
+          <article
+            v-for="example in examples"
+            :key="`${example.languageCode}-${example.word}`"
+            class="example-card"
+          >
+            <span>
+              <span class="example-language">{{ example.languageName }}</span>
+              <strong :lang="example.languageCode">{{ example.word }}</strong>
+              <small>/{{ example.ipa }}/</small>
+              <p>{{ example.meaning }}</p>
+            </span>
+            <button
+              type="button"
+              class="example-audio"
+              :class="{ 'example-audio-active': activeExample === example.key }"
+              :aria-label="`Hear ${example.word} pronounced in ${example.languageName}`"
+              :aria-pressed="activeExample === example.key"
+              @click="speakExample(example)"
+            >
+              <span aria-hidden="true">▶</span>
+            </button>
+          </article>
+        </div>
+        <p v-else class="empty-examples">
+          No matching spoken example is currently available.
+        </p>
+      </section>
+
       <section class="profile-section" aria-labelledby="spellings-heading">
         <div class="section-heading">
           <span>
@@ -72,48 +110,10 @@
               >{{ letter }}</span>
             </p>
             <p v-else>
-              See the example words below for spelling connections.
+              See the example word above for a spelling connection.
             </p>
           </article>
         </div>
-      </section>
-
-      <section class="profile-section" aria-labelledby="examples-heading">
-        <div class="section-heading">
-          <span>
-            <p class="profile-kicker">Listen in context</p>
-            <h2 id="examples-heading">Example words</h2>
-          </span>
-          <span class="section-count">{{ examples.length }} examples</span>
-        </div>
-
-        <div v-if="examples.length" class="example-grid">
-          <article
-            v-for="example in examples"
-            :key="`${example.languageCode}-${example.word}`"
-            class="example-card"
-          >
-            <span>
-              <span class="example-language">{{ example.languageName }}</span>
-              <strong :lang="example.languageCode">{{ example.word }}</strong>
-              <small>/{{ example.ipa }}/</small>
-              <p>{{ example.meaning }}</p>
-            </span>
-            <button
-              type="button"
-              class="example-audio"
-              :class="{ 'example-audio-active': activeExample === example.key }"
-              :aria-label="`Hear ${example.word} pronounced in ${example.languageName}`"
-              :aria-pressed="activeExample === example.key"
-              @click="speakExample(example)"
-            >
-              <span aria-hidden="true">▶</span>
-            </button>
-          </article>
-        </div>
-        <p v-else class="empty-examples">
-          No matching spoken example is currently available in the daily word collection.
-        </p>
       </section>
     </AtlasPanel>
   </AtlasPageShell>
@@ -126,19 +126,11 @@ import {
   officialIpaChartUrl,
 } from '~/data/characterProfiles'
 import { getLanguageMetadata } from '~/data/languageMetadata'
-import { loadLanguageWords } from '~/data/words'
+import {
+  getIpaSoundExamples,
+  type SoundExample,
+} from '~/data/soundExamples'
 import { getSpeechVoice } from '~/utils/pronunciation'
-
-interface SoundExample {
-  key: string
-  word: string
-  meaning: string
-  ipa: string
-  languageCode: string
-  languageName: string
-  speechLocale: string
-  spelling?: string
-}
 
 const route = useRoute()
 const symbol = String(route.params.symbol)
@@ -154,82 +146,7 @@ const resolvedSound = sound
 
 const { data: soundExamples } = await useAsyncData(
   `ipa-sound-${resolvedSound.symbol}`,
-  async () => {
-    const examples: SoundExample[] = []
-    const languageCodes = resolvedSound.languageCodes
-
-    function addExample(
-      languageCode: string,
-      word: Awaited<ReturnType<typeof loadLanguageWords>>['words'][number],
-      spelling?: string,
-    ) {
-      const key = `${languageCode}:${word.word}`
-      if (examples.some(item => item.key === key)) return
-      const metadata = getLanguageMetadata(languageCode)
-      examples.push({
-        key,
-        word: word.word,
-        meaning: word.meaning,
-        ipa: word.ipa,
-        languageCode,
-        languageName: metadata.englishName,
-        speechLocale: metadata.speechLocale,
-        spelling,
-      })
-    }
-
-    function containsSound(ipa: string) {
-      const normalizedIpa = ipa.normalize('NFC')
-      const normalizedSound = resolvedSound.symbol.normalize('NFC')
-      let index = normalizedIpa.indexOf(normalizedSound)
-
-      while (index !== -1) {
-        const nextCharacter = normalizedIpa[index + normalizedSound.length]
-        if (
-          normalizedSound.endsWith('ː')
-          || normalizedSound.endsWith('\u0303')
-          || !nextCharacter
-          || !['ː', '\u0303', '\u032F'].includes(nextCharacter)
-        ) {
-          return true
-        }
-        index = normalizedIpa.indexOf(normalizedSound, index + normalizedSound.length)
-      }
-
-      return false
-    }
-
-    const languageWordSets = await Promise.all(languageCodes.map(async languageCode => ({
-      languageCode,
-      words: (await loadLanguageWords(languageCode)).words,
-    })))
-
-    // Prefer challenge focus ranges because they identify the exact spelling.
-    for (const { languageCode, words } of languageWordSets) {
-      for (const word of words) {
-        const focusedIpa = word.ipaFocus
-          .map(([start, end]) => word.ipa.slice(start, end))
-          .join('')
-        const vowelOnly = focusedIpa.replace(/[˥˦˧˨˩ˀ]/gu, '')
-        if (vowelOnly !== resolvedSound.symbol) continue
-
-        addExample(languageCode, word, word.choices[0])
-        if (examples.length === 8) return examples
-      }
-    }
-
-    // Ordinary vowels are not always the missing character in a daily challenge.
-    // Fall back to matching the full transcription without claiming a spelling.
-    for (const { languageCode, words } of languageWordSets) {
-      for (const word of words) {
-        if (!containsSound(word.ipa)) continue
-        addExample(languageCode, word)
-        if (examples.length === 8) return examples
-      }
-    }
-
-    return examples
-  },
+  () => getIpaSoundExamples(resolvedSound.symbol),
 )
 const examples = computed(() => soundExamples.value ?? [])
 const enrichedLanguages = computed(() =>

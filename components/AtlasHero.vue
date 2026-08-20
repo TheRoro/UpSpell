@@ -5,7 +5,7 @@
       <span>N</span>
       <strong>✦</strong>
     </div>
-    <div class="relative mx-auto max-w-5xl px-6 py-10 text-center sm:py-14">
+    <div class="atlas-hero-content relative mx-auto max-w-5xl px-6 text-center">
       <p class="text-xs font-black uppercase tracking-[0.28em] text-amber-200">
         {{ eyebrow }}
       </p>
@@ -52,6 +52,15 @@ withDefaults(defineProps<{
 
 .atlas-hero h1 {
   font-family: 'Source Serif 4', Georgia, serif;
+}
+
+.atlas-hero-content {
+  display: flex;
+  min-height: 18rem;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .atlas-route-line {
@@ -106,6 +115,12 @@ withDefaults(defineProps<{
 }
 
 @media (max-width: 640px) {
+  .atlas-hero-content {
+    min-height: 16.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .atlas-compass {
     left: -2rem;
     opacity: 0.6;

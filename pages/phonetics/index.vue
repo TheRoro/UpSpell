@@ -6,50 +6,48 @@
     />
 
     <AtlasPanel class="mx-auto my-6 max-w-6xl px-5 py-8 sm:my-10 sm:px-10 sm:py-10">
-      <AtlasNavigation
-        class="mb-8"
-        back-label="Back to the map"
-        back-to="/"
-        forward-label="Copy characters"
-        forward-to="/reference"
-        label="Phonetics navigation"
-      />
-
-      <section class="sound-directory" aria-labelledby="sound-directory-heading">
-        <PhoneticsDirectoryHeader
-          heading-id="sound-directory-heading"
-          kicker="International Phonetic Alphabet"
-          title="Explore sounds"
-          description="Start with an IPA sound, learn how it is produced, then compare the characters and words that use it."
-          :count="sounds.length"
+      <AtlasPanelBody>
+        <AtlasCarouselNavigation
+          class="mb-8"
+          current-section="phonetics"
         />
 
-        <nav class="language-filters" aria-label="Filter sounds by language">
-          <NuxtLink to="/phonetics" aria-current="page">All sounds</NuxtLink>
-          <NuxtLink
-            v-for="language in languageMetadata"
-            :key="language.code"
-            :to="`/phonetics/${language.code}`"
-          >
-            <img :src="language.flag" alt="" />
-            {{ language.englishName }}
-          </NuxtLink>
-        </nav>
+        <section class="sound-directory" aria-labelledby="sound-directory-heading">
+          <PhoneticsDirectoryHeader
+            heading-id="sound-directory-heading"
+            kicker="International Phonetic Alphabet"
+            title="Explore sounds"
+            description="Start with an IPA sound, learn how it is produced, then compare the characters and words that use it."
+            :count="sounds.length"
+          />
 
-        <section class="sound-group" aria-labelledby="vowel-sounds">
-          <div class="group-heading">
-            <h3 id="vowel-sounds">Vowels</h3>
-            <span>{{ sounds.length }}</span>
-          </div>
-          <div class="sound-grid">
-            <IpaSoundCard
-              v-for="sound in sounds"
-              :key="sound.symbol"
-              :sound="sound"
-            />
-          </div>
+          <nav class="language-filters" aria-label="Filter sounds by language">
+            <NuxtLink to="/phonetics" aria-current="page">All sounds</NuxtLink>
+            <NuxtLink
+              v-for="language in languageMetadata"
+              :key="language.code"
+              :to="`/phonetics/${language.code}`"
+            >
+              <img :src="language.flag" alt="" />
+              {{ language.englishName }}
+            </NuxtLink>
+          </nav>
+
+          <section class="sound-group" aria-labelledby="vowel-sounds">
+            <div class="group-heading">
+              <h3 id="vowel-sounds">Vowels</h3>
+              <span>{{ sounds.length }}</span>
+            </div>
+            <div class="sound-grid">
+              <IpaSoundCard
+                v-for="sound in sounds"
+                :key="sound.symbol"
+                :sound="sound"
+              />
+            </div>
+          </section>
         </section>
-      </section>
+      </AtlasPanelBody>
     </AtlasPanel>
   </AtlasPageShell>
 </template>

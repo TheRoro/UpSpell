@@ -6,58 +6,53 @@
     />
 
     <AtlasPanel class="mx-auto my-6 max-w-6xl px-5 py-8 sm:my-10 sm:px-10 sm:py-10">
-      <AtlasNavigation
-        class="mb-8"
-        back-label="Back to the map"
-        back-to="/"
-        label="Character collection navigation"
-      />
+      <AtlasPanelBody>
+        <AtlasCarouselNavigation
+          class="mb-8"
+          current-section="characters"
+        />
 
-      <section class="relative z-10 mx-auto max-w-5xl" aria-labelledby="language-guides">
-        <div class="collection-heading">
-          <p class="coordinate-label text-sm font-black uppercase tracking-[0.2em] text-sky-800 dark:text-[#D1BEA2]">
-            Character collection
-          </p>
-          <h2 id="language-guides" class="mt-2 text-3xl font-black text-stone-900 dark:text-white sm:text-4xl">
-            Choose a language
-          </h2>
-          <p class="mt-3 max-w-2xl text-stone-600 dark:text-[#D7C3A3]">
-            Choose a language, then select any character to copy it instantly.
-          </p>
-        </div>
+        <section aria-labelledby="language-guides">
+          <AtlasSectionHeader
+            heading-id="language-guides"
+            eyebrow="Character collection"
+            title="Choose a language"
+            description="Choose a language, then select any character to copy it instantly."
+          />
 
-        <div class="guide-grid mt-8">
-          <NuxtLink
-            v-for="(language, index) in languageGuides"
-            :key="language.code"
-            :to="language.route"
-            :aria-label="`Open ${language.englishName} character reference`"
-            class="language-guide-card group"
-            :style="{ '--card-delay': `${index * 45}ms` }"
-          >
-            <span class="card-heading">
-              <span class="flag-frame">
-                <img :src="language.flag" alt="" />
+          <div class="guide-grid mt-8">
+            <NuxtLink
+              v-for="(language, index) in languageGuides"
+              :key="language.code"
+              :to="language.route"
+              :aria-label="`Open ${language.englishName} character reference`"
+              class="language-guide-card group"
+              :style="{ '--card-delay': `${index * 45}ms` }"
+            >
+              <span class="card-heading">
+                <span class="flag-frame">
+                  <img :src="language.flag" alt="" />
+                </span>
+                <span class="min-w-0">
+                  <strong :lang="language.code">{{ language.name }}</strong>
+                  <small>{{ language.englishName }}</small>
+                </span>
               </span>
-              <span class="min-w-0">
-                <strong :lang="language.code">{{ language.name }}</strong>
-                <small>{{ language.englishName }}</small>
+
+              <span class="character-specimens" :lang="language.code" aria-hidden="true">
+                <span v-for="character in language.featuredCharacters" :key="character">{{ character }}</span>
               </span>
-            </span>
 
-            <span class="character-specimens" :lang="language.code" aria-hidden="true">
-              <span v-for="character in language.featuredCharacters" :key="character">{{ character }}</span>
-            </span>
+              <span class="rule-note">{{ language.accentRule }}</span>
 
-            <span class="rule-note">{{ language.accentRule }}</span>
-
-            <span class="card-footer">
-              <span>Copy characters</span>
-              <span class="card-arrow" aria-hidden="true">→</span>
-            </span>
-          </NuxtLink>
-        </div>
-      </section>
+              <span class="card-footer">
+                <span>Copy characters</span>
+                <span class="card-arrow" aria-hidden="true">→</span>
+              </span>
+            </NuxtLink>
+          </div>
+        </section>
+      </AtlasPanelBody>
     </AtlasPanel>
   </AtlasPageShell>
 </template>
@@ -88,12 +83,10 @@ const languageGuides = computed(() =>
 </script>
 
 <style scoped>
-.collection-heading h2,
 .language-guide-card strong {
   font-family: 'Source Serif 4', Georgia, serif;
 }
 
-.coordinate-label,
 .card-footer {
   font-family: 'Overpass Mono', monospace;
 }
@@ -102,23 +95,6 @@ const languageGuides = computed(() =>
   border-radius: 0.35rem;
   outline: 3px solid var(--atlas-focus);
   outline-offset: 3px;
-}
-
-.collection-heading {
-  position: relative;
-  border-bottom: 1px solid rgb(120 53 15 / 20%);
-  padding-bottom: 1.25rem;
-}
-
-.collection-heading::after {
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  height: 3px;
-  width: 4.5rem;
-  border-radius: 9999px;
-  background: rgb(42 103 110);
-  content: '';
 }
 
 .guide-grid {
@@ -140,7 +116,7 @@ const languageGuides = computed(() =>
   box-shadow:
     2px 3px 0 rgb(120 53 15 / 10%),
     inset 0 0 0 2px rgb(255 255 255 / 22%);
-  transition: box-shadow 220ms ease, transform 220ms ease;
+  transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
   animation: card-arrive 420ms calc(var(--card-delay)) ease both;
 }
 
@@ -150,7 +126,7 @@ const languageGuides = computed(() =>
   right: 0;
   left: 0;
   height: 0.22rem;
-  background: rgb(42 103 110);
+  background: var(--atlas-accent);
   content: '';
   transform: scaleX(0);
   transform-origin: left;
@@ -158,9 +134,10 @@ const languageGuides = computed(() =>
 }
 
 .language-guide-card:hover {
+  border-color: rgb(42 103 110 / 45%);
   box-shadow:
     4px 7px 0 rgb(120 53 15 / 12%),
-    inset 0 0 0 2px rgb(255 255 255 / 22%);
+    inset 0 0 0 2px rgb(255 255 255 / 18%);
   transform: translateY(-0.25rem);
 }
 
@@ -285,12 +262,15 @@ html.dark .language-guide-card {
     inset 0 0 0 2px rgb(196 154 74 / 3%);
 }
 
-html.dark .collection-heading {
-  border-bottom-color: rgb(196 154 74 / 16%);
+html.dark .language-guide-card::before {
+  background: var(--atlas-accent-strong);
 }
 
-html.dark .collection-heading::after {
-  background: rgb(209 190 162);
+html.dark .language-guide-card:hover {
+  border-color: rgb(209 190 162 / 55%);
+  box-shadow:
+    4px 7px 0 rgb(0 0 0 / 24%),
+    inset 0 0 0 2px rgb(196 154 74 / 3%);
 }
 
 html.dark .card-heading strong {

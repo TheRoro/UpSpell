@@ -6,7 +6,7 @@
     <div class="challenge-toolbar mb-6">
       <AtlasNavigation
         class="min-w-0 flex-1"
-        back-label="Back to the map"
+        back-label="Back to challenges"
         label="Challenge navigation"
         @back="$emit('back')"
       />

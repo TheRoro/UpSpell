@@ -9,7 +9,10 @@
         :class="{ 'bottom-navigation-link-active': isCurrent(item.section) }"
         :aria-current="isCurrent(item.section) ? 'page' : undefined"
       >
-        <span class="bottom-navigation-icon" aria-hidden="true">{{ item.icon }}</span>
+        <span class="bottom-navigation-icon" aria-hidden="true">
+          <span v-if="item.icon === 'phonetics'" class="phonetics-glyph">/ə/</span>
+          <AtlasBottomNavigationIcon v-else :section="item.icon" />
+        </span>
         <span>{{ item.label }}</span>
       </NuxtLink>
     </nav>
@@ -19,8 +22,10 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { languageMetadata } from '~/data/languageMetadata'
-
-type NavigationSection = 'map' | 'stats' | 'characters' | 'phonetics'
+import {
+  primaryNavigationItems,
+  type PrimaryNavigationSection,
+} from '~/data/primaryNavigation'
 
 const props = defineProps<{
   languageCode?: string | null
@@ -44,44 +49,17 @@ const activeLanguageCode = computed(() =>
     ? props.languageCode
     : routeLanguageCode.value,
 )
-const navigationItems = computed<Array<{
-  section: NavigationSection
-  label: string
-  icon: string
-  to: string
-}>>(() => [
-  {
-    section: 'map',
-    label: 'Map',
-    icon: '⌂',
-    to: '/',
-  },
-  {
-    section: 'stats',
-    label: 'Stats',
-    icon: '⌁',
-    to: '/stats',
-  },
-  {
-    section: 'characters',
-    label: 'Characters',
-    icon: 'á',
-    to: activeLanguageCode.value
+const navigationItems = computed(() => primaryNavigationItems.map(item => ({
+  ...item,
+  to: item.section === 'phonetics' && activeLanguageCode.value
+    ? `/phonetics/${activeLanguageCode.value}`
+    : item.section === 'characters' && activeLanguageCode.value
       ? `/${activeLanguageCode.value}`
-      : '/reference',
-  },
-  {
-    section: 'phonetics',
-    label: 'Phonetics',
-    icon: '/ə/',
-    to: activeLanguageCode.value
-      ? `/phonetics/${activeLanguageCode.value}`
-      : '/phonetics',
-  },
-])
+      : item.to,
+})))
 
-function isCurrent(section: NavigationSection): boolean {
-  if (section === 'map') return route.path === '/'
+function isCurrent(section: PrimaryNavigationSection): boolean {
+  if (section === 'challenge') return route.path === '/'
   if (section === 'stats') return route.path.startsWith('/stats')
   if (section === 'phonetics') return route.path.startsWith('/phonetics')
   if (route.path.startsWith('/reference')) return true
@@ -148,11 +126,19 @@ function isCurrent(section: NavigationSection): boolean {
 }
 
 .bottom-navigation-icon {
-  min-height: 1.2rem;
+  display: grid;
+  width: 2rem;
+  height: 1.5rem;
+  place-items: center;
+}
+
+.phonetics-glyph {
+  display: block;
   font-family: 'Overpass Mono', monospace;
   font-size: 0.95rem;
   font-weight: 800;
   line-height: 1;
+  white-space: nowrap;
 }
 
 html.dark .bottom-navigation {

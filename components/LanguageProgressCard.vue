@@ -49,6 +49,10 @@
         <dt>Best streak</dt>
         <dd>{{ bestStreak }}</dd>
       </div>
+      <div>
+        <dt>Vowels explored</dt>
+        <dd>{{ vowelsExplored }}<small>/{{ vowelCount }}</small></dd>
+      </div>
     </dl>
   </article>
 </template>
@@ -64,6 +68,8 @@ defineProps<{
   accuracy: number
   currentStreak: number
   bestStreak: number
+  vowelsExplored: number
+  vowelCount: number
   index: number
 }>()
 </script>
@@ -216,7 +222,7 @@ defineProps<{
 
 .route-details {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 1rem;
   border-top: 1px solid var(--atlas-card-border);
   padding-top: 0.8rem;
@@ -241,6 +247,13 @@ defineProps<{
   font-family: 'Source Serif 4', Georgia, serif;
   font-size: 1.1rem;
   font-weight: 800;
+}
+
+.route-details dd small {
+  margin-left: 0.1rem;
+  color: var(--atlas-muted);
+  font-family: 'Overpass', sans-serif;
+  font-size: 0.65rem;
 }
 
 @keyframes card-arrive {

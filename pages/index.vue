@@ -3,43 +3,46 @@
     <p class="sr-only" role="status" aria-live="polite">{{ announcement }}</p>
 
     <AtlasHero
-      title="Explore words through spelling and sound."
-      subtitle="Choose a language, discover today’s word, and chart what you learn."
+      eyebrow="12 languages, one daily challenge"
+      title="Daily Spelling Challenge"
+      subtitle="Choose a language, solve today’s word, and explore how it sounds and is written."
     />
 
     <AtlasPanel v-if="!selectedLang" class="mx-auto my-6 max-w-6xl px-5 py-8 sm:my-10 sm:px-10 sm:py-10">
-      <section class="relative z-10 mx-auto max-w-5xl">
-        <div class="destinations-heading mb-8">
-          <p class="text-xs font-black uppercase tracking-[0.24em] text-sky-800 dark:text-[#D1BEA2]">
-            Mapped destinations
-          </p>
-          <h2 class="mt-2 text-3xl font-black text-stone-900 dark:text-white sm:text-4xl">
-            Choose your next language
-          </h2>
-          <p class="mt-3 text-stone-600 dark:text-[#D7C3A3]">
-            Your discoveries stay on this device.
-          </p>
-        </div>
+      <AtlasPanelBody>
+        <AtlasCarouselNavigation
+          class="mb-8"
+          current-section="challenge"
+        />
 
-        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-x-10">
-          <MapDestinationCard
-            v-for="(lang, index) in languages"
-            :key="lang.code"
-            :name="lang.name"
-            :english-name="getLanguageMetadata(lang.code).englishName"
-            :language-code="lang.code"
-            :flag="lang.flag"
-            :featured-marks="languageCardDetails[lang.code].featuredMarks"
-            :featured-words="languageCardDetails[lang.code].featuredWords"
-            :index="index"
-            :disabled="Boolean(loadingLanguageCode)"
-            :loading="loadingLanguageCode === lang.code"
-            v-bind="getLanguageProgress(lang.code)"
-            @select="openLanguage(lang.code)"
+        <section aria-labelledby="challenge-languages">
+          <AtlasSectionHeader
+            class="mb-8"
+            heading-id="challenge-languages"
+            eyebrow="Daily language challenge"
+            title="Choose a language to begin"
+            description="Solve today’s word, then explore its pronunciation, vowels, and characters."
           />
-        </div>
-      </section>
 
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-x-10">
+            <MapDestinationCard
+              v-for="(lang, index) in languages"
+              :key="lang.code"
+              :name="lang.name"
+              :english-name="getLanguageMetadata(lang.code).englishName"
+              :language-code="lang.code"
+              :flag="lang.flag"
+              :featured-marks="languageCardDetails[lang.code].featuredMarks"
+              :featured-words="languageCardDetails[lang.code].featuredWords"
+              :index="index"
+              :disabled="Boolean(loadingLanguageCode)"
+              :loading="loadingLanguageCode === lang.code"
+              v-bind="getLanguageProgress(lang.code)"
+              @select="openLanguage(lang.code)"
+            />
+          </div>
+        </section>
+      </AtlasPanelBody>
     </AtlasPanel>
 
     <DailyChallenge
@@ -75,8 +78,8 @@
 
 <script setup lang="ts">
 usePageSeo({
-  title: 'UpSpell | Daily Language Atlas',
-  description: 'Explore words, spelling, and special characters across 12 languages, one daily discovery at a time.',
+  title: 'UpSpell | Daily Spelling Challenge',
+  description: 'Complete a daily spelling challenge and explore pronunciation, vowels, and special characters across 12 languages.',
   path: '/',
 })
 
@@ -110,22 +113,3 @@ const {
   wordSegments,
 } = useHomeGame()
 </script>
-
-<style scoped>
-.destinations-heading {
-  position: relative;
-  border-bottom: 1px solid var(--atlas-card-border);
-  padding-bottom: 1.25rem;
-}
-
-.destinations-heading::after {
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  height: 3px;
-  width: 4.5rem;
-  border-radius: 9999px;
-  background: var(--atlas-accent-strong);
-  content: '';
-}
-</style>
